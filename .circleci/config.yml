@@ -1,0 +1,21 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@5.0.1
+
+jobs:
+  suikoden_election_2022_frontend_build_and_test:
+    docker:
+      - image: cimg/node:16.4
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: yarn
+      # - run:
+      #     name: Run tests
+      #     command: yarn test
+
+workflows:
+  main_workflow:
+    jobs:
+      - suikoden_election_2022_frontend_build_and_test

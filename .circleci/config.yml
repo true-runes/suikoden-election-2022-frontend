@@ -16,6 +16,6 @@ jobs:
       #     command: yarn test
 
 workflows:
-  main_workflow:
+  circleci_main_workflow:
     jobs:
       - suikoden_election_2022_frontend_build_and_test

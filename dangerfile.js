@@ -8,9 +8,9 @@ if (changedNumberOfLines > LARGE_NUMBER_OF_CHANGED_LINES) {
     `👮‍♂ Pull Request が ${LARGE_NUMBER_OF_CHANGED_LINES} 行を超えており、大きめかもしれません。`
   )
 }
-if (changedNumberOfLines < LARGE_NUMBER_OF_CHANGED_LINES) {
+if (changedNumberOfLines < MINIMUM_NUMBER_OF_CHANGED_LINES) {
   message(
-    `👍 Pull Request が ${LARGE_NUMBER_OF_CHANGED_LINES} 行未満であり、コンパクトです。`
+    `👍 Pull Request が ${MINIMUM_NUMBER_OF_CHANGED_LINES} 行未満であり、コンパクトです。`
   )
 }
 

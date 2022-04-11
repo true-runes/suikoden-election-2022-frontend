@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from 'next/document';
+import { Html, Head, Main, NextScript } from 'next/document'
 
 const MyDocument = () => {
   // const url = '<https://example.com>';
@@ -9,10 +9,10 @@ const MyDocument = () => {
     <Html lang="ja-JP">
       <Head>
         <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/favicons/apple-touch-icon.png"
-          />
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/favicons/apple-touch-icon.png"
+        />
         <link
           rel="icon"
           type="image/png"
@@ -53,7 +53,7 @@ const MyDocument = () => {
         <NextScript />
       </body>
     </Html>
-  );
-};
+  )
+}
 
-export default MyDocument;
+export default MyDocument

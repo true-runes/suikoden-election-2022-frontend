@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 
 export const middleware = (req: NextRequest) => {
-  if (process.env.DEPLOYMENT_ENVIRONMENT === 'production') return NextResponse.next()
+  if (process.env.DEPLOYMENT_ENVIRONMENT === 'production')
+    return NextResponse.next()
 
   const basicAuth = req.headers.get('authorization')
 
@@ -9,7 +10,10 @@ export const middleware = (req: NextRequest) => {
     const auth = basicAuth.split(' ')[1]
     const [user, pwd] = Buffer.from(auth, 'base64').toString().split(':')
 
-    if (user ===  process.env.BASIC_AUTH_USERNAME && pwd === process.env.BASIC_AUTH_PASSWORD) {
+    if (
+      user === process.env.BASIC_AUTH_USERNAME &&
+      pwd === process.env.BASIC_AUTH_PASSWORD
+    ) {
       return NextResponse.next()
     }
   }

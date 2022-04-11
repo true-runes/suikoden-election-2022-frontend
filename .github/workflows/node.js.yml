@@ -1,0 +1,37 @@
+name: (GitHub Actions) Node.js CI
+
+on:
+  push:
+    branches:
+      - main
+      - development
+  pull_request:
+    branches:
+      - development
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x]
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'yarn'
+    - name: $ yarn install
+      run: |
+        yarn install --frozen-lockfile
+    - name: ESLint
+      run: |
+        yarn lint
+    # - name: Jest
+    #   run: |
+    #     yarn test
+    # - name: Codecov の結果をアップロードする
+    #   uses: codecov/codecov-action@v2
+    #   with:
+    #     directory: ./.coverage

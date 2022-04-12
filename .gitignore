@@ -3,6 +3,9 @@ tmp/
 .npm
 .eslintcache
 
+cypress/screenshots/
+cypress/videos/
+
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies

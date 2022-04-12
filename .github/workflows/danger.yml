@@ -1,4 +1,4 @@
-name: (GitHub Actions) Danger
+name: "(GitHub Actions) Danger"
 on: [pull_request]
 
 jobs:

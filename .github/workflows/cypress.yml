@@ -1,4 +1,4 @@
-name: (GitHub Actions) Cypress
+name: "GHA: Cypress"
 
 on:
   - push

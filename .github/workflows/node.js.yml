@@ -35,3 +35,6 @@ jobs:
     #   uses: codecov/codecov-action@v2
     #   with:
     #     directory: ./.coverage
+    - name: Next.js がビルドできるかどうかのテスト
+      run: |
+        yarn build

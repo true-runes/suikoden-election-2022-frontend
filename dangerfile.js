@@ -10,7 +10,7 @@
   // TODO: main ブランチの場合はスキップするように修正する
   if (changedNumberOfLines > LARGE_NUMBER_OF_CHANGED_LINES) {
     warn(
-      `👮‍♂ Pull Request が ${LARGE_NUMBER_OF_CHANGED_LINES} 行を超えており、大きめかもしれません（mainブランチ への Pull Request ならば問題ありません）。`
+      `👮‍♂ Pull Request が ${LARGE_NUMBER_OF_CHANGED_LINES} 行を超えており、大きめかもしれません（mainブランチ への Pull Request や yarn.lock の更新ならば問題ありません）。`
     )
   }
 

@@ -38,30 +38,40 @@ a {
   width: 36px;
 }
 
+.bm-burger-button button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 8px;
+}
+
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background: #000;
 }
 
 /* Color/shape of burger icon bars on hover */
 .bm-burger-bars-hover {
-  background: #005b99;
+  background: #fff;
+  opacity: 0.6;
 }
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 24px;
-  width: 24px;
+  height: 35px;
+  margin: 10px;
+  width: 35px;
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
   background: #bdc3c7;
+  height: 30px;
+  margin: -3px 0 0 -3px;
+  width: 1px;
 }
 
 /*
-Sidebar wrapper styles
-Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
 */
 .bm-menu-wrap {
   height: 100%;
@@ -70,7 +80,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: white;
+  background: #373a47;
   font-size: 1.15em;
   padding: 2.5em 1.5em 0;
 }
@@ -89,6 +99,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Individual item */
 .bm-item {
   display: inline-block;
+  margin-bottom: 10px;
   outline: none;
   text-decoration: none;
 }

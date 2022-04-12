@@ -7,11 +7,13 @@
   const LARGE_NUMBER_OF_CHANGED_LINES = 100
   const MINIMUM_NUMBER_OF_CHANGED_LINES = 10
 
+  // TODO: main ブランチの場合はスキップするように修正する
   if (changedNumberOfLines > LARGE_NUMBER_OF_CHANGED_LINES) {
     warn(
-      `👮‍♂ Pull Request が ${LARGE_NUMBER_OF_CHANGED_LINES} 行を超えており、大きめかもしれません。`
+      `👮‍♂ Pull Request が ${LARGE_NUMBER_OF_CHANGED_LINES} 行を超えており、大きめかもしれません（mainブランチ への Pull Request ならば問題ありません）。`
     )
   }
+
   if (changedNumberOfLines < MINIMUM_NUMBER_OF_CHANGED_LINES) {
     message(
       `👍 Pull Request が ${MINIMUM_NUMBER_OF_CHANGED_LINES} 行未満であり、コンパクトです。`

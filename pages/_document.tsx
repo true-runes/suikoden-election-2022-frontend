@@ -8,6 +8,7 @@ const MyDocument = () => {
   return (
     <Html lang="ja-JP">
       <Head>
+        <meta name="description" content="幻水総選挙2022" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"

@@ -16,7 +16,7 @@
 
   if (changedNumberOfLines < MINIMUM_NUMBER_OF_CHANGED_LINES) {
     message(
-      `👍 Pull Request が ${MINIMUM_NUMBER_OF_CHANGED_LINES} 行未満であり、コンパクトです。`
+      `👍 Pull Request の変更行数が ${MINIMUM_NUMBER_OF_CHANGED_LINES} 行未満 であり、コンパクトです。`
     )
   }
 

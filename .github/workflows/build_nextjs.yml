@@ -1,4 +1,4 @@
-name: (GitHub Actions) Node.js CI
+name: (GitHub Actions) Build Next.js
 
 on:
   push:
@@ -25,13 +25,6 @@ jobs:
     - name: $ yarn install
       run: |
         yarn install --frozen-lockfile
-    - name: ESLint
+    - name: Next.js がビルドできるかどうかのテスト
       run: |
-        yarn lint
-    # - name: Jest
-    #   run: |
-    #     yarn test
-    # - name: Codecov の結果をアップロードする
-    #   uses: codecov/codecov-action@v2
-    #   with:
-    #     directory: ./.coverage
+        yarn build

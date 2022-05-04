@@ -35,11 +35,12 @@ const Home: NextPage = () => {
       </div>
 
       <main id="page-wrap">
+        {/* TODO: 524KB あるので要検討 */}
         <Image
-          src="/kitten_powered_by_unsplash.jpg"
-          alt="Vercel Logo"
-          width={2400}
-          height={1600}
+          src="/gss2021_logo_4k.jpg"
+          alt="幻水総選挙2022"
+          width={6480}
+          height={2160}
         />
 
         <p>コンポーネント</p>

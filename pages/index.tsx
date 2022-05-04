@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
+// import Head from 'next/head'
 import Image from 'next/image'
 import styled from 'styled-components'
 
@@ -15,10 +15,8 @@ const Home: NextPage = () => {
     // tailwind の container でくくる
     <div>
       {/* <div id="outer-container"> */}
-      <Head>
-        {/* TODO: 環境によってテキストを変える（「開発環境」であることを明示する） */}
-        <title>幻水総選挙2022</title>
-      </Head>
+      {/* TODO: 環境によってテキストを変える（「開発環境」であることを明示する） */}
+      <title>ホーム - 幻水総選挙2022</title>
 
       <div className={'right'}>
         <HumbergerMenu />
@@ -39,6 +37,7 @@ const Home: NextPage = () => {
         <KaihyoIllustStatus />
         <TouhyouCheck />
       </main>
+
       <StyledFooter>（フッタコンポーネント）幻水総選挙2022</StyledFooter>
     </div>
   )

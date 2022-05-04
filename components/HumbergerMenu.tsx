@@ -1,4 +1,5 @@
 import { scaleRotate as Menu } from 'react-burger-menu'
+import Link from 'next/link'
 
 const MenuItems = () => {
   return (
@@ -6,24 +7,22 @@ const MenuItems = () => {
       {/* TODO: outer-container は再検討 */}
       {/* TODO: Element with ID 'outer-container' not found */}
       <Menu pageWrapId={'page-wrap'} outerContainerId={'outer-container'}>
-        <p className="text-2xl">幻水総選挙2022</p>
+        <p className="text-2xl">
+          <Link href="/">幻水総選挙2022</Link>
+        </p>
 
         <div className="divider"></div>
 
         <div>
-          <a className="menu-item" href="https://example.com/">
-            投票方法
-          </a>
+          <Link href="/how-to-vote">投票方法</Link>
         </div>
 
         <div>
-          <a className="menu-item" href="https://example.com/">
-            企画
-          </a>
+          <Link href="/kikaku">企画</Link>
         </div>
 
         <div className="menu-item">
-          <a href="https://example.com/">よくある質問</a>
+          <Link href="/faq">よくある質問</Link>
         </div>
 
         <>

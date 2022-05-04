@@ -4,7 +4,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styled from 'styled-components'
 import { scaleRotate as Menu } from 'react-burger-menu'
-import topLogoImage from 'public/gss2021_logo_4k.jpg'
 
 const Home: NextPage = () => {
   return (
@@ -38,7 +37,7 @@ const Home: NextPage = () => {
       <main id="page-wrap">
         {/* TODO: 524KB あるので要検討 */}
         <Image
-          src={topLogoImage}
+          src="public/gss2021_logo_4k.jpg"
           alt="幻水総選挙2022"
           width={6480}
           height={2160}

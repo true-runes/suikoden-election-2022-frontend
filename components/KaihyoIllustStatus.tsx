@@ -5,7 +5,7 @@ const KaihyoIllustStatus = () => {
 
       <div
         tabIndex={0}
-        className="max-w-sm border collapse collapse-arrow border-base-300 rounded-box"
+        className="max-w-sm collapse collapse-arrow border-base-300 rounded-box"
       >
         <input type="checkbox" className="peer" />
         <div className="bg-black collapse-title text-primary-content">

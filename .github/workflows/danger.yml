@@ -1,5 +1,9 @@
 name: (GitHub Actions) Danger
-on: [pull_request]
+on:
+  pull_request:
+    branches:
+      - '**'
+      - '!main'
 
 jobs:
   build:

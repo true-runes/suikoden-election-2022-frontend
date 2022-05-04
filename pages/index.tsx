@@ -40,7 +40,7 @@ const Home: NextPage = () => {
           src="/gss2021_logo_4k.jpg"
           alt="幻水総選挙2022"
           width={6480}
-          height={2160}
+          height={4320}
         />
 
         <p>コンポーネント</p>

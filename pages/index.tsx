@@ -15,21 +15,24 @@ const Home: NextPage = () => {
         <title>幻水総選挙2022</title>
       </Head>
 
-      <Menu pageWrapId={'page-wrap'} outerContainerId={'outer-container'}>
-        <p>幻水総選挙2022</p>
-        <a className="bm-item menu-item" href="https://example.com/">
-          this page1!
-        </a>
-        <a className="bm-item menu-item" href="https://example.com/">
-          this page2!
-        </a>
-        <a className="bm-item menu-item" href="https://example.com/">
-          this page3!
-        </a>
-        <a className="bm-item menu-item" href="https://example.com/">
-          this page4!
-        </a>
-      </Menu>
+      <div className={'right'}>
+        {/* TODO: outer-container は再検討 */}
+        <Menu pageWrapId={'page-wrap'} outerContainerId={'outer-container'}>
+          <p>幻水総選挙2022</p>
+          <a className="bm-item menu-item" href="https://example.com/">
+            this page1!
+          </a>
+          <a className="bm-item menu-item" href="https://example.com/">
+            this page2!
+          </a>
+          <a className="bm-item menu-item" href="https://example.com/">
+            this page3!
+          </a>
+          <a className="bm-item menu-item" href="https://example.com/">
+            this page4!
+          </a>
+        </Menu>
+      </div>
 
       <main id="page-wrap">
         <Image

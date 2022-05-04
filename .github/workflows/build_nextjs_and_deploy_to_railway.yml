@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [16.x, 18.x]
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
@@ -28,14 +28,3 @@ jobs:
     - name: Next.js をビルドする
       run: |
         yarn build
-    - name: Railway にデプロイする
-      # 'main' については Railway 側で連携して自動でデプロイされているので条件に含まない
-      if: |
-        contains(github.head_ref, 'development') ||
-        contains(github.head_ref, 'feat/') ||
-        contains(github.head_ref, 'fix/')
-      run: |
-        yarn global add @railway/cli
-        railway up --service "幻水総選挙2022 (development)"
-      env:
-        RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}

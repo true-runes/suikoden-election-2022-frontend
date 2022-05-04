@@ -1,7 +1,10 @@
 name: (GitHub Actions) Cypress
 
 on:
-  - push
+  push:
+    branches:
+      - main
+      - development
 
 jobs:
   cypress_gss2022_frontend:

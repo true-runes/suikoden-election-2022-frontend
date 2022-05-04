@@ -1,18 +1,14 @@
-const KaihyoIllustStatus = () => {
+import type { NextPage } from 'next'
+
+const KaihyoIllustStatus: NextPage = () => {
   return (
     <div>
-      <p className={'text-2xl'}>開票イラスト応募状況</p>
-
-      <div
-        tabIndex={0}
-        className="max-w-sm collapse collapse-arrow border-base-300 rounded-box"
-      >
-        <input type="checkbox" className="peer" />
-        <div className="bg-black collapse-title text-primary-content">
-          Click me to show/hide content
-        </div>
-        <div className="bg-black collapse-content text-primary-content">
-          <p>tabindex={0} attribute is necessary to make the div focusable</p>
+      <div className="hero bg-base-200">
+        <div className="hero-content text-center">
+          <div className="max-w-md">
+            <h1 className="text-4xl font-bold">開票イラスト応募状況</h1>
+            <p className="py-6 text-xl">選挙運動の説明など</p>
+          </div>
         </div>
       </div>
     </div>

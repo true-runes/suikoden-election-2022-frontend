@@ -1,7 +1,5 @@
 import type { NextPage } from 'next'
-// import Head from 'next/head'
 import Image from 'next/image'
-import styled from 'styled-components'
 
 import HumbergerMenu from '../components/HumbergerMenu'
 import KaishiNichizi from '../components/KaishiNichizi'
@@ -9,6 +7,7 @@ import OshiSerif from '../components/OshiSerif'
 import SenkyoUndou from '../components/SenkyoUndou'
 import KaihyoIllustStatus from '../components/KaihyoIllustStatus'
 import TouhyouCheck from '../components/TouhyouCheck'
+import SiteFooter from '../components/SiteFooter'
 
 const Home: NextPage = () => {
   return (
@@ -31,27 +30,21 @@ const Home: NextPage = () => {
           height={4320}
         />
 
+        <div className="divider" />
         <KaishiNichizi />
+        <div className="divider" />
         <OshiSerif />
+        <div className="divider" />
         <SenkyoUndou />
+        <div className="divider" />
         <KaihyoIllustStatus />
+        <div className="divider" />
         <TouhyouCheck />
       </main>
 
-      <StyledFooter>（フッタコンポーネント）幻水総選挙2022</StyledFooter>
+      <SiteFooter />
     </div>
   )
 }
-
-const StyledFooter = styled.footer`
-  font-weight: bold;
-`
-
-const StyledOuterContainer = styled.div`
-  position: relative;
-  right: 0;
-  height: 130px;
-  background: #a90000;
-`
 
 export default Home

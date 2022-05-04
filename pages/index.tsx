@@ -1,9 +1,14 @@
 import type { NextPage } from 'next'
-import Link from 'next/link'
+// import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 import styled from 'styled-components'
 import { scaleRotate as Menu } from 'react-burger-menu'
+import KaishiNichizi from '../components/KaishiNichizi'
+import OshiSerif from '../components/OshiSerif'
+import SenkyoUndou from '../components/SenkyoUndou'
+import KaihyoIllustStatus from '../components/KaihyoIllustStatus'
+import TouhyouCheck from '../components/TouhyouCheck'
 
 const Home: NextPage = () => {
   return (
@@ -43,11 +48,13 @@ const Home: NextPage = () => {
           height={2160}
         />
 
-        <p>コンポーネント</p>
-        <p>コンポーネント</p>
-        <p>コンポーネント</p>
-        <p>コンポーネント</p>
-        <p>コンポーネント</p>
+        <KaishiNichizi />
+        <OshiSerif />
+        <SenkyoUndou />
+
+        <KaihyoIllustStatus />
+
+        <TouhyouCheck />
       </main>
       <StyledFooter>（フッタコンポーネント）幻水総選挙2022</StyledFooter>
     </div>

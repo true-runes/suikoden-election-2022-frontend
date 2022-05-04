@@ -1,0 +1,14 @@
+FROM node:18.0.0
+
+WORKDIR /app
+ARG EnvironmentVariable
+
+COPY package.json /app
+COPY yarn.lock /app
+RUN yarn install && yarn cache clean
+
+COPY . /app
+RUN yarn build
+
+EXPOSE 3000
+CMD [ "yarn", "start" ]

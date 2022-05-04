@@ -1,9 +1,14 @@
 import type { NextPage } from 'next'
-import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 import styled from 'styled-components'
-import { scaleRotate as Menu } from 'react-burger-menu'
+
+import HumbergerMenu from '../components/HumbergerMenu'
+import KaishiNichizi from '../components/KaishiNichizi'
+import OshiSerif from '../components/OshiSerif'
+import SenkyoUndou from '../components/SenkyoUndou'
+import KaihyoIllustStatus from '../components/KaihyoIllustStatus'
+import TouhyouCheck from '../components/TouhyouCheck'
 
 const Home: NextPage = () => {
   return (
@@ -16,22 +21,7 @@ const Home: NextPage = () => {
       </Head>
 
       <div className={'right'}>
-        {/* TODO: outer-container は再検討 */}
-        <Menu pageWrapId={'page-wrap'} outerContainerId={'outer-container'}>
-          <p>幻水総選挙2022</p>
-          <a className="bm-item menu-item" href="https://example.com/">
-            this page1!
-          </a>
-          <a className="bm-item menu-item" href="https://example.com/">
-            this page2!
-          </a>
-          <a className="bm-item menu-item" href="https://example.com/">
-            this page3!
-          </a>
-          <a className="bm-item menu-item" href="https://example.com/">
-            this page4!
-          </a>
-        </Menu>
+        <HumbergerMenu />
       </div>
 
       <main id="page-wrap">
@@ -43,11 +33,11 @@ const Home: NextPage = () => {
           height={4320}
         />
 
-        <p>コンポーネント</p>
-        <p>コンポーネント</p>
-        <p>コンポーネント</p>
-        <p>コンポーネント</p>
-        <p>コンポーネント</p>
+        <KaishiNichizi />
+        <OshiSerif />
+        <SenkyoUndou />
+        <KaihyoIllustStatus />
+        <TouhyouCheck />
       </main>
       <StyledFooter>（フッタコンポーネント）幻水総選挙2022</StyledFooter>
     </div>

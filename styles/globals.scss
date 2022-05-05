@@ -1,6 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import 'gridjs/dist/theme/mermaid.css';
 
 body {
   font-family:
@@ -114,4 +115,9 @@ a {
 /* オーバーレイのスタイル */
 .bm-overlay {
   background: rgb(0 0 0 / 30%);
+}
+
+/* Gird.js の検索ボックスを右寄せにする */
+.overflow-x-auto .gridjs-search {
+  float: right;
 }

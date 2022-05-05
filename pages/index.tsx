@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
+import Link from 'next/link'
 
 import type { NextPage } from 'next'
 import Image from 'next/image'
@@ -51,6 +52,12 @@ const Home: NextPage = () => {
       </div>
 
       <main id="page-wrap">
+        <div className="navbar bg-neutral text-neutral-content">
+          <div className="normal-case text-xl" style={{ paddingLeft: '1em' }}>
+            <Link href="/">幻水総選挙2022</Link>
+          </div>
+        </div>
+
         {/* TODO: 524KB あるので要検討 */}
         <Image
           src="/gss2021_logo_4k.jpg"
@@ -96,13 +103,17 @@ const Home: NextPage = () => {
         </div>
 
         <div className="divider" />
+        <KaihyoIllustStatus />
+
+        <div className="divider" />
         <KaishiNichizi />
+
         <div className="divider" />
         <OshiSerif />
+
         <div className="divider" />
         <SenkyoUndou />
-        <div className="divider" />
-        <KaihyoIllustStatus />
+
         <div className="divider" />
         <TouhyouCheck />
       </main>

@@ -1940,6 +1940,19 @@ graceful-fs@^4.1.6, graceful-fs@^4.2.0:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.10.tgz#147d3a006da4ca3ce14728c7aefc287c367d7a6c"
   integrity sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
 
+gridjs-react@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/gridjs-react/-/gridjs-react-5.0.2.tgz#5c561b89a391615fc8242223649e56808fcdd824"
+  integrity sha512-K8bEUL8MuRRbu6o9hCc/bn+H7UfstN0yRIb/UMzVIbJ7ROR0ns9UA63mr4xcMP5keqolCPuLuM1manlH17BZCA==
+
+gridjs@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/gridjs/-/gridjs-5.0.2.tgz#27c4bd7399d07770e68b45bcca20c3b1fea828b6"
+  integrity sha512-7EaMc4/IhqRcSbdOYvHOlHETciWmbbhMU6rDr2e0UfzIXSkb7X3Lhf9+bGv+v4JaWnJW5GBillgIIHrAvIIoFg==
+  dependencies:
+    preact "^10.5.12"
+    tslib "^2.0.1"
+
 hard-rejection@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/hard-rejection/-/hard-rejection-2.1.0.tgz#1c6eda5c1685c63942766d79bb40ae773cecd883"
@@ -2974,6 +2987,11 @@ postcss@^8.3.11, postcss@^8.4.12:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
+preact@^10.5.12:
+  version "10.7.1"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.7.1.tgz#bdd2b2dce91a5842c3b9b34dfe050e5401068c9e"
+  integrity sha512-MufnRFz39aIhs9AMFisonjzTud1PK1bY+jcJLo6m2T9Uh8AqjD77w11eAAawmjUogoGOnipECq7e/1RClIKsxg==
+
 prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
@@ -3687,6 +3705,11 @@ tslib@^1.8.1:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
+
+tslib@^2.0.1:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
+  integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
 
 tslib@^2.1.0:
   version "2.3.1"

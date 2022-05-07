@@ -41,9 +41,8 @@ const Home: NextPage = () => {
   )
 
   return (
-    // tailwind の container でくくる
-    <div>
-      {/* <div id="outer-container"> */}
+    // TODO: tailwind の container でくくる
+    <div id="outer-container">
       {/* TODO: 環境によってテキストを変える（「開発環境」であることを明示する） */}
       <title>ホーム - 幻水総選挙2022</title>
 
@@ -66,7 +65,7 @@ const Home: NextPage = () => {
           height={4320}
         />
 
-        <div className="hero bg-base-200">
+        {/* <div className="hero bg-base-200">
           <div className="hero-content text-center">
             <div className="max-w-md">
               <span className="text-xl">投票開始まであと</span>
@@ -100,7 +99,7 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="divider" />
         <KaihyoIllustStatus />
@@ -125,18 +124,18 @@ const Home: NextPage = () => {
 
 export default Home
 
-const StyledNowSecond = styled.span`
-  --value: ${(props: { now: Date }) => props.now.getSeconds()};
-`
+// const StyledNowSecond = styled.span`
+//   --value: ${(props: { now: Date }) => props.now.getSeconds()};
+// `
 
-const StyledNowMinute = styled.span`
-  --value: ${(props: { now: Date }) => props.now.getMinutes()};
-`
+// const StyledNowMinute = styled.span`
+//   --value: ${(props: { now: Date }) => props.now.getMinutes()};
+// `
 
-const StyledNowHour = styled.span`
-  --value: ${(props: { now: Date }) => props.now.getHours()};
-`
+// const StyledNowHour = styled.span`
+//   --value: ${(props: { now: Date }) => props.now.getHours()};
+// `
 
-const StyledNowDate = styled.span`
-  --value: ${(props: { now: Date }) => props.now.getDate()};
-`
+// const StyledNowDate = styled.span`
+//   --value: ${(props: { now: Date }) => props.now.getDate()};
+// `

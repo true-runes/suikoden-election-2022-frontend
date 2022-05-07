@@ -13,19 +13,19 @@ const MenuItems = () => {
 
         <div className="divider"></div>
 
-        <div>
+        <div className="text-xl">
           <Link href="/how-to-vote">投票方法</Link>
         </div>
 
-        <div>
+        <div className="text-xl">
           <Link href="/kikaku">企画</Link>
         </div>
 
-        <div className="menu-item">
+        <div className="text-xl">
           <Link href="/faq">よくある質問</Link>
         </div>
 
-        <>
+        <div className="text-xl">
           <div tabIndex={0} className="collapse">
             <input type="checkbox" className="peer" style={{ minHeight: 0 }} />
             <div
@@ -59,13 +59,68 @@ const MenuItems = () => {
               </span>
             </div>
             <div className="collapse-content">
-              <p>2021</p>
-              <p>2020</p>
-              <p>2019</p>
-              <p>2018</p>
+              <p className="py-2">
+                <a
+                  href="https://election-2021.suikoden.info/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  幻水総選挙2021{' '}
+                </a>
+              </p>
+
+              <p className="py-2">
+                <a
+                  href="https://election-2020.suikoden.info/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  幻水総選挙2020{' '}
+                </a>
+              </p>
+
+              <p className="py-2">
+                <a
+                  href="https://election-2019.suikoden.info/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  幻水総選挙2019{' '}
+                </a>
+              </p>
+
+              <p className="py-2">
+                <a
+                  href="https://election-2018.suikoden.info/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  幻水総選挙2018{' '}
+                </a>
+              </p>
+
+              <p className="py-2">
+                <a
+                  href="https://election-2017.suikoden.info/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  幻水総選挙2017{' '}
+                </a>
+              </p>
+
+              <p className="py-2">
+                <a
+                  href="https://election-2016.suikoden.info/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  幻水総選挙2016{' '}
+                </a>
+              </p>
             </div>
           </div>
-        </>
+        </div>
       </Menu>
     </div>
   )

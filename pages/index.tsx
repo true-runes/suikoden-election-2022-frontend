@@ -57,12 +57,12 @@ const Home: NextPage = () => {
           </div>
         </div>
 
-        {/* TODO: 524KB あるので要検討 */}
+        {/* TODO: 385KB あるので Now Loading を入れた方がいい */}
         <Image
-          src="/gss2021_logo_4k.jpg"
+          src="/gss2022_top.jpg"
           alt="幻水総選挙2022"
-          width={6480}
-          height={4320}
+          width={3180}
+          height={2044}
         />
 
         {/* <div className="hero bg-base-200">

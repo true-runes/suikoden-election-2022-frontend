@@ -1,4 +1,4 @@
-import { scaleRotate as Menu } from 'react-burger-menu'
+import { push as Menu } from 'react-burger-menu'
 import Link from 'next/link'
 
 const MenuItems = () => {

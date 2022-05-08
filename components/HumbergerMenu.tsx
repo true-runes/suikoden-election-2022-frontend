@@ -10,22 +10,19 @@ const MenuItems = () => {
         <p className="text-2xl">
           <Link href="/">幻水総選挙2022</Link>
         </p>
-
-        <div className="divider"></div>
-
-        <div className="text-xl">
-          <Link href="/how-to-vote">投票方法</Link>
+        <div className="divide-neutral-50">
+          <div className="divider"></div>
         </div>
-
-        <div className="text-xl">
-          <Link href="/kikaku">企画</Link>
+        <div className="text-lg">
+          <Link href="/how-to-vote">📝 投票方法</Link>
         </div>
-
-        <div className="text-xl">
-          <Link href="/faq">よくある質問</Link>
+        <div className="text-lg">
+          <Link href="/kikaku">💡 企画</Link>
         </div>
-
-        <div className="text-xl">
+        <div className="text-lg">
+          <Link href="/faq">❓ よくある質問</Link>
+        </div>
+        <div className="text-lg">
           <div tabIndex={0} className="collapse">
             <input type="checkbox" className="peer" style={{ minHeight: 0 }} />
             <div
@@ -35,7 +32,7 @@ const MenuItems = () => {
                 minHeight: 0,
               }}
             >
-              過去の幻水総選挙{' '}
+              📓 過去の幻水総選挙
               <span
                 style={{
                   display: 'inline-block',
@@ -59,7 +56,7 @@ const MenuItems = () => {
               </span>
             </div>
             <div className="collapse-content">
-              <p className="py-2">
+              <p className="py-2 pl-4">
                 <a
                   href="https://election-2021.suikoden.info/"
                   target="_blank"
@@ -69,7 +66,7 @@ const MenuItems = () => {
                 </a>
               </p>
 
-              <p className="py-2">
+              <p className="py-2 pl-4">
                 <a
                   href="https://election-2020.suikoden.info/"
                   target="_blank"
@@ -79,7 +76,7 @@ const MenuItems = () => {
                 </a>
               </p>
 
-              <p className="py-2">
+              <p className="py-2 pl-4">
                 <a
                   href="https://election-2019.suikoden.info/"
                   target="_blank"
@@ -89,7 +86,7 @@ const MenuItems = () => {
                 </a>
               </p>
 
-              <p className="py-2">
+              <p className="py-2 pl-4">
                 <a
                   href="https://election-2018.suikoden.info/"
                   target="_blank"
@@ -99,7 +96,7 @@ const MenuItems = () => {
                 </a>
               </p>
 
-              <p className="py-2">
+              <p className="py-2 pl-4">
                 <a
                   href="https://election-2017.suikoden.info/"
                   target="_blank"
@@ -109,7 +106,7 @@ const MenuItems = () => {
                 </a>
               </p>
 
-              <p className="py-2">
+              <p className="py-2 pl-4">
                 <a
                   href="https://election-2016.suikoden.info/"
                   target="_blank"

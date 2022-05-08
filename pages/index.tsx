@@ -42,7 +42,7 @@ const Home: NextPage = () => {
 
   return (
     // TODO: tailwind の container でくくる
-    <div id="outer-container">
+    <div>
       {/* TODO: 環境によってテキストを変える（「開発環境」であることを明示する） */}
       <title>ホーム - 幻水総選挙2022</title>
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import type { NextPage } from 'next'
 import Link from 'next/link'
-import HumbergerMenu from '../components/HumbergerMenu'
+import HumbergerNavigation from '../components/HumbergerMenu/Navigation'
 import { Grid } from 'gridjs'
 
 const KaihyoStatus: NextPage = () => {
@@ -35,7 +35,7 @@ const KaihyoStatus: NextPage = () => {
       <title>開票イラスト応募状況 - 幻水総選挙2022</title>
 
       <div className={'right'}>
-        <HumbergerMenu />
+        <HumbergerNavigation />
       </div>
 
       <main id="page-wrap">

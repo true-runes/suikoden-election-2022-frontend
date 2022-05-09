@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
-
-import type { NextPage } from 'next'
 import Image from 'next/image'
+import type { NextPage } from 'next'
 
-import HumbergerMenu from '../components/HumbergerMenu'
+import HumbergerNavigation from '../components/HumbergerMenu/Navigation'
+
 import KaishiNichizi from '../components/KaishiNichizi'
 import OshiSerif from '../components/OshiSerif'
 import SenkyoUndou from '../components/SenkyoUndou'
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
       <title>ホーム - 幻水総選挙2022</title>
 
       <div className={'right'}>
-        <HumbergerMenu />
+        <HumbergerNavigation />
       </div>
 
       <main id="page-wrap">

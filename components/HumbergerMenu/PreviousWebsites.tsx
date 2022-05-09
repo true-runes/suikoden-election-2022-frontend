@@ -46,13 +46,13 @@ const PreviousWebsites = () => {
             </span>
           </div>
           <div className="collapse-content">
-            {previousWebsiteNamesAndUrls.map((siteNameAndUrl) => (
-              <>
+            {previousWebsiteNamesAndUrls.map((siteNameAndUrl, index) => (
+              <div key={index}>
                 <PreviousWebsiteLink
                   siteName={siteNameAndUrl.siteName}
                   href={siteNameAndUrl.url}
                 />
-              </>
+              </div>
             ))}
           </div>
         </div>

@@ -73,12 +73,16 @@ a {
   width: 35px;
 }
 
-/* メニューを閉じる「バツボタン」の色および形 */
+/*
+  メニューを閉じる「バツボタン」の色および形および大きさ
+  height がバツボタンの大きさ
+  width は線の太さ
+*/
 .bm-cross {
   background: #bdc3c7;
-  height: 30px;
+  height: 25px !important;
   margin: -3px 0 0 -3px;
-  width: 1px;
+  width: 2px !important;
 }
 
 /*

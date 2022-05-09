@@ -52,7 +52,7 @@ const Home: NextPage = () => {
 
       <main id="page-wrap">
         <div className="navbar bg-neutral text-neutral-content">
-          <div className="normal-case text-xl" style={{ paddingLeft: '1em' }}>
+          <div className="normal-case text-xl pl-3">
             <Link href="/">幻水総選挙2022</Link>
           </div>
         </div>

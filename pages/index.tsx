@@ -62,7 +62,7 @@ const Home: NextPage = () => {
           src="/gss2022_top.jpg"
           alt="幻水総選挙2022"
           width={3180}
-          height={2044}
+          height={1788}
         />
 
         {/* <div className="hero bg-base-200">

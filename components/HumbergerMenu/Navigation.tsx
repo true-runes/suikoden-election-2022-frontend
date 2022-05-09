@@ -4,9 +4,7 @@ import PreviousWebsites from './PreviousWebsites'
 
 const Navigation = () => {
   return (
-    <div>
-      {/* TODO: outer-container は再検討 */}
-      {/* TODO: Element with ID 'outer-container' not found */}
+    <div id="outer-container">
       <Menu pageWrapId={'page-wrap'} outerContainerId={'outer-container'}>
         <p className="text-2xl">
           <Link href="/">幻水総選挙2022</Link>

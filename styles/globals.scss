@@ -1,6 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import 'gridjs/dist/theme/mermaid.css';
 
 body {
   font-family:
@@ -30,17 +31,19 @@ a {
   box-sizing: border-box;
 }
 
+/* ハンバーガーボタンの色や形 */
 .bm-burger-button {
   height: 30px;
   left: 36px;
   position: fixed;
-  top: 36px;
+  top: 18px;
   width: 36px;
 }
 
+/* ハンバーガーボタンの場所 */
 .right .bm-burger-button {
   left: initial;
-  right: 36px;
+  right: 24px;
 }
 
 .bm-burger-button button:focus {
@@ -51,11 +54,15 @@ a {
 /* バーガーアイコンの「棒」の色や形 */
 .bm-burger-bars {
   background: #fff;
+
+  /* デフォルトは 20% */
+  height: 15% !important;
 }
 
 /* バーガーアイコンの「棒」の色や形（ホバー時） */
 .bm-burger-bars-hover {
   background: #808080;
+  height: 10%;
   opacity: 0.6;
 }
 
@@ -66,12 +73,16 @@ a {
   width: 35px;
 }
 
-/* メニューを閉じる「バツボタン」の色および形 */
+/*
+  メニューを閉じる「バツボタン」の色および形および大きさ
+  height がバツボタンの大きさ
+  width は線の太さ
+*/
 .bm-cross {
   background: #bdc3c7;
-  height: 30px;
+  height: 25px !important;
   margin: -3px 0 0 -3px;
-  width: 1px;
+  width: 2px !important;
 }
 
 /*
@@ -113,4 +124,9 @@ a {
 /* オーバーレイのスタイル */
 .bm-overlay {
   background: rgb(0 0 0 / 30%);
+}
+
+/* Gird.js の検索ボックスを右寄せにする */
+.overflow-x-auto .gridjs-search {
+  float: right;
 }

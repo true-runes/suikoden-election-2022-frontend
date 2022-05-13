@@ -1,5 +1,3 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/true-runes/suikoden-election-2022-frontend/badge)](https://www.codefactor.io/repository/github/true-runes/suikoden-election-2022-frontend)
-
 [![CircleCI](https://circleci.com/gh/true-runes/suikoden-election-2022-frontend/tree/development.svg?style=svg)](https://circleci.com/gh/true-runes/suikoden-election-2022-frontend/tree/development)
 
 ![GitHub Actions Status](https://github.com/true-runes/suikoden-election-2022-frontend/workflows/%28GitHub%20Actions%29%20Build%20Docker%20Image/badge.svg)

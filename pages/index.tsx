@@ -7,7 +7,7 @@ import type { NextPage } from 'next'
 import HumbergerNavigation from '../components/HumbergerMenu/Navigation'
 
 import EventSummary from '../components/EventSummary'
-// import OshiSerif from '../components/OshiSerif'
+import HowToVote from '../components/HowToVote'
 // import SenkyoUndou from '../components/SenkyoUndou'
 // import KaihyoIllustStatus from '../components/KaihyoIllustStatus'
 // import TouhyouCheck from '../components/TouhyouCheck'
@@ -109,10 +109,7 @@ const Home: NextPage = () => {
         <EventSummary />
 
         <div className="divider" />
-        <WhatIsGensosenkyo />
-
-        <div className="divider" />
-        <WhatIsGensosenkyo />
+        <HowToVote />
 
         <div className="divider" />
         <IllustratedBy />

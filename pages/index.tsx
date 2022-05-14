@@ -8,6 +8,8 @@ import HumbergerNavigation from '../components/HumbergerMenu/Navigation'
 
 import EventSummary from '../components/EventSummary'
 import HowToVote from '../components/HowToVote'
+import Departments from '../components/Departments'
+
 // import SenkyoUndou from '../components/SenkyoUndou'
 // import KaihyoIllustStatus from '../components/KaihyoIllustStatus'
 // import TouhyouCheck from '../components/TouhyouCheck'
@@ -110,6 +112,9 @@ const Home: NextPage = () => {
 
         <div className="divider" />
         <HowToVote />
+
+        <div className="divider" />
+        <Departments />
 
         <div className="divider" />
         <IllustratedBy />

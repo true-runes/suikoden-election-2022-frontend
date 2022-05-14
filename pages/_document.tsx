@@ -39,12 +39,10 @@ const MyDocument = () => {
           crossOrigin="true"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Zen+Old+Mincho:wght@900&display=swap"
           rel="stylesheet"
-        />
+        ></link>
         <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
-
         <meta name="description" content={description} />
         <meta name="theme-color" content="#333" />
         <meta property="og:type" content="website" />

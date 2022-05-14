@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import SiteFooter from '../components/SiteFooter'
 
 const MyDocument = () => {
   // const url = '<https://example.com>';
@@ -64,7 +63,6 @@ const MyDocument = () => {
       <body>
         <Main />
         <NextScript />
-        <SiteFooter />
       </body>
     </Html>
   )

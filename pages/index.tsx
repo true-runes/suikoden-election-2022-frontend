@@ -104,19 +104,18 @@ const Home: NextPage = () => {
         <WhatIsGensosenkyo />
 
         <div className="divider" />
-        <KaihyoIllustStatus />
+        {/* <KaihyoIllustStatus /> */}
+        <WhatIsGensosenkyo />
 
         <div className="divider" />
-        <KaishiNichizi />
+        {/* <KaishiNichizi /> */}
+        <WhatIsGensosenkyo />
 
         <div className="divider" />
-        <OshiSerif />
+        {/* <OshiSerif /> */}
+        <WhatIsGensosenkyo />
 
         <div className="divider" />
-        <SenkyoUndou />
-
-        <div className="divider" />
-        <TouhyouCheck />
       </main>
     </div>
   )

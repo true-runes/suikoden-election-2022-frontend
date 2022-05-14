@@ -2,25 +2,28 @@ import type { NextPage } from 'next'
 
 const WhatIsGensosenkyo: NextPage = () => {
   return (
-    <div>
-      <div
-        tabIndex={0}
-        className="collapse collapse-arrow border-base-300 bg-base-100"
-      >
-        <input type="checkbox" className="peer" style={{ minHeight: 0 }} />
-        <div className="collapse-title text-2xl font-medium text-center">
-          幻水総選挙って何？
-        </div>
-        <div className="collapse-content">
-          <ul className="py-6 px-6 text-base text-left list-disc">
-            <li>好きなキャラに投票する、ツイッター内のイベントです。</li>
-            <li>
-              非公式のファン企画で、既存の企業様、関係者様等とは一切関係ありません。
-            </li>
-            <li>
-              総選挙を通して幻水ファン盛り上がろうぜ！という趣旨のお祭りですので、よろしくお願い致します。
-            </li>
-          </ul>
+    <div className="bg-white text-black">
+      <div className="hero">
+        <div className="hero-content text-center">
+          <div className="max-w-md">
+            <h1 className="text-2xl font-bold pb-4">幻水総選挙って何？</h1>
+            <div className="text-base text-left">
+              <ul className="list-disc pl-6 pr-2">
+                <li className="pb-2">
+                  好きな幻水キャラに投票する、非公式のTwitterイベントです
+                </li>
+                <li className="pb-2">
+                  有志によるファン企画であり、既存の企業様、関係者様等とは一切関係ありません
+                </li>
+                <li className="pb-2">
+                  幻水総選挙をきっかけに「幻水が好き！」「このキャラが好き！」という思いを発信できる場にできたらいいなと思います
+                </li>
+                <li className="pb-2">
+                  幻水ファンが盛り上がれるお祭りのようなイベントを目指して頑張りますので、どうぞよろしくお願い致します
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -9,6 +9,7 @@ import HumbergerNavigation from '../components/HumbergerMenu/Navigation'
 import EventSummary from '../components/EventSummary'
 import HowToVote from '../components/HowToVote'
 import Departments from '../components/Departments'
+import Dendouiri from '../components/Dendouiri'
 
 // import SenkyoUndou from '../components/SenkyoUndou'
 // import KaihyoIllustStatus from '../components/KaihyoIllustStatus'
@@ -115,6 +116,9 @@ const Home: NextPage = () => {
 
         <div className="divider" />
         <Departments />
+
+        <div className="divider" />
+        <Dendouiri />
 
         <div className="divider" />
         <IllustratedBy />

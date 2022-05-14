@@ -10,10 +10,7 @@ import EventSummary from '../components/EventSummary'
 import HowToVote from '../components/HowToVote'
 import Departments from '../components/Departments'
 import Dendouiri from '../components/Dendouiri'
-
-// import SenkyoUndou from '../components/SenkyoUndou'
-// import KaihyoIllustStatus from '../components/KaihyoIllustStatus'
-// import TouhyouCheck from '../components/TouhyouCheck'
+import Onegai from '../components/Onegai'
 
 import WhatIsGensosenkyo from '../components/WhatIsGensosenkyo'
 import IllustratedBy from '../components/IllustratedBy'
@@ -119,6 +116,9 @@ const Home: NextPage = () => {
 
         <div className="divider" />
         <Dendouiri />
+
+        <div className="divider" />
+        <Onegai />
 
         <div className="divider" />
         <IllustratedBy />

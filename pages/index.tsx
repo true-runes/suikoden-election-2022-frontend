@@ -117,6 +117,8 @@ const Home: NextPage = () => {
 
         <div className="divider" />
         <TouhyouCheck />
+
+        <SiteFooter />
       </main>
     </div>
   )

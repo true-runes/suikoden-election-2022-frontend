@@ -51,7 +51,7 @@ const Home: NextPage = () => {
       </div>
 
       <main id="page-wrap">
-        <div className="navbar bg-neutral text-neutral-content">
+        <div className="navbar bg-neutral text-neutral-content sticky top-0 z-50">
           <div className="normal-case text-xl pl-4">
             <Link href="/">幻水総選挙2022</Link>
           </div>

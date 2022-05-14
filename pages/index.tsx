@@ -6,11 +6,15 @@ import type { NextPage } from 'next'
 
 import HumbergerNavigation from '../components/HumbergerMenu/Navigation'
 
-import KaishiNichizi from '../components/KaishiNichizi'
-import OshiSerif from '../components/OshiSerif'
-import SenkyoUndou from '../components/SenkyoUndou'
-import KaihyoIllustStatus from '../components/KaihyoIllustStatus'
-import TouhyouCheck from '../components/TouhyouCheck'
+import EventSummary from '../components/EventSummary'
+import HowToVote from '../components/HowToVote'
+import Departments from '../components/Departments'
+import Dendouiri from '../components/Dendouiri'
+import Onegai from '../components/Onegai'
+import Kikaku from '../components/Kikaku'
+
+import WhatIsGensosenkyo from '../components/WhatIsGensosenkyo'
+import IllustratedBy from '../components/IllustratedBy'
 import SiteFooter from '../components/SiteFooter'
 
 const nowSecond = () => {
@@ -41,9 +45,7 @@ const Home: NextPage = () => {
   )
 
   return (
-    // TODO: tailwind の container でくくる
-    <div>
-      {/* TODO: 環境によってテキストを変える（「開発環境」であることを明示する） */}
+    <div className="bg-white text-black">
       <title>ホーム - 幻水総選挙2022</title>
 
       <div className={'right'}>
@@ -51,13 +53,12 @@ const Home: NextPage = () => {
       </div>
 
       <main id="page-wrap">
-        <div className="navbar bg-neutral text-neutral-content">
-          <div className="normal-case text-xl pl-3">
+        <div className="navbar bg-neutral text-neutral-content sticky top-0 z-50">
+          <div className="normal-case text-xl pl-4">
             <Link href="/">幻水総選挙2022</Link>
           </div>
         </div>
 
-        {/* TODO: 385KB あるので Now Loading を入れた方がいい */}
         <Image
           src="/gss2022_top.jpg"
           alt="幻水総選挙2022"
@@ -101,23 +102,34 @@ const Home: NextPage = () => {
           </div>
         </div> */}
 
-        <div className="divider" />
-        <KaihyoIllustStatus />
+        <div className="pt-4">
+          <WhatIsGensosenkyo />
+        </div>
 
         <div className="divider" />
-        <KaishiNichizi />
+        <EventSummary />
 
         <div className="divider" />
-        <OshiSerif />
+        <HowToVote />
 
         <div className="divider" />
-        <SenkyoUndou />
+        <Departments />
 
         <div className="divider" />
-        <TouhyouCheck />
+        <Dendouiri />
+
+        <div className="divider" />
+        <Onegai />
+
+        <div className="divider" />
+        <Kikaku />
+
+        <div className="divider" />
+        <IllustratedBy />
+
+        <div className="divider" />
+        <SiteFooter />
       </main>
-
-      <SiteFooter />
     </div>
   )
 }

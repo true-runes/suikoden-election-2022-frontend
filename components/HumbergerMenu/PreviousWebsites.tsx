@@ -13,48 +13,16 @@ const PreviousWebsites = () => {
   return (
     <div>
       <div className="text-lg">
-        <div tabIndex={0} className="collapse">
-          <input type="checkbox" className="peer" style={{ minHeight: 0 }} />
-          <div
-            className="collapse-title"
-            style={{
-              padding: 0,
-              minHeight: 0,
-            }}
-          >
-            📓 過去の幻水総選挙
-            <span
-              style={{
-                display: 'inline-block',
-                verticalAlign: 'text-bottom',
-              }}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                />
-              </svg>{' '}
-            </span>
-          </div>
-          <div className="collapse-content">
-            {previousWebsiteNamesAndUrls.map((siteNameAndUrl, index) => (
-              <div key={index}>
-                <PreviousWebsiteLink
-                  siteName={siteNameAndUrl.siteName}
-                  href={siteNameAndUrl.url}
-                />
-              </div>
-            ))}
-          </div>
+        <div className="pb-4">📓 過去の幻水総選挙</div>
+        <div className="pl-4">
+          {previousWebsiteNamesAndUrls.map((siteNameAndUrl, index) => (
+            <div key={index}>
+              <PreviousWebsiteLink
+                siteName={siteNameAndUrl.siteName}
+                href={siteNameAndUrl.url}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>

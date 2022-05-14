@@ -2,10 +2,10 @@ import type { NextPage } from 'next'
 
 const SiteFooter: NextPage = () => {
   return (
-    <div>
-      <footer className="footer footer-center p-4 bg-base-300 text-base-content">
+    <>
+      <footer className="footer footer-center bg-white text-black pb-6">
         <div>
-          <p className="text-xl">
+          <p className="text-lg">
             幻水総選挙2022 (
             <a
               href="https://twitter.com/gensosenkyo"
@@ -18,7 +18,7 @@ const SiteFooter: NextPage = () => {
           </p>
         </div>
       </footer>{' '}
-    </div>
+    </>
   )
 }
 

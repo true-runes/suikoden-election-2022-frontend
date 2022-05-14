@@ -116,6 +116,8 @@ const Home: NextPage = () => {
         <WhatIsGensosenkyo />
 
         <div className="divider" />
+
+        <SiteFooter />
       </main>
     </div>
   )

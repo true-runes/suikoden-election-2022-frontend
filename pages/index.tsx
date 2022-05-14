@@ -111,19 +111,10 @@ const Home: NextPage = () => {
         <EventSummary />
 
         <div className="divider" />
-<<<<<<< HEAD
         <HowToVote />
 
         <div className="divider" />
         <Departments />
-||||||| 71b312b
-        <WhatIsGensosenkyo />
-
-        <div className="divider" />
-        <WhatIsGensosenkyo />
-=======
-        <HowToVote />
->>>>>>> development
 
         <div className="divider" />
         <IllustratedBy />

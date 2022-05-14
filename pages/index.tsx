@@ -6,11 +6,11 @@ import type { NextPage } from 'next'
 
 import HumbergerNavigation from '../components/HumbergerMenu/Navigation'
 
-import KaishiNichizi from '../components/KaishiNichizi'
-import OshiSerif from '../components/OshiSerif'
-import SenkyoUndou from '../components/SenkyoUndou'
-import KaihyoIllustStatus from '../components/KaihyoIllustStatus'
-import TouhyouCheck from '../components/TouhyouCheck'
+import EventSummary from '../components/EventSummary'
+// import OshiSerif from '../components/OshiSerif'
+// import SenkyoUndou from '../components/SenkyoUndou'
+// import KaihyoIllustStatus from '../components/KaihyoIllustStatus'
+// import TouhyouCheck from '../components/TouhyouCheck'
 
 import WhatIsGensosenkyo from '../components/WhatIsGensosenkyo'
 import IllustratedBy from '../components/IllustratedBy'
@@ -101,27 +101,23 @@ const Home: NextPage = () => {
           </div>
         </div> */}
 
+        <div className="pt-4">
+          <WhatIsGensosenkyo />
+        </div>
+
+        <div className="divider" />
+        <EventSummary />
+
         <div className="divider" />
         <WhatIsGensosenkyo />
 
         <div className="divider" />
-        {/* <KaihyoIllustStatus /> */}
         <WhatIsGensosenkyo />
 
         <div className="divider" />
-        {/* <KaishiNichizi /> */}
-        <WhatIsGensosenkyo />
-
-        <div className="divider" />
-        {/* <OshiSerif /> */}
-        <WhatIsGensosenkyo />
-
-        <div className="divider" />
-
         <IllustratedBy />
 
         <div className="divider" />
-
         <SiteFooter />
       </main>
     </div>

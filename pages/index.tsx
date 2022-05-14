@@ -11,6 +11,7 @@ import HowToVote from '../components/HowToVote'
 import Departments from '../components/Departments'
 import Dendouiri from '../components/Dendouiri'
 import Onegai from '../components/Onegai'
+import Kikaku from '../components/Kikaku'
 
 import WhatIsGensosenkyo from '../components/WhatIsGensosenkyo'
 import IllustratedBy from '../components/IllustratedBy'
@@ -119,6 +120,9 @@ const Home: NextPage = () => {
 
         <div className="divider" />
         <Onegai />
+
+        <div className="divider" />
+        <Kikaku />
 
         <div className="divider" />
         <IllustratedBy />

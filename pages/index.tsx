@@ -13,6 +13,7 @@ import KaihyoIllustStatus from '../components/KaihyoIllustStatus'
 import TouhyouCheck from '../components/TouhyouCheck'
 
 import WhatIsGensosenkyo from '../components/WhatIsGensosenkyo'
+import IllustratedBy from '../components/IllustratedBy'
 import SiteFooter from '../components/SiteFooter'
 
 const nowSecond = () => {
@@ -43,7 +44,7 @@ const Home: NextPage = () => {
   )
 
   return (
-    <div>
+    <div className="bg-white text-black">
       <title>ホーム - 幻水総選挙2022</title>
 
       <div className={'right'}>
@@ -114,6 +115,10 @@ const Home: NextPage = () => {
         <div className="divider" />
         {/* <OshiSerif /> */}
         <WhatIsGensosenkyo />
+
+        <div className="divider" />
+
+        <IllustratedBy />
 
         <div className="divider" />
 

@@ -2,8 +2,8 @@ import type { NextPage } from 'next'
 
 const SiteFooter: NextPage = () => {
   return (
-    <div>
-      <footer className="footer footer-center p-4 bg-base-300 text-base-content">
+    <>
+      <footer className="footer footer-center bg-neutral text-base-content p-4 pb-6">
         <div>
           <p className="text-xl">
             幻水総選挙2022 (
@@ -18,7 +18,7 @@ const SiteFooter: NextPage = () => {
           </p>
         </div>
       </footer>{' '}
-    </div>
+    </>
   )
 }
 

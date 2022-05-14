@@ -11,6 +11,8 @@ import OshiSerif from '../components/OshiSerif'
 import SenkyoUndou from '../components/SenkyoUndou'
 import KaihyoIllustStatus from '../components/KaihyoIllustStatus'
 import TouhyouCheck from '../components/TouhyouCheck'
+
+import WhatIsGensosenkyo from '../components/WhatIsGensosenkyo'
 import SiteFooter from '../components/SiteFooter'
 
 const nowSecond = () => {
@@ -41,9 +43,7 @@ const Home: NextPage = () => {
   )
 
   return (
-    // TODO: tailwind の container でくくる
     <div>
-      {/* TODO: 環境によってテキストを変える（「開発環境」であることを明示する） */}
       <title>ホーム - 幻水総選挙2022</title>
 
       <div className={'right'}>
@@ -52,12 +52,11 @@ const Home: NextPage = () => {
 
       <main id="page-wrap">
         <div className="navbar bg-neutral text-neutral-content">
-          <div className="normal-case text-xl pl-3">
+          <div className="normal-case text-xl pl-4">
             <Link href="/">幻水総選挙2022</Link>
           </div>
         </div>
 
-        {/* TODO: 385KB あるので Now Loading を入れた方がいい */}
         <Image
           src="/gss2022_top.jpg"
           alt="幻水総選挙2022"
@@ -102,6 +101,9 @@ const Home: NextPage = () => {
         </div> */}
 
         <div className="divider" />
+        <WhatIsGensosenkyo />
+
+        <div className="divider" />
         <KaihyoIllustStatus />
 
         <div className="divider" />
@@ -116,8 +118,6 @@ const Home: NextPage = () => {
         <div className="divider" />
         <TouhyouCheck />
       </main>
-
-      <SiteFooter />
     </div>
   )
 }

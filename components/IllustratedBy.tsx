@@ -7,8 +7,12 @@ const IllustratedBy: NextPage = () => {
         イラストご協力
         <br />
         まみた様(
-        <a href="https://twitter.com/mimitama" target="_blank" rel="noreferrer">
-          <span className="underline">@mimitama</span>
+        <a
+          href="https://twitter.com/mamita404"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span className="underline">@mamita404</span>
         </a>
         )
       </div>

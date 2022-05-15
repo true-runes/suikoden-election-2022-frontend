@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
 
-import HumbergerNavigation from '../components/HumbergerMenu/Navigation'
+import HumbergerNavigation from '../components/HumbergerMenu/HumbergerNavigation'
 import NavBar from '../components/NavBar'
 
 const EventsInEvent: NextPage = () => {

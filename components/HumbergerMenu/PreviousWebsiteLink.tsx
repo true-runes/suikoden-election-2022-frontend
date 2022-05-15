@@ -1,6 +1,6 @@
 const PreviousWebsiteLink = (props: any) => {
   return (
-    <div className="py-2 pl-4">
+    <div className="py-2">
       <a
         href={props.href}
         target="_blank"
@@ -9,7 +9,7 @@ const PreviousWebsiteLink = (props: any) => {
       >
         <div className="flex">
           <div className="pr-0 flex-auto">{props.siteName}</div>
-          <div className="flex-initial w-14">
+          <div className="flex-initial w-16">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"

@@ -12,6 +12,7 @@ const Navigation = () => {
         <div className="divide-neutral-50">
           <div className="divider"></div>
         </div>
+        <Link href="/events-in-event">イベント内企画</Link>
         <PreviousWebsites />
       </Menu>
     </div>

@@ -11,21 +11,26 @@ const PreviousWebsites = () => {
   ]
 
   return (
-    <div>
-      <div className="text-lg">
-        <div className="pb-4">📓 過去の幻水総選挙</div>
-        <div className="pl-4">
-          {previousWebsiteNamesAndUrls.map((siteNameAndUrl, index) => (
-            <div key={index}>
-              <PreviousWebsiteLink
-                siteName={siteNameAndUrl.siteName}
-                href={siteNameAndUrl.url}
-              />
-            </div>
-          ))}
+    <>
+      <div className="collapse collapse-arrow">
+        <input type="checkbox" className="peer" />
+        <div className="collapse-title pl-0">
+          <div>過去の幻水総選挙</div>
+        </div>
+        <div className="collapse-content">
+          <div>
+            {previousWebsiteNamesAndUrls.map((siteNameAndUrl, index) => (
+              <div key={index}>
+                <PreviousWebsiteLink
+                  siteName={siteNameAndUrl.siteName}
+                  href={siteNameAndUrl.url}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

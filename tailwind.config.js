@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'zen-old-mincho': ['Zen Old Mincho'],
+    },
   },
   plugins: [require('daisyui')],
 }

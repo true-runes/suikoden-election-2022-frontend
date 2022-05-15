@@ -39,6 +39,10 @@ const MyDocument = () => {
           crossOrigin="true"
         />
         <link
+          href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@900&display=swap"
+          rel="stylesheet"
+        />
+        <link
           href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Zen+Old+Mincho:wght@900&display=swap"
           rel="stylesheet"
         ></link>

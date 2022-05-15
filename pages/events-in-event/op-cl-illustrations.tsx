@@ -31,9 +31,10 @@ const OpClIllustrations: NextPage = () => {
         <div className="hero">
           <div className="hero-content text-center">
             <div className="max-w-md">
-              <h1 className="text-2xl font-bold pb-4">
+              <h1 className="text-2xl font-bold pb-4 underline font-zen-old-mincho">
                 OPイラスト・CLイラスト
               </h1>
+
               <h2 className="text-xl font-bold pb-4">OP＆CLイラストとは？</h2>
               <div className="text-base text-left pb-4">
                 オープニングイラスト（OPイラスト）・クロージングイラスト（CLイラスト）は、それぞれ「投票開始」、「企画終了」のツイート時に掲載させて頂くイラストです。

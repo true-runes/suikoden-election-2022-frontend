@@ -110,10 +110,10 @@ const Home: NextPage = () => {
         <EventSummary />
 
         <div className="divider" />
-        <HowToVote />
+        <Departments />
 
         <div className="divider" />
-        <Departments />
+        <HowToVote />
 
         <div className="divider" />
         <Dendouiri />

@@ -9,12 +9,15 @@ const Departments: NextPage = () => {
             <h1 className="text-2xl font-bold pb-4">部門</h1>
             <div className="text-base text-left pb-4">
               <ul className="list-disc pl-6 pr-2">
-                <li className="pb-2">幻水総選挙2022では2つの部門があります</li>
                 <li className="pb-2">
-                  各部門でお一人様1回ずつ投票できます（どちらか一方の部門のみへの投票でも構いません）
+                  幻水総選挙2022では2つの部門があります。
+                </li>
+                <li className="pb-2">
+                  各部門でお一人様1回ずつ投票できます（どちらか一方の部門のみへの投票でも構いません）。
                 </li>
               </ul>
             </div>
+
             <div className="pb-4">
               <h2 className="text-xl font-bold pb-4">①オールキャラ部門</h2>
               <p className="text-base text-center pb-4">
@@ -23,18 +26,21 @@ const Departments: NextPage = () => {
               <div className="pb-4">
                 <h3 className="text-lg font-bold">投票数</h3>
                 <p className="text-lg pb-4">
-                  お一人様<span className="text-red-500">3票</span>まで
+                  お一人様 <span className="text-red-500">3票</span> まで
                 </p>
                 <div className="text-base text-left pb-4">
                   <ul className="list-disc pl-6 pr-2">
                     <li className="pb-2">
-                      1キャラにつき1票（
+                      <span className="text-red-500">1キャラにつき1票まで</span>
+                      投票可（
                       <span className="text-red-500">
                         同じキャラへの複数投票はできません
                       </span>
-                      ）
+                      ）。
                     </li>
-                    <li className="pb-2">1票だけ、2票だけの投票も可</li>
+                    <li className="pb-2">
+                      3票を使い切らず、1票だけ、2票だけの投票も可。
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -47,6 +53,7 @@ const Departments: NextPage = () => {
             <h2 className="text-xl font-bold pb-4">
               ②？？？部門（近日発表！）
             </h2>
+            <p className="text-base text-center pb-4">？？？</p>
           </div>
         </div>
       </div>

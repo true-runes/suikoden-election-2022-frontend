@@ -1,6 +1,6 @@
 const PreviousWebsiteLink = (props: any) => {
   return (
-    <p className="py-2 pl-4">
+    <div className="py-2 pl-4">
       <a
         href={props.href}
         target="_blank"
@@ -31,7 +31,7 @@ const PreviousWebsiteLink = (props: any) => {
           </div>
         </div>
       </a>
-    </p>
+    </div>
   )
 }
 

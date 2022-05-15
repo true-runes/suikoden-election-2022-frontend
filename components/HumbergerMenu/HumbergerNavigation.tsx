@@ -13,9 +13,10 @@ const Navigation = () => {
           <div className="text-lg py-4">開催概要</div>
           <div className="text-lg py-4">総選挙内企画</div>
           <div className="text-lg py-4">よくあるご質問（準備中）</div>
-          <div className="py-4">
+          <div className="text-lg">
             <PreviousWebsites />
           </div>
+
           {/* <div className="text-base py-4">
             <div>
               <svg

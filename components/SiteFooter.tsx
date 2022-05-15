@@ -1,23 +1,34 @@
 import type { NextPage } from 'next'
+import TwitterIcon from '../components/Svg/TwitterIcon'
+import ExternalLink from '../components/Svg/ExternalLink'
 
 const SiteFooter: NextPage = () => {
   return (
     <>
       <footer className="footer footer-center bg-white text-black pb-6">
-        <div>
-          <p className="text-lg">
-            幻水総選挙2022 (
-            <a
-              href="https://twitter.com/gensosenkyo"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span className="underline">@gensosenkyo</span>
-            </a>
-            )
-          </p>
+        <div className="text-base py-4">
+          <div>
+            <span>
+              <span className="pr-1">
+                <TwitterIcon />
+              </span>
+              幻水総選挙2022 ({' '}
+              <a
+                href="https://twitter.com/gensosenkyo"
+                target="_blank"
+                rel="noreferrer"
+                className="link link-hover underline-offset-4"
+              >
+                @gensosenkyo
+              </a>
+              <span className="pl-1">
+                <ExternalLink />
+              </span>{' '}
+              )
+            </span>
+          </div>
         </div>
-      </footer>{' '}
+      </footer>
     </>
   )
 }

@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Link from 'next/link'
 
 const Kikaku: NextPage = () => {
   return (
@@ -11,19 +12,29 @@ const Kikaku: NextPage = () => {
             </h1>
 
             <div>
-              <p className="pb-4">
-                今年も下記の企画を準備中です。詳細は後日発表いたします。
+              <p className="pb-4 text-left">
+                今年も下記の企画を準備中です。詳細は各項目のリンク先に記載があります。
               </p>
               <div className="text-base text-left pb-4">
                 <ul className="list-decimal pl-6 pr-2">
-                  <li className="pb-2">選挙運動</li>
-                  <li className="pb-2">開票イラスト</li>
-                  <li className="pb-2">お題小説</li>
-                  <li className="pb-2">推し台詞</li>
-                  <li className="pb-2">
-                    オープニングイラスト・クロージングイラスト
+                  <li className="pb-2 link link-hover underline-offset-4">
+                    <Link href="/events-in-event/election-campaign">
+                      選挙運動
+                    </Link>
                   </li>
-                  <li className="pb-2">ボーナス票</li>
+                  <li className="pb-2">開票イラスト（準備中）</li>
+                  <li className="pb-2 link link-hover underline-offset-4">
+                    <Link href="/events-in-event/novels-on-themes">
+                      お題小説
+                    </Link>
+                  </li>
+                  <li className="pb-2">推し台詞（準備中）</li>
+                  <li className="pb-2 link link-hover underline-offset-4">
+                    <Link href="/events-in-event/op-cl-illustrations">
+                      オープニングイラスト・クロージングイラスト
+                    </Link>
+                  </li>
+                  <li className="pb-2">ボーナス票（準備中）</li>
                 </ul>
               </div>
             </div>

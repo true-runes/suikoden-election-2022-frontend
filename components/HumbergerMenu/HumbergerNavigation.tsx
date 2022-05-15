@@ -6,7 +6,7 @@ const Navigation = () => {
   return (
     <div id="outer-container">
       <Menu pageWrapId={'page-wrap'} outerContainerId={'outer-container'}>
-        <div className="grid grid-cols-1 divide-y divide-current">
+        <div className="grid grid-cols-1 divide-y divide-current font-zen-old-mincho">
           <div className="text-2xl py-4">
             <Link href="/">幻水総選挙2022</Link>
           </div>

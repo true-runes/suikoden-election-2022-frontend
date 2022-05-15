@@ -14,10 +14,10 @@ const HowToVote: NextPage = () => {
             <div className="text-base text-left pb-4">
               <ul className="list-disc pl-6 pr-2">
                 <li className="pb-2">
-                  指定のハッシュタグをつけて、ツイートで投票して下さい
+                  指定のハッシュタグをつけて、ツイートで投票して下さい。
                 </li>
                 <li className="pb-2">
-                  タグ名や具体的なツイート内容は各部門の説明をご参照下さい
+                  タグ名や具体的なツイート内容は各部門の説明をご参照下さい。
                 </li>
               </ul>
             </div>
@@ -25,9 +25,9 @@ const HowToVote: NextPage = () => {
             <div className="text-base text-left pb-4">
               <ul className="list-disc pl-6 pr-2">
                 <li className="pb-2">
-                  非公開アカウント（鍵付き）の方や、鍵を開けたり閉めたりする方は、主催宛DMで投票して下さい
+                  非公開アカウント（鍵付き）の方や、鍵を開けたり閉めたりする方は、主催宛DMで投票して下さい。
                 </li>
-                <li className="pb-2">公開アカウントの方もDM投票が可能です</li>
+                <li className="pb-2">公開アカウントの方もDM投票が可能です。</li>
               </ul>
             </div>
             <h1 className="text-lg font-bold pb-4">
@@ -38,12 +38,12 @@ const HowToVote: NextPage = () => {
             </p>
             <div className="text-base text-left pb-4">
               <ul className="list-decimal pl-6 pr-2">
-                <li className="pb-2">投票前にアカウントを公開状態にする</li>
+                <li className="pb-2">投票前にアカウントを公開状態にする。</li>
                 <li className="pb-2">
-                  ツイート投票後、専用ページで「投票チェック」をする
+                  ツイート投票後、専用ページで「投票チェック」をする（チェック方法は後日ご案内します）。
                 </li>
                 <li className="pb-2">
-                  2022/7/3（日）23:59まで公開アカウントのままにする
+                  2022/7/3（日）23:59まで公開アカウントのままにする。
                 </li>
               </ul>
             </div>

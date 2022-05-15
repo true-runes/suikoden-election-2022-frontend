@@ -3,7 +3,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 const MyDocument = () => {
   const url = 'https://election.suikoden.info'
   const title = '幻水総選挙2022'
-  const description = '幻水総選挙2022のサイトです。'
+  const description = '幻水総選挙2022のWebサイトです。'
 
   return (
     <Html lang="ja-JP">

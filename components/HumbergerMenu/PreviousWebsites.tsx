@@ -11,7 +11,7 @@ const PreviousWebsites = () => {
   ]
 
   return (
-    <div>
+    <>
       <div className="text-lg">
         <div className="pb-4">📓 過去の幻水総選挙</div>
         <div className="pl-4">
@@ -25,7 +25,7 @@ const PreviousWebsites = () => {
           ))}
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

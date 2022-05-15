@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 
-export const middleware = (req: NextRequest) => {
+const middleware = (req: NextRequest) => {
   if (process.env.DEPLOYMENT_ENVIRONMENT === 'production')
     return NextResponse.next()
 
@@ -25,3 +25,5 @@ export const middleware = (req: NextRequest) => {
     },
   })
 }
+
+export default middleware

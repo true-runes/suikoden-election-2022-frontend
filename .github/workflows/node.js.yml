@@ -8,6 +8,12 @@ on:
   pull_request:
     branches:
       - development
+  workflow_dispatch:
+    inputs:
+      debug_enabled:
+        description: 'Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)'
+        required: false
+        default: "false"
 
 jobs:
   build:
@@ -22,6 +28,14 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
+    # Enable tmate debugging of manually-triggered workflows if the input option was provided
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
+      if: ${{ github.event_name == 'workflow_dispatch' }}
+      timeout-minutes: 15
+      with:
+        sudo: false
+        limit-access-to-actor: true
     - name: $ yarn install
       run: |
         yarn install --frozen-lockfile

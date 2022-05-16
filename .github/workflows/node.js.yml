@@ -25,6 +25,11 @@ jobs:
     - name: $ yarn install
       run: |
         yarn install --frozen-lockfile
+    - name: SSH でデバッグを行う
+      if: ${{ always() }}
+      uses: mxschmitt/action-tmate@v3
+      with:
+        sudo: true
     - name: ESLint
       run: |
         yarn lint

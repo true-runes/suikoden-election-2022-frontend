@@ -9,11 +9,6 @@ on:
     branches:
       - development
   workflow_dispatch:
-    inputs:
-      debug_enabled:
-        description: 'Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)'
-        required: false
-        default: "false"
 
 jobs:
   build:
@@ -34,7 +29,7 @@ jobs:
       if: ${{ github.event_name == 'workflow_dispatch' }}
       timeout-minutes: 15
       with:
-        sudo: false
+        sudo: true
         limit-access-to-actor: true
     - name: $ yarn install
       run: |
@@ -42,10 +37,12 @@ jobs:
     - name: ESLint
       run: |
         yarn lint
-    # - name: Jest
-    #   run: |
-    #     yarn test
-    # - name: Codecov の結果をアップロードする
-    #   uses: codecov/codecov-action@v2
-    #   with:
-    #     directory: ./.coverage
+    - name: Jest
+      run: |
+        echo 'TODO: $ yarn test'
+    - name: Codecov の結果をアップロードする
+      run: |
+        echo 'TODO: Codecov の結果をアップロードする'
+      # uses: codecov/codecov-action@v2
+      # with:
+      #   directory: ./.coverage

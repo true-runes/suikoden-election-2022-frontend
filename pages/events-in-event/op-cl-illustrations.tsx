@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
+import { TwitterTweetEmbed, TwitterTimelineEmbed } from 'react-twitter-embed'
 
 import HumbergerNavigation from '../../components/HumbergerMenu/HumbergerNavigation'
 import NavBar from '../../components/NavBar'
@@ -37,8 +38,13 @@ const OpClIllustrations: NextPage = () => {
 
               <h2 className="text-xl font-bold pb-4">OP＆CLイラストとは？</h2>
               <div className="text-base text-left pb-4">
-                オープニングイラスト（OPイラスト）・クロージングイラスト（CLイラスト）は、それぞれ「投票開始」、「企画終了」のツイート時に掲載させて頂くイラストです。
-                ご協力頂ける方はDMでご連絡下さい。
+                <p className="pb-2">
+                  「オープニングイラスト（OPイラスト）」と「クロージングイラスト（CLイラスト）」を募集します。
+                </p>
+                <p className="pb-2">
+                  それぞれ「投票開始」、「企画終了」のツイート時に掲載させて頂くイラストです。
+                </p>
+                <p>ご協力頂ける方はDMでご連絡下さい。</p>
               </div>
 
               <div className="divider" />
@@ -59,7 +65,7 @@ const OpClIllustrations: NextPage = () => {
                     となります。
                   </li>
                   <li className="pb-2">
-                    <p>使用時にお名前とtwitter IDを掲載させて頂きます。</p>
+                    <p>使用時にお名前と Twitter ID を掲載させて頂きます。</p>
                     <p>（ID掲載を希望されない場合、お名前のみ記載致します）</p>
                   </li>
                   <li className="pb-2">イラストに文字を入れさせて頂きます。</li>
@@ -96,6 +102,26 @@ const OpClIllustrations: NextPage = () => {
               <div className="text-base text-center">
                 <p className="text-red-500 pb-1">2022年6月12日（日）</p>
                 <p>（ご相談に応じます）</p>
+              </div>
+
+              <div className="divider" />
+
+              <h2 className="text-xl font-bold pb-4">昨年のOPイラスト</h2>
+              <div className="text-base">
+                <TwitterTweetEmbed
+                  tweetId="1403321117125775360"
+                  options={{ id: 'gensosenkyo', lang: 'ja' }}
+                />
+              </div>
+
+              <div className="divider" />
+
+              <h2 className="text-xl font-bold pb-4">昨年のCLイラスト</h2>
+              <div className="text-base">
+                <TwitterTweetEmbed
+                  tweetId="1406308364481548293"
+                  options={{ id: 'gensosenkyo', lang: 'ja' }}
+                />
               </div>
             </div>
           </div>

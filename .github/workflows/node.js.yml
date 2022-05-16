@@ -8,6 +8,7 @@ on:
   pull_request:
     branches:
       - development
+  workflow_dispatch:
 
 jobs:
   build:
@@ -22,16 +23,26 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
+    # Enable tmate debugging of manually-triggered workflows if the input option was provided
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
+      if: ${{ github.event_name == 'workflow_dispatch' }}
+      timeout-minutes: 15
+      with:
+        sudo: true
+        limit-access-to-actor: true
     - name: $ yarn install
       run: |
         yarn install --frozen-lockfile
     - name: ESLint
       run: |
         yarn lint
-    # - name: Jest
-    #   run: |
-    #     yarn test
-    # - name: Codecov の結果をアップロードする
-    #   uses: codecov/codecov-action@v2
-    #   with:
-    #     directory: ./.coverage
+    - name: Jest
+      run: |
+        echo 'TODO: $ yarn test'
+    - name: Codecov の結果をアップロードする
+      run: |
+        echo 'TODO: Codecov の結果をアップロードする'
+      # uses: codecov/codecov-action@v2
+      # with:
+      #   directory: ./.coverage

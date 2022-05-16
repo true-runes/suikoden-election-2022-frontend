@@ -23,6 +23,7 @@
     "postcss": "8.4.13",
     "prettier": "^2.6.2",
     "react-burger-menu": "^3.0.6",
+    "react-twitter-embed": "^4.0.4",
     "sass": "1.51.0",
     "styled-components": "^5.3.5",
     "stylelint": "14.8.2",

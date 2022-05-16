@@ -56,6 +56,19 @@ const NovelsOnThemes: NextPage = () => {
 
               <div className="divider" />
 
+              <h2 className="text-xl font-bold pb-4">昨年のお題</h2>
+              <div className="text-base text-left pb-4">
+                <div className="pb-4">昨年のお題は下記の3つでした。</div>
+
+                <ul className="list-disc pl-6 pr-2">
+                  <li className="pb-2">「祭」</li>
+                  <li className="pb-2">「どれにする？」</li>
+                  <li className="pb-2">（フリー）</li>
+                </ul>
+              </div>
+
+              <div className="divider" />
+
               <h2 className="text-xl font-bold pb-4">募集期間</h2>
               <div className="text-base text-center pb-4">
                 2022年5月15日（日）～5月21日（土）
@@ -77,19 +90,6 @@ const NovelsOnThemes: NextPage = () => {
                 >
                   お題応募用フォーム
                 </a>
-              </div>
-
-              <div className="divider" />
-
-              <h2 className="text-xl font-bold pb-4">昨年のお題</h2>
-              <div className="text-base text-left pb-4">
-                <div className="pb-4">昨年のお題は下記の3つでした。</div>
-
-                <ul className="list-disc pl-6 pr-2">
-                  <li className="pb-2">「祭」</li>
-                  <li className="pb-2">「どれにする？」</li>
-                  <li className="pb-2">（フリー）</li>
-                </ul>
               </div>
 
               <div className="divider" />

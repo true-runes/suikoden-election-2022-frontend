@@ -8,7 +8,7 @@ jobs:
     docker:
       # FIXME: リリースされ次第バージョンを上げること
       # https://hub.docker.com/r/cimg/node/tags?page=1&name=18
-      - image: cimg/node:18.1
+      - image: cimg/node:18.2
     steps:
       - checkout
       - node/install-packages:

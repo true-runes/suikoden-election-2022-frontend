@@ -20,7 +20,7 @@
     "eslint-config-prettier": "^8.5.0",
     "gridjs": "^5.0.2",
     "gridjs-react": "^5.0.2",
-    "postcss": "8.4.13",
+    "postcss": "8.4.14",
     "prettier": "^2.6.2",
     "react-burger-menu": "^3.0.6",
     "react-twitter-embed": "^4.0.4",

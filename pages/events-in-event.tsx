@@ -6,10 +6,14 @@ import NavBar from '../components/NavBar'
 import SiteFooter from '../components/SiteFooter'
 import Kikaku from '../components/Kikaku'
 
+import { useLocale } from '../hooks/useLocale'
+
 const EventsInEvent: NextPage = () => {
+  const { t, locale } = useLocale()
+
   return (
     <div className="bg-white text-black">
-      <title>総選挙内企画 - 幻水総選挙2022</title>
+      <title>{`${t.PAGE_TITLE_PROJECTS} - ${t.WEBSITE_TITLE}`}</title>
       <div className={'right'}>
         <HumbergerNavigation />
       </div>
@@ -20,9 +24,9 @@ const EventsInEvent: NextPage = () => {
         <div className="text-base bg-gray-700 text-white breadcrumbs pl-6 pb-2">
           <ul>
             <li>
-              <Link href="/">ホーム</Link>
+              <Link href="/">{t.PAGE_TITLE_HOME}</Link>
             </li>
-            <li>総選挙内企画</li>
+            <li>{t.PAGE_TITLE_PROJECTS}</li>
           </ul>
         </div>
 

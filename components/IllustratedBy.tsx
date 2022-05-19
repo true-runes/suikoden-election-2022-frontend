@@ -1,13 +1,16 @@
 import type { NextPage } from 'next'
 import TwitterIcon from '../components/Svg/TwitterIcon'
 import ExternalLink from '../components/Svg/ExternalLink'
+import { useLocale } from '../hooks/useLocale'
 
 const IllustratedBy: NextPage = () => {
+  const { locale } = useLocale()
+
   return (
     <>
       <div className="text-base text-center">
         <p className="pb-4 font-bold underline text-xl font-zen-old-mincho">
-          イラストご協力
+          {locale === 'ja' ? 'イラストご協力' : 'Illustration by'}
         </p>
         <span>
           <span className="pr-1">

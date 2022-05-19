@@ -1,8 +1,11 @@
 import type { NextPage } from 'next'
 import TwitterIcon from '../components/Svg/TwitterIcon'
 import ExternalLink from '../components/Svg/ExternalLink'
+import { useLocale } from '../hooks/useLocale'
 
 const SiteFooter: NextPage = () => {
+  const { t } = useLocale()
+
   return (
     <>
       <footer className="footer footer-center bg-white text-black pb-6">
@@ -12,7 +15,7 @@ const SiteFooter: NextPage = () => {
               <span className="pr-1">
                 <TwitterIcon />
               </span>
-              幻水総選挙2022 ({' '}
+              {t.WEBSITE_TITLE} ({' '}
               <a
                 href="https://twitter.com/gensosenkyo"
                 target="_blank"

@@ -38,14 +38,14 @@ const NavBar: NextPage = () => {
 
   return (
     <>
-      <div className="navbar bg-neutral text-white  sticky top-0 z-50">
+      <div className="navbar bg-neutral text-white sticky top-0 z-50">
         <div className="text-xl pl-4 font-zen-old-mincho">
           <Link href="/">{t.WEBSITE_TITLE}</Link>
         </div>
 
-        <div className="absolute inset-y-0 right-20">
+        <div className="absolute right-20 bg-neutral text-white">
           <select
-            className="select select-bordered select-sm"
+            className="select select-bordered select-sm bg-neutral text-white"
             defaultValue={locale}
             onChange={changeLanguage}
           >

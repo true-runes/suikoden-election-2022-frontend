@@ -5,10 +5,14 @@ import HumbergerNavigation from '../../components/HumbergerMenu/HumbergerNavigat
 import NavBar from '../../components/NavBar'
 import SiteFooter from '../../components/SiteFooter'
 
+import { useLocale } from '../../hooks/useLocale'
+
 const NovelsOnThemes: NextPage = () => {
+  const { t, locale } = useLocale()
+
   return (
     <div className="bg-white text-black">
-      <title>お題小説 - 幻水総選挙2022</title>
+      <title>{`${t.PAGE_TITLE_NOVELS_ON_THEME} - ${t.WEBSITE_TITLE}`}</title>
       <div className={'right'}>
         <HumbergerNavigation />
       </div>
@@ -19,12 +23,12 @@ const NovelsOnThemes: NextPage = () => {
         <div className="text-base bg-gray-700 text-white breadcrumbs pl-6 pb-2">
           <ul>
             <li>
-              <Link href="/">ホーム</Link>
+              <Link href="/">{t.PAGE_TITLE_HOME}</Link>
             </li>
             <li>
-              <Link href="/events-in-event">総選挙内企画</Link>
+              <Link href="/events-in-event">{t.PAGE_TITLE_PROJECTS}</Link>
             </li>
-            <li>お題小説</li>
+            <li>{t.PAGE_TITLE_NOVELS_ON_THEME}</li>
           </ul>
         </div>
 
@@ -32,10 +36,14 @@ const NovelsOnThemes: NextPage = () => {
           <div className="hero-content text-center">
             <div className="max-w-md">
               <h1 className="text-2xl font-bold pb-4 underline font-zen-old-mincho">
-                お題小説
+                {t.PAGE_TITLE_NOVELS_ON_THEME}
               </h1>
 
-              <h2 className="text-xl font-bold pb-4">お題小説とは？</h2>
+              <h2 className="text-xl font-bold pb-4">
+                {locale === 'ja'
+                  ? 'お題小説とは？'
+                  : 'What is themed short stories?'}
+              </h2>
               <div className="text-base text-left pb-4">
                 キャラとお題（テーマ）を選んで小説を書いていただき、ハッシュタグを付けてツイートする企画です。
                 イラストだけでなく文字書きの方も参加できる企画があれば…と思い、昨年より開始いたしました。

@@ -6,16 +6,11 @@ orbs:
 jobs:
   suikoden_election_2022_frontend_build_and_test:
     docker:
-      # FIXME: リリースされ次第バージョンを上げること
-      # https://hub.docker.com/r/cimg/node/tags?page=1&name=18
-      - image: cimg/node:18.1
+      - image: cimg/node:18.2
     steps:
       - checkout
       - node/install-packages:
           pkg-manager: yarn
-      # - run:
-      #     name: Run tests
-      #     command: yarn test
 
 workflows:
   circleci_main_workflow:

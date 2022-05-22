@@ -5,10 +5,14 @@ import HumbergerNavigation from '../../components/HumbergerMenu/HumbergerNavigat
 import NavBar from '../../components/NavBar'
 import SiteFooter from '../../components/SiteFooter'
 
+import { useLocale } from '../../hooks/useLocale'
+
 const ElectionCampaign: NextPage = () => {
+  const { t, locale } = useLocale()
+
   return (
     <div className="bg-white text-black">
-      <title>選挙運動 - 幻水総選挙2022</title>
+      <title>{`${t.PAGE_TITLE_CAMPAIGNING} - ${t.WEBSITE_TITLE}`}</title>
       <div className={'right'}>
         <HumbergerNavigation />
       </div>
@@ -19,12 +23,12 @@ const ElectionCampaign: NextPage = () => {
         <div className="text-base bg-gray-700 text-white breadcrumbs pl-6 pb-2">
           <ul>
             <li>
-              <Link href="/">ホーム</Link>
+              <Link href="/">{t.PAGE_TITLE_HOME}</Link>
             </li>
             <li>
-              <Link href="/events-in-event">総選挙内企画</Link>
+              <Link href="/events-in-event">{t.PAGE_TITLE_PROJECTS}</Link>
             </li>
-            <li>選挙運動</li>
+            <li>{t.PAGE_TITLE_CAMPAIGNING}</li>
           </ul>
         </div>
 
@@ -32,9 +36,11 @@ const ElectionCampaign: NextPage = () => {
           <div className="hero-content text-center">
             <div className="max-w-md">
               <h1 className="text-2xl font-bold pb-4 underline font-zen-old-mincho">
-                選挙運動
+                {t.PAGE_TITLE_CAMPAIGNING}
               </h1>
-              <h2 className="text-xl font-bold pb-4">選挙運動とは？</h2>
+              <h2 className="text-xl font-bold pb-4">
+                {locale === 'ja' ? '選挙運動とは？' : 'What is Campaigning?'}
+              </h2>
               <div className="text-base text-left">
                 <div className="pb-4">
                   ハッシュタグ「{' '}

@@ -6,10 +6,14 @@ import HumbergerNavigation from '../../components/HumbergerMenu/HumbergerNavigat
 import NavBar from '../../components/NavBar'
 import SiteFooter from '../../components/SiteFooter'
 
+import { useLocale } from '../../hooks/useLocale'
+
 const OpClIllustrations: NextPage = () => {
+  const { t, locale } = useLocale()
+
   return (
     <div className="bg-white text-black">
-      <title>OPイラスト・CLイラスト - 幻水総選挙2022</title>
+      <title>{`${t.PAGE_TITLE_OP_CL_ILLUSTS} - ${t.WEBSITE_TITLE}`}</title>
       <div className={'right'}>
         <HumbergerNavigation />
       </div>
@@ -20,12 +24,12 @@ const OpClIllustrations: NextPage = () => {
         <div className="text-base bg-gray-700 text-white breadcrumbs pl-6 pb-2">
           <ul>
             <li>
-              <Link href="/">ホーム</Link>
+              <Link href="/">{t.PAGE_TITLE_HOME}</Link>
             </li>
             <li>
-              <Link href="/events-in-event">総選挙内企画</Link>
+              <Link href="/events-in-event">{t.PAGE_TITLE_PROJECTS}</Link>
             </li>
-            <li>OP&CLイラスト</li>
+            <li>{t.PAGE_TITLE_OP_CL_ILLUSTS}</li>
           </ul>
         </div>
 
@@ -33,10 +37,14 @@ const OpClIllustrations: NextPage = () => {
           <div className="hero-content text-center">
             <div className="max-w-md">
               <h1 className="text-2xl font-bold pb-4 underline font-zen-old-mincho">
-                OPイラスト・CLイラスト
+                {t.PAGE_TITLE_OP_CL_ILLUSTS}
               </h1>
 
-              <h2 className="text-xl font-bold pb-4">OP＆CLイラストとは？</h2>
+              <h2 className="text-xl font-bold pb-4">
+                {locale === 'ja'
+                  ? 'OP＆CLイラストとは？'
+                  : 'What is OP illust. & CL illust.?'}
+              </h2>
               <div className="text-base text-left pb-4">
                 <p className="pb-2">
                   「オープニングイラスト（OPイラスト）」と「クロージングイラスト（CLイラスト）」を募集します。

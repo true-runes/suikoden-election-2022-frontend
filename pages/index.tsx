@@ -19,6 +19,8 @@ import WhatIsGensosenkyo from '../components/WhatIsGensosenkyo'
 import IllustratedBy from '../components/IllustratedBy'
 import SiteFooter from '../components/SiteFooter'
 
+import { useLocale } from '../hooks/useLocale'
+
 const nowSecond = () => {
   const time = new Date()
   const hour = time.getHours()
@@ -46,9 +48,11 @@ const Home: NextPage = () => {
     [now]
   )
 
+  const { t } = useLocale()
+
   return (
     <div className="bg-white text-black">
-      <title>ホーム - 幻水総選挙2022</title>
+      <title>{`${t.PAGE_TITLE_HOME} - ${t.WEBSITE_TITLE}`}</title>
 
       <div className={'right'}>
         <HumbergerNavigation />
@@ -59,7 +63,7 @@ const Home: NextPage = () => {
 
         <Image
           src="/gss2022_top.jpg"
-          alt="幻水総選挙2022"
+          alt={t.TOP_IMAGE_ALT}
           width={3180}
           height={1788}
         />

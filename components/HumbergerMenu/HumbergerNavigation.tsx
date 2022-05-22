@@ -46,10 +46,12 @@ const Navigation = () => {
                       </div>
                     </li>
                     <li className="py-2">
-                      <div className="text-base">
-                        {locale === 'ja'
-                          ? '開票イラスト（準備中）'
-                          : 'Voting illustrations (in progress)'}
+                      <div className="text-base link link-hover underline-offset-4">
+                        <Link href="/events-in-event/illustrations-with-results">
+                          {locale === 'ja'
+                            ? '開票イラスト'
+                            : 'Voting illustrations'}
+                        </Link>
                       </div>
                     </li>
                     <li className="py-2">

@@ -9,7 +9,7 @@ const Onegai: NextPage = () => {
       <div className="hero">
         <div className="hero-content text-center">
           <div className="max-w-md">
-            <h1 className="text-2xl font-bold pb-4 underline font-zen-old-mincho">
+            <h1 className="text-2xl font-bold pb-10 underline font-zen-old-mincho">
               {locale === 'ja' ? 'お願い' : 'Please'}
             </h1>
 

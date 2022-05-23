@@ -37,6 +37,19 @@ const Kikaku: NextPage = () => {
                           : 'Voting illustrations'}
                       </span>
                     </Link>
+                    <div className="pt-4 text-base link link-hover underline-offset-4">
+                      <ul className="list-disc pl-6">
+                        <li className="pb-2">
+                          <Link href="/events-in-event/illustrations-book">
+                            <span className="underline underline-offset-4 text-blue-500 hover:text-blue-900">
+                              {locale === 'ja'
+                                ? '開票イラスト本'
+                                : 'Voting illustrations Book'}
+                            </span>
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li className="pb-4">
                     <Link href="/events-in-event/novels-on-themes">

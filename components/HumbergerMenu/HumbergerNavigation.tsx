@@ -54,8 +54,8 @@ const Navigation = () => {
                         </Link>
                       </div>
                       <div className="text-base link link-hover underline-offset-4">
-                        <ul className="list-disc pl-6 pr-2">
-                          <li className="pt-2">
+                        <ul className="list-disc pl-6">
+                          <li className="pt-4">
                             <Link href="/events-in-event/illustrations-book">
                               {locale === 'ja'
                                 ? '開票イラスト本'

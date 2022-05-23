@@ -145,18 +145,35 @@ const IllustrationsWithResults: NextPage = () => {
               <div>
                 <h3>①フォームで送信 【開票イラスト送信フォーム】（Dropbox）</h3>
                 https://www.dropbox.com/request/FQ1a3d6T8pSdISItXfeo
-                ・アカウント登録は不要です。
-                ・フォームの仕様上、メールアドレス入力が必須です。主催側にアドレスは伝わりませんのでご安心ください。
-                ・入力したアドレスに送信完了のお知らせが届きます。
-                ・ご自身のアドレスを入力したくない方は、幻水総選挙のアドレスを入力して下さい。
-                幻水総選挙メールアドレス: gensosenkyo2015@gmail.com
-                ・ご自分のDropboxにログインした状態ですと、「名前」「メールアドレス」の入力欄は表示されません。
-                （そのまま送信して頂いて大丈夫です）
-                ・送信後は大変お手数ですが、主催宛DMでキャラ名のご連絡をお願いします。
+                <ul className="list-decimal pl-6 pr-2">
+                  <li className="pb-2">アカウント登録は不要です。</li>
+                  <li className="pb-2">
+                    フォームの仕様上、メールアドレス入力が必須です。主催側にアドレスは伝わりませんのでご安心ください。
+                  </li>
+                  <li className="pb-2">
+                    入力したアドレスに送信完了のお知らせが届きます。
+                  </li>
+                  <li className="pb-2">
+                    ご自身のアドレスを入力したくない方は、幻水総選挙のアドレスを入力して下さい。
+                    <br />
+                    幻水総選挙メールアドレス: gensosenkyo2015@gmail.com
+                  </li>
+                  <li className="pb-2">
+                    送信後は大変お手数ですが、主催宛DMでキャラ名のご連絡をお願いします。
+                  </li>
+                </ul>
                 <h3>②主催宛DMで送信</h3>
-                Twitterの仕様につき、画像が劣化する場合がありますのでご注意ください。
+                <ul className="list-decimal pl-6 pr-2">
+                  <li className="pb-2">
+                    Twitterの仕様につき、画像が劣化する場合がありますのでご注意ください。
+                  </li>
+                </ul>
                 <h3>③ファイル転送サービスを利用</h3>
-                ギガファイル便、データ便などを使ってデータをアップロードし、URLを主催宛DMに送信してください。
+                <ul className="list-decimal pl-6 pr-2">
+                  <li className="pb-2">
+                    ギガファイル便、データ便などを使ってデータをアップロードし、URLを主催宛DMに送信してください。
+                  </li>
+                </ul>
                 <h2 className="text-xl font-bold pb-4">Q&A</h2>
                 Q&A Q：他のキャラを一緒に描いてもいいですか？
                 A：応募キャラ単体のイラスト推奨ですが、他のキャラを入れても構いません。

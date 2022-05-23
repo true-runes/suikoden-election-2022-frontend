@@ -53,6 +53,17 @@ const Navigation = () => {
                             : 'Voting illustrations'}
                         </Link>
                       </div>
+                      <div className="text-base link link-hover underline-offset-4">
+                        <ul className="list-disc pl-6 pr-2">
+                          <li className="pt-2">
+                            <Link href="/events-in-event/illustrations-book">
+                              {locale === 'ja'
+                                ? '開票イラスト本'
+                                : 'Voting illustrations Book'}
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                     <li className="py-2">
                       <div className="text-base">

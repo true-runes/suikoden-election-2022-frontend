@@ -83,7 +83,21 @@ const Navigation = () => {
           <div className="text-lg">
             <PreviousWebsites />
           </div>
-          <div />
+          <div className="py-4">
+            <div className="text-lg">
+              <Link href="/" locale={false} passHref>
+                <span className="link link-hover underline-offset-4">
+                  日本語
+                </span>
+              </Link>{' '}
+              /{' '}
+              <Link href="/en" locale={false} passHref>
+                <span className="link link-hover underline-offset-4">
+                  English
+                </span>
+              </Link>
+            </div>
+          </div>
         </div>
       </Menu>
     </div>

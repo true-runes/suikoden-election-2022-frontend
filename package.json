@@ -22,7 +22,7 @@
     "gridjs-react": "^5.0.2",
     "postcss": "8.4.14",
     "prettier": "^2.6.2",
-    "react-burger-menu": "^3.0.6",
+    "react-burger-menu": "3.0.8",
     "react-twitter-embed": "^4.0.4",
     "sass": "1.52.1",
     "styled-components": "^5.3.5",

@@ -21,13 +21,17 @@ const OpClIllustrations: NextPage = () => {
       <main id="page-wrap">
         <NavBar />
 
-        <div className="text-base bg-gray-700 text-white breadcrumbs pl-6 pb-2">
+        <div className="text-base bg-gray-700 text-white breadcrumbs pl-6 pb-2 sticky top-16 z-50">
           <ul>
             <li>
-              <Link href="/">{t.PAGE_TITLE_HOME}</Link>
+              <Link href="/" passHref>
+                {t.PAGE_TITLE_HOME}
+              </Link>
             </li>
             <li>
-              <Link href="/events-in-event">{t.PAGE_TITLE_PROJECTS}</Link>
+              <Link href="/events-in-event" passHref>
+                {t.PAGE_TITLE_PROJECTS}
+              </Link>
             </li>
             <li>{t.PAGE_TITLE_OP_CL_ILLUSTS}</li>
           </ul>

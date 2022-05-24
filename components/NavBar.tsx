@@ -40,7 +40,9 @@ const NavBar: NextPage = () => {
     <>
       <div className="navbar bg-neutral text-white sticky top-0 z-50">
         <div className="text-xl pl-4 font-zen-old-mincho">
-          <Link href="/">{t.WEBSITE_TITLE}</Link>
+          <Link href="/" passHref>
+            {t.WEBSITE_TITLE}
+          </Link>
         </div>
 
         <div className="absolute right-20 bg-neutral text-white">

@@ -22,9 +22,9 @@ const Kikaku: NextPage = () => {
               </p>
               <div className="text-base text-left pb-4">
                 <ul className="list-decimal pl-6 pr-2">
-                  <li className="pb-4 underline link link-hover underline-offset-4">
+                  <li className="pb-4">
                     <Link href="/events-in-event/election-campaign">
-                      <span className="underline underline-offset-4 text-blue-500 hover:text-blue-900">
+                      <span className="link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900">
                         {locale === 'ja' ? '選挙運動' : 'Campaigning'}
                       </span>
                     </Link>
@@ -34,9 +34,9 @@ const Kikaku: NextPage = () => {
                       ? '開票イラスト（準備中）'
                       : 'Voting illustrations (in progress)'}
                   </li>
-                  <li className="pb-4 underline link link-hover underline-offset-4">
+                  <li className="pb-4">
                     <Link href="/events-in-event/novels-on-themes">
-                      <span className="underline underline-offset-4 text-blue-500 hover:text-blue-900">
+                      <span className="link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900">
                         {locale === 'ja' ? 'お題小説' : 'Themed short stories'}
                       </span>
                     </Link>
@@ -46,9 +46,9 @@ const Kikaku: NextPage = () => {
                       ? '推し台詞（準備中）'
                       : 'Fave quote (in progress)'}
                   </li>
-                  <li className="pb-4 underline link link-hover underline-offset-4">
+                  <li className="pb-4">
                     <Link href="/events-in-event/op-cl-illustrations">
-                      <span className="underline underline-offset-4 text-blue-500 hover:text-blue-900">
+                      <span className="link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900">
                         {locale === 'ja'
                           ? 'オープニングイラスト・クロージングイラスト'
                           : 'Opening illustration / Closing illustration'}

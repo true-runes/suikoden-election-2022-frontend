@@ -11,7 +11,9 @@ const Navigation = () => {
       <Menu pageWrapId={'page-wrap'} outerContainerId={'outer-container'}>
         <div className="grid grid-cols-1 divide-y divide-current font-zen-old-mincho">
           <div className="text-2xl py-4">
-            <Link href="/">{t.WEBSITE_TITLE}</Link>
+            <Link href="/" passHref>
+              {t.WEBSITE_TITLE}
+            </Link>
           </div>
           <div className="text-lg">
             <div className="collapse collapse-arrow">
@@ -20,19 +22,26 @@ const Navigation = () => {
                 <div>{locale === 'ja' ? '総選挙内企画' : 'Projects'}</div>
               </div>
               <div className="collapse-content">
-                <div className="py-2 link link-hover underline-offset-4">
-                  <Link href="/events-in-event">
-                    {locale === 'ja'
-                      ? '総選挙内企画について'
-                      : 'About Projects'}
+                <div className="py-2">
+                  <Link href="/events-in-event" passHref>
+                    <span className="link link-hover underline-offset-4">
+                      {locale === 'ja'
+                        ? '総選挙内企画について'
+                        : 'About Projects'}
+                    </span>
                   </Link>
                 </div>
                 <div>
                   <ul className="list-decimal pl-8">
                     <li className="py-2">
-                      <div className="text-base link link-hover underline-offset-4">
-                        <Link href="/events-in-event/election-campaign">
-                          {locale === 'ja' ? '選挙運動' : 'Campaigning'}
+                      <div className="text-base">
+                        <Link
+                          href="/events-in-event/election-campaign"
+                          passHref
+                        >
+                          <span className="link link-hover underline-offset-4">
+                            {locale === 'ja' ? '選挙運動' : 'Campaigning'}
+                          </span>
                         </Link>
                       </div>
                     </li>
@@ -44,11 +53,13 @@ const Navigation = () => {
                       </div>
                     </li>
                     <li className="py-2">
-                      <div className="text-base link link-hover underline-offset-4">
-                        <Link href="/events-in-event/novels-on-themes">
-                          {locale === 'ja'
-                            ? 'お題小説'
-                            : 'Themed short stories'}
+                      <div className="text-base">
+                        <Link href="/events-in-event/novels-on-themes" passHref>
+                          <span className="link link-hover underline-offset-4">
+                            {locale === 'ja'
+                              ? 'お題小説'
+                              : 'Themed short stories'}
+                          </span>
                         </Link>
                       </div>
                     </li>
@@ -60,11 +71,16 @@ const Navigation = () => {
                       </div>
                     </li>
                     <li className="py-2">
-                      <div className="text-base link link-hover underline-offset-4">
-                        <Link href="/events-in-event/op-cl-illustrations">
-                          {locale === 'ja'
-                            ? 'OP&CLイラスト'
-                            : 'Opening illustration / Closing illustration'}
+                      <div className="text-base">
+                        <Link
+                          href="/events-in-event/op-cl-illustrations"
+                          passHref
+                        >
+                          <span className="link link-hover underline-offset-4">
+                            {locale === 'ja'
+                              ? 'OP&CLイラスト'
+                              : 'Opening illustration / Closing illustration'}
+                          </span>
                         </Link>
                       </div>
                     </li>

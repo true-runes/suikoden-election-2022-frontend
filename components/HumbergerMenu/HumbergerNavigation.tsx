@@ -46,20 +46,30 @@ const Navigation = () => {
                       </div>
                     </li>
                     <li className="py-2">
-                      <div className="text-base link link-hover underline-offset-4">
-                        <Link href="/events-in-event/illustrations-with-results">
-                          {locale === 'ja'
-                            ? '開票イラスト'
-                            : 'Voting illustrations'}
+                      <div className="text-base">
+                        <Link
+                          href="/events-in-event/illustrations-with-results"
+                          passHref
+                        >
+                          <span className="link link-hover underline-offset-4">
+                            {locale === 'ja'
+                              ? '開票イラスト'
+                              : 'Voting illustrations'}
+                          </span>
                         </Link>
                       </div>
-                      <div className="text-base link link-hover underline-offset-4">
+                      <div className="text-base">
                         <ul className="list-disc pl-6">
                           <li className="pt-4">
-                            <Link href="/events-in-event/illustrations-book">
-                              {locale === 'ja'
-                                ? '開票イラスト本'
-                                : 'Voting illustrations Book'}
+                            <Link
+                              href="/events-in-event/illustrations-book"
+                              passHref
+                            >
+                              <span className="link link-hover underline-offset-4">
+                                {locale === 'ja'
+                                  ? '開票イラスト本'
+                                  : 'Voting illustrations Book'}
+                              </span>
                             </Link>
                           </li>
                         </ul>

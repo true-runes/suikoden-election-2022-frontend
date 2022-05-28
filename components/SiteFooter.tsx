@@ -5,14 +5,16 @@ import { useLocale } from '../hooks/useLocale'
 
 import Otoiawase from '../components/Otoiawase'
 
-const SiteFooter: NextPage = () => {
+const SiteFooter: NextPage = (props) => {
   const { t } = useLocale()
 
   return (
     <>
-      <Otoiawase />
-
-      <div className="divider" />
+      {props.isHideOtoiawaseComponent ? null : (
+        <>
+          <Otoiawase /> <div className="divider" />
+        </>
+      )}
 
       <footer className="footer footer-center bg-white text-black pb-6">
         <div className="text-base py-4">

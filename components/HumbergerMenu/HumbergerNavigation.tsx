@@ -101,6 +101,15 @@ const Navigation = () => {
           </div>
           <div className="py-4">
             <div className="text-lg">
+              <Link href="/inquiry">
+                <span className="link link-hover underline-offset-4">
+                  お問い合わせ
+                </span>
+              </Link>
+            </div>
+          </div>
+          <div className="py-4">
+            <div className="text-lg">
               <Link href="/" locale={false} passHref>
                 <span className="link link-hover underline-offset-4">
                   日本語

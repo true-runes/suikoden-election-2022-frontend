@@ -10,10 +10,12 @@ const SiteFooter: NextPage = () => {
 
   return (
     <>
+      <Otoiawase />
+
+      <div className="divider" />
+
       <footer className="footer footer-center bg-white text-black pb-6">
         <div className="text-base py-4">
-          <Otoiawase />
-
           <span>
             <span className="pr-1">
               <TwitterIcon />

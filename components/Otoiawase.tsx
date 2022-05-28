@@ -8,7 +8,7 @@ const Otoiawase: NextPage = () => {
 
   return (
     <div className="bg-white text-black px-4 pb-2">
-      <h1 className="text-xl font-bold pb-4 underline font-zen-old-mincho">
+      <h1 className="text-center text-xl font-bold pb-4 underline font-zen-old-mincho">
         {locale === 'ja' ? 'お問い合わせ' : 'Inquiry'}
       </h1>
       <div className="text-left">

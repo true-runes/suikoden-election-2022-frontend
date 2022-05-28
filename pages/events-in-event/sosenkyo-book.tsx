@@ -98,7 +98,7 @@ const SosenkyoBook: NextPage = () => {
                   <span className="text-red-500">以下の2点の送信</span>{' '}
                   をお願い致します。詳細は後述します。
                 </div>
-                <ul className="list-none pl-6 pr-2">
+                <ul className="list-none pl-0 pr-2">
                   <li className="pb-2">① 印刷用データファイルを作成して送信</li>
                   <li className="pb-2">② 参加表明フォームを送信</li>
                 </ul>

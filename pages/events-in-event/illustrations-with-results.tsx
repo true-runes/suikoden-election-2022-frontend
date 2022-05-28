@@ -340,7 +340,8 @@ const IllustrationsWithResults: NextPage = () => {
                           Q. 他のキャラを一緒に描く場合の具体例はありますか？
                         </p>
                         <div className="pb-2">
-                          A. 以下のような過去の例があります。
+                          A.
+                          以下のような過去の例がありますが、これ以外の描き方でも構いません。
                           <ul className="list-disc pl-10 pr-2 pt-2">
                             <li className="pb-2">他のキャラを小さく描く</li>
                             <li className="pb-2">他のキャラを背景に描く</li>

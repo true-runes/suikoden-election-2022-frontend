@@ -39,25 +39,19 @@ const IllustrationsBook: NextPage = () => {
               <h1 className="text-2xl font-bold pb-10 underline font-zen-old-mincho">
                 {t.PAGE_TITLE_ILLUSTRATIONS_BOOK}
               </h1>
-              <></>
-              <></>
-              <></>
               <h2 className="text-xl font-bold pb-4">
                 {locale === 'ja'
                   ? '幻水総選挙本とは？'
                   : 'What is Sosenkyo book?'}
               </h2>
-              <></>
-              <></>
-              <></>
               <div className="text-base text-left pb-4">
-                <p className="pb-4">
+                <div className="pb-4">
                   総選挙にお送りいただいた開票イラストのうち、
                   <span className="text-red-500">
-                    掲載許可を下さった方の作品
+                    掲載許可をくださった方の作品
                   </span>
                   をまとめた本のことです。
-                </p>
+                </div>
                 <ul className="list-disc pl-6 pr-2">
                   <li className="pb-2">掲載を強制するものではございません。</li>
                   <li className="pb-0">
@@ -67,27 +61,28 @@ const IllustrationsBook: NextPage = () => {
               </div>
 
               <div className="divider" />
+
               <h2 className="text-xl font-bold pb-4">〆切</h2>
               <div className="text-base text-center pb-4">
                 <div className="pb-2">
-                  <p>参加表明フォーム送信〆切</p>
-                  <p className="text-red-500 pl-1 pr-1">2022年7月31日（日）</p>
+                  <div>参加表明フォーム送信〆切</div>
+                  <div className="text-red-500 pl-1 pr-1">
+                    2022年7月31日（日）
+                  </div>
                 </div>
                 <div className="pb-2">
-                  <p>印刷用データ〆切</p>
-                  <p className="text-red-500 pl-1 pr-1">2022年7月31日（日）</p>
+                  <div>印刷用データ〆切</div>
+                  <div className="text-red-500 pl-1 pr-1">
+                    2022年7月31日（日）
+                  </div>
                 </div>
               </div>
-              <></>
-              <></>
-              <></>
+
               <div className="divider" />
-              <></>
-              <></>
-              <></>
+
               <h2 className="text-xl font-bold pb-4">本について</h2>
               <div className="text-base text-left pb-4">
-                <p className="pb-4">以下のような内容を想定しております。</p>
+                <div className="pb-4">以下のような内容を想定しております。</div>
                 <ul className="list-disc pl-6 pr-2">
                   <li className="pb-2">
                     1ページあたり、イラスト 2～4枚 程度の掲載
@@ -100,16 +95,14 @@ const IllustrationsBook: NextPage = () => {
                   </li>
                 </ul>
               </div>
-              <></>
-              <></>
-              <></>
+
               <div className="divider" />
-              <></>
-              <></>
-              <></>
+
               <h2 className="text-xl font-bold pb-4">募集概要</h2>
               <div className="text-base text-left pb-4">
-                幻水総選挙本への掲載をご希望の方は、通常の開票イラストの応募に加え、以下の2点の送信をお願い致します。詳細は後述します。
+                <div className="pb-4">
+                  幻水総選挙本への掲載をご希望の方は、通常の開票イラストの応募に加え、以下の2点の送信をお願い致します。詳細は後述します。
+                </div>
                 <ul className="list-disc pl-6 pr-2">
                   <li className="pb-2">
                     印刷用データファイルを作成して送信（準備中）
@@ -117,46 +110,42 @@ const IllustrationsBook: NextPage = () => {
                   <li className="pb-2">参加表明フォームを送信（準備中）</li>
                 </ul>
               </div>
-              <></>
-              <></>
-              <></>
+
               <div className="divider" />
-              <></>
-              <></>
-              <></>
+
               <h2 className="text-xl font-bold pb-4">
                 募集詳細 - 印刷用データのサイズ
               </h2>
               <div className="text-base text-left pb-4">
                 <ul className="list-disc pl-6 pr-2">
                   <li className="pb-2">
-                    <p className="pb-2">
+                    <div className="pb-2">
                       印刷用データのサイズの規定は下記の通りです。
-                    </p>
+                    </div>
                     <ul className="list-disc pl-6 pr-2">
                       <li className="pb-2">
-                        <p className="pb-2">縦長の場合</p>
+                        <div className="pb-2">縦長の場合</div>
                         <ul className="list-none pl-6 pr-2">
                           <li className="pb-2">
-                            <p>幅 1100px × 高さ 1500px 以上</p>
-                            <p>幅 2508px × 高さ 3541px 以下</p>
+                            <div>幅 1100px × 高さ 1500px 以上</div>
+                            <div>幅 2508px × 高さ 3541px 以下</div>
                           </li>
                         </ul>
                       </li>
                       <li className="pb-2">
-                        <p className="pb-2">横長の場合</p>
+                        <div className="pb-2">横長の場合</div>
                         <ul className="list-none pl-6 pr-2">
                           <li className="pb-2">
-                            <p>幅 1500px × 高さ 1100px 以上</p>
-                            <p>幅 3541px × 高さ 2508px 以下</p>
+                            <div>幅 1500px × 高さ 1100px 以上</div>
+                            <div>幅 3541px × 高さ 2508px 以下</div>
                           </li>
                         </ul>
                       </li>
                       <li className="pb-2">
-                        <p className="pb-2">正方形の場合</p>
+                        <div className="pb-2">正方形の場合</div>
                         <ul className="list-none pl-6 pr-2">
                           <li className="pb-2">
-                            <p>幅 1300px × 高さ 1300px 以上</p>
+                            <div>幅 1300px × 高さ 1300px 以上</div>
                           </li>
                         </ul>
                       </li>
@@ -178,6 +167,7 @@ const IllustrationsBook: NextPage = () => {
               </div>
 
               <div className="divider" />
+
               <h2 className="text-xl font-bold pb-4">
                 募集詳細 - 印刷用データの解像度
               </h2>
@@ -193,6 +183,7 @@ const IllustrationsBook: NextPage = () => {
               </div>
 
               <div className="divider" />
+
               <h2 className="text-xl font-bold pb-4">
                 募集詳細 - カラーモード
               </h2>
@@ -208,6 +199,7 @@ const IllustrationsBook: NextPage = () => {
               </div>
 
               <div className="divider" />
+
               <h2 className="text-xl font-bold pb-4">募集詳細 - 保存形式</h2>
               <div className="text-base text-left pb-4">
                 <ul className="list-disc pl-6 pr-2">
@@ -222,6 +214,7 @@ const IllustrationsBook: NextPage = () => {
               </div>
 
               <div className="divider" />
+
               <h2 className="text-xl font-bold pb-4">募集詳細 - ファイル名</h2>
               <div className="text-base text-left pb-4">
                 <ul className="list-disc pl-6 pr-2">
@@ -235,12 +228,16 @@ const IllustrationsBook: NextPage = () => {
                         」を付けてください
                       </li>
                       <li className="pb-2">日本語のファイル名で構いません</li>
+                      <li className="pb-2">
+                        スマートフォンから送る場合等、ファイル名変更が難しい方はそのままで大丈夫です
+                      </li>
                     </ul>
                   </li>
                 </ul>
               </div>
 
               <div className="divider" />
+
               <h2 className="text-xl font-bold pb-4">
                 募集詳細 - 送信方法詳細
               </h2>
@@ -268,39 +265,39 @@ const IllustrationsBook: NextPage = () => {
                 <ul className="list-none pl-6 pr-2">
                   <div className="py-2">
                     <li className="pb-2">
-                      <p className="pb-2">
+                      <div className="pb-2">
                         Q. サイズを規定より小さく描いてしまったのですが…。
-                      </p>
-                      <p className="pb-2">
+                      </div>
+                      <div className="pb-2">
                         A.
-                        多少の違いは大丈夫ですが、大きく違う場合は印刷の見た目に影響が出る可能性があります。事前にご相談ください。
-                      </p>
+                        規定のサイズは目安のため、多少の違いは大丈夫です。大きく違う場合は印刷の見た目に影響が出る可能性がありますので、事前にご相談ください。
+                      </div>
                     </li>
                   </div>
                   <div className="py-2">
                     <li className="pb-2">
-                      <p className="pb-2">
+                      <div className="pb-2">
                         Q. 使用するソフトで CMYKカラー や psd保存 ができません。
-                      </p>
-                      <p className="pb-2">
-                        <p className="pb-1">
+                      </div>
+                      <div className="pb-2">
+                        <div className="pb-1">
                           A. データによっては jpg や png
                           でもお受けしますのでご相談ください。カラーモードについては主催側での変換も承ります。
-                        </p>
-                        <p className="pb-1">
+                        </div>
+                        <div className="pb-1">
                           ただし、CMYKへの変換を行なうと、色の見た目が変わることがありますのでご注意ください（一般的には、鮮やかな色がくすんだ色に変わります）。
-                        </p>
-                      </p>
+                        </div>
+                      </div>
                     </li>
                   </div>
                   <li className="pb-2">
-                    <p className="pb-2">
+                    <div className="pb-2">
                       Q.
                       Web用データと印刷用データは同時に出さないといけませんか？
-                    </p>
-                    <p className="pb-2">
+                    </div>
+                    <div className="pb-2">
                       A. 期限内に両方を提出頂ければ、同時でなくても大丈夫です。
-                    </p>
+                    </div>
                   </li>
                 </ul>
               </div>

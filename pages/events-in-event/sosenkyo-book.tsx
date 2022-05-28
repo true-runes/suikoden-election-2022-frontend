@@ -302,7 +302,6 @@ const SosenkyoBook: NextPage = () => {
                     <li className="pb-2">
                       ※以降、イラスト本参加者様共通のご連絡がある場合は、メールにて一斉送信いたします。
                     </li>
-                    <li className="pb-2">④ 主催よりデータ受領のご連絡</li>
                   </ul>
                 </div>
               </div>

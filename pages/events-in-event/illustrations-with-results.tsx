@@ -97,6 +97,22 @@ const IllustrationsWithResults: NextPage = () => {
                     ご応募頂きましたイラストにつきまして、ご自身のSNSへの投稿や同人誌への掲載などをご自由にして頂いて構いません。可能であれば総選挙終了後の公開でお願いします。
                   </li>
                   <li className="pb-2">
+                    <p className="pb-2">
+                      「これで大丈夫？」と迷ってしまった場合は
+                      <a
+                        href="https://twitter.com/gensosenkyo"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="link link-hover underline-offset-4"
+                      >
+                        <span className="underline underline-offset-4 text-blue-500 hover:text-blue-900 pl-1 pr-1">
+                          主催
+                        </span>
+                      </a>
+                      宛DM にてご質問ください。
+                    </p>
+                  </li>
+                  <li className="pb-2">
                     「幻水総選挙本」への掲載をご希望の方は
                     <Link href="/events-in-event/illustrations-book">
                       <a className="underline underline-offset-4 text-blue-500 hover:text-blue-900 pl-1 pr-1">
@@ -357,26 +373,6 @@ const IllustrationsWithResults: NextPage = () => {
                         </div>
                       </li>
                     </div>
-                    <li className="pb-2">
-                      <p className="pb-2">
-                        Q.
-                        「これで大丈夫？」と迷ってしまった場合はどうすればいいですか？
-                      </p>
-                      <p className="pb-2">
-                        A.{' '}
-                        <a
-                          href="https://twitter.com/gensosenkyo"
-                          target="_blank"
-                          rel="noreferrer"
-                          className="link link-hover underline-offset-4"
-                        >
-                          <span className="underline underline-offset-4 text-blue-500 hover:text-blue-900 pl-1 pr-1">
-                            主催
-                          </span>
-                        </a>
-                        宛DM にてご質問ください。
-                      </p>
-                    </li>
                   </ul>
                 </div>
               </div>

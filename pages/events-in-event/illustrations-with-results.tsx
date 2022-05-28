@@ -121,7 +121,7 @@ const IllustrationsWithResults: NextPage = () => {
                     応募したいキャラ単体のイラストを推奨します。
                   </li>
                   <li className="pb-2">
-                    カラー / モノクロ、デジタル / アナログは自由です。
+                    カラー or モノクロ、デジタル or アナログは自由です。
                   </li>
                   <li className="pb-2">
                     イラストに
@@ -161,7 +161,10 @@ const IllustrationsWithResults: NextPage = () => {
                     </span>
                   </li>
                 </ul>
-                ※日本語のファイル名で構いません。
+                <p className="py-2">※日本語のファイル名で構いません。</p>
+                <p className="pb-2">
+                  ※スマートフォンから送る場合等、ファイル名変更が難しい方はそのままで大丈夫です。
+                </p>
               </div>
 
               <div className="divider" />

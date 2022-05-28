@@ -44,8 +44,8 @@ const IllustrationsBook: NextPage = () => {
               <></>
               <h2 className="text-xl font-bold pb-4">
                 {locale === 'ja'
-                  ? '開票イラスト本とは？'
-                  : 'What is voting illustrations book?'}
+                  ? '幻水総選挙本とは？'
+                  : 'What is Sosenkyo book?'}
               </h2>
               <></>
               <></>
@@ -109,7 +109,7 @@ const IllustrationsBook: NextPage = () => {
               <></>
               <h2 className="text-xl font-bold pb-4">募集概要</h2>
               <div className="text-base text-left pb-4">
-                開票イラスト本への掲載をご希望の方は、通常の開票イラストの応募に加え、以下の2点の送信をお願い致します。詳細は後述します。
+                幻水総選挙本への掲載をご希望の方は、通常の開票イラストの応募に加え、以下の2点の送信をお願い致します。詳細は後述します。
                 <ul className="list-disc pl-6 pr-2">
                   <li className="pb-2">
                     印刷用データファイルを作成して送信（準備中）

@@ -97,12 +97,10 @@ const IllustrationsWithResults: NextPage = () => {
                     ご応募頂きましたイラストにつきまして、ご自身のSNSへの投稿や同人誌への掲載などをご自由にして頂いて構いません。可能であれば総選挙終了後の公開でお願いします。
                   </li>
                   <li className="pb-2">
-                    「開票イラスト本」への掲載をご希望の方は
+                    「幻水総選挙本」への掲載をご希望の方は
                     <Link href="/events-in-event/illustrations-book">
                       <a className="underline underline-offset-4 text-blue-500 hover:text-blue-900 pl-1 pr-1">
-                        {locale === 'ja'
-                          ? '開票イラスト本'
-                          : 'Voting illustrations book'}
+                        {locale === 'ja' ? '幻水総選挙本' : 'Sosenkyo book'}
                       </a>
                     </Link>
                     のページをご覧ください。

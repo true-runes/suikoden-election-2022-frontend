@@ -91,7 +91,15 @@ const OshiSerif: NextPage = () => {
                   ・キャラ名 <br />
                   ・台詞
                   <br /> ・ハッシュタグ「
-                  <span className="font-bold">#幻水総選挙推し台詞</span>」<br />
+                  <a
+                    href="https://twitter.com/search?q=%23%E5%B9%BB%E6%B0%B4%E7%B7%8F%E9%81%B8%E6%8C%99%E6%8E%A8%E3%81%97%E5%8F%B0%E8%A9%9E&src=typed_query&f=live"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline underline-offset-2 text-blue-500 hover:text-blue-900"
+                  >
+                    #幻水総選挙推し台詞
+                  </a>
+                  」<br />
                 </div>
                 を記載し、主催（@gensosenkyo）宛ツイートで投稿して下さい。
                 よろしければ選んだ理由なども語って下さい。

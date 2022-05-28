@@ -13,7 +13,7 @@ const IllustrationsBook: NextPage = () => {
 
   return (
     <div className="bg-white text-black">
-      <title>{`${t.PAGE_TITLE_NOVELS_ON_THEME} - ${t.WEBSITE_TITLE}`}</title>
+      <title>{`${t.PAGE_TITLE_ILLUSTRATIONS_BOOK} - ${t.WEBSITE_TITLE}`}</title>
       <div className={'right'}>
         <HumbergerNavigation />
       </div>
@@ -80,7 +80,7 @@ const IllustrationsBook: NextPage = () => {
               <h2 className="text-xl font-bold pb-4">本について</h2>
               <div className="text-base text-left pb-4">
                 <ul className="list-disc pl-6 pr-2">
-                  <li className="pb-2">仕様：B5/フルカラー本</li>
+                  <li className="pb-2">仕様：B5 / フルカラー本</li>
                   <li className="pb-2">頒布価格：未定</li>
                   <li className="pb-2">
                     発行日：2022年9月予定（幻想水滸伝オンリー同人誌即売会「三都物語95」）
@@ -249,12 +249,10 @@ const IllustrationsBook: NextPage = () => {
 
               <div className="divider" />
 
-              <h2 className="text-xl font-bold pb-4">
-                募集詳細 - 送信方法詳細
-              </h2>
+              <h2 className="text-xl font-bold pb-4">送信方法詳細</h2>
               <div className="pb-4">以下の ① と ② の作業をお願いします。</div>
-              <div className="pb-10">
-                <h3 className="text-lg text-center pb-4">
+              <div className="pb-4">
+                <h3 className="text-lg text-center">
                   <div className="underline underline-offset-4 pb-4">
                     ① 印刷用データファイルを作成して送信
                   </div>
@@ -270,13 +268,50 @@ const IllustrationsBook: NextPage = () => {
                   </div>
                 </h3>
               </div>
-              <div className="pb-10">
+              <div className="pb-4">
                 <h3 className="text-lg text-center pb-4">
                   <span className="underline underline-offset-4">
                     ② 参加表明フォームを送信
                   </span>
                 </h3>
                 <div>参加表明フォームは現在準備中です。</div>
+              </div>
+
+              <div className="divider" />
+
+              <h2 className="text-xl font-bold pb-4">参加の流れ</h2>
+              <div className="pb-4">
+                <div className="text-base text-left pb-4">
+                  <ul className="list-none pl-6 pr-2">
+                    <li className="pb-2">① WEB用データ、印刷用データを送信</li>
+                    <li className="pb-2">
+                      ② 「開票イラスト本 参加表明フォーム」に入力、送信
+                    </li>
+                    <li className="pb-2">③ 主催宛DMで送信のご報告</li>
+                    <li className="pb-2">④ 主催よりデータ受領のご連絡</li>
+                  </ul>
+                </div>
+                <div className="text-base text-left">
+                  <ul className="list-none pl-6 pr-2">
+                    <li className="pb-2">
+                      ※印刷用に加筆修正をされたい場合、最初にWEB用データのみご提出いただき、印刷用データを後日お送りいただいても大丈夫です。
+                    </li>
+                    <li className="pb-2">
+                      ※一週間経っても受領連絡がない場合は、DMが届いていない可能性がございます。お手数ですが再度DMをお送り下さい。
+                    </li>
+                    <li className="pb-2">
+                      ※以降、イラスト本参加者様共通のご連絡がある場合は、メールにて一斉送信いたします。
+                    </li>
+                    <li className="pb-2">④ 主催よりデータ受領のご連絡</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="divider" />
+
+              <h2 className="text-xl font-bold pb-4">注意</h2>
+              <div className="pb-4 text-left">
+                掲載にあたり、イラスト原寸より縮小させていただく場合がございます（拡大はしません）。総選挙本ご参加の方はこれにご同意いただけたものとみなします。
               </div>
 
               <div className="divider" />

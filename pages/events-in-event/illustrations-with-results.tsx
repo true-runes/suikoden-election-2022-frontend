@@ -97,6 +97,9 @@ const IllustrationsWithResults: NextPage = () => {
                     ご応募頂きましたイラストにつきまして、ご自身のSNSへの投稿や同人誌への掲載などをご自由にして頂いて構いません。可能であれば総選挙終了後の公開でお願いします。
                   </li>
                   <li className="pb-2">
+                    複数作品に登場するキャラを両方描く、同じキャラを衣装違いで並べる、などは是非どうぞ。
+                  </li>
+                  <li className="pb-2">
                     <p className="pb-2">
                       「これで大丈夫？」と迷ってしまった場合は
                       <a
@@ -362,12 +365,6 @@ const IllustrationsWithResults: NextPage = () => {
                             <li className="pb-2">他のキャラを後ろ姿で描く</li>
                             <li className="pb-2">
                               他のキャラの一部分（手など）を入れる
-                            </li>
-                            <li className="pb-2">
-                              複数作品に登場するキャラを両方描く
-                            </li>
-                            <li className="pb-2">
-                              同じキャラを衣装違いで並べる
                             </li>
                           </ul>
                         </div>

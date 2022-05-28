@@ -96,34 +96,6 @@ const IllustrationsWithResults: NextPage = () => {
                   <li className="pb-2">
                     ご応募頂きましたイラストにつきまして、ご自身のSNSへの投稿や同人誌への掲載などをご自由にして頂いて構いません。可能であれば総選挙終了後の公開でお願いします。
                   </li>
-                  <li className="pb-2">
-                    複数作品に登場するキャラを両方描く、同じキャラを衣装違いで並べる、などは是非どうぞ。
-                  </li>
-                  <li className="pb-2">
-                    <p className="pb-2">
-                      「これで大丈夫？」と迷ってしまった場合は
-                      <a
-                        href="https://twitter.com/gensosenkyo"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="link link-hover underline-offset-4"
-                      >
-                        <span className="underline underline-offset-4 text-blue-500 hover:text-blue-900 pl-1 pr-1">
-                          主催
-                        </span>
-                      </a>
-                      宛DM にてご質問ください。
-                    </p>
-                  </li>
-                  <li className="pb-2">
-                    「幻水総選挙本」への掲載をご希望の方は
-                    <Link href="/events-in-event/sosenkyo-book">
-                      <a className="underline underline-offset-4 text-blue-500 hover:text-blue-900 pl-1 pr-1">
-                        {locale === 'ja' ? '幻水総選挙本' : 'Sosenkyo book'}
-                      </a>
-                    </Link>
-                    のページをご覧ください。
-                  </li>
                 </ul>
               </div>
 
@@ -204,9 +176,6 @@ const IllustrationsWithResults: NextPage = () => {
                 募集詳細 - 送信方法詳細
               </h2>
               <div className="text-base text-left pb-4">
-                <></>
-                <></>
-                <></>
                 <div className="pb-10">
                   <h3 className="text-lg text-center pb-4">
                     <span className="underline underline-offset-4">
@@ -262,9 +231,7 @@ const IllustrationsWithResults: NextPage = () => {
                     </li>
                   </ul>
                 </div>
-                <></>
-                <></>
-                <></>
+
                 <div className="pb-10">
                   <h3 className="text-lg text-center pb-4">
                     <span className="underline underline-offset-4">
@@ -291,9 +258,6 @@ const IllustrationsWithResults: NextPage = () => {
                   </ul>
                 </div>
 
-                <></>
-                <></>
-                <></>
                 <div className="pb-10">
                   <h3 className="text-lg text-center pb-4">
                     <span className="underline underline-offset-4">
@@ -322,16 +286,12 @@ const IllustrationsWithResults: NextPage = () => {
                     </span>
                   </p>
                 </div>
-                <></>
-                <></>
-                <></>
+
                 <div className="divider" />
-                <></>
-                <></>
-                <></>
+
                 <h2 className="text-xl text-center font-bold pb-4">Q & A</h2>
                 <div className="text-base text-left pb-0">
-                  <ul className="list-none pl-6 pr-2">
+                  <ul className="list-none pl-0 pr-2">
                     <div className="py-2">
                       <li className="pb-2">
                         <p className="pb-2">
@@ -347,7 +307,7 @@ const IllustrationsWithResults: NextPage = () => {
                           となるようにお願いいたします。
                         </p>
                         <p>
-                          また恋愛描写を含む場合は、原作程度の表現でお願いします。
+                          また恋愛（カップリング）描写を含む場合は、原作程度の表現でお願いします。
                         </p>
                       </li>
                     </div>
@@ -359,7 +319,7 @@ const IllustrationsWithResults: NextPage = () => {
                         <div className="pb-2">
                           A.
                           以下のような過去の例がありますが、これ以外の描き方でも構いません。
-                          <ul className="list-disc pl-10 pr-2 pt-2">
+                          <ul className="list-disc pl-6 pr-2 pt-2">
                             <li className="pb-2">他のキャラを小さく描く</li>
                             <li className="pb-2">他のキャラを背景に描く</li>
                             <li className="pb-2">他のキャラを後ろ姿で描く</li>
@@ -370,6 +330,42 @@ const IllustrationsWithResults: NextPage = () => {
                         </div>
                       </li>
                     </div>
+                  </ul>
+                </div>
+
+                <div className="divider" />
+
+                <h2 className="text-xl text-center font-bold pb-4">その他</h2>
+                <div className="text-base text-left pb-0">
+                  <ul className="list-disc pl-6 pr-2">
+                    <li className="pb-2">
+                      複数作品に登場するキャラを両方描く、同じキャラを衣装違いで並べる、などは是非どうぞ。
+                    </li>
+                    <li className="pb-2">
+                      <p className="pb-2">
+                        「これで大丈夫？」と迷ってしまった場合は
+                        <a
+                          href="https://twitter.com/gensosenkyo"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="link link-hover underline-offset-4"
+                        >
+                          <span className="underline underline-offset-4 text-blue-500 hover:text-blue-900 pl-1 pr-1">
+                            主催
+                          </span>
+                        </a>
+                        宛DM にてご質問ください。
+                      </p>
+                    </li>
+                    <li className="pb-2">
+                      「幻水総選挙本」への掲載をご希望の方は
+                      <Link href="/events-in-event/sosenkyo-book">
+                        <a className="underline underline-offset-4 text-blue-500 hover:text-blue-900 pl-1 pr-1">
+                          {locale === 'ja' ? '幻水総選挙本' : 'Sosenkyo book'}
+                        </a>
+                      </Link>
+                      のページをご覧ください。
+                    </li>
                   </ul>
                 </div>
               </div>

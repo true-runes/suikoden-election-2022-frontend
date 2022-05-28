@@ -72,6 +72,9 @@ const SosenkyoBook: NextPage = () => {
                   <li className="pb-2">
                     1ページあたり 2～4枚 程度の掲載を想定しています。
                   </li>
+                  <li className="pb-2">
+                    参加者様には、完成した本を一冊進呈いたします。
+                  </li>
                 </ul>
               </div>
 
@@ -94,7 +97,16 @@ const SosenkyoBook: NextPage = () => {
               <h2 className="text-xl font-bold pb-4">募集概要</h2>
               <div className="text-base text-left pb-4">
                 <div className="pb-4">
-                  幻水総選挙本への掲載をご希望の方は、通常の開票イラストの応募に加え、
+                  幻水総選挙本への掲載をご希望の方は、
+                  <Link
+                    href="/events-in-event/illustrations-with-results"
+                    passHref
+                  >
+                    <span className="link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900 pr-1">
+                      通常の開票イラストの応募
+                    </span>
+                  </Link>
+                  に加え、
                   <span className="text-red-500">以下の2点の送信</span>{' '}
                   をお願い致します。詳細は後述します。
                 </div>
@@ -145,8 +157,7 @@ const SosenkyoBook: NextPage = () => {
                     </ul>
                   </li>
                   <li className="pb-2">
-                    「350dpi の B7」か「ハガキサイズ以上 ～
-                    B5」程度でお描きいただくと規定内に収まります。
+                    サイズに迷う方は「B7（350dpi）」か「ハガキ・ポストカード（350dpi）」サイズで描かれることをおすすめします。
                   </li>
                   <li className="pb-2">
                     アナログイラストは可能であれば、スキャナーで取り込んだデータをお送りください（カラー、解像度300～350dpi）。
@@ -284,9 +295,7 @@ const SosenkyoBook: NextPage = () => {
                 <div className="text-base text-left pb-4">
                   <ul className="list-none pl-0 pr-2">
                     <li className="pb-2">① WEB用データ、印刷用データを送信</li>
-                    <li className="pb-2">
-                      ② 「開票イラスト本 参加表明フォーム」に入力、送信
-                    </li>
+                    <li className="pb-2">② 「参加表明フォーム」に入力、送信</li>
                     <li className="pb-2">③ 主催宛DMで送信のご報告</li>
                     <li className="pb-2">④ 主催よりデータ受領のご連絡</li>
                   </ul>
@@ -298,9 +307,6 @@ const SosenkyoBook: NextPage = () => {
                     </li>
                     <li className="pb-2">
                       ※一週間経っても受領連絡がない場合は、DMが届いていない可能性がございます。お手数ですが再度DMをお送り下さい。
-                    </li>
-                    <li className="pb-2">
-                      ※以降、イラスト本参加者様共通のご連絡がある場合は、メールにて一斉送信いたします。
                     </li>
                   </ul>
                 </div>

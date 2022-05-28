@@ -29,10 +29,10 @@ const HowToVote: NextPage = () => {
                 {locale === 'ja' ? (
                   <ul className="list-disc pl-6 pr-2">
                     <li className="pb-2">
-                      指定のハッシュタグをつけて、ツイートで投票して下さい。
+                      指定のハッシュタグをつけて、ツイートで投票してください。
                     </li>
                     <li className="pb-2">
-                      タグ名や具体的なツイート内容は各部門の説明をご参照下さい。
+                      タグ名や具体的なツイート内容は各部門の説明をご参照ください。
                     </li>
                   </ul>
                 ) : (
@@ -57,7 +57,7 @@ const HowToVote: NextPage = () => {
                 {locale === 'ja' ? (
                   <ul className="list-disc pl-6 pr-2">
                     <li className="pb-2">
-                      非公開アカウント（鍵付き）の方や、鍵を開けたり閉めたりする方は、主催宛DMで投票して下さい。
+                      非公開アカウント（鍵付き）の方や、鍵を開けたり閉めたりする方は、主催宛DMで投票してください。
                     </li>
                     <li className="pb-2">
                       公開アカウントの方もDM投票が可能です。

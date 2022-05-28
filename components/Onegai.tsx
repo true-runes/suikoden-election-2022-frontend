@@ -28,7 +28,7 @@ const Onegai: NextPage = () => {
                   </li>
                   <li className="pb-2">
                     {locale === 'ja'
-                      ? '明らかに同じ方からの複数投票がありました場合は、無効にさせて頂く可能性がございます。'
+                      ? '明らかに同じ方からの複数投票がありました場合は、無効にさせていただく可能性がございます。'
                       : 'Obviously if we receive multiple votes from the same person, their votes may be invalidated.'}
                     <br />
                     {locale === 'ja'
@@ -37,7 +37,7 @@ const Onegai: NextPage = () => {
                   </li>
                   <li className="pb-2">
                     {locale === 'ja'
-                      ? '幻水総選挙関連のハッシュタグで、特定のキャラや特定のキャラを推す方への批判・悪口を目的としたツイートは、ご遠慮下さいますようお願い致します。'
+                      ? '幻水総選挙関連のハッシュタグで、特定のキャラや特定のキャラを推す方への批判・悪口を目的としたツイートは、ご遠慮くださいますようお願い致します。'
                       : 'Please refrain from using the Suikoden General Election hashtags for criticizing or badmouthing specific characters or people who are fans of specific characters.'}
                   </li>
                 </ul>

@@ -47,7 +47,7 @@ const IllustrationsWithResults: NextPage = () => {
               </h2>
 
               <div className="text-base text-left pb-4">
-                開票当日、キャラの順位発表ツイートに掲載するイラストを募集します。お好きなキャラを描いてお送り下さい。
+                開票当日、キャラの順位発表ツイートに掲載するイラストを募集します。お好きなキャラを描いてお送りください。
               </div>
 
               <div className="divider" />
@@ -82,7 +82,7 @@ const IllustrationsWithResults: NextPage = () => {
               <div className="text-base text-left pb-4">
                 <ul className="list-disc pl-6 pr-2">
                   <li className="pb-2">
-                    イラストが描かれた画像ファイルをご応募下さい。詳細は後述します。
+                    イラストが描かれた画像ファイルをご応募ください。詳細は後述します。
                   </li>
                   <li className="pb-2">
                     お一人様で
@@ -106,7 +106,7 @@ const IllustrationsWithResults: NextPage = () => {
                           : 'Voting illustrations book'}
                       </a>
                     </Link>
-                    のページをご覧下さい。このページの応募手続きに加えて、開票イラスト本用の応募作業が別途必要になります。
+                    のページをご覧ください。このページの応募手続きに加えて、開票イラスト本用の応募作業が別途必要になります。
                   </li>
                 </ul>
               </div>
@@ -129,7 +129,7 @@ const IllustrationsWithResults: NextPage = () => {
                     <span className="text-red-500 pl-1 pr-1">
                       お名前（サイン）とTwitter ID
                     </span>
-                    を記載して下さい。作者様の確認及び、無断利用防止のためです。
+                    を記載してください。作者様の確認及び、無断利用防止のためです。
                   </li>
                   <li className="pb-2">
                     お名前のみ、IDのみの記載でも構いませんが、なるべく両方の記載を推奨します。
@@ -222,7 +222,7 @@ const IllustrationsWithResults: NextPage = () => {
                       <span className="font-bold">
                         gensosenkyo2015@gmail.com
                       </span>
-                      ) をご入力下さい
+                      ) をご入力ください
                     </li>
                     <li className="pb-2">
                       大変お手数ですが、
@@ -275,7 +275,7 @@ const IllustrationsWithResults: NextPage = () => {
                   </h3>
                   <p className="pb-4">
                     ギガファイル便やデータ便などのサービスを用いてデータをアップロードして
-                    下さい。
+                    ください。
                   </p>
                   <p>
                     アップロード後に、
@@ -362,7 +362,7 @@ const IllustrationsWithResults: NextPage = () => {
                             主催
                           </span>
                         </a>
-                        宛DM にてご質問下さい。
+                        宛DM にてご質問ください。
                       </p>
                     </li>
                   </ul>

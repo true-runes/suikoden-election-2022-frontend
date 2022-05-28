@@ -13,14 +13,13 @@ const IllustrationsWithResults: NextPage = () => {
 
   return (
     <div className="bg-white text-black">
-      <title>{`${t.PAGE_TITLE_NOVELS_ON_THEME} - ${t.WEBSITE_TITLE}`}</title>
+      <title>{`${t.PAGE_TITLE_ILLUSTRATIONS_WITH_RESULTS} - ${t.WEBSITE_TITLE}`}</title>
       <div className={'right'}>
         <HumbergerNavigation />
       </div>
 
       <main id="page-wrap">
         <NavBar />
-
         <div className="text-base bg-gray-700 text-white breadcrumbs pl-6 pb-2 sticky top-16 z-50">
           <ul>
             <li>
@@ -326,7 +325,7 @@ const IllustrationsWithResults: NextPage = () => {
                         <p className="pb-2">
                           Q. 他のキャラを一緒に描く場合の具体例はありますか？
                         </p>
-                        <p className="pb-2">
+                        <div className="pb-2">
                           A. 以下のような過去の例があります。
                           <ul className="list-disc pl-10 pr-2 pt-2">
                             <li className="pb-2">他のキャラを小さく描く</li>
@@ -342,7 +341,7 @@ const IllustrationsWithResults: NextPage = () => {
                               同じキャラを衣装違いで並べる
                             </li>
                           </ul>
-                        </p>
+                        </div>
                       </li>
                     </div>
                     <li className="pb-2">

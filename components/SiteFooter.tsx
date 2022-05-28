@@ -16,7 +16,7 @@ const SiteFooter: NextPage = () => {
 
       <footer className="footer footer-center bg-white text-black pb-6">
         <div className="text-base py-4">
-          <span>
+          <span className="pb-1">
             <span className="pr-1">
               <TwitterIcon />
             </span>
@@ -34,6 +34,7 @@ const SiteFooter: NextPage = () => {
             </span>{' '}
             )
           </span>
+          <span className="pb-1">© 2022 幻水総選挙2022</span>
         </div>
       </footer>
     </>

@@ -329,6 +329,9 @@ const IllustrationsWithResults: NextPage = () => {
                           </span>
                           となるようにお願いいたします。
                         </p>
+                        <p>
+                          また恋愛描写を含む場合は、原作程度の表現でお願いします。
+                        </p>
                       </li>
                     </div>
                     <div className="py-2">

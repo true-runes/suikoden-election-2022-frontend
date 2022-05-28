@@ -55,20 +55,97 @@ const NovelsOnThemes: NextPage = () => {
 
               <div className="divider" />
 
-              <h2 className="text-xl font-bold pb-4">お題小説の「お題」募集</h2>
-              <div className="text-base text-left pb-4">
-                <p className="pb-2">
-                  企画に使わせていただくお題を募集します。
-                  単語やセリフなど、何でもOKです。
-                </p>
-                <p>
-                  お題は全部で3つで、そのうち1つは「フリー（内容自由）」となります。残りの2つを募集します。
-                </p>
+              <h2 className="text-xl font-bold pb-4">お題</h2>
+              <div className="text-base text-center pb-4">
+                <p className="pb-2">準備中です（募集は終了しました）。</p>
               </div>
 
               <div className="divider" />
 
-              <h2 className="text-xl font-bold pb-4">昨年のお題</h2>
+              <h2 className="text-xl font-bold pb-4">投稿方法</h2>
+              <div className="text-base text-center pb-4">
+                <p className="pb-2">準備中です。</p>
+                {/* <div>
+                  ・応募キャラ（1名） ・お題 ・ハッシュタグ 「
+                  #幻水総選挙お題小説 」 を記載し、主催宛（ @gensosenkyo
+                  ）ツイートで小説を投稿して下さい。
+                </div> */}
+              </div>
+
+              <div className="divider" />
+
+              <h2 className="text-xl font-bold pb-4">ツイート例</h2>
+              <div className="text-base text-center pb-4">
+                <p className="pb-2">準備中です。</p>
+                {/* <div>
+                  ・応募キャラ（1名） ・お題 ・ハッシュタグ 「
+                  #幻水総選挙お題小説 」 を記載し、主催宛（ @gensosenkyo
+                  ）ツイートで小説を投稿して下さい。
+                </div> */}
+              </div>
+
+              <div className="divider" />
+
+              <h2 className="text-xl font-bold pb-4">小説の掲載方法</h2>
+              <div className="text-base text-center pb-4">
+                <p className="pb-2">準備中です。</p>
+                {/* <div>
+                  ①画像で掲載
+                  文庫ページメーカー、新書ページメーカーなどに本文を流し込んで画像にして下さい。
+                  （リンク参照） https://sscard.monokakitools.net/index.html
+                  ②外部リンクを掲載
+                  pixiv、Privatter（ぷらいべったー）などに小説を投稿し、ツイートにURLを載せて下さい。
+                  ※作品の公開範囲は「全体公開」でお願いします。
+                  （ぷらいべったーは「ログイン限定公開」でも可）
+                  ③ツイートに直接書く
+                  リプライ（返信）やスレッドでツイートを繋げて書いて下さい。
+                </div> */}
+              </div>
+
+              <div className="divider" />
+
+              <h2 className="text-xl font-bold pb-4">注意点</h2>
+              <div className="text-base text-center pb-4">
+                <p className="pb-2">準備中です。</p>
+                {/* <div>
+                  ・1ツイートに収まらない場合は、リプライ（返信）やスレッドで繋げて下さい。
+                  一番最初のツイートにハッシュタグを付けて下さい。
+                  ・応募キャラ以外が登場しても構いません。
+                  ・主人公はお好きな名前をどうぞ。
+                  ・恋愛描写は公式の設定、表現を基準にお願いします。
+                  ※カップリング要素を含む作品は、応募ツイートに必ず明記して下さい。
+                  ※掲載方法は ①画像 ②外部リンク のどちらか
+                  ※作者様のIDとお名前をご紹介します（ID希望しない方はお名前のみご紹介）
+                </div> */}
+              </div>
+
+              <div className="divider" />
+
+              <h2 className="text-xl font-bold pb-4">
+                非公開アカウントの方の作品掲載
+              </h2>
+              <div className="text-base text-center pb-4">
+                <p className="pb-2">準備中です。</p>
+                {/* <div>
+                  非公開アカウントの方は、作品を主催宛DMでお送り頂きますと、幻水総選挙のサブアカウントからツイートでご紹介します。
+                  これにより、作品がボーナス票の対象となります。
+                </div> */}
+              </div>
+
+              <div className="divider" />
+
+              <h2 className="text-xl font-bold pb-4">作品のご紹介について</h2>
+              <div className="text-base text-center pb-4">
+                <p className="pb-2">準備中です。</p>
+                {/* <div>
+                  開票の翌日以降、順位発表のツイートにリプで繋げる形で、作品をご紹介させていただきます。
+                  ※繋げてほしくない方は、「開票時の紹介不要」と記載してください。
+                </div> */}
+              </div>
+
+              <div className="divider" />
+
+              <h2 className="text-xl font-bold pb-4">（参考）昨年のお題</h2>
               <div className="text-base text-left pb-4">
                 <div className="pb-4">昨年のお題は下記の3つでした。</div>
 
@@ -77,38 +154,6 @@ const NovelsOnThemes: NextPage = () => {
                   <li className="pb-2">「どれにする？」</li>
                   <li className="pb-2">（フリー）</li>
                 </ul>
-              </div>
-
-              <div className="divider" />
-
-              <h2 className="text-xl font-bold pb-4">募集期間</h2>
-              <div className="text-base text-center pb-4">
-                2022年5月15日（日）～5月21日（土）
-              </div>
-
-              <div className="divider" />
-
-              <h3 className="text-xl font-bold pb-4">応募方法</h3>
-              <div className="text-base text-left pb-4">
-                下記フォームよりお題を送信してください。
-                なお、ご送信いただきました内容について、個別のご連絡やご返信は行ないませんのでご了承ください。
-              </div>
-              <div className="text-base text-center pb-4">
-                <a
-                  href="https://ws.formzu.net/dist/S669729239/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="underline underline-offset-4 text-blue-500 hover:text-blue-900"
-                >
-                  お題応募用フォーム
-                </a>
-              </div>
-
-              <div className="divider" />
-
-              <h2 className="text-xl font-bold pb-4">お題小説の投稿について</h2>
-              <div className="text-base text-left">
-                小説作品の投稿方法などについては、後日発表いたします。
               </div>
             </div>
           </div>

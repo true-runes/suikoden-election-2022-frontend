@@ -46,53 +46,46 @@ const IllustrationsBook: NextPage = () => {
               </h2>
               <div className="text-base text-left pb-4">
                 <div className="pb-4">
-                  総選挙にお送りいただいた開票イラストのうち、
+                  幻水総選挙10周年の記念として制作する、開票イラストなどをまとめた本のことです。
+                </div>
+              </div>
+              <div className="divider" />
+
+              <h2 className="text-xl font-bold pb-4">
+                開票イラストの掲載について
+              </h2>
+              <div className="text-base text-left pb-4">
+                <div className="pb-4">
+                  お送りいただいた開票イラストのうち、
                   <span className="text-red-500">
                     掲載許可をくださった方の作品
                   </span>
-                  をまとめた本のことです。
+                  を収録させていただきます。
                 </div>
                 <ul className="list-disc pl-6 pr-2">
-                  <li className="pb-2">掲載を強制するものではございません。</li>
-                  <li className="pb-0">
-                    規定に沿っていれば、いずれの開票イラストでも掲載可能です。
+                  <li className="pb-2">
+                    お送りいただいた全ての方にお声がけいたしますが、本への掲載を強要するものではありません。
+                  </li>
+                  <li className="pb-2">
+                    規定に沿っていればどの開票イラストでも掲載可能です。
+                  </li>
+                  <li className="pb-2">
+                    1ページあたり 2～4枚 程度の掲載を想定しています。
                   </li>
                 </ul>
               </div>
 
               <div className="divider" />
 
-              <h2 className="text-xl font-bold pb-4">〆切</h2>
-              <div className="text-base text-center pb-4">
-                <div className="pb-2">
-                  <div>参加表明フォーム送信〆切</div>
-                  <div className="text-red-500 pl-1 pr-1">
-                    2022年7月31日（日）
-                  </div>
-                </div>
-                <div className="pb-2">
-                  <div>印刷用データ〆切</div>
-                  <div className="text-red-500 pl-1 pr-1">
-                    2022年7月31日（日）
-                  </div>
-                </div>
-              </div>
-
-              <div className="divider" />
-
               <h2 className="text-xl font-bold pb-4">本について</h2>
               <div className="text-base text-left pb-4">
-                <div className="pb-4">以下のような内容を想定しております。</div>
                 <ul className="list-disc pl-6 pr-2">
+                  <li className="pb-2">仕様：B5/フルカラー本</li>
+                  <li className="pb-2">頒布価格：未定</li>
                   <li className="pb-2">
-                    1ページあたり、イラスト 2～4枚 程度の掲載
+                    発行日：2022年9月予定（幻想水滸伝オンリー同人誌即売会「三都物語95」）
                   </li>
-                  <li className="pb-2">B5・フルカラー</li>
-                  <li className="pb-2">頒布価格 未定</li>
-                  <li className="pb-2">2022年9月発行予定</li>
-                  <li className="pb-2">
-                    幻想水滸伝オンリー同人誌即売会「三都物語95」での頒布、および、通販
-                  </li>
+                  <li className="pb-2">イベントでの頒布及び通販</li>
                 </ul>
               </div>
 
@@ -101,13 +94,13 @@ const IllustrationsBook: NextPage = () => {
               <h2 className="text-xl font-bold pb-4">募集概要</h2>
               <div className="text-base text-left pb-4">
                 <div className="pb-4">
-                  幻水総選挙本への掲載をご希望の方は、通常の開票イラストの応募に加え、以下の2点の送信をお願い致します。詳細は後述します。
+                  幻水総選挙本への掲載をご希望の方は、通常の開票イラストの応募に加え、
+                  <span className="text-red-500">以下の2点の送信</span>{' '}
+                  をお願い致します。詳細は後述します。
                 </div>
-                <ul className="list-disc pl-6 pr-2">
-                  <li className="pb-2">
-                    印刷用データファイルを作成して送信（準備中）
-                  </li>
-                  <li className="pb-2">参加表明フォームを送信（準備中）</li>
+                <ul className="list-none pl-6 pr-2">
+                  <li className="pb-2">① 印刷用データファイルを作成して送信</li>
+                  <li className="pb-2">② 参加表明フォームを送信</li>
                 </ul>
               </div>
 
@@ -238,16 +231,44 @@ const IllustrationsBook: NextPage = () => {
 
               <div className="divider" />
 
+              <h2 className="text-xl font-bold pb-4">〆切</h2>
+              <div className="text-base text-center pb-4">
+                <div className="pb-2">
+                  <div>参加表明フォーム送信〆切</div>
+                  <div className="text-red-500 pl-1 pr-1">
+                    2022年7月31日（日）
+                  </div>
+                </div>
+                <div className="pb-2">
+                  <div>印刷用データ〆切</div>
+                  <div className="text-red-500 pl-1 pr-1">
+                    2022年7月31日（日）
+                  </div>
+                </div>
+              </div>
+
+              <div className="divider" />
+
               <h2 className="text-xl font-bold pb-4">
                 募集詳細 - 送信方法詳細
               </h2>
+              <div className="pb-4">以下の ① と ② の作業をお願いします。</div>
               <div className="pb-10">
                 <h3 className="text-lg text-center pb-4">
-                  <span className="underline underline-offset-4">
-                    ① 印刷用データファイルを作成して送信する
-                  </span>
+                  <div className="underline underline-offset-4 pb-4">
+                    ① 印刷用データファイルを作成して送信
+                  </div>
+                  <div className="text-base text-left pb-4">
+                    <ul className="list-disc pl-6 pr-2">
+                      <li className="pb-2">
+                        「印刷用データ送信フォーム（準備中）」よりお送りいただくか、ギガファイル便などのファイル転送サービスをお使いください。
+                      </li>
+                      <li className="pb-2">
+                        DMで画像ファイルを直接お受けすることはできません（劣化の原因となるため）。
+                      </li>
+                    </ul>
+                  </div>
                 </h3>
-                <div>準備中です。</div>
               </div>
               <div className="pb-10">
                 <h3 className="text-lg text-center pb-4">
@@ -255,7 +276,7 @@ const IllustrationsBook: NextPage = () => {
                     ② 参加表明フォームを送信
                   </span>
                 </h3>
-                <div>準備中です。</div>
+                <div>参加表明フォームは現在準備中です。</div>
               </div>
 
               <div className="divider" />

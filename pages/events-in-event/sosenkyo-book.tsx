@@ -282,7 +282,7 @@ const SosenkyoBook: NextPage = () => {
               <h2 className="text-xl font-bold pb-4">参加の流れ</h2>
               <div className="pb-4">
                 <div className="text-base text-left pb-4">
-                  <ul className="list-none pl-6 pr-2">
+                  <ul className="list-none pl-0 pr-2">
                     <li className="pb-2">① WEB用データ、印刷用データを送信</li>
                     <li className="pb-2">
                       ② 「開票イラスト本 参加表明フォーム」に入力、送信
@@ -292,7 +292,7 @@ const SosenkyoBook: NextPage = () => {
                   </ul>
                 </div>
                 <div className="text-base text-left">
-                  <ul className="list-none pl-6 pr-2">
+                  <ul className="list-none pl-0 pr-2">
                     <li className="pb-2">
                       ※印刷用に加筆修正をされたい場合、最初にWEB用データのみご提出いただき、印刷用データを後日お送りいただいても大丈夫です。
                     </li>
@@ -317,7 +317,7 @@ const SosenkyoBook: NextPage = () => {
 
               <h2 className="text-xl font-bold pb-4">Q & A</h2>
               <div className="text-base text-left">
-                <ul className="list-none pl-6 pr-2">
+                <ul className="list-none pl-0 pr-2">
                   <div className="py-2">
                     <li className="pb-2">
                       <div className="pb-2">

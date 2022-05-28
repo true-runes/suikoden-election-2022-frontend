@@ -117,7 +117,7 @@ const IllustrationsWithResults: NextPage = () => {
                   </li>
                   <li className="pb-2">
                     「幻水総選挙本」への掲載をご希望の方は
-                    <Link href="/events-in-event/illustrations-book">
+                    <Link href="/events-in-event/sosenkyo-book">
                       <a className="underline underline-offset-4 text-blue-500 hover:text-blue-900 pl-1 pr-1">
                         {locale === 'ja' ? '幻水総選挙本' : 'Sosenkyo book'}
                       </a>

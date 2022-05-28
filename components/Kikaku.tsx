@@ -43,10 +43,7 @@ const Kikaku: NextPage = () => {
                     <div className="pt-4 text-base">
                       <ul className="list-disc pl-6">
                         <li className="pb-2">
-                          <Link
-                            href="/events-in-event/illustrations-book"
-                            passHref
-                          >
+                          <Link href="/events-in-event/sosenkyo-book" passHref>
                             <span className="link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900">
                               {locale === 'ja'
                                 ? '幻水総選挙本'

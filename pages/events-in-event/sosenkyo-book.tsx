@@ -8,12 +8,12 @@ import SiteFooter from '../../components/SiteFooter'
 
 import { useLocale } from '../../hooks/useLocale'
 
-const IllustrationsBook: NextPage = () => {
+const SosenkyoBook: NextPage = () => {
   const { t, locale } = useLocale()
 
   return (
     <div className="bg-white text-black">
-      <title>{`${t.PAGE_TITLE_ILLUSTRATIONS_BOOK} - ${t.WEBSITE_TITLE}`}</title>
+      <title>{`${t.PAGE_TITLE_SOSENKYO_BOOK} - ${t.WEBSITE_TITLE}`}</title>
       <div className={'right'}>
         <HumbergerNavigation />
       </div>
@@ -29,7 +29,7 @@ const IllustrationsBook: NextPage = () => {
             <li>
               <Link href="/events-in-event">{t.PAGE_TITLE_PROJECTS}</Link>
             </li>
-            <li>{t.PAGE_TITLE_ILLUSTRATIONS_BOOK}</li>
+            <li>{t.PAGE_TITLE_SOSENKYO_BOOK}</li>
           </ul>
         </div>
 
@@ -37,7 +37,7 @@ const IllustrationsBook: NextPage = () => {
           <div className="hero-content text-center">
             <div className="max-w-md">
               <h1 className="text-2xl font-bold pb-10 underline font-zen-old-mincho">
-                {t.PAGE_TITLE_ILLUSTRATIONS_BOOK}
+                {t.PAGE_TITLE_SOSENKYO_BOOK}
               </h1>
               <h2 className="text-xl font-bold pb-4">
                 {locale === 'ja'
@@ -317,7 +317,7 @@ const IllustrationsBook: NextPage = () => {
               <div className="divider" />
 
               <h2 className="text-xl font-bold pb-4">Q & A</h2>
-              <div className="text-base text-left pb-4">
+              <div className="text-base text-left">
                 <ul className="list-none pl-6 pr-2">
                   <div className="py-2">
                     <li className="pb-2">
@@ -368,4 +368,4 @@ const IllustrationsBook: NextPage = () => {
   )
 }
 
-export default IllustrationsBook
+export default SosenkyoBook

@@ -62,7 +62,7 @@ const Navigation = () => {
                         <ul className="list-disc pl-6">
                           <li className="pt-4">
                             <Link
-                              href="/events-in-event/illustrations-book"
+                              href="/events-in-event/sosenkyo-book"
                               passHref
                             >
                               <span className="link link-hover underline-offset-4">

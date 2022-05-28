@@ -193,7 +193,7 @@ const IllustrationsWithResults: NextPage = () => {
                 <div className="pb-10">
                   <h3 className="text-lg text-center pb-4">
                     <span className="underline underline-offset-4">
-                      ① フォームで送信する方法
+                      ① フォームで送信
                     </span>
                   </h3>
                   <ul className="list-disc pl-6 pr-2">
@@ -251,7 +251,7 @@ const IllustrationsWithResults: NextPage = () => {
                 <div className="pb-10">
                   <h3 className="text-lg text-center pb-4">
                     <span className="underline underline-offset-4">
-                      ② 主催宛DMで送信する方法
+                      ② 主催宛DMで送信
                     </span>
                   </h3>
                   <a
@@ -272,7 +272,7 @@ const IllustrationsWithResults: NextPage = () => {
                 <div className="pb-10">
                   <h3 className="text-lg text-center pb-4">
                     <span className="underline underline-offset-4">
-                      ③ ファイル転送サービスで送信する方法
+                      ③ ファイル転送サービスで送信
                     </span>
                   </h3>
                   <p className="pb-4">

@@ -49,8 +49,8 @@ const Kikaku: NextPage = () => {
                           >
                             <span className="link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900">
                               {locale === 'ja'
-                                ? '開票イラスト本'
-                                : 'Voting illustrations Book'}
+                                ? '幻水総選挙本'
+                                : 'Sosenkyo Book'}
                             </span>
                           </Link>
                         </li>

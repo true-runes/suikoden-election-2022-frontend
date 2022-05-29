@@ -179,10 +179,14 @@ const NovelsOnThemes: NextPage = () => {
                         URL を載せて下さい。
                       </li>
                       <li className="pb-2">
-                        作品の公開範囲は「全体公開」でお願いします。
+                        作品の公開範囲は「
+                        <span className="text-red-500">全体公開</span>
+                        」でお願いします。
                       </li>
                       <li className="pb-2">
-                        ぷらいべったーは「ログイン限定公開」でも可能です。
+                        ぷらいべったーは「
+                        <span className="text-red-500">ログイン限定公開</span>
+                        」でも可能です。
                       </li>
                     </ul>
                   </div>
@@ -208,11 +212,25 @@ const NovelsOnThemes: NextPage = () => {
 
               <h2 className="text-xl font-bold pb-4">注意点</h2>
               <div className="text-base text-center pb-4">
-                ・1ツイートに収まらない場合は、リプライ（返信）やスレッドで繋げて下さい。
-                一番最初のツイートには指定のハッシュタグを付けて下さい。
-                ・応募キャラ以外が登場しても構いません。
-                ・主人公はお好きな名前をどうぞ。
-                ・恋愛（カップリング）描写を含む場合は、原作程度の表現でお願いします。応募ツイートに必ず明記してください。
+                <div className="text-left">
+                  <ul className="list-disc pl-6 pr-2">
+                    <li className="pb-2">
+                      1ツイートに収まらない場合は、リプライ（返信）やスレッドで繋げて下さい。
+                    </li>
+                    <li className="pb-2">
+                      一番最初のツイートには指定のハッシュタグを付けて下さい。
+                    </li>
+                    <li className="pb-2">
+                      応募キャラ以外が登場しても構いません。
+                    </li>
+                    <li className="pb-2">主人公はお好きな名前をどうぞ。</li>
+                    <li className="pb-2">
+                      恋愛（カップリング）描写を含む場合は、
+                      <span className="text-red-500">原作程度</span>
+                      の表現でお願いします。応募ツイートに必ず明記してください。
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               <div className="divider" />
@@ -221,19 +239,29 @@ const NovelsOnThemes: NextPage = () => {
                 小説作品のご紹介について
               </h2>
               <div className="text-base text-center pb-4">
-                開票の翌日以降、開票ツイートに繋げる形で、お題小説をご紹介させていただきます。
-                ※繋げてほしくない方は、投稿時に「開票後の紹介不要」と記載してください。
+                <div className="text-left">
+                  <ul className="list-disc pl-6 pr-2">
+                    <li className="pb-2">
+                      開票の翌日以降、開票ツイートに繋げる形で、お題小説をご紹介させていただきます。
+                    </li>
+                    <li className="pb-2">
+                      繋げてほしくない方は、投稿時に「開票後の紹介不要」と記載してください。
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               <div className="divider" />
 
               <h2 className="text-xl font-bold pb-4">非公開アカウントの方へ</h2>
               <div className="text-base text-center pb-0">
-                非公開アカウントの方は、作品を主催宛DMでお送り頂きますと、幻水総選挙のサブアカウントからツイートでご紹介します。
-                これにより、作品がボーナス票の対象となります。 ※掲載方法は ①画像
-                ②外部リンク のどちらか
-                ※作者様のIDとお名前をご紹介します（ID希望しない方はお名前のみご紹介）
-                →ボーナス票の情報公開時に掲載
+                <div className="text-left">
+                  <ul className="list-disc pl-6 pr-2">
+                    <li className="pb-2">
+                      非公開アカウントの方は、作品を主催宛DMでお送り頂きますと、幻水総選挙のサブアカウントからツイートでご紹介します。
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

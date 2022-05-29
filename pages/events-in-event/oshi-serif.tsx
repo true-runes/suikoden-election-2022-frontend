@@ -59,7 +59,7 @@ const OshiSerif: NextPage = () => {
               <h2 className="text-xl font-bold pb-4">詳細</h2>
               <div className="text-base text-left pb-4">
                 <ul className="list-disc pl-6 pr-2">
-                  <li className="pb-2"> お一人様いくつでも投稿できます。</li>
+                  <li className="pb-2">お一人様いくつでも投稿できます。</li>
                   <li className="pb-2">
                     公式小説や公式コミックスなど、
                     <span className="text-red-500">
@@ -88,18 +88,22 @@ const OshiSerif: NextPage = () => {
               <h3 className="text-xl font-bold pb-4">投稿方法</h3>
               <div className="text-base text-left pb-4">
                 <div className="pb-2">
-                  ・キャラ名 <br />
-                  ・台詞
-                  <br /> ・ハッシュタグ「
-                  <a
-                    href="https://twitter.com/search?q=%23%E5%B9%BB%E6%B0%B4%E7%B7%8F%E9%81%B8%E6%8C%99%E6%8E%A8%E3%81%97%E5%8F%B0%E8%A9%9E&src=typed_query&f=live"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="underline underline-offset-2 text-blue-500 hover:text-blue-900"
-                  >
-                    #幻水総選挙推し台詞
-                  </a>
-                  」<br />
+                  <ul className="list-disc pl-24 pr-2">
+                    <li className="pb-2">キャラ名</li>
+                    <li className="pb-2">台詞</li>
+                    <li className="pb-2">
+                      ハッシュタグ「
+                      <a
+                        href="https://twitter.com/search?q=%23%E5%B9%BB%E6%B0%B4%E7%B7%8F%E9%81%B8%E6%8C%99%E6%8E%A8%E3%81%97%E5%8F%B0%E8%A9%9E&src=typed_query&f=live"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="underline underline-offset-2 text-blue-500 hover:text-blue-900"
+                      >
+                        #幻水総選挙推し台詞
+                      </a>
+                      」
+                    </li>
+                  </ul>
                 </div>
                 を記載し、主催（@gensosenkyo）宛ツイートで投稿して下さい。
                 よろしければ選んだ理由なども語って下さい。

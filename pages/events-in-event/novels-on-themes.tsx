@@ -58,10 +58,10 @@ const NovelsOnThemes: NextPage = () => {
 
               <h2 className="text-xl font-bold pb-4">お題</h2>
               <div className="text-base text-left pb-4">
-                <ul className="list-none pl-6 pr-2">
-                  <li className="pb-2">① 「記念」</li>
-                  <li className="pb-2">② 「そういえば」</li>
-                  <li className="pb-2">③ フリー（内容自由）</li>
+                <ul className="list-none pl-0 pr-2">
+                  <li className="pb-0">① 「記念」</li>
+                  <li className="pb-0">② 「そういえば」</li>
+                  <li className="pb-0">③ フリー（内容自由）</li>
                 </ul>
               </div>
 
@@ -100,7 +100,7 @@ const NovelsOnThemes: NextPage = () => {
               <h3 className="text-xl font-bold pb-4">投稿方法</h3>
               <div className="text-base text-left pb-4">
                 <div className="pb-2">
-                  <ul className="list-disc pr-2">
+                  <ul className="list-disc pl-6 pr-2">
                     <li className="pb-2">応募キャラ（1名）</li>
                     <li className="pb-2">お題</li>
                     <li className="pb-2">

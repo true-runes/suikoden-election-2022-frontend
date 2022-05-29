@@ -123,15 +123,13 @@ const NovelsOnThemes: NextPage = () => {
               <div className="divider" />
 
               <h2 className="text-xl font-bold pb-4">ツイート例</h2>
-              <div className="text-base text-left pb-4">
-                <div className="pb-4">
-                  <Image
-                    src="/novels_on_theme_sample.png"
-                    alt="お題小説ツイート例"
-                    width={1174}
-                    height={610}
-                  />
-                </div>
+              <div className="text-base text-center pb-4">
+                <Image
+                  src="/novels_on_theme_tweet_sample.png"
+                  alt="お題小説ツイート例"
+                  width={1162}
+                  height={1264}
+                />
               </div>
 
               <div className="divider" />

@@ -56,32 +56,42 @@ const NovelsOnThemes: NextPage = () => {
               <div className="divider" />
 
               <h2 className="text-xl font-bold pb-4">お題</h2>
-              <div className="text-base text-center pb-4">
-                <p className="pb-2">準備中です（募集は終了しました）。</p>
+              <div className="text-base text-left pb-4">
+                <ul className="list-none pl-6 pr-2">
+                  <li className="pl-32 pb-2">① 「記念」</li>
+                  <li className="pl-32 pb-2">② 「そういえば」</li>
+                  <li className="pl-32 pb-2">③ フリー（内容自由）</li>
+                </ul>
               </div>
 
               <div className="divider" />
 
-              <h2 className="text-xl font-bold pb-4">投稿方法</h2>
+              <h2 className="text-xl font-bold pb-4">文字数</h2>
               <div className="text-base text-center pb-4">
-                <p className="pb-2">準備中です。</p>
-                {/* <div>
-                  ・応募キャラ（1名） ・お題 ・ハッシュタグ 「
-                  #幻水総選挙お題小説 」 を記載し、主催宛（ @gensosenkyo
-                  ）ツイートで小説を投稿して下さい。
-                </div> */}
+                <p className="pb-2">140字前後 ～ 上限なし</p>
               </div>
 
               <div className="divider" />
 
-              <h2 className="text-xl font-bold pb-4">ツイート例</h2>
+              <h2 className="text-xl font-bold pb-4">お一人様の応募可能数</h2>
+              <div className="text-base text-left pb-4">
+                <ul className="list-disc pl-6 pr-2">
+                  <li className="pb-2">
+                    <span className="text-red-500">
+                      1キャラにつき、各お題1作品まで
+                    </span>
+                  </li>
+                  <li className="pb-2">
+                    違うキャラの作品を複数ご応募いただくのは大歓迎です
+                  </li>
+                </ul>
+              </div>
+
+              <div className="divider" />
+
+              <h2 className="text-xl font-bold pb-4">締切</h2>
               <div className="text-base text-center pb-4">
-                <p className="pb-2">準備中です。</p>
-                {/* <div>
-                  ・応募キャラ（1名） ・お題 ・ハッシュタグ 「
-                  #幻水総選挙お題小説 」 を記載し、主催宛（ @gensosenkyo
-                  ）ツイートで小説を投稿して下さい。
-                </div> */}
+                <span className="text-red-500">2022年6月26日（日）23:59</span>
               </div>
 
               <div className="divider" />

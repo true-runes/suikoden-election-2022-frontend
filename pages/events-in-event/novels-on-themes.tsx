@@ -59,6 +59,20 @@ const NovelsOnThemes: NextPage = () => {
 
               <h2 className="text-xl font-bold pb-4">お題</h2>
               <div className="text-base text-left pb-4">
+                <div className="pb-4">
+                  ① と ② は事前に募集したお題の中から選ばせていただきました。
+                  <br />
+                  事前募集で頂いたお題は{' '}
+                  <Link
+                    href="/events-in-event/novels-on-themes-application-results"
+                    passHref
+                  >
+                    <span className="link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900">
+                      こちら
+                    </span>
+                  </Link>
+                </div>
+
                 <ul className="list-none pl-0 pr-2">
                   <li className="pb-0">① 「記念」</li>
                   <li className="pb-0">② 「そういえば」</li>
@@ -75,18 +89,16 @@ const NovelsOnThemes: NextPage = () => {
 
               <div className="divider" />
 
-              <h2 className="text-xl font-bold pb-4">お一人様の応募可能数</h2>
+              <h2 className="text-xl font-bold pb-4">応募数</h2>
               <div className="text-base text-left pb-4">
-                <ul className="list-disc pl-6 pr-2">
-                  <li className="pb-2">
-                    <span className="text-red-500">
-                      1キャラにつき、各お題1作品まで
-                    </span>
-                  </li>
-                  <li className="pb-2">
-                    違うキャラの作品を複数ご応募いただくのは大歓迎です
-                  </li>
-                </ul>
+                何作品でもご応募できます。
+                <br />
+                ただし、お一人様で同じキャラへの応募は各お題1作品までです。
+                <br />
+                <br />
+                例：4主人公でお題①②③を1作品ずつ書く、5主人公でお題①を書く、2主人公でお題②を書く
+                <br />
+                →可能です
               </div>
 
               <div className="divider" />

@@ -144,6 +144,13 @@ const NovelsOnThemes: NextPage = () => {
                   height={1264}
                 />
               </div>
+              <div className="text-left">
+                投稿ツイートには、幻水総選挙のサブアカウント（@sub_gensosenkyo）から「いいね」を付けさせていただきます。
+                <br />
+                これをもってご応募が受理されたものといたします。
+                <br />
+                ※投稿から一週間経っても「いいね」がない場合は、お手数ですがDMにてお問い合わせ下さい。
+              </div>
 
               <div className="divider" />
 

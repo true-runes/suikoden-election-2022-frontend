@@ -253,17 +253,18 @@ const NovelsOnThemes: NextPage = () => {
 
               <div className="divider" />
 
-              <h2 className="text-xl font-bold pb-4">
-                小説作品のご紹介について
-              </h2>
+              <h2 className="text-xl font-bold pb-4">作品のご紹介について</h2>
               <div className="text-base text-center pb-4">
                 <div className="text-left">
                   <ul className="list-disc pl-6 pr-2">
                     <li className="pb-2">
-                      開票の翌日以降、開票ツイートに繋げる形で、お題小説をご紹介させていただきます。
+                      開票の翌日以降、開票ツイートに繋げる形で、小説の投稿ツイートをご紹介させていただきます。
                     </li>
                     <li className="pb-2">
                       繋げてほしくない方は、投稿時に「開票後の紹介不要」と記載してください。
+                    </li>
+                    <li className="pb-2">
+                      主催側で受理できていないツイート、投稿後に非公開・削除されたツイートはご紹介できません。
                     </li>
                   </ul>
                 </div>

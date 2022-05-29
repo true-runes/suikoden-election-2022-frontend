@@ -56,11 +56,11 @@ const NovelsOnThemes: NextPage = () => {
               <div className="divider" />
 
               <h2 className="text-xl font-bold pb-4">お題</h2>
-              <div className="text-base text-left pb-4">
+              <div className="text-base text-left pl-32 pb-4">
                 <ul className="list-none pl-6 pr-2">
-                  <li className="pl-32 pb-2">① 「記念」</li>
-                  <li className="pl-32 pb-2">② 「そういえば」</li>
-                  <li className="pl-32 pb-2">③ フリー（内容自由）</li>
+                  <li className="pb-2">① 「記念」</li>
+                  <li className="pb-2">② 「そういえば」</li>
+                  <li className="pb-2">③ フリー（内容自由）</li>
                 </ul>
               </div>
 
@@ -96,20 +96,27 @@ const NovelsOnThemes: NextPage = () => {
 
               <div className="divider" />
 
-              <h2 className="text-xl font-bold pb-4">小説の掲載方法</h2>
-              <div className="text-base text-center pb-4">
-                <p className="pb-2">準備中です。</p>
-                {/* <div>
-                  ①画像で掲載
-                  文庫ページメーカー、新書ページメーカーなどに本文を流し込んで画像にして下さい。
-                  （リンク参照） https://sscard.monokakitools.net/index.html
-                  ②外部リンクを掲載
-                  pixiv、Privatter（ぷらいべったー）などに小説を投稿し、ツイートにURLを載せて下さい。
-                  ※作品の公開範囲は「全体公開」でお願いします。
-                  （ぷらいべったーは「ログイン限定公開」でも可）
-                  ③ツイートに直接書く
-                  リプライ（返信）やスレッドでツイートを繋げて書いて下さい。
-                </div> */}
+              <h3 className="text-xl font-bold pb-4">投稿方法</h3>
+              <div className="text-base text-left pb-4">
+                <div className="pb-2">
+                  <ul className="list-disc pl-24 pr-2">
+                    <li className="pb-2">応募キャラ（1名）</li>
+                    <li className="pb-2">お題</li>
+                    <li className="pb-2">
+                      ハッシュタグ「
+                      <a
+                        href="https://twitter.com/search?q=%23%E5%B9%BB%E6%B0%B4%E7%B7%8F%E9%81%B8%E6%8C%99%E3%81%8A%E9%A1%8C%E5%B0%8F%E8%AA%AC&src=typed_query&f=live"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="underline underline-offset-2 text-blue-500 hover:text-blue-900"
+                      >
+                        #幻水総選挙お題小説
+                      </a>
+                      」
+                    </li>
+                  </ul>
+                </div>
+                を記載し、主催（@gensosenkyo）宛ツイートで小説を投稿して下さい。
               </div>
 
               <div className="divider" />

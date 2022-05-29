@@ -74,9 +74,19 @@ const NovelsOnThemes: NextPage = () => {
                 </div>
 
                 <ul className="list-none pl-0 pr-2">
-                  <li className="pb-0">① 「記念」</li>
-                  <li className="pb-0">② 「そういえば」</li>
-                  <li className="pb-0">③ フリー（内容自由）</li>
+                  <li className="pb-0">
+                    <span className="font-bold text-red-500">① 「記念」</span>
+                  </li>
+                  <li className="pb-0">
+                    <span className="font-bold text-red-500">
+                      ② 「そういえば」
+                    </span>
+                  </li>
+                  <li className="pb-0">
+                    <span className="font-bold text-red-500">
+                      ③ フリー（内容自由）
+                    </span>
+                  </li>
                 </ul>
               </div>
 
@@ -93,10 +103,14 @@ const NovelsOnThemes: NextPage = () => {
               <div className="text-base text-left pb-4">
                 何作品でもご応募できます。
                 <br />
-                ただし、お一人様で同じキャラへの応募は各お題1作品までです。
+                ただし、お一人様で
+                <span className="text-red-500">
+                  同じキャラへの応募は各お題1作品まで
+                </span>
+                です。
                 <br />
                 <br />
-                例：4主人公でお題①②③を1作品ずつ書く、5主人公でお題①を書く、2主人公でお題②を書く
+                例：ヒューゴでお題①②③を1作品ずつ書く、ゲドでお題①を書く、クリスでお題②を書く
                 <br />
                 →可能です
               </div>
@@ -145,7 +159,11 @@ const NovelsOnThemes: NextPage = () => {
                 />
               </div>
               <div className="text-left">
-                投稿ツイートには、幻水総選挙のサブアカウント（@sub_gensosenkyo）から「いいね」を付けさせていただきます。
+                投稿ツイートには、幻水総選挙のサブアカウント（@sub_gensosenkyo）から
+                <span className="text-red-500">
+                  「いいね」を付けさせていただきます
+                </span>
+                。
                 <br />
                 これをもってご応募が受理されたものといたします。
                 <br />
@@ -243,9 +261,10 @@ const NovelsOnThemes: NextPage = () => {
                     </li>
                     <li className="pb-2">主人公はお好きな名前をどうぞ。</li>
                     <li className="pb-2">
-                      恋愛（カップリング）描写を含む場合は、
-                      <span className="text-red-500">原作程度</span>
-                      の表現でお願いします。応募ツイートに必ず明記してください。
+                      <span className="text-red-500">
+                        恋愛（カップリング）描写を含む場合は、 原作程度の表現
+                      </span>
+                      でお願いします。応募ツイートに必ず明記してください。
                     </li>
                   </ul>
                 </div>
@@ -280,7 +299,9 @@ const NovelsOnThemes: NextPage = () => {
                       非公開アカウントの方は、作品を主催宛DMでお送り頂きますと、幻水総選挙のサブアカウント
                       (@sub_gensosenkyo) からツイートでご紹介します。
                     </li>
-                    <li>小説の作成方法は ①画像 ②外部リンク のどちらか</li>
+                    <li>
+                      小説の作成方法は ①画像で作成 ②外部リンクを掲載 のどちらか
+                    </li>
                     <li>
                       作者様のIDとお名前をツイートに掲載します（お名前のみでも可）
                     </li>

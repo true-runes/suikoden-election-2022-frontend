@@ -53,6 +53,7 @@ const NovelsOnThemesApplicationResults: NextPage = () => {
               <div className="text-base text-left pb-0">
                 <div className="text-base text-left pb-4">
                   「お題」募集でご応募いただきましたお題の一覧です。
+                  <br />
                   ご応募ありがとうございました！
                 </div>
 

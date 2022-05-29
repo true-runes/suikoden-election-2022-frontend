@@ -88,7 +88,7 @@ const OshiSerif: NextPage = () => {
               <h3 className="text-xl font-bold pb-4">投稿方法</h3>
               <div className="text-base text-left pb-4">
                 <div className="pb-2">
-                  <ul className="list-disc pl-24 pr-2">
+                  <ul className="list-disc pl-6 pr-2">
                     <li className="pb-2">キャラ名</li>
                     <li className="pb-2">台詞</li>
                     <li className="pb-2">

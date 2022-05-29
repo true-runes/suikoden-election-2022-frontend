@@ -44,6 +44,12 @@ const OpClIllustrations: NextPage = () => {
                 {t.PAGE_TITLE_OP_CL_ILLUSTS}
               </h1>
 
+              <div className="pt-2 pb-6">
+                <span className="text-xl text-red-500">
+                  ※募集は終了しました
+                </span>
+              </div>
+
               <h2 className="text-xl font-bold pb-4">
                 {locale === 'ja'
                   ? 'OP＆CLイラストとは？'

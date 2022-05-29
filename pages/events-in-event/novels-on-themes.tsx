@@ -277,7 +277,12 @@ const NovelsOnThemes: NextPage = () => {
                 <div className="text-left">
                   <ul className="list-disc pl-6 pr-2">
                     <li className="pb-2">
-                      非公開アカウントの方は、作品を主催宛DMでお送り頂きますと、幻水総選挙のサブアカウントからツイートでご紹介します。
+                      非公開アカウントの方は、作品を主催宛DMでお送り頂きますと、幻水総選挙のサブアカウント
+                      (@sub_gensosenkyo) からツイートでご紹介します。
+                    </li>
+                    <li>小説の作成方法は ①画像 ②外部リンク のどちらか</li>
+                    <li>
+                      作者様のIDとお名前をツイートに掲載します（お名前のみでも可）
                     </li>
                   </ul>
                 </div>

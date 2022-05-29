@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import HumbergerNavigation from '../../components/HumbergerMenu/HumbergerNavigation'
 import NavBar from '../../components/NavBar'
@@ -121,56 +122,62 @@ const NovelsOnThemes: NextPage = () => {
 
               <div className="divider" />
 
+              <h2 className="text-xl font-bold pb-4">ツイート例</h2>
+              <div className="text-base text-left pb-4">
+                <div className="pb-4">
+                  <Image
+                    src="/novels_on_theme_sample.png"
+                    alt="お題小説ツイート例"
+                    width={1174}
+                    height={610}
+                  />
+                </div>
+              </div>
+
+              <div className="divider" />
+
+              <h2 className="text-xl font-bold pb-4">小説の作成方法</h2>
+              <div className="text-base text-center pb-4">
+                ①画像で作成
+                文庫ページメーカー、新書ページメーカーなどに本文を流し込んで画像にしてください。
+                詳しくはこちら https://sscard.monokakitools.net/index.html
+                ②外部リンクを掲載
+                pixiv、Privatter（ぷらいべったー）などに小説を投稿し、ツイートにURLを載せて下さい。
+                ※作品の公開範囲は「全体公開」でお願いします。
+                （ぷらいべったーは「ログイン限定公開」でも可）
+                ③ツイートに直接書く ツイートに本文を直接お書きください。
+              </div>
+
+              <div className="divider" />
+
               <h2 className="text-xl font-bold pb-4">注意点</h2>
               <div className="text-base text-center pb-4">
-                <p className="pb-2">準備中です。</p>
-                {/* <div>
-                  ・1ツイートに収まらない場合は、リプライ（返信）やスレッドで繋げて下さい。
-                  一番最初のツイートにハッシュタグを付けて下さい。
-                  ・応募キャラ以外が登場しても構いません。
-                  ・主人公はお好きな名前をどうぞ。
-                  ・恋愛描写は公式の設定、表現を基準にお願いします。
-                  ※カップリング要素を含む作品は、応募ツイートに必ず明記して下さい。
-                  ※掲載方法は ①画像 ②外部リンク のどちらか
-                  ※作者様のIDとお名前をご紹介します（ID希望しない方はお名前のみご紹介）
-                </div> */}
+                ・1ツイートに収まらない場合は、リプライ（返信）やスレッドで繋げて下さい。
+                一番最初のツイートには指定のハッシュタグを付けて下さい。
+                ・応募キャラ以外が登場しても構いません。
+                ・主人公はお好きな名前をどうぞ。
+                ・恋愛（カップリング）描写を含む場合は、原作程度の表現でお願いします。応募ツイートに必ず明記してください。
               </div>
 
               <div className="divider" />
 
               <h2 className="text-xl font-bold pb-4">
-                非公開アカウントの方の作品掲載
+                小説作品のご紹介について
               </h2>
               <div className="text-base text-center pb-4">
-                <p className="pb-2">準備中です。</p>
-                {/* <div>
-                  非公開アカウントの方は、作品を主催宛DMでお送り頂きますと、幻水総選挙のサブアカウントからツイートでご紹介します。
-                  これにより、作品がボーナス票の対象となります。
-                </div> */}
+                開票の翌日以降、開票ツイートに繋げる形で、お題小説をご紹介させていただきます。
+                ※繋げてほしくない方は、投稿時に「開票後の紹介不要」と記載してください。
               </div>
 
               <div className="divider" />
 
-              <h2 className="text-xl font-bold pb-4">作品のご紹介について</h2>
-              <div className="text-base text-center pb-4">
-                <p className="pb-2">準備中です。</p>
-                {/* <div>
-                  開票の翌日以降、順位発表のツイートにリプで繋げる形で、作品をご紹介させていただきます。
-                  ※繋げてほしくない方は、「開票時の紹介不要」と記載してください。
-                </div> */}
-              </div>
-
-              <div className="divider" />
-
-              <h2 className="text-xl font-bold pb-4">（参考）昨年のお題</h2>
-              <div className="text-base text-left pb-4">
-                <div className="pb-4">昨年のお題は下記の3つでした。</div>
-
-                <ul className="list-disc pl-6 pr-2">
-                  <li className="pb-2">「祭」</li>
-                  <li className="pb-2">「どれにする？」</li>
-                  <li className="pb-2">（フリー）</li>
-                </ul>
+              <h2 className="text-xl font-bold pb-4">非公開アカウントの方へ</h2>
+              <div className="text-base text-center pb-0">
+                非公開アカウントの方は、作品を主催宛DMでお送り頂きますと、幻水総選挙のサブアカウントからツイートでご紹介します。
+                これにより、作品がボーナス票の対象となります。 ※掲載方法は ①画像
+                ②外部リンク のどちらか
+                ※作者様のIDとお名前をご紹介します（ID希望しない方はお名前のみご紹介）
+                →ボーナス票の情報公開時に掲載
               </div>
             </div>
           </div>

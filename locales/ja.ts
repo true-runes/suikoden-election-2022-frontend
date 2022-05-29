@@ -15,4 +15,5 @@ export default {
   PAGE_TITLE_CAMPAIGNING: '選挙運動',
   PAGE_TITLE_ILLUSTRATIONS_WITH_RESULTS: '開票イラスト',
   PAGE_TITLE_SOSENKYO_BOOK: '幻水総選挙本',
+  PAGE_TITLE_OSHI_SERIF: '推し台詞教えて！',
 }

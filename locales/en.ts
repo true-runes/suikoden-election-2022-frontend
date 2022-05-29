@@ -13,4 +13,6 @@ export default {
   PAGE_TITLE_PROJECTS: 'Projects',
   PAGE_TITLE_NOVELS_ON_THEME: 'Themed short stories',
   PAGE_TITLE_CAMPAIGNING: 'Campaigning',
+  PAGE_TITLE_ILLUSTRATIONS_WITH_RESULTS: 'Voting illustrations',
+  PAGE_TITLE_SOSENKYO_BOOK: 'Sosenkyo book',
 }

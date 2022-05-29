@@ -39,7 +39,7 @@ const ElectionCampaign: NextPage = () => {
         <div className="hero">
           <div className="hero-content text-center">
             <div className="max-w-md">
-              <h1 className="text-2xl font-bold pb-4 underline font-zen-old-mincho">
+              <h1 className="text-2xl font-bold pb-10 underline font-zen-old-mincho">
                 {t.PAGE_TITLE_CAMPAIGNING}
               </h1>
               <h2 className="text-xl font-bold pb-4">
@@ -57,7 +57,7 @@ const ElectionCampaign: NextPage = () => {
                     #幻水総選挙運動
                   </a>{' '}
                   」をつけたツイートで、選挙運動をしませんか？
-                  推しを応援するも良し。魅力や好きなシーンを語って布教するも良し。総選挙を盛り上げるも良し。ご自由にお使い下さい。
+                  推しを応援するも良し。魅力や好きなシーンを語って布教するも良し。総選挙を盛り上げるも良し。ご自由にお使いください。
                 </div>
                 <ul className="list-disc pl-6 pr-2">
                   <li className="py-1">

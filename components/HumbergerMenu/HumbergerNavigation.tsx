@@ -47,9 +47,32 @@ const Navigation = () => {
                     </li>
                     <li className="py-2">
                       <div className="text-base">
-                        {locale === 'ja'
-                          ? '開票イラスト（準備中）'
-                          : 'Voting illustrations (in progress)'}
+                        <Link
+                          href="/events-in-event/illustrations-with-results"
+                          passHref
+                        >
+                          <span className="link link-hover underline-offset-4">
+                            {locale === 'ja'
+                              ? '開票イラスト'
+                              : 'Voting illustrations'}
+                          </span>
+                        </Link>
+                      </div>
+                      <div className="text-base">
+                        <ul className="list-disc pl-6">
+                          <li className="pt-4">
+                            <Link
+                              href="/events-in-event/sosenkyo-book"
+                              passHref
+                            >
+                              <span className="link link-hover underline-offset-4">
+                                {locale === 'ja'
+                                  ? '幻水総選挙本'
+                                  : 'Sosenkyo Book'}
+                              </span>
+                            </Link>
+                          </li>
+                        </ul>
                       </div>
                     </li>
                     <li className="py-2">

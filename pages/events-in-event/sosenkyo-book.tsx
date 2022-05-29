@@ -245,13 +245,13 @@ const SosenkyoBook: NextPage = () => {
               <h2 className="text-xl font-bold pb-4">〆切</h2>
               <div className="text-base text-center pb-4">
                 <div className="pb-2">
-                  <div>参加表明フォーム送信〆切</div>
+                  <div>印刷用データ〆切</div>
                   <div className="text-red-500 pl-1 pr-1">
                     2022年7月31日（日）
                   </div>
                 </div>
                 <div className="pb-2">
-                  <div>印刷用データ〆切</div>
+                  <div>参加表明フォーム送信〆切</div>
                   <div className="text-red-500 pl-1 pr-1">
                     2022年7月31日（日）
                   </div>
@@ -261,7 +261,9 @@ const SosenkyoBook: NextPage = () => {
               <div className="divider" />
 
               <h2 className="text-xl font-bold pb-4">送信方法詳細</h2>
-              <div className="pb-4">以下の ① と ② の作業をお願いします。</div>
+              <div className="pb-4 text-base">
+                以下の ① と ② の作業をお願いします。
+              </div>
               <div className="pb-4">
                 <h3 className="text-lg text-center">
                   <div className="underline underline-offset-4 pb-4">
@@ -270,7 +272,18 @@ const SosenkyoBook: NextPage = () => {
                   <div className="text-base text-left pb-4">
                     <ul className="list-disc pl-6 pr-2">
                       <li className="pb-2">
-                        「印刷用データ送信フォーム（準備中）」よりお送りいただくか、ギガファイル便などのファイル転送サービスをお使いください。
+                        「
+                        <a
+                          href="https://www.dropbox.com/request/OlqEwtVSahDfH0FhIQSg"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="link link-hover underline-offset-4"
+                        >
+                          <span className="underline underline-offset-4 text-blue-500 hover:text-blue-900 pl-1 pr-1">
+                            印刷用データ送信フォーム
+                          </span>
+                        </a>
+                        」よりお送りいただくか、ギガファイル便などのファイル転送サービスをお使いください。
                       </li>
                       <li className="pb-2">
                         DMで画像ファイルを直接お受けすることはできません（劣化の原因となるため）。
@@ -285,7 +298,26 @@ const SosenkyoBook: NextPage = () => {
                     ② 参加表明フォームを送信
                   </span>
                 </h3>
-                <div>参加表明フォームは現在準備中です。</div>
+                <div className="text-left">
+                  <ul className="list-disc pl-6 pr-2">
+                    <li className="pb-2">
+                      <a
+                        href="https://ssl.form-mailer.jp/fms/7d721d31746603"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="link link-hover underline-offset-4"
+                      >
+                        <span className="underline underline-offset-4 text-blue-500 hover:text-blue-900 pl-1 pr-1">
+                          こちらのフォーム
+                        </span>
+                      </a>
+                      より参加表明をお願いします。
+                    </li>
+                    <li className="pb-2">
+                      参加表明後、メールの一斉送信でご連絡させていただく場合がございます。連絡可能なメールアドレスをご準備ください。
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               <div className="divider" />

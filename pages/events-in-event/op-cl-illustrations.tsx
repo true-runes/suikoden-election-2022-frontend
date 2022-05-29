@@ -45,7 +45,7 @@ const OpClIllustrations: NextPage = () => {
               </h1>
 
               <div className="pt-2 pb-6">
-                <span className="text-xl text-red-500">
+                <span className="text-xl font-bold text-red-500">
                   ※募集は終了しました
                 </span>
               </div>
@@ -60,9 +60,9 @@ const OpClIllustrations: NextPage = () => {
                   「オープニングイラスト（OPイラスト）」と「クロージングイラスト（CLイラスト）」を募集します。
                 </p>
                 <p className="pb-2">
-                  それぞれ「投票開始」、「企画終了」のツイート時に掲載させて頂くイラストです。
+                  それぞれ「投票開始」、「企画終了」のツイート時に掲載させていただくイラストです。
                 </p>
-                <p>ご協力頂ける方はDMでご連絡下さい。</p>
+                <p>ご協力頂ける方はDMでご連絡ください。</p>
               </div>
 
               <div className="divider" />

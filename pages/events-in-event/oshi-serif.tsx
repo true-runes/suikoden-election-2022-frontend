@@ -59,7 +59,7 @@ const OshiSerif: NextPage = () => {
               <h2 className="text-xl font-bold pb-4">詳細</h2>
               <div className="text-base text-left pb-4">
                 <ul className="list-disc pl-6 pr-2">
-                  <li className="pb-2"> お一人様いくつでも投稿できます。</li>
+                  <li className="pb-2">お一人様いくつでも投稿できます。</li>
                   <li className="pb-2">
                     公式小説や公式コミックスなど、
                     <span className="text-red-500">

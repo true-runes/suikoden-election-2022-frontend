@@ -163,7 +163,7 @@ const IllustrationsWithResults: NextPage = () => {
                 <p className="pb-4">
                   次のいずれかの方法で送信してください。詳細は後述します。
                 </p>
-                <ul className="list-none pl-6 pr-2">
+                <ul className="list-none pl-0 pr-2">
                   <li className="pb-2">① フォームで送信</li>
                   <li className="pb-2">② 主催宛DMで送信</li>
                   <li className="pb-2">③ ファイル転送サービスを利用して送信</li>

@@ -45,7 +45,7 @@ const OpClIllustrations: NextPage = () => {
               </h1>
 
               <div className="pt-2 pb-6">
-                <span className="text-xl text-red-500">
+                <span className="text-xl font-bold text-red-500">
                   ※募集は終了しました
                 </span>
               </div>

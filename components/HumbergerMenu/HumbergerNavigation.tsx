@@ -88,13 +88,13 @@ const Navigation = () => {
                     </li>
                     <li className="py-2">
                       <div className="text-base">
-                        <Link href="/events-in-event/oshi-serif" passHref>
-                          <span className="link link-hover underline-offset-4">
-                            {locale === 'ja'
-                              ? '推し台詞教えて！'
-                              : 'Fave quote'}
-                          </span>
-                        </Link>
+                        {/* <Link href="/events-in-event/oshi-serif" passHref> */}
+                        {/* <span className="link link-hover underline-offset-4"> */}
+                        {locale === 'ja'
+                          ? '推し台詞教えて！（準備中）'
+                          : 'Fave quote (in progress)'}
+                        {/* </span> */}
+                        {/* </Link> */}
                       </div>
                     </li>
                     <li className="py-2">

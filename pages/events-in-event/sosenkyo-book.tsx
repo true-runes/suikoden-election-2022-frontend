@@ -316,7 +316,14 @@ const SosenkyoBook: NextPage = () => {
 
               <h2 className="text-xl font-bold pb-4">注意</h2>
               <div className="pb-4 text-left">
-                掲載にあたり、イラスト原寸より縮小させていただく場合がございます（拡大はしません）。総選挙本ご参加の方はこれにご同意いただけたものとみなします。
+                <ul className="list-disc pl-6 pr-2 pt-2">
+                  <li className="pb-2">
+                    掲載にあたり、イラスト原寸より縮小させていただく場合がございます（拡大はしません）。総選挙本ご参加の方はこれにご同意いただけたものとみなします。
+                  </li>
+                  <li className="pb-2">
+                    万が一、盗作などによって損害が発生した場合の賠償責任は、主催ではなく作者が負うものといたします。
+                  </li>
+                </ul>
               </div>
 
               <div className="divider" />
@@ -358,6 +365,16 @@ const SosenkyoBook: NextPage = () => {
                     </div>
                     <div className="pb-2">
                       A. 期限内に両方を提出頂ければ、同時でなくても大丈夫です。
+                    </div>
+                  </li>
+                  <li className="pb-2">
+                    <div className="pb-2">
+                      Q.
+                      提出した印刷用データを同人誌に再録したり、Webで公開してもいいですか？
+                    </div>
+                    <div className="pb-2">
+                      A.
+                      通常の開票イラストと同様に、ご自身の作品は、SNSへの投稿や同人誌への掲載などをご自由にして頂いて構いません。
                     </div>
                   </li>
                 </ul>

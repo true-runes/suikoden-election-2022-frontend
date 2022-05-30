@@ -1,5 +1,6 @@
 {
   "projectId": "abc987",
+  "baseUrl": "http://localhost:3100",
   "downloadsFolder": "cypress/downloads",
   "fixturesFolder": "cypress/fixtures",
   "integrationFolder": "cypress/integration",

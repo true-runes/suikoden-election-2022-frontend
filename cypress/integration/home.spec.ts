@@ -8,6 +8,9 @@
 
 describe('My First Test', () => {
   it('Does not do much!', () => {
-    expect(true).to.equal(true)
+    cy.visit('/')
+    cy.screenshot('my_screenshot')
+
+    cy.contains('幻水総選挙')
   })
 })

@@ -113,9 +113,11 @@ const Navigation = () => {
                     </li>
                     <li className="py-2">
                       <div className="text-base">
-                        {locale === 'ja'
-                          ? 'ボーナス票（準備中）'
-                          : 'Bonus votes (in progress)'}
+                        <Link href="/events-in-event/bonus-votes" passHref>
+                          <span className="link link-hover underline-offset-4">
+                            {locale === 'ja' ? 'ボーナス票' : 'Bonus votes'}
+                          </span>
+                        </Link>
                       </div>
                     </li>
                   </ul>

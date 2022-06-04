@@ -84,7 +84,7 @@ jobs:
           wait-on: 'http://localhost:3100'
           wait-on-timeout: 30 # seconds
           working-directory: ./
-          config-file: cypress.json
+          config-file: cypress.config.ts
           record: false
           browser: chrome
           # browser: firefox

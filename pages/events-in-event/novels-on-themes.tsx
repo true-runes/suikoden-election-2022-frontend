@@ -144,7 +144,8 @@ const NovelsOnThemes: NextPage = () => {
                     </li>
                   </ul>
                 </div>
-                を記載し、主催（@gensosenkyo）宛ツイートで小説を投稿して下さい。
+                を記載し、「 <span className="font-bold">@gensosenkyo</span>{' '}
+                」を付けたツイートで投稿して下さい。
               </div>
 
               <div className="divider" />

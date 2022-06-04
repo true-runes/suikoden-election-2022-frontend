@@ -62,13 +62,11 @@ const Kikaku: NextPage = () => {
                     </Link>
                   </li>
                   <li className="pb-4">
-                    {/* <Link href="/events-in-event/oshi-serif" passHref> */}
-                    {/* <span className="link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900"> */}
-                    {locale === 'ja'
-                      ? '推し台詞教えて！（準備中）'
-                      : 'Fave quote (in progress)'}
-                    {/* </span> */}
-                    {/* </Link> */}
+                    <Link href="/events-in-event/oshi-serif" passHref>
+                      <span className="link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900">
+                        {locale === 'ja' ? '推し台詞教えて！' : 'Fave quote'}
+                      </span>
+                    </Link>
                   </li>
                   <li className="pb-4">
                     <Link href="/events-in-event/op-cl-illustrations" passHref>

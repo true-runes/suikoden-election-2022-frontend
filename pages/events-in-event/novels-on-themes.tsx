@@ -304,7 +304,13 @@ const NovelsOnThemes: NextPage = () => {
                       非公開アカウントの方は、作品を主催宛DMでお送り頂きますと、幻水総選挙のサブアカウント
                       (@sub_gensosenkyo) からツイートでご紹介します。
                       <br />
-                      これにより、作品がボーナス票の対象となります。
+                      これにより、作品が{' '}
+                      <Link href="/events-in-event/bonus-votes" passHref>
+                        <span className="link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900 pr-1">
+                          ボーナス票
+                        </span>
+                      </Link>
+                      の対象となります。
                     </li>
                     <li>
                       小説の作成方法は ①画像で作成 ②外部リンクを掲載 のどちらか

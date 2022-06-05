@@ -126,7 +126,10 @@ const OshiSerif: NextPage = () => {
 
               <h3 className="text-xl font-bold pb-4">応募の受理</h3>
               <div className="text-base text-left pb-4">
-                投稿ツイートには、幻水総選挙のサブアカウント（@sub_gensosenkyo）から「いいね」を付けさせていただきます。
+                投稿ツイートには、幻水総選挙のサブアカウント（@sub_gensosenkyo）から
+                <span className="text-red-500">
+                  「いいね」を付けさせていただきます。
+                </span>
                 <br />
                 これをもってご応募が受理されたものといたします。
                 <br />

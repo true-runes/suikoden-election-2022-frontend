@@ -214,7 +214,11 @@ const BonusVotes: NextPage = () => {
                 </div>
 
                 <div className="text-base text-left">
-                  ※誰が応募したか、応募が何件あるか…は関係なく、「応募（ツイート）の有無」のみで集計されます。
+                  ※誰が応募したか、応募が何件あるか…は関係なく、
+                  <span className="text-red-500">
+                    参加者様全体の「応募（ツイート）の有無」
+                  </span>
+                  で集計されます。
                 </div>
               </div>
             </div>

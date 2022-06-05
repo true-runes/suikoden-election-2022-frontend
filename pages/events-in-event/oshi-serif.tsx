@@ -144,7 +144,13 @@ const OshiSerif: NextPage = () => {
                 <br />
                 幻水総選挙のサブアカウント（@sub_gensosenkyo）から、キャラ名と推し台詞をツイートします。
                 <br />
-                これにより、応募した台詞がボーナス票の対象となります。
+                これにより、応募した台詞が{' '}
+                <Link href="/events-in-event/bonus-votes" passHref>
+                  <span className="link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900 pr-1">
+                    ボーナス票
+                  </span>
+                </Link>
+                の対象となります。
               </div>
             </div>
           </div>

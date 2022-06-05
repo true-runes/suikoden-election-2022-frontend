@@ -159,7 +159,11 @@ const NovelsOnThemes: NextPage = () => {
                   height={1264}
                 />
               </div>
-              <div className="text-left">
+
+              <div className="divider" />
+
+              <h2 className="text-xl font-bold pb-4">応募の受理</h2>
+              <div className="text-base text-left pb-4">
                 投稿ツイートには、幻水総選挙のサブアカウント（@sub_gensosenkyo）から
                 <span className="text-red-500">
                   「いいね」を付けさせていただきます

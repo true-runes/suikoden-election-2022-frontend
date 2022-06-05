@@ -5,13 +5,18 @@ on:
     branches:
       - main
       - development
+  pull_request:
+    branches:
+      - main
+      - development
 
 jobs:
   cypress_gss2022_frontend:
     name: Cypress での E2E テスト
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v3.0.2
+      - name: Checkout
+        uses: actions/checkout@v3.0.2
       - name: 環境を確認する
         run: |
           echo '[$ pwd]'
@@ -29,7 +34,7 @@ jobs:
           sudo ln -s /usr/lib/x86_64-linux-gnu/libffi.so.7.1.0 /usr/lib/x86_64-linux-gnu/libffi.so.6
       - name: Node.js をインストールする
         run: |
-          curl -sSL "https://nodejs.org/dist/v16.14.2/node-v16.14.2-linux-x64.tar.xz" | tar --strip-components=2 -xJ -C /usr/local/bin/ node-v16.14.2-linux-x64/bin/node
+          curl -sSL "https://nodejs.org/dist/v18.2.0/node-v18.2.0-linux-x64.tar.xz" | tar --strip-components=2 -xJ -C /usr/local/bin/ node-v18.2.0-linux-x64/bin/node
           curl https://www.npmjs.com/install.sh | bash
           echo 'インストールされた Node.js のバージョンは、'
           node -v
@@ -59,7 +64,7 @@ jobs:
         id: yarn-cache
         run: echo "::set-output name=dir::.yarn/cache"
       - name: Yarn のキャッシュファイルを取得する
-        uses: actions/cache@v3.0.2
+        uses: actions/cache@v3.0.3
         with:
           path: ${{ steps.yarn-cache.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
@@ -68,16 +73,24 @@ jobs:
       - name: Npm のパッケージをインストールする ($ yarn install)
         run: |
           yarn install
+      - name: Cypress Info を実行する
+        run: |
+          npx cypress info
       - name: Cypress を実行する
-        uses: cypress-io/github-action@v3.1.0
+        uses: cypress-io/github-action@v4.0.0
         with:
-          start: npx cypress
+          build: npx next build
+          start: npx next start --port 3100
+          wait-on: 'http://localhost:3100'
+          wait-on-timeout: 30 # seconds
           working-directory: ./
-          config-file: cypress.json
+          config-file: cypress.config.ts
           record: false
           browser: chrome
           # browser: firefox
           # browser: edge
+        env:
+          DEPLOYMENT_ENVIRONMENT: production
       - name: Cypress のスクリーンショットをアップロードする
         uses: actions/upload-artifact@v3.1.0
         if: always()

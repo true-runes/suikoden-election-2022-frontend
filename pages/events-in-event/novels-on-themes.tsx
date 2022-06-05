@@ -144,7 +144,8 @@ const NovelsOnThemes: NextPage = () => {
                     </li>
                   </ul>
                 </div>
-                を記載し、主催（@gensosenkyo）宛ツイートで小説を投稿して下さい。
+                を記載し、「 <span className="font-bold">@gensosenkyo</span>{' '}
+                」を付けたツイートで投稿して下さい。
               </div>
 
               <div className="divider" />
@@ -154,11 +155,15 @@ const NovelsOnThemes: NextPage = () => {
                 <Image
                   src="/novels_on_theme_tweet_sample.png"
                   alt="お題小説ツイート例"
-                  width={1162}
-                  height={1264}
+                  width={1168}
+                  height={1318}
                 />
               </div>
-              <div className="text-left">
+
+              <div className="divider" />
+
+              <h2 className="text-xl font-bold pb-4">応募の受理</h2>
+              <div className="text-base text-left pb-4">
                 投稿ツイートには、幻水総選挙のサブアカウント（@sub_gensosenkyo）から
                 <span className="text-red-500">
                   「いいね」を付けさせていただきます
@@ -280,10 +285,10 @@ const NovelsOnThemes: NextPage = () => {
                       開票の翌日以降、開票ツイートに繋げる形で、小説の投稿ツイートをご紹介させていただきます。
                     </li>
                     <li className="pb-2">
-                      繋げてほしくない方は、投稿時に「開票後の紹介不要」と記載してください。
+                      ご応募受理済みの公開ツイートが対象です。
                     </li>
                     <li className="pb-2">
-                      主催側で受理できていないツイート、投稿後に非公開・削除されたツイートはご紹介できません。
+                      繋げてほしくない方は、投稿時に「開票後の紹介不要」と記載してください。
                     </li>
                   </ul>
                 </div>
@@ -298,6 +303,8 @@ const NovelsOnThemes: NextPage = () => {
                     <li className="pb-2">
                       非公開アカウントの方は、作品を主催宛DMでお送り頂きますと、幻水総選挙のサブアカウント
                       (@sub_gensosenkyo) からツイートでご紹介します。
+                      <br />
+                      これにより、作品がボーナス票の対象となります。
                     </li>
                     <li>
                       小説の作成方法は ①画像で作成 ②外部リンクを掲載 のどちらか

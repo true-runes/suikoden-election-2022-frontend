@@ -59,7 +59,7 @@ const OshiSerif: NextPage = () => {
               <h2 className="text-xl font-bold pb-4">詳細</h2>
               <div className="text-base text-left pb-4">
                 <ul className="list-disc pl-6 pr-2">
-                  <li className="pb-2">お一人様いくつでも投稿できます。</li>
+                  <li className="pb-2">お一人様でいくつでも投稿できます。</li>
                   <li className="pb-2">
                     公式小説や公式コミックスなど、
                     <span className="text-red-500">
@@ -68,7 +68,7 @@ const OshiSerif: NextPage = () => {
                     です。 （小説版や漫画版は出典を書いて下さい）
                   </li>
                   <li className="pb-2">
-                    昨年と同じ台詞をご投稿頂いても構いません。
+                    過去の総選挙で使用した台詞と同じものでも構いません。
                   </li>
                   <li className="pb-2">
                     1キャラに対して複数の台詞を頂きました場合、掲載する台詞は主催側で選ばせて頂きます。
@@ -105,7 +105,8 @@ const OshiSerif: NextPage = () => {
                     </li>
                   </ul>
                 </div>
-                を記載し、主催（@gensosenkyo）宛ツイートで投稿して下さい。
+                を記載し、「 <span className="font-bold">@gensosenkyo</span>{' '}
+                」宛ツイートで投稿して下さい。
                 よろしければ選んだ理由なども語って下さい。
               </div>
 
@@ -116,18 +117,34 @@ const OshiSerif: NextPage = () => {
                 <Image
                   src="/oshi_serif_sample.png"
                   alt="推し台詞ツイート例"
-                  width={1176}
-                  height={490}
+                  width={1170}
+                  height={540}
                 />
               </div>
 
               <div className="divider" />
 
-              <h3 className="text-xl font-bold pb-4">補足</h3>
+              <h3 className="text-xl font-bold pb-4">応募の受理</h3>
               <div className="text-base text-left pb-4">
-                非公開アカウントの方は、主催宛DMでお送り下さい。幻水総選挙サブアカウントから、キャラと推し台詞をツイートでご紹介します。
+                投稿ツイートには、幻水総選挙のサブアカウント（@sub_gensosenkyo）から
+                <span className="text-red-500">
+                  「いいね」を付けさせていただきます。
+                </span>
                 <br />
-                これにより、台詞がボーナス票の対象となります。
+                これをもってご応募が受理されたものといたします。
+                <br />
+                ※投稿から一週間経っても「いいね」がない場合は、お手数ですがDMにてお問い合わせ下さい。
+              </div>
+
+              <div className="divider" />
+
+              <h3 className="text-xl font-bold pb-4">非公開アカウントの方へ</h3>
+              <div className="text-base text-left pb-4">
+                非公開アカウントの方は、主催宛DMでお送り下さい。
+                <br />
+                幻水総選挙のサブアカウント（@sub_gensosenkyo）から、キャラ名と推し台詞をツイートします。
+                <br />
+                これにより、応募した台詞がボーナス票の対象となります。
               </div>
             </div>
           </div>

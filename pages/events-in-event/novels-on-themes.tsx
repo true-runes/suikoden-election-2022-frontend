@@ -155,8 +155,8 @@ const NovelsOnThemes: NextPage = () => {
                 <Image
                   src="/novels_on_theme_tweet_sample.png"
                   alt="お題小説ツイート例"
-                  width={1162}
-                  height={1264}
+                  width={1168}
+                  height={1318}
                 />
               </div>
 

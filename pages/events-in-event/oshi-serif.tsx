@@ -117,8 +117,8 @@ const OshiSerif: NextPage = () => {
                 <Image
                   src="/oshi_serif_sample.png"
                   alt="推し台詞ツイート例"
-                  width={1176}
-                  height={490}
+                  width={1170}
+                  height={540}
                 />
               </div>
 

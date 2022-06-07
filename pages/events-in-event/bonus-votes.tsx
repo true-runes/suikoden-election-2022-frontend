@@ -213,6 +213,17 @@ const BonusVotes: NextPage = () => {
                   </div>
                 </div>
 
+                <div className="pb-4">
+                  <h3 className="text-lg text-center">
+                    <div className="underline underline-offset-4 pb-4">例③</div>
+                  </h3>
+                  <div className="text-base text-center pb-4">
+                    「テッド」の総選挙運動ツイートが1件
+                    <br />
+                    →「テッド」に「+2票」
+                  </div>
+                </div>
+
                 <div className="text-base text-left">
                   ※誰が応募したか、応募が何件あるか…は関係なく、
                   <span className="text-red-500">

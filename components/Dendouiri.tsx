@@ -35,7 +35,7 @@ const Dendouiri: NextPage = () => {
             </div>
             <p className="text-base text-left text-red-500">
               {locale === 'ja'
-                ? '今年は幻水総選挙10周年記念、及び、「部門」創設のため、全キャラへの投票を可能とします。'
+                ? '今年は幻水総選挙10年目記念、及び、「部門」創設のため、全キャラへの投票を可能とします。'
                 : 'This year, to celebrate the 10th anniversary of the Suikoden General Election and because of the creation of “divisions”, votes for all characters will be allowed.'}
             </p>
           </div>

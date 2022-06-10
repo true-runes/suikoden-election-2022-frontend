@@ -14,7 +14,7 @@ const Departments: NextPage = () => {
             </h1>
 
             <div>
-              <div className="text-base text-left pb-4">
+              <div className="text-base text-left pb-0">
                 <ul className="list-disc pl-6 pr-2">
                   <li className="pb-2">
                     {locale === 'ja'
@@ -29,7 +29,9 @@ const Departments: NextPage = () => {
                 </ul>
               </div>
 
-              <div className="pb-4">
+              <div className="pl-10 pr-10 divider" />
+
+              <div className="pb-0">
                 <h2 className="text-xl font-bold pb-4">
                   {locale === 'ja'
                     ? '①オールキャラ部門'
@@ -41,7 +43,7 @@ const Departments: NextPage = () => {
                     : 'In this division, vote for your favorite characters.'}
                 </p>
                 <div className="pb-4">
-                  <h3 className="text-lg font-bold">
+                  <h3 className="text-lg font-bold pb-2">
                     {locale === 'ja' ? '投票数' : 'Number of votes'}
                   </h3>
                   {locale === 'ja' ? (
@@ -89,7 +91,7 @@ const Departments: NextPage = () => {
                   </div>
                 </div>
                 <div className="pb-4">
-                  <h3 className="text-lg font-bold">
+                  <h3 className="text-lg font-bold pb-2">
                     {locale === 'ja'
                       ? '投票用ハッシュタグ'
                       : 'Hashtag to use for voting'}
@@ -98,14 +100,40 @@ const Departments: NextPage = () => {
                 </div>
               </div>
 
+              <div className="pl-10 pr-10 divider" />
+
               <h2 className="text-xl font-bold pb-4">
-                {locale === 'ja'
-                  ? '②？？？部門（近日発表！）'
-                  : '(2) ??? division (Reveal soon!)'}
+                {locale === 'ja' ? '②コンビ部門' : '(2) Combination division'}
               </h2>
               <p className="text-base text-center pb-4">
-                {locale === 'ja' ? '？？？' : '???'}
+                {locale === 'ja'
+                  ? '好きなキャラのコンビ（2人組）に投票する部門です。'
+                  : '好きなキャラのコンビ（2人組）に投票する部門です。'}
               </p>
+
+              <div className="pb-4">
+                <h3 className="text-lg font-bold pb-2">
+                  {locale === 'ja' ? '投票数' : 'Number of votes'}
+                </h3>
+                {locale === 'ja' ? (
+                  <p className="text-lg pb-4">
+                    お一人様 <span className="text-red-500">1票</span> まで
+                  </p>
+                ) : (
+                  <p className="text-lg pb-4">
+                    1 person has up to{' '}
+                    <span className="text-red-500">1 votes</span>
+                  </p>
+                )}
+              </div>
+              <div className="pb-4">
+                <h3 className="text-lg font-bold pb-2">
+                  {locale === 'ja'
+                    ? '投票用ハッシュタグ'
+                    : 'Hashtag to use for voting'}
+                </h3>
+                <p className="text-lg">#幻水総選挙2022コンビ部門</p>
+              </div>
             </div>
           </div>
         </div>

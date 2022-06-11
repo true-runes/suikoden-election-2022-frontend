@@ -10,6 +10,7 @@ import NavBar from '../components/NavBar'
 
 import EventSummary from '../components/EventSummary'
 import HowToVote from '../components/HowToVote'
+import VoteExamples from '../components/VoteExamples'
 import Departments from '../components/Departments'
 import Dendouiri from '../components/Dendouiri'
 import Onegai from '../components/Onegai'
@@ -117,6 +118,9 @@ const Home: NextPage = () => {
 
         <div className="divider" />
         <HowToVote />
+
+        <div className="divider" />
+        <VoteExamples />
 
         <div className="divider" />
         <Dendouiri />

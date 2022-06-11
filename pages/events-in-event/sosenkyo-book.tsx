@@ -46,7 +46,7 @@ const SosenkyoBook: NextPage = () => {
               </h2>
               <div className="text-base text-left pb-4">
                 <div className="pb-4">
-                  幻水総選挙10周年の記念として制作する、開票イラストなどをまとめた本のことです。
+                  幻水総選挙10年目の記念として制作する、開票イラストなどをまとめた本のことです。
                 </div>
               </div>
               <div className="divider" />

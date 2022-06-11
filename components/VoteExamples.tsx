@@ -66,7 +66,9 @@ const VoteExamples: NextPage = () => {
               </div>
               <ul className="list-disc pl-6 pr-2">
                 <li className="pb-2">
-                  オールキャラ部門とコンビ部門は、それぞれ別のツイートで投票してください。
+                  <span className="text-red-500">
+                    オールキャラ部門とコンビ部門は、それぞれ別のツイートで投票してください。
+                  </span>
                 </li>
                 <li className="pb-2">
                   愛称を使わずキャラクター名で投票してください。

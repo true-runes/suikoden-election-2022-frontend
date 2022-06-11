@@ -19,6 +19,8 @@ import WhatIsGensosenkyo from '../components/WhatIsGensosenkyo'
 import IllustratedBy from '../components/IllustratedBy'
 import SiteFooter from '../components/SiteFooter'
 
+import ResultIllustrationsStatus from '../components/ResultIllustrationsStatus'
+
 import { useLocale } from '../hooks/useLocale'
 
 // const nowSecond = () => {
@@ -104,6 +106,10 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div> */}
+
+        <div className="pt-4">
+          <ResultIllustrationsStatus />
+        </div>
 
         <div className="pt-4">
           <WhatIsGensosenkyo />

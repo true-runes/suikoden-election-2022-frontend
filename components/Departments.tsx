@@ -96,7 +96,16 @@ const Departments: NextPage = () => {
                       ? '投票用ハッシュタグ'
                       : 'Hashtag to use for voting'}
                   </h3>
-                  <p className="text-lg">#幻水総選挙2022</p>
+                  <p className="text-lg">
+                    <a
+                      href="https://twitter.com/search?q=%23%E5%B9%BB%E6%B0%B4%E7%B7%8F%E9%81%B8%E6%8C%992022&src=typed_query&f=live"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="underline underline-offset-2 text-blue-500 hover:text-blue-900"
+                    >
+                      #幻水総選挙2022
+                    </a>
+                  </p>
                 </div>
               </div>
 
@@ -132,7 +141,17 @@ const Departments: NextPage = () => {
                     ? '投票用ハッシュタグ'
                     : 'Hashtag to use for voting'}
                 </h3>
-                <p className="text-lg">#幻水総選挙2022コンビ部門</p>
+                <p className="text-lg">
+                  {' '}
+                  <a
+                    href="https://twitter.com/search?q=%23%E5%B9%BB%E6%B0%B4%E7%B7%8F%E9%81%B8%E6%8C%992022%E3%82%B3%E3%83%B3%E3%83%93%E9%83%A8%E9%96%80&src=typed_query&f=live"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline underline-offset-2 text-blue-500 hover:text-blue-900"
+                  >
+                    #幻水総選挙2022コンビ部門
+                  </a>
+                </p>
               </div>
             </div>
           </div>

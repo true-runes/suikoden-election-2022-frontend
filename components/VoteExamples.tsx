@@ -22,7 +22,7 @@ const VoteExamples: NextPage = () => {
                 src="/vote_example_all_chara_01.png"
                 alt="オールキャラ部門 投票例 01"
                 width={1166}
-                height={332}
+                height={336}
               />
             </div>
 
@@ -33,8 +33,8 @@ const VoteExamples: NextPage = () => {
               <Image
                 src="/vote_example_all_chara_02.png"
                 alt="オールキャラ部門 投票例 02"
-                width={1168}
-                height={494}
+                width={1176}
+                height={480}
               />
             </div>
 
@@ -43,8 +43,8 @@ const VoteExamples: NextPage = () => {
               <Image
                 src="/vote_example_combination_01.png"
                 alt="コンビ部門 投票例 01"
-                width={1170}
-                height={332}
+                width={1182}
+                height={318}
               />
             </div>
 
@@ -53,8 +53,8 @@ const VoteExamples: NextPage = () => {
               <Image
                 src="/vote_example_combination_02.png"
                 alt="コンビ部門 投票例 02"
-                width={1170}
-                height={384}
+                width={1180}
+                height={370}
               />
             </div>
 
@@ -66,10 +66,10 @@ const VoteExamples: NextPage = () => {
               </div>
               <ul className="list-disc pl-6 pr-2">
                 <li className="pb-2">
-                  オールキャラ部門の投票はなるべく1ツイートに収めてください。
+                  オールキャラ部門とコンビ部門は、それぞれ別のツイートで投票してください。
                 </li>
                 <li className="pb-2">
-                  愛称を使わず、キャラクター名で投票して下さい。
+                  愛称を使わずキャラクター名で投票してください。
                   <br />
                   （「様」などはOK）
                 </li>

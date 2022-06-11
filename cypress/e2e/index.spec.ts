@@ -14,14 +14,14 @@ describe('ホームページ', () => {
     cy.get('title').should('have.text', 'ホーム - 幻水総選挙2022')
 
     // h1 タグ
-    cy.get('h1').should('have.length', 8)
+    cy.get('h1').should('have.length', 9)
     cy.get('h1').each((item, index, list) => {
       if (index === 0) {
         cy.wrap(item).should('have.text', '幻水総選挙って何？')
       }
 
       if (index === 6) {
-        cy.wrap(item).should('have.text', 'お願い')
+        cy.wrap(item).should('have.text', '「殿堂入り」について')
       }
     })
     cy.contains('h1', /お願い/).should('have.length', 1)
@@ -49,14 +49,14 @@ describe('ホームページ（投票期間中）', () => {
     cy.get('title').should('have.text', 'ホーム - 幻水総選挙2022')
 
     // h1 タグ
-    cy.get('h1').should('have.length', 8)
+    cy.get('h1').should('have.length', 9)
     cy.get('h1').each((item, index, list) => {
       if (index === 0) {
         cy.wrap(item).should('have.text', '幻水総選挙って何？')
       }
 
       if (index === 6) {
-        cy.wrap(item).should('have.text', 'お願い')
+        cy.wrap(item).should('have.text', '「殿堂入り」について')
       }
     })
     cy.contains('h1', /お願い/).should('have.length', 1)

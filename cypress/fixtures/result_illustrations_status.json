@@ -1,0 +1,39 @@
+{
+  "contents": [
+    {
+      "id": "twet1ufquz93",
+      "createdAt": "2022-06-11T07:13:10.449Z",
+      "updatedAt": "2022-06-11T07:13:10.449Z",
+      "publishedAt": "2022-06-11T07:13:10.449Z",
+      "revisedAt": "2022-06-11T07:13:10.449Z",
+      "characterName": "シルビナ"
+    },
+    {
+      "id": "fhbl4k21lsck",
+      "createdAt": "2022-06-05T02:35:52.339Z",
+      "updatedAt": "2022-06-05T02:35:52.339Z",
+      "publishedAt": "2022-06-05T02:35:52.339Z",
+      "revisedAt": "2022-06-05T02:35:52.339Z",
+      "characterName": "クライブ"
+    },
+    {
+      "id": "ykor54w9w",
+      "createdAt": "2022-06-05T01:48:21.778Z",
+      "updatedAt": "2022-06-11T06:58:23.237Z",
+      "publishedAt": "2022-06-05T01:48:21.778Z",
+      "revisedAt": "2022-06-05T01:48:21.778Z",
+      "characterName": "スタリオン"
+    },
+    {
+      "id": "eizjfdmcu",
+      "createdAt": "2022-06-05T01:48:36.196Z",
+      "updatedAt": "2022-06-05T01:48:36.196Z",
+      "publishedAt": "2022-06-05T01:48:36.196Z",
+      "revisedAt": "2022-06-05T01:48:36.196Z",
+      "characterName": "シドニア"
+    }
+  ],
+  "totalCount": 6,
+  "offset": 0,
+  "limit": 10
+}

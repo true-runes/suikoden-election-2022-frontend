@@ -21,32 +21,33 @@ import SiteFooter from '../components/SiteFooter'
 
 import { useLocale } from '../hooks/useLocale'
 
-const nowSecond = () => {
-  const time = new Date()
-  const hour = time.getHours()
-  const minute = time.getMinutes()
-  const second = time.getSeconds()
+// const nowSecond = () => {
+//   const time = new Date()
+//   const hour = time.getHours()
+//   const minute = time.getMinutes()
+//   const second = time.getSeconds()
 
-  return second
-}
+//   return second
+// }
 
 const Home: NextPage = () => {
   // TODO: "now" ではなく、開催日からの差分を出し、減らしていく
-  const [now, setNow] = useState(new Date())
+  // const [now, setNow] = useState(new Date())
 
-  useEffect(
-    function () {
-      const intervalId = setInterval(function () {
-        setNow(new Date())
-      }, 1000)
+  // TODO: 子コンポーネントへの影響にも注意する（コンポーネント切り出すべき）
+  // useEffect(
+  //   function () {
+  //     const intervalId = setInterval(function () {
+  //       setNow(new Date())
+  //     }, 1000)
 
-      return function () {
-        clearInterval(intervalId)
-      }
-    },
+  //     return function () {
+  //       clearInterval(intervalId)
+  //     }
+  //   },
 
-    [now]
-  )
+  //   [now]
+  // )
 
   const { t } = useLocale()
 

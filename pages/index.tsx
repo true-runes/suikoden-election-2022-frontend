@@ -14,7 +14,7 @@ import VoteExamples from '@/components/votes/VoteExamples'
 import Departments from '@/components/votes/Departments'
 import Dendouiri from '@/components/votes/Dendouiri'
 import Onegai from '@/components/votes/Onegai'
-import Kikaku from '@/components/events-in-event/Kikaku'
+import EventsInEventIndex from '@/components/events-in-event/index'
 
 import WhatIsGensosenkyo from '@/components/votes/WhatIsGensosenkyo'
 import IllustratedBy from '@/components/common/IllustratedBy'
@@ -129,7 +129,7 @@ const Home: NextPage = () => {
         <Onegai />
 
         <div className="divider" />
-        <Kikaku />
+        <EventsInEventIndex />
 
         <div className="divider" />
         <IllustratedBy />

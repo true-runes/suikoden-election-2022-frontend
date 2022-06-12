@@ -4,7 +4,7 @@ import Link from 'next/link'
 import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation'
 import NavBar from '@/components/common/NavBar'
 import SiteFooter from '@/components/common/SiteFooter'
-import Kikaku from '@/components/events-in-event/Kikaku'
+import EventsInEventIndex from '@/components/events-in-event/index'
 
 import { useLocale } from '@/hooks/useLocale'
 
@@ -32,7 +32,7 @@ const EventsInEvent: NextPage = () => {
           </ul>
         </div>
 
-        <Kikaku />
+        <EventsInEventIndex />
 
         <div className="divider" />
         <SiteFooter />

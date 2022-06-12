@@ -47,3 +47,22 @@ describe('総選挙内企画のページ', () => {
     })
   })
 })
+
+describe('総選挙内企画のページ（英語版）', () => {
+  beforeEach(() => {
+    cy.visit('/en/events-in-event')
+  })
+
+  it('ページタイトルが期待どおりであること', () => {
+    cy.url().should('equal', 'http://localhost:3100/en/events-in-event')
+
+    cy.get('title').should('have.text', 'Projects - Gensosenkyo 2022')
+  })
+
+  it('h1 タグ が期待どおりであること', () => {
+    cy.url().should('equal', 'http://localhost:3100/en/events-in-event')
+
+    cy.get('h1').should('have.length', 1)
+    cy.get('h1').eq(0).should('have.text', 'Projects')
+  })
+})

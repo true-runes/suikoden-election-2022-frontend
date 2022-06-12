@@ -17,13 +17,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "yarn"
-      - name: 環境を確認する
-        run: |
-          echo '[$ pwd]'
-          pwd
-          echo '[$ ls -la]'
-          ls -la
+          cache: yarn
       - name: 日本語フォントのインストールを行う
         run: |
           sudo apt install -y fonts-migmix

@@ -115,7 +115,7 @@ const OshiSerif: NextPage = () => {
               <h2 className="text-xl font-bold pb-4">ツイート例</h2>
               <div className="pb-4">
                 <Image
-                  src="/oshi_serif_sample.png"
+                  src="/images/oshi_serif_sample.png"
                   alt="推し台詞ツイート例"
                   width={1170}
                   height={540}

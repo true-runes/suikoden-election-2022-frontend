@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app'
 import { googleTagManagerId } from '@/utils/gtm'
 import GoogleTagManager, {
   GoogleTagManagerId,
-} from '@/components/GoogleTagManager'
+} from '@/components/common/GoogleTagManager'
 
 import '@/styles/globals.scss'
 

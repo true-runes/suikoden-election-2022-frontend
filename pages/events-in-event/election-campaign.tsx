@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
 
-import HumbergerNavigation from '@/components/HumbergerMenu/HumbergerNavigation'
+import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation'
 import NavBar from '@/components/NavBar'
 import SiteFooter from '@/components/SiteFooter'
 

@@ -1,4 +1,4 @@
-import PreviousWebsiteLink from '@/components/HumbergerMenu/PreviousWebsiteLink'
+import PreviousWebsiteLink from '@/components/humberger-menu/PreviousWebsiteLink'
 import { useLocale } from '@/hooks/useLocale'
 
 const PreviousWebsites = () => {

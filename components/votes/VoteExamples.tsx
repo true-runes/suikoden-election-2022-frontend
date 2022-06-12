@@ -19,7 +19,7 @@ const VoteExamples: NextPage = () => {
                 オールキャラ部門 投票例①
               </h2>
               <Image
-                src="/vote_example_all_chara_01.png"
+                src="/images/vote_example_all_chara_01.png"
                 alt="オールキャラ部門 投票例 01"
                 width={1166}
                 height={336}
@@ -31,7 +31,7 @@ const VoteExamples: NextPage = () => {
                 オールキャラ部門 投票例②
               </h2>
               <Image
-                src="/vote_example_all_chara_02.png"
+                src="/images/vote_example_all_chara_02.png"
                 alt="オールキャラ部門 投票例 02"
                 width={1176}
                 height={480}

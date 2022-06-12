@@ -64,7 +64,7 @@ const Home: NextPage = () => {
         <NavBar />
 
         <Image
-          src="/gss2022_top.jpg"
+          src="/images/gss2022_top.jpg"
           alt={t.TOP_IMAGE_ALT}
           width={3180}
           height={1788}

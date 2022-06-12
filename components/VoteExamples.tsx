@@ -38,38 +38,13 @@ const VoteExamples: NextPage = () => {
               />
             </div>
 
-            <div className="text-base text-center pb-6">
-              <h2 className="text-xl font-bold pb-4">コンビ部門 投票例①</h2>
-              <Image
-                src="/vote_example_combination_01.png"
-                alt="コンビ部門 投票例 01"
-                width={1182}
-                height={318}
-              />
-            </div>
-
-            <div className="text-base text-center pb-6">
-              <h2 className="text-xl font-bold pb-4">コンビ部門 投票例②</h2>
-              <Image
-                src="/vote_example_combination_02.png"
-                alt="コンビ部門 投票例 02"
-                width={1180}
-                height={370}
-              />
-            </div>
-
             <div className="text-base text-left pb-0">
               <div className="text-base text-left pb-4">
                 ハッシュタグの前には半角スペースまたは改行が必要です。
                 <br />
-                キャラやコンビがしっかりと判別できれば、書式は問いません。
+                キャラがしっかりと判別できれば、書式は問いません。
               </div>
               <ul className="list-disc pl-6 pr-2">
-                <li className="pb-2">
-                  <span className="text-red-500">
-                    オールキャラ部門とコンビ部門は、それぞれ別のツイートで投票してください。
-                  </span>
-                </li>
                 <li className="pb-2">
                   愛称を使わずキャラクター名で投票してください。
                   <br />

@@ -1,0 +1,7 @@
+.circleci
+.github
+cypress
+.history
+.vscode
+node_modules
+tmp

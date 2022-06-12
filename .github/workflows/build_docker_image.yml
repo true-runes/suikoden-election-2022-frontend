@@ -2,12 +2,6 @@ name: (GitHub Actions) Build Docker Image
 
 on:
   push:
-    branches:
-      - main
-      - development
-  pull_request:
-    branches:
-      - development
 
 jobs:
   build:

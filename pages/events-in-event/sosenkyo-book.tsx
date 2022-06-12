@@ -6,6 +6,8 @@ import HumbergerNavigation from '../../components/HumbergerMenu/HumbergerNavigat
 import NavBar from '../../components/NavBar'
 import SiteFooter from '../../components/SiteFooter'
 
+import Contacts from '../../components/sosenkyo-book/contacts'
+
 import { useLocale } from '../../hooks/useLocale'
 
 const SosenkyoBook: NextPage = () => {
@@ -429,6 +431,9 @@ const SosenkyoBook: NextPage = () => {
                   </li>
                 </ul>
               </div>
+
+              <div className="divider" />
+              <Contacts />
             </div>
           </div>
         </div>

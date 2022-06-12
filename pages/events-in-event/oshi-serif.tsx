@@ -2,11 +2,11 @@ import type { NextPage } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import HumbergerNavigation from '../../components/HumbergerMenu/HumbergerNavigation'
-import NavBar from '../../components/NavBar'
-import SiteFooter from '../../components/SiteFooter'
+import HumbergerNavigation from '@/components/HumbergerMenu/HumbergerNavigation'
+import NavBar from '@/components/NavBar'
+import SiteFooter from '@/components/SiteFooter'
 
-import { useLocale } from '../../hooks/useLocale'
+import { useLocale } from '@/hooks/useLocale'
 
 const OshiSerif: NextPage = () => {
   const { t, locale } = useLocale()

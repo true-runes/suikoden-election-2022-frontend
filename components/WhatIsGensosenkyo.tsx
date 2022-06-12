@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { useLocale } from '../hooks/useLocale'
+import { useLocale } from '@/hooks/useLocale'
 
 const WhatIsGensosenkyo: NextPage = () => {
   const { locale } = useLocale()

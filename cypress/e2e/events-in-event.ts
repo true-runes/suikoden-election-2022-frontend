@@ -3,20 +3,27 @@ describe('総選挙内企画のページ', () => {
     cy.visit('/events-in-event')
   })
 
-  it('期待どおりの挙動をすること', () => {
+  it('ページタイトルが期待どおりであること', () => {
     cy.url().should('equal', 'http://localhost:3100/events-in-event')
 
     cy.get('title').should('have.text', '総選挙内企画 - 幻水総選挙2022')
+  })
 
-    // h1 タグ
+  it('h1 タグ が期待どおりであること', () => {
+    cy.url().should('equal', 'http://localhost:3100/events-in-event')
+
     cy.get('h1').should('have.length', 1)
     cy.get('h1').eq(0).should('have.text', '総選挙内企画')
+  })
+
+  it('li タグ が期待どおりであること', () => {
+    cy.url().should('equal', 'http://localhost:3100/events-in-event')
 
     // 単一コンポーネント内の li タグ
     cy.get('.hero li').should('have.length', 7)
 
-    cy.get('.hero li').then((hero_and_li_elements) => {
-      const texts = hero_and_li_elements.map((_index, item) => {
+    cy.get('.hero li').then(($hero_and_li_elements) => {
+      const texts = $hero_and_li_elements.map((_index, item) => {
         // 各要素に対して jQuery の text() を実行している
         return Cypress.$(item).text()
       })
@@ -34,7 +41,8 @@ describe('総選挙内企画のページ', () => {
         'ボーナス票',
       ]
 
-      // Cypress のオブジェクトではないので expect を用いて比較している（配列なので deep する）
+      // Cypress のオブジェクトではないので expect を用いて比較している
+      // そして配列なので deep.equal する
       expect(gotTexts).to.deep.equal(expectedTexts)
     })
   })

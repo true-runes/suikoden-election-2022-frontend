@@ -4,23 +4,23 @@ import Link from 'next/link'
 import Image from 'next/image'
 import type { NextPage } from 'next'
 
-import HumbergerNavigation from '../components/HumbergerMenu/HumbergerNavigation'
+import HumbergerNavigation from '@/components/HumbergerMenu/HumbergerNavigation'
 
-import NavBar from '../components/NavBar'
+import NavBar from '@/components/NavBar'
 
-import EventSummary from '../components/EventSummary'
-import HowToVote from '../components/HowToVote'
-import VoteExamples from '../components/VoteExamples'
-import Departments from '../components/Departments'
-import Dendouiri from '../components/Dendouiri'
-import Onegai from '../components/Onegai'
-import Kikaku from '../components/Kikaku'
+import EventSummary from '@/components/EventSummary'
+import HowToVote from '@/components/HowToVote'
+import VoteExamples from '@/components/VoteExamples'
+import Departments from '@/components/Departments'
+import Dendouiri from '@/components/Dendouiri'
+import Onegai from '@/components/Onegai'
+import Kikaku from '@/components/Kikaku'
 
-import WhatIsGensosenkyo from '../components/WhatIsGensosenkyo'
-import IllustratedBy from '../components/IllustratedBy'
-import SiteFooter from '../components/SiteFooter'
+import WhatIsGensosenkyo from '@/components/WhatIsGensosenkyo'
+import IllustratedBy from '@/components/IllustratedBy'
+import SiteFooter from '@/components/SiteFooter'
 
-import { useLocale } from '../hooks/useLocale'
+import { useLocale } from '@/hooks/useLocale'
 
 // const nowSecond = () => {
 //   const time = new Date()

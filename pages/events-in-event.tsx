@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
 
-import HumbergerNavigation from '../components/HumbergerMenu/HumbergerNavigation'
-import NavBar from '../components/NavBar'
-import SiteFooter from '../components/SiteFooter'
-import Kikaku from '../components/Kikaku'
+import HumbergerNavigation from '@/components/HumbergerMenu/HumbergerNavigation'
+import NavBar from '@/components/NavBar'
+import SiteFooter from '@/components/SiteFooter'
+import Kikaku from '@/components/Kikaku'
 
-import { useLocale } from '../hooks/useLocale'
+import { useLocale } from '@/hooks/useLocale'
 
 const EventsInEvent: NextPage = () => {
   const { t, locale } = useLocale()

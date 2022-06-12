@@ -61,3 +61,17 @@ describe('ホームページ（投票期間中）', () => {
     })
   })
 })
+
+describe('ホームページ（英語版）', () => {
+  beforeEach(() => {
+    cy.visit('/en')
+  })
+
+  it('ページタイトルが期待どおりであること', () => {
+    cy.url().should('equal', 'http://localhost:3100/en')
+
+    cy.get('title').should('have.text', 'Home - Gensosenkyo 2022')
+
+    cy.get('body').contains('What is the "Gensosenkyo" ?')
+  })
+})

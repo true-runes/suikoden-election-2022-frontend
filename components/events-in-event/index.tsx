@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Link from 'next/link'
 import { useLocale } from '@/hooks/useLocale'
 
-const Kikaku: NextPage = () => {
+const EventsInEventIndex: NextPage = () => {
   const { locale } = useLocale()
 
   return (
@@ -94,4 +94,4 @@ const Kikaku: NextPage = () => {
   )
 }
 
-export default Kikaku
+export default EventsInEventIndex

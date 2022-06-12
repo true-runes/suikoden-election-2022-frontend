@@ -2,9 +2,9 @@ import type { NextPage } from 'next'
 import Link from 'next/link'
 
 import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation'
-import NavBar from '@/components/NavBar'
-import SiteFooter from '@/components/SiteFooter'
-import Kikaku from '@/components/Kikaku'
+import NavBar from '@/components/common/NavBar'
+import SiteFooter from '@/components/common/SiteFooter'
+import Kikaku from '@/components/events-in-event/Kikaku'
 
 import { useLocale } from '@/hooks/useLocale'
 

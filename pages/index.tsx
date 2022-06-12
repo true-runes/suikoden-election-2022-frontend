@@ -6,19 +6,19 @@ import type { NextPage } from 'next'
 
 import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation'
 
-import NavBar from '@/components/NavBar'
+import NavBar from '@/components/common/NavBar'
 
-import EventSummary from '@/components/EventSummary'
-import HowToVote from '@/components/HowToVote'
-import VoteExamples from '@/components/VoteExamples'
-import Departments from '@/components/Departments'
-import Dendouiri from '@/components/Dendouiri'
-import Onegai from '@/components/Onegai'
-import Kikaku from '@/components/Kikaku'
+import EventSummary from '@/components/common/EventSummary'
+import HowToVote from '@/components/votes/HowToVote'
+import VoteExamples from '@/components/votes/VoteExamples'
+import Departments from '@/components/votes/Departments'
+import Dendouiri from '@/components/votes/Dendouiri'
+import Onegai from '@/components/votes/Onegai'
+import Kikaku from '@/components/events-in-event/Kikaku'
 
-import WhatIsGensosenkyo from '@/components/WhatIsGensosenkyo'
-import IllustratedBy from '@/components/IllustratedBy'
-import SiteFooter from '@/components/SiteFooter'
+import WhatIsGensosenkyo from '@/components/votes/WhatIsGensosenkyo'
+import IllustratedBy from '@/components/common/IllustratedBy'
+import SiteFooter from '@/components/common/SiteFooter'
 
 import { useLocale } from '@/hooks/useLocale'
 

@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
-import TwitterIcon from '@/components/Svg/TwitterIcon'
-import ExternalLink from '@/components/Svg/ExternalLink'
+import TwitterIcon from '@/components/svg/TwitterIcon'
+import ExternalLink from '@/components/svg/ExternalLink'
 import { useLocale } from '@/hooks/useLocale'
 
 const IllustratedBy: NextPage = () => {

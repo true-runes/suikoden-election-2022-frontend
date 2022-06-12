@@ -30,6 +30,10 @@
   ],
   "exclude": [
     "cypress/**",
-    "node_modules"
+    "node_modules",
+    ".history/**",
+    ".next/**",
+    ".vscode/**",
+    "tmp/**"
   ]
 }

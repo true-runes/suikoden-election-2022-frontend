@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import type { NextPage } from 'next'
 
-import HumbergerNavigation from '@/components/HumbergerMenu/HumbergerNavigation'
+import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation'
 
 import NavBar from '@/components/NavBar'
 

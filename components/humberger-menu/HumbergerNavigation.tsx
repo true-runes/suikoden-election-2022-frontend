@@ -1,7 +1,7 @@
 import { push as Menu } from 'react-burger-menu'
 import Link from 'next/link'
-import PreviousWebsites from './PreviousWebsites'
-import { useLocale } from '../../hooks/useLocale'
+import PreviousWebsites from '@/components/humberger-menu/PreviousWebsites'
+import { useLocale } from '@/hooks/useLocale'
 
 const Navigation = () => {
   const { t, locale } = useLocale()

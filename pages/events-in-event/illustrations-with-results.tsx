@@ -2,11 +2,11 @@ import type { NextPage } from 'next'
 import Link from 'next/link'
 import { TwitterTweetEmbed, TwitterTimelineEmbed } from 'react-twitter-embed'
 
-import HumbergerNavigation from '../../components/HumbergerMenu/HumbergerNavigation'
-import NavBar from '../../components/NavBar'
-import SiteFooter from '../../components/SiteFooter'
+import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation'
+import NavBar from '@/components/common/NavBar'
+import SiteFooter from '@/components/common/SiteFooter'
 
-import { useLocale } from '../../hooks/useLocale'
+import { useLocale } from '@/hooks/useLocale'
 
 const IllustrationsWithResults: NextPage = () => {
   const { t, locale } = useLocale()

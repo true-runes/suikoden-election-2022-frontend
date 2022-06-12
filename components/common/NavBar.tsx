@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
 
-import { useLocale } from '../hooks/useLocale'
+import { useLocale } from '@/hooks/useLocale'
 
 const NavBar: NextPage = () => {
   const { t, locale } = useLocale()

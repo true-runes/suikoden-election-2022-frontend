@@ -4,23 +4,23 @@ import Link from 'next/link'
 import Image from 'next/image'
 import type { NextPage } from 'next'
 
-import HumbergerNavigation from '../components/HumbergerMenu/HumbergerNavigation'
+import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation'
 
-import NavBar from '../components/NavBar'
+import NavBar from '@/components/common/NavBar'
 
-import EventSummary from '../components/EventSummary'
-import HowToVote from '../components/HowToVote'
-import VoteExamples from '../components/VoteExamples'
-import Departments from '../components/Departments'
-import Dendouiri from '../components/Dendouiri'
-import Onegai from '../components/Onegai'
-import Kikaku from '../components/Kikaku'
+import EventSummary from '@/components/common/EventSummary'
+import HowToVote from '@/components/votes/HowToVote'
+import VoteExamples from '@/components/votes/VoteExamples'
+import Departments from '@/components/votes/Departments'
+import Dendouiri from '@/components/votes/Dendouiri'
+import Onegai from '@/components/votes/Onegai'
+import EventsInEventIndex from '@/components/events-in-event/index'
 
-import WhatIsGensosenkyo from '../components/WhatIsGensosenkyo'
-import IllustratedBy from '../components/IllustratedBy'
-import SiteFooter from '../components/SiteFooter'
+import WhatIsGensosenkyo from '@/components/votes/WhatIsGensosenkyo'
+import IllustratedBy from '@/components/common/IllustratedBy'
+import SiteFooter from '@/components/common/SiteFooter'
 
-import { useLocale } from '../hooks/useLocale'
+import { useLocale } from '@/hooks/useLocale'
 
 // const nowSecond = () => {
 //   const time = new Date()
@@ -64,7 +64,7 @@ const Home: NextPage = () => {
         <NavBar />
 
         <Image
-          src="/gss2022_top.jpg"
+          src="/images/gss2022_top.jpg"
           alt={t.TOP_IMAGE_ALT}
           width={3180}
           height={1788}
@@ -129,7 +129,7 @@ const Home: NextPage = () => {
         <Onegai />
 
         <div className="divider" />
-        <Kikaku />
+        <EventsInEventIndex />
 
         <div className="divider" />
         <IllustratedBy />

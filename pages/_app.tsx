@@ -1,11 +1,11 @@
 import type { AppProps } from 'next/app'
 
-import { googleTagManagerId } from '../utils/gtm'
+import { googleTagManagerId } from '@/utils/gtm'
 import GoogleTagManager, {
   GoogleTagManagerId,
-} from '../components/GoogleTagManager'
+} from '@/components/common/GoogleTagManager'
 
-import '../styles/globals.scss'
+import '@/styles/globals.scss'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

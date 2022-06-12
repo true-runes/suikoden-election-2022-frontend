@@ -17,7 +17,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
   "include": [
     "next-env.d.ts",
@@ -25,6 +29,11 @@
     "**/*.tsx"
   ],
   "exclude": [
-    "node_modules"
+    "cypress/**",
+    "node_modules",
+    ".history/**",
+    ".next/**",
+    ".vscode/**",
+    "tmp/**"
   ]
 }

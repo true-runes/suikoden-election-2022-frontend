@@ -2,13 +2,13 @@ import type { NextPage } from 'next'
 import Link from 'next/link'
 import { TwitterTweetEmbed, TwitterTimelineEmbed } from 'react-twitter-embed'
 
-import HumbergerNavigation from '../../components/HumbergerMenu/HumbergerNavigation'
-import NavBar from '../../components/NavBar'
-import SiteFooter from '../../components/SiteFooter'
+import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation'
+import NavBar from '@/components/common/NavBar'
+import SiteFooter from '@/components/common/SiteFooter'
 
-import Contacts from '../../components/sosenkyo-book/contacts'
+import Contacts from '@/components/events-in-event/sosenkyo-book/Contacts'
 
-import { useLocale } from '../../hooks/useLocale'
+import { useLocale } from '@/hooks/useLocale'
 
 const SosenkyoBook: NextPage = () => {
   const { t, locale } = useLocale()

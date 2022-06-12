@@ -2,11 +2,11 @@ import type { NextPage } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import HumbergerNavigation from '../../components/HumbergerMenu/HumbergerNavigation'
-import NavBar from '../../components/NavBar'
-import SiteFooter from '../../components/SiteFooter'
+import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation'
+import NavBar from '@/components/common/NavBar'
+import SiteFooter from '@/components/common/SiteFooter'
 
-import { useLocale } from '../../hooks/useLocale'
+import { useLocale } from '@/hooks/useLocale'
 
 const OshiSerif: NextPage = () => {
   const { t, locale } = useLocale()
@@ -115,7 +115,7 @@ const OshiSerif: NextPage = () => {
               <h2 className="text-xl font-bold pb-4">ツイート例</h2>
               <div className="pb-4">
                 <Image
-                  src="/oshi_serif_sample.png"
+                  src="/images/oshi_serif_sample.png"
                   alt="推し台詞ツイート例"
                   width={1170}
                   height={540}

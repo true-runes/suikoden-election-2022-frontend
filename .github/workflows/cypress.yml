@@ -2,13 +2,6 @@ name: (GitHub Actions) Cypress
 
 on:
   push:
-    branches:
-      - main
-      - development
-  pull_request:
-    branches:
-      - main
-      - development
 
 jobs:
   cypress_gss2022_frontend:

@@ -1,4 +1,4 @@
-describe('ホーム - 総選挙内企画 - 開票イラスト - 幻水総選挙2022', () => {
+describe('ホーム - 総選挙内企画 - 開票イラスト', () => {
   const targetPath = '/events-in-event/illustrations-with-results'
 
   beforeEach(() => {
@@ -56,5 +56,19 @@ describe('ホーム - 総選挙内企画 - 開票イラスト - 幻水総選挙2
 
   it('フッタ が期待どおりであること', () => {
     cy.get('footer').should('have.length', 1)
+  })
+})
+
+describe('（英語版）ホーム - 総選挙内企画 - 開票イラスト', () => {
+  beforeEach(() => {
+    cy.visit('/en/events-in-event/illustrations-with-results')
+  })
+
+  it.skip('ページタイトルが期待どおりであること', () => {
+    cy.get('title').should('have.text', 'Home - Gensosenkyo 2022')
+  })
+
+  it.skip('ページ内容が期待どおりであること', () => {
+    cy.get('body').contains('What is the "Gensosenkyo" ?')
   })
 })

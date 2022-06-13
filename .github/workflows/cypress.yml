@@ -17,7 +17,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: yarn
+          # FIXME: 不具合により一時的にキャッシュを無効化する
+          # https://github.com/actions/setup-node/issues/516#issuecomment-1153635273
+          # cache: yarn
       - name: 日本語フォントのインストールを行う
         run: |
           sudo apt install -y fonts-migmix

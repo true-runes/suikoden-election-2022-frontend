@@ -1,9 +1,11 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
 import { useLocale } from '@/hooks/useLocale'
+// import useTranslation from 'next-translate/useTranslation'
 
 const EventsInEventIndex: NextPage = () => {
   const { locale } = useLocale()
+  // const { t } = useTranslation('')
 
   return (
     <div className="bg-white text-black">

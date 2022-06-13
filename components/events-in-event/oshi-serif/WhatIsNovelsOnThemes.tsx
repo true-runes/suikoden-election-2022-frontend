@@ -1,8 +1,10 @@
 import type { NextPage } from 'next'
 import { useLocale } from '@/hooks/useLocale'
+// import useTranslation from 'next-translate/useTranslation'
 
 export const WhatIsOshiSerif: NextPage = () => {
   const { locale } = useLocale()
+  // const { t } = useTranslation('')
 
   return (
     <>

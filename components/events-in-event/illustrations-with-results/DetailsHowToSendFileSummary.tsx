@@ -1,6 +1,9 @@
 import type { NextPage } from 'next'
+// import useTranslation from 'next-translate/useTranslation'
 
 export const DetailsHowToSendFileSummary: NextPage = () => {
+  // const { t } = useTranslation('')
+
   return (
     <>
       <h2 className="text-xl font-bold pb-4">募集詳細 - 送信方法</h2>

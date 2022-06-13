@@ -1,8 +1,10 @@
 import type { NextPage } from 'next'
 import { useLocale } from '@/hooks/useLocale'
+// import useTranslation from 'next-translate/useTranslation'
 
 export const WhatIsOpClIllustrations: NextPage = () => {
   const { locale } = useLocale()
+  // const { t } = useTranslation('')
 
   return (
     <>

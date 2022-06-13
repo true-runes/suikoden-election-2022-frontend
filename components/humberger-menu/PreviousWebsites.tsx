@@ -1,8 +1,10 @@
 import PreviousWebsiteLink from '@/components/humberger-menu/PreviousWebsiteLink'
 import { useLocale } from '@/hooks/useLocale'
+// import useTranslation from 'next-translate/useTranslation'
 
 const PreviousWebsites = () => {
   const { t, locale } = useLocale()
+  // const { t } = useTranslation('')
 
   const previousWebsiteNamesAndUrls = [
     {

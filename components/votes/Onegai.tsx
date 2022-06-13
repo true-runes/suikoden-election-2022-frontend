@@ -1,7 +1,9 @@
 import type { NextPage } from 'next'
 import { useLocale } from '@/hooks/useLocale'
+// import useTranslation from 'next-translate/useTranslation'
 
 const Onegai: NextPage = () => {
+  // const { t } = useTranslation('')
   const { locale } = useLocale()
 
   return (

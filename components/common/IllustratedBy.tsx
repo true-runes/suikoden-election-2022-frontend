@@ -1,10 +1,14 @@
 import type { NextPage } from 'next'
 import TwitterIcon from '@/components/svg/TwitterIcon'
 import ExternalLink from '@/components/svg/ExternalLink'
+// FIXME: useLocale は消す
 import { useLocale } from '@/hooks/useLocale'
+import useTranslation from 'next-translate/useTranslation'
 
 const IllustratedBy: NextPage = () => {
+  // FIXME: locale は消す
   const { locale } = useLocale()
+  const { t } = useTranslation('common_illustrated_by')
 
   return (
     <>

@@ -1,7 +1,10 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
+// import useTranslation from 'next-translate/useTranslation'
 
 export const Themes: NextPage = () => {
+  // const { t } = useTranslation('')
+
   return (
     <>
       <h2 className="text-xl font-bold pb-4">お題</h2>

@@ -1,6 +1,9 @@
 import type { NextPage } from 'next'
+// import useTranslation from 'next-translate/useTranslation'
 
 export const CountedDivisions: NextPage = () => {
+  // const { t } = useTranslation('')
+
   return (
     <>
       <h2 className="text-xl font-bold pb-4">ボーナス票が入る部門</h2>

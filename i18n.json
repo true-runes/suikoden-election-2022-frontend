@@ -5,7 +5,8 @@
     "*": [
       "common",
       "votes_what_is_gensosenkyo",
-      "votes_hall_of_fame"
+      "votes_hall_of_fame",
+      "votes_how_to_vote"
     ]
   }
 }

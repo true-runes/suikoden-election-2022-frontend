@@ -31,9 +31,9 @@ jobs:
     - name: ESLint
       run: |
         yarn lint
-    - name: Jest
+    - name: Jest によるテストを実行する
       run: |
-        echo 'TODO: $ yarn test'
+        npx jest
     - name: Codecov の結果をアップロードする
       run: |
         echo 'TODO: Codecov の結果をアップロードする'

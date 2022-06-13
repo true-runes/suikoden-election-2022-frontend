@@ -1,8 +1,12 @@
 import type { NextPage } from 'next'
+// FIXME: useLocale は消す
 import { useLocale } from '@/hooks/useLocale'
+import useTranslation from 'next-translate/useTranslation'
 
 const EventSummary: NextPage = () => {
+  // FIXME: locale は消す
   const { locale } = useLocale()
+  const { t } = useTranslation('common_event_summary')
 
   return (
     <div className="bg-white text-black">

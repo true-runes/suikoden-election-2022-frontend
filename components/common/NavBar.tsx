@@ -2,9 +2,11 @@ import type { NextPage } from 'next'
 import Link from 'next/link'
 
 import { useLocale } from '@/hooks/useLocale'
+// import useTranslation from 'next-translate/useTranslation'
 
 const NavBar: NextPage = () => {
   const { t, locale } = useLocale()
+  // const { t } = useTranslation('common_navbar')
 
   const languages = [
     { id: 1, name: '日本語', value: 'ja' },

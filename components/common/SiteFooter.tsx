@@ -2,9 +2,11 @@ import type { NextPage } from 'next'
 import TwitterIcon from '@/components/svg/TwitterIcon'
 import ExternalLink from '@/components/svg/ExternalLink'
 import { useLocale } from '@/hooks/useLocale'
+// import useTranslation from 'next-translate/useTranslation'
 
 const SiteFooter: NextPage = () => {
   const { t } = useLocale()
+  // const { t } = useTranslation('common_site_footer')
 
   return (
     <>

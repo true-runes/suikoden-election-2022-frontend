@@ -1,7 +1,10 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
+// import useTranslation from 'next-translate/useTranslation'
 
 export const Condition01: NextPage = () => {
+  // const { t } = useTranslation('')
+
   return (
     <>
       <div className="pb-4">

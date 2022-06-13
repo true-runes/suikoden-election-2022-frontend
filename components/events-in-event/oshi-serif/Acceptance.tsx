@@ -1,6 +1,9 @@
 import type { NextPage } from 'next'
+// import useTranslation from 'next-translate/useTranslation'
 
 export const Acceptance: NextPage = () => {
+  // const { t } = useTranslation('')
+
   return (
     <>
       <h3 className="text-xl font-bold pb-4">応募の受理</h3>

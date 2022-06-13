@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { useLocale } from '@/hooks/useLocale'
 
-const Dendouiri: NextPage = () => {
+export const HallOfFame: NextPage = () => {
   const { locale } = useLocale()
 
   return (
@@ -44,5 +44,3 @@ const Dendouiri: NextPage = () => {
     </div>
   )
 }
-
-export default Dendouiri

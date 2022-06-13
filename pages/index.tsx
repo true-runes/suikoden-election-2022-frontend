@@ -12,7 +12,7 @@ import EventSummary from '@/components/common/EventSummary'
 import HowToVote from '@/components/votes/HowToVote'
 import VoteExamples from '@/components/votes/VoteExamples'
 import { Divisions } from '@/components/votes/Divisions'
-import Dendouiri from '@/components/votes/Dendouiri'
+import { HallOfFame } from '@/components/votes/HallOfFame'
 import Onegai from '@/components/votes/Onegai'
 import EventsInEventIndex from '@/components/events-in-event/index'
 
@@ -123,7 +123,7 @@ const Home: NextPage = () => {
         <VoteExamples />
 
         <div className="divider" />
-        <Dendouiri />
+        <HallOfFame />
 
         <div className="divider" />
         <Onegai />

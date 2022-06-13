@@ -1,26 +1,22 @@
 import type { NextPage } from 'next'
 import TwitterIcon from '@/components/svg/TwitterIcon'
 import ExternalLink from '@/components/svg/ExternalLink'
-// FIXME: useLocale は消す
-import { useLocale } from '@/hooks/useLocale'
 import useTranslation from 'next-translate/useTranslation'
 
-const IllustratedBy: NextPage = () => {
-  // FIXME: locale は消す
-  const { locale } = useLocale()
+export const IllustratedBy: NextPage = () => {
   const { t } = useTranslation('common_illustrated_by')
 
   return (
     <>
       <div className="text-base text-center">
         <p className="pb-4 font-bold underline text-xl font-zen-old-mincho">
-          {locale === 'ja' ? 'イラストご協力' : 'Illustration by'}
+          {t('イラストご協力')}
         </p>
         <span>
           <span className="pr-1">
             <TwitterIcon />
           </span>
-          まみた様 ({' '}
+          {t('まみた様')} ({' '}
           <a
             href="https://twitter.com/mamita404"
             target="_blank"
@@ -38,5 +34,3 @@ const IllustratedBy: NextPage = () => {
     </>
   )
 }
-
-export default IllustratedBy

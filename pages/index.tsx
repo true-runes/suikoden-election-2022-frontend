@@ -6,7 +6,7 @@ import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation
 
 import NavBar from '@/components/common/NavBar'
 
-import EventSummary from '@/components/common/EventSummary'
+import { EventSummary } from '@/components/common/EventSummary'
 import HowToVote from '@/components/votes/HowToVote'
 import VoteExamples from '@/components/votes/VoteExamples'
 import { Divisions } from '@/components/votes/Divisions'

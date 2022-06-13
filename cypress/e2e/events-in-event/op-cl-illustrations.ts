@@ -1,26 +1,35 @@
-describe('ホーム - 総選挙内企画 - 幻水総選挙本', () => {
-  const targetPath = '/events-in-event/sosenkyo-book'
+describe('ホーム - 総選挙内企画 - OPイラスト・CLイラスト', () => {
+  const targetPath = '/events-in-event/op-cl-illustrations'
 
   beforeEach(() => {
     cy.visit(targetPath)
   })
 
   it('ページタイトルが期待どおりであること', () => {
-    // TODO: ホスト名をハードコーディングしたくない
     cy.url().should('equal', `http://localhost:3100${targetPath}`)
 
-    cy.get('title').should('have.text', '幻水総選挙本 - 幻水総選挙2022')
+    cy.get('title').should(
+      'have.text',
+      'OPイラスト・CLイラスト - 幻水総選挙2022'
+    )
+  })
+
+  it('パンくずリスト が期待どおりであること', () => {
+    cy.get('.breadcrumbs').should(
+      'have.text',
+      'ホーム総選挙内企画OPイラスト・CLイラスト'
+    )
   })
 
   it('h1 タグ が期待どおりであること', () => {
     cy.get('h1').should('have.length', 1)
     cy.get('h1').then(($h1) => {
-      cy.wrap($h1).eq(0).should('have.text', '幻水総選挙本')
+      cy.wrap($h1).eq(0).should('have.text', 'OPイラスト・CLイラスト')
     })
   })
 
   it('h2 タグ が期待どおりであること', () => {
-    cy.get('h2').should('have.length', 16)
+    cy.get('h2').should('have.length', 6)
 
     cy.get('h2').then(($h2) => {
       const texts = $h2.map((_index, item) => {
@@ -32,22 +41,12 @@ describe('ホーム - 総選挙内企画 - 幻水総選挙本', () => {
       const gotTexts = texts.get()
 
       const expectedTexts = [
-        '幻水総選挙本とは？',
-        '開票イラストの掲載について',
-        '本について',
-        '募集概要',
-        '募集詳細 - 印刷用データのサイズ',
-        '募集詳細 - 印刷用データの解像度',
-        '募集詳細 - カラーモード',
-        '募集詳細 - 保存形式',
-        '募集詳細 - ファイル名',
-        '〆切',
-        '送信方法詳細',
-        '参加の流れ',
-        '注意',
-        '過去の作品掲載について',
-        'Q & A',
-        '連絡先',
+        'OP＆CLイラストとは？',
+        '募集内容の詳細',
+        'お礼',
+        'イラスト送付〆切',
+        '昨年のOPイラスト',
+        '昨年のCLイラスト',
       ]
 
       // Cypress のオブジェクトではないので expect を用いて比較している

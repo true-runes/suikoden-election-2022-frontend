@@ -11,8 +11,8 @@ import NavBar from '@/components/common/NavBar'
 import EventSummary from '@/components/common/EventSummary'
 import HowToVote from '@/components/votes/HowToVote'
 import VoteExamples from '@/components/votes/VoteExamples'
-import Departments from '@/components/votes/Departments'
-import Dendouiri from '@/components/votes/Dendouiri'
+import { Divisions } from '@/components/votes/Divisions'
+import { HallOfFame } from '@/components/votes/HallOfFame'
 import Onegai from '@/components/votes/Onegai'
 import EventsInEventIndex from '@/components/events-in-event/index'
 
@@ -114,7 +114,7 @@ const Home: NextPage = () => {
         <EventSummary />
 
         <div className="divider" />
-        <Departments />
+        <Divisions />
 
         <div className="divider" />
         <HowToVote />
@@ -123,7 +123,7 @@ const Home: NextPage = () => {
         <VoteExamples />
 
         <div className="divider" />
-        <Dendouiri />
+        <HallOfFame />
 
         <div className="divider" />
         <Onegai />

@@ -1,6 +1,9 @@
 import type { NextPage } from 'next'
+// import useTranslation from 'next-translate/useTranslation'
 
 export const Details: NextPage = () => {
+  // const { t } = useTranslation('')
+
   return (
     <>
       <h2 className="text-xl font-bold pb-4">募集内容の詳細</h2>

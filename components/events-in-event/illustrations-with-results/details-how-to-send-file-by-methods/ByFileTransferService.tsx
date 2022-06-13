@@ -1,6 +1,9 @@
 import type { NextPage } from 'next'
+// import useTranslation from 'next-translate/useTranslation'
 
 export const ByFileTransferService: NextPage = () => {
+  // const { t } = useTranslation('')
+
   return (
     <>
       <div className="pb-10">

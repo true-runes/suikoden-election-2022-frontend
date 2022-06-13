@@ -1,7 +1,10 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
+// import useTranslation from 'next-translate/useTranslation'
 
 export const TweetExample: NextPage = () => {
+  // const { t } = useTranslation('')
+
   return (
     <>
       <h2 className="text-xl font-bold pb-4">ツイート例</h2>

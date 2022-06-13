@@ -5,7 +5,11 @@ import { Condition02 } from '@/components/events-in-event/bonus-votes/counted-co
 import { Condition03 } from '@/components/events-in-event/bonus-votes/counted-conditions/Condition03'
 import { Condition04 } from '@/components/events-in-event/bonus-votes/counted-conditions/Condition04'
 
+// import useTranslation from 'next-translate/useTranslation'
+
 export const CountedConditions: NextPage = () => {
+  // const { t } = useTranslation('')
+
   return (
     <>
       <h2 className="text-xl font-bold pb-4">ボーナス票が入る条件</h2>

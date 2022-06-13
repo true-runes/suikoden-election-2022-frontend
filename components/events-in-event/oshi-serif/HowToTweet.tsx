@@ -1,6 +1,9 @@
 import type { NextPage } from 'next'
+// import useTranslation from 'next-translate/useTranslation'
 
 export const HowToTweet: NextPage = () => {
+  // const { t } = useTranslation('')
+
   return (
     <>
       <h3 className="text-xl font-bold pb-4">投稿方法</h3>

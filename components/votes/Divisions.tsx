@@ -1,8 +1,10 @@
 import type { NextPage } from 'next'
 import { useLocale } from '@/hooks/useLocale'
+// import useTranslation from 'next-translate/useTranslation'
 
 export const Divisions: NextPage = () => {
   const { locale } = useLocale()
+  // const { t } = useTranslation('')
 
   return (
     <div className="bg-white text-black">
@@ -25,6 +27,16 @@ export const Divisions: NextPage = () => {
                     {locale === 'ja'
                       ? '各部門でお一人様1回ずつ投票できます（どちらか一方の部門のみへの投票でも構いません）。'
                       : 'You can vote 1 time in each division (you can also vote just in one division only if you wish).'}
+                  </li>
+                  <li className="pb-2">
+                    <a
+                      href="https://note.com/gensosenkyo/n/nc07265ea4511"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="underline underline-offset-2 text-blue-500 hover:text-blue-900"
+                    >
+                      「コンビ部門」の再検討について (2022/06/13)
+                    </a>
                   </li>
                 </ul>
               </div>

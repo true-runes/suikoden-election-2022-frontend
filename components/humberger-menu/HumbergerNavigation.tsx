@@ -2,9 +2,11 @@ import { push as Menu } from 'react-burger-menu'
 import Link from 'next/link'
 import PreviousWebsites from '@/components/humberger-menu/PreviousWebsites'
 import { useLocale } from '@/hooks/useLocale'
+// import useTranslation from 'next-translate/useTranslation'
 
 const Navigation = () => {
   const { t, locale } = useLocale()
+  // const { t } = useTranslation('')
 
   return (
     <div id="outer-container">

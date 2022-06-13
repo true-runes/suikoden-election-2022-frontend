@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { useLocale } from '@/hooks/useLocale'
 
-const Departments: NextPage = () => {
+export const Divisions: NextPage = () => {
   const { locale } = useLocale()
 
   return (
@@ -122,5 +122,3 @@ const Departments: NextPage = () => {
     </div>
   )
 }
-
-export default Departments

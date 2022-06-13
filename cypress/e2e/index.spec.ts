@@ -62,7 +62,7 @@ describe('ホームページ（投票期間中）', () => {
   })
 })
 
-describe('ホームページ（英語版）', () => {
+describe('（英語版）ホームページ', () => {
   beforeEach(() => {
     cy.visit('/en')
   })

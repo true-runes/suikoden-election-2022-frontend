@@ -48,7 +48,7 @@ describe('総選挙内企画のページ', () => {
   })
 })
 
-describe('総選挙内企画のページ（英語版）', () => {
+describe('（英語版）総選挙内企画のページ', () => {
   beforeEach(() => {
     cy.visit('/en/events-in-event')
   })

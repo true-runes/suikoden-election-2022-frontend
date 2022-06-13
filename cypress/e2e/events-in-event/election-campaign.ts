@@ -46,3 +46,17 @@ describe('ホーム - 総選挙内企画 - 選挙運動', () => {
     cy.get('footer').should('have.length', 1)
   })
 })
+
+describe('（英語版）ホーム - 総選挙内企画 - 選挙運動', () => {
+  beforeEach(() => {
+    cy.visit('/en/events-in-event/election-campaign')
+  })
+
+  it.skip('ページタイトルが期待どおりであること', () => {
+    cy.get('title').should('have.text', 'Home - Gensosenkyo 2022')
+  })
+
+  it.skip('ページ内容が期待どおりであること', () => {
+    cy.get('body').contains('What is the "Gensosenkyo" ?')
+  })
+})

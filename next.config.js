@@ -1,12 +1,10 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
+const nextTranslate = require('next-translate')
+
+module.exports = nextTranslate({
   reactStrictMode: true,
   experimental: {
     optimizeFonts: true,
     scrollRestoration: true,
   },
-  i18n: {
-    locales: ['ja', 'en'],
-    defaultLocale: 'ja',
-  },
-}
+})

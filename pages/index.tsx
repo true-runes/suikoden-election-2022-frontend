@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import styled from 'styled-components'
-import Link from 'next/link'
 import Image from 'next/image'
 import type { NextPage } from 'next'
 
@@ -16,7 +14,7 @@ import { HallOfFame } from '@/components/votes/HallOfFame'
 import Onegai from '@/components/votes/Onegai'
 import EventsInEventIndex from '@/components/events-in-event/index'
 
-import WhatIsGensosenkyo from '@/components/votes/WhatIsGensosenkyo'
+import { WhatIsGensosenkyo } from '@/components/votes/WhatIsGensosenkyo'
 import IllustratedBy from '@/components/common/IllustratedBy'
 import SiteFooter from '@/components/common/SiteFooter'
 

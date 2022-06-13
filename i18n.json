@@ -4,7 +4,8 @@
   "pages": {
     "*": [
       "common",
-      "votes_what_is_gensosenkyo"
+      "votes_what_is_gensosenkyo",
+      "votes_hall_of_fame"
     ]
   }
 }

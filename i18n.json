@@ -5,6 +5,7 @@
     "*": [
       "common",
       "common_event_summary",
+      "common_illustrated_by",
       "votes_what_is_gensosenkyo",
       "votes_hall_of_fame",
       "votes_how_to_vote"

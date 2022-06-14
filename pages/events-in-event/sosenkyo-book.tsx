@@ -10,7 +10,7 @@ import Contacts from '@/components/events-in-event/sosenkyo-book/Contacts'
 
 const SosenkyoBook: NextPage = () => {
   const commonTranslation = useTranslation('common')
-  const { t, lang } = useTranslation('sosenkyo_book')
+  const { t } = useTranslation('sosenkyo_book')
 
   return (
     <div className="bg-white text-black">

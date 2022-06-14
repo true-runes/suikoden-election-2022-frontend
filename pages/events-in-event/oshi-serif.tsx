@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation'
 import { NavBar } from '@/components/common/NavBar'
-import SiteFooter from '@/components/common/SiteFooter'
+import { SiteFooter } from '@/components/common/SiteFooter'
 
 import { useLocale } from '@/hooks/useLocale'
 import { WhatIsOshiSerif } from '@/components/events-in-event/oshi-serif/WhatIsNovelsOnThemes'

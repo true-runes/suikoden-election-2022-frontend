@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
-import { TwitterTweetEmbed, TwitterTimelineEmbed } from 'react-twitter-embed'
+import useTranslation from 'next-translate/useTranslation'
 
 import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation'
 import { NavBar } from '@/components/common/NavBar'
@@ -8,14 +8,15 @@ import { SiteFooter } from '@/components/common/SiteFooter'
 
 import Contacts from '@/components/events-in-event/sosenkyo-book/Contacts'
 
-import { useLocale } from '@/hooks/useLocale'
-
 const SosenkyoBook: NextPage = () => {
-  const { t, locale } = useLocale()
+  const commonTranslation = useTranslation('common')
+  const { t, lang } = useTranslation('sosenkyo_book')
 
   return (
     <div className="bg-white text-black">
-      <title>{`${t.PAGE_TITLE_SOSENKYO_BOOK} - ${t.WEBSITE_TITLE}`}</title>
+      <title>{`${commonTranslation.t('幻水総選挙本')} - ${commonTranslation.t(
+        '幻水総選挙2022'
+      )}`}</title>
       <div className={'right'}>
         <HumbergerNavigation />
       </div>
@@ -26,12 +27,14 @@ const SosenkyoBook: NextPage = () => {
         <div className="text-base bg-gray-700 text-white breadcrumbs pl-6 pb-2 sticky top-16 z-50">
           <ul>
             <li>
-              <Link href="/">{t.PAGE_TITLE_HOME}</Link>
+              <Link href="/">{commonTranslation.t('幻水総選挙2022')}</Link>
             </li>
             <li>
-              <Link href="/events-in-event">{t.PAGE_TITLE_PROJECTS}</Link>
+              <Link href="/events-in-event">
+                {commonTranslation.t('総選挙内企画')}
+              </Link>
             </li>
-            <li>{t.PAGE_TITLE_SOSENKYO_BOOK}</li>
+            <li>{commonTranslation.t('幻水総選挙本')}</li>
           </ul>
         </div>
 
@@ -39,12 +42,10 @@ const SosenkyoBook: NextPage = () => {
           <div className="hero-content text-center">
             <div className="max-w-md">
               <h1 className="text-2xl font-bold pb-10 underline font-zen-old-mincho">
-                {t.PAGE_TITLE_SOSENKYO_BOOK}
+                {commonTranslation.t('幻水総選挙本')}
               </h1>
               <h2 className="text-xl font-bold pb-4">
-                {locale === 'ja'
-                  ? '幻水総選挙本とは？'
-                  : 'What is Sosenkyo book?'}
+                {t('幻水総選挙本とは？')}
               </h2>
               <div className="text-base text-left pb-4">
                 <div className="pb-4">

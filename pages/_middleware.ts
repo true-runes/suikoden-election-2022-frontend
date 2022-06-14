@@ -1,7 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server'
 
 const middleware = (req: NextRequest) => {
-  if (process.env.DEPLOYMENT_ENVIRONMENT === 'production')
+  if (
+    process.env.DEPLOYMENT_ENVIRONMENT === 'production' &&
+    req.page.name !== '/usagisan'
+  )
     return NextResponse.next()
 
   const basicAuth = req.headers.get('authorization')

@@ -16,9 +16,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        # FIXME: 不具合により一時的にキャッシュを無効化する
-        # https://github.com/actions/setup-node/issues/516#issuecomment-1153635273
-        # cache: yarn
+        cache: yarn
     # Enable tmate debugging of manually-triggered workflows if the input option was provided
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3

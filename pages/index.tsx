@@ -4,7 +4,7 @@ import type { NextPage } from 'next'
 
 import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation'
 
-import NavBar from '@/components/common/NavBar'
+import { NavBar } from '@/components/common/NavBar'
 
 import { EventSummary } from '@/components/common/EventSummary'
 import HowToVote from '@/components/votes/HowToVote'

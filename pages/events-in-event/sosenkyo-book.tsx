@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { TwitterTweetEmbed, TwitterTimelineEmbed } from 'react-twitter-embed'
 
 import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation'
-import NavBar from '@/components/common/NavBar'
+import { NavBar } from '@/components/common/NavBar'
 import SiteFooter from '@/components/common/SiteFooter'
 
 import Contacts from '@/components/events-in-event/sosenkyo-book/Contacts'

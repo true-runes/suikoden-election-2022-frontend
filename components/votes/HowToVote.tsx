@@ -19,7 +19,7 @@ const HowToVote: NextPage = () => {
               </p>
 
               <h2 className="text-xl font-bold pb-4">
-                {t('方法1_ツイート投票')}
+                {t('方法1: ツイート投票')}
               </h2>
               <div className="text-base text-left pb-4">
                 <ul className="list-disc pl-6 pr-2">
@@ -36,7 +36,7 @@ const HowToVote: NextPage = () => {
                 </ul>
               </div>
 
-              <h2 className="text-xl font-bold pb-4">{t('方法2_DM投票')}</h2>
+              <h2 className="text-xl font-bold pb-4">{t('方法2: DM投票')}</h2>
               <div className="text-base text-left pb-4">
                 <ul className="list-disc pl-6 pr-2">
                   <li className="pb-2">
@@ -68,7 +68,7 @@ const HowToVote: NextPage = () => {
                     )}
                   </li>
                   <li className="pb-2">
-                    {t('2022/7/3（日）23_59まで公開アカウントのままにする。')}
+                    {t('2022/7/3（日）23:59まで公開アカウントのままにする。')}
                   </li>
                 </ul>
               </div>

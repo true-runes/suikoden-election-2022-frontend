@@ -31,6 +31,20 @@ describe('ホームページ', () => {
       cy.wrap($h2).eq(0).should('have.attr', 'class', 'text-xl font-bold pb-4')
     })
   })
+
+  it('ページ内の主要文言が期待どおりであること', () => {
+    cy.url().should('equal', 'http://localhost:3100/')
+
+    cy.contains('body', '2022年6月24日（金）21:00 から')
+    cy.contains('body', '2022年6月26日（日）23:59 まで')
+    cy.contains('body', '2022年7月9日（土）19:00～（予定）')
+    cy.contains('body', '2022年7月16日（土）19:00～（予定）')
+
+    cy.contains('body', '方法1: ツイート投票')
+    cy.contains('body', '方法2: DM投票')
+
+    cy.contains('body', '2022/7/3（日）23:59まで公開アカウントのままにする。')
+  })
 })
 
 describe('ホームページ（投票期間中）', () => {

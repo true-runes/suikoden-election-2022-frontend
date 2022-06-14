@@ -17,9 +17,9 @@ export const EventSummary: NextPage = () => {
               <div className="pb-8">
                 <h2 className="text-xl font-bold pb-4">{t('投票期間')}</h2>
                 <div className="text-base">
-                  <p>{t('2022年6月24日（金）21_00 から')}</p>
+                  <p>{t('2022年6月24日（金）21:00 から')}</p>
                   {lang === 'en' && <p>to</p>}
-                  <p>{t('2022年6月26日（日）23_59 まで')}</p>
+                  <p>{t('2022年6月26日（日）23:59 まで')}</p>
                 </div>
               </div>
 
@@ -27,12 +27,12 @@ export const EventSummary: NextPage = () => {
               <div className="text-base">
                 <div className="pb-4">
                   <p className="font-bold pb-2">{t('第一部')}</p>
-                  <p>{t('2022年7月9日（土）19_00～（予定）')}</p>
+                  <p>{t('2022年7月9日（土）19:00～（予定）')}</p>
                 </div>
 
                 <div className="pb-4">
                   <p className="font-bold pb-2">{t('第二部')}</p>
-                  <p>{t('2022年7月16日（土）19_00～（予定）')}</p>
+                  <p>{t('2022年7月16日（土）19:00～（予定）')}</p>
                 </div>
               </div>
             </div>

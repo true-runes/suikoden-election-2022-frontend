@@ -1,11 +1,10 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
+import useTranslation from 'next-translate/useTranslation'
 
 import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation'
-import NavBar from '@/components/common/NavBar'
-import SiteFooter from '@/components/common/SiteFooter'
-
-import { useLocale } from '@/hooks/useLocale'
+import { NavBar } from '@/components/common/NavBar'
+import { SiteFooter } from '@/components/common/SiteFooter'
 
 import { WhatIsBonusVotes } from '@/components/events-in-event/bonus-votes/WhatIsBonusVotes'
 import { CountedDivisions } from '@/components/events-in-event/bonus-votes/CountedDivisions'
@@ -13,11 +12,13 @@ import { CountedConditions } from '@/components/events-in-event/bonus-votes/Coun
 import { Examples } from '@/components/events-in-event/bonus-votes/Examples'
 
 const BonusVotes: NextPage = () => {
-  const { t } = useLocale()
+  const commonTranslation = useTranslation('common')
 
   return (
     <div className="bg-white text-black">
-      <title>{`ボーナス票 - ${t.WEBSITE_TITLE}`}</title>
+      <title>{`${commonTranslation.t('ボーナス票')} - ${commonTranslation.t(
+        '幻水総選挙2022'
+      )}`}</title>
       <div className={'right'}>
         <HumbergerNavigation />
       </div>
@@ -29,15 +30,15 @@ const BonusVotes: NextPage = () => {
           <ul>
             <li>
               <Link href="/" passHref>
-                {t.PAGE_TITLE_HOME}
+                {commonTranslation.t('ホーム')}
               </Link>
             </li>
             <li>
               <Link href="/events-in-event" passHref>
-                {t.PAGE_TITLE_PROJECTS}
+                {commonTranslation.t('総選挙内企画')}
               </Link>
             </li>
-            <li>ボーナス票</li>
+            <li>{commonTranslation.t('ボーナス票')}</li>
           </ul>
         </div>
 

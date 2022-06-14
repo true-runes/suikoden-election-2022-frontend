@@ -4,19 +4,19 @@ import type { NextPage } from 'next'
 
 import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation'
 
-import NavBar from '@/components/common/NavBar'
+import { NavBar } from '@/components/common/NavBar'
 
-import EventSummary from '@/components/common/EventSummary'
+import { EventSummary } from '@/components/common/EventSummary'
 import HowToVote from '@/components/votes/HowToVote'
 import VoteExamples from '@/components/votes/VoteExamples'
 import { Divisions } from '@/components/votes/Divisions'
 import { HallOfFame } from '@/components/votes/HallOfFame'
 import Onegai from '@/components/votes/Onegai'
-import EventsInEventIndex from '@/components/events-in-event/index'
+import { EventsInEventIndex } from '@/components/events-in-event/index'
 
 import { WhatIsGensosenkyo } from '@/components/votes/WhatIsGensosenkyo'
-import IllustratedBy from '@/components/common/IllustratedBy'
-import SiteFooter from '@/components/common/SiteFooter'
+import { IllustratedBy } from '@/components/common/IllustratedBy'
+import { SiteFooter } from '@/components/common/SiteFooter'
 
 import { useLocale } from '@/hooks/useLocale'
 

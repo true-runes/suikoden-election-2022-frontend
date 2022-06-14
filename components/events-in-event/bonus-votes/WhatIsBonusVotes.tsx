@@ -1,16 +1,12 @@
 import type { NextPage } from 'next'
-import { useLocale } from '@/hooks/useLocale'
-// import useTranslation from 'next-translate/useTranslation'
+import useTranslation from 'next-translate/useTranslation'
 
 export const WhatIsBonusVotes: NextPage = () => {
-  const { locale } = useLocale()
-  // const { t } = useTranslation('')
+  const { t } = useTranslation('bonus_votes_what_is_bonus_votes')
 
   return (
     <>
-      <h2 className="text-xl font-bold pb-4">
-        {locale === 'ja' ? 'ボーナス票とは？' : 'What is bonus votes?'}
-      </h2>
+      <h2 className="text-xl font-bold pb-4">{t('ボーナス票とは？')}</h2>
       <div className="text-base text-left pb-4">
         下記の条件をクリアしたキャラには「ボーナス票」が入ります。
         <br />

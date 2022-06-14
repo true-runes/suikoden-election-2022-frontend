@@ -1,12 +1,9 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
+import useTranslation from 'next-translate/useTranslation'
 
-import { useLocale } from '@/hooks/useLocale'
-// import useTranslation from 'next-translate/useTranslation'
-
-const NavBar: NextPage = () => {
-  const { t, locale } = useLocale()
-  // const { t } = useTranslation('common_navbar')
+export const NavBar: NextPage = () => {
+  const commonTranslation = useTranslation('common')
 
   const languages = [
     { id: 1, name: '日本語', value: 'ja' },
@@ -22,7 +19,6 @@ const NavBar: NextPage = () => {
   const changeLanguage = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ): void => {
-    // FIXME: 綺麗にする
     switch (e.target.value) {
       case 'ja':
         location.href = location.pathname
@@ -43,14 +39,14 @@ const NavBar: NextPage = () => {
       <div className="navbar bg-neutral text-white sticky top-0 z-50">
         <div className="text-xl pl-4 font-zen-old-mincho">
           <Link href="/" passHref>
-            {t.WEBSITE_TITLE}
+            {commonTranslation.t('幻水総選挙2022')}
           </Link>
         </div>
 
         <div className="absolute right-20 bg-neutral text-white">
           <select
             className="select select-bordered select-sm bg-neutral text-white"
-            defaultValue={locale}
+            defaultValue={commonTranslation.lang}
             onChange={changeLanguage}
           >
             {listLanguages}
@@ -60,5 +56,3 @@ const NavBar: NextPage = () => {
     </>
   )
 }
-
-export default NavBar

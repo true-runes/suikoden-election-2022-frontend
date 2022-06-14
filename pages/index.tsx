@@ -12,7 +12,7 @@ import VoteExamples from '@/components/votes/VoteExamples'
 import { Divisions } from '@/components/votes/Divisions'
 import { HallOfFame } from '@/components/votes/HallOfFame'
 import Onegai from '@/components/votes/Onegai'
-import EventsInEventIndex from '@/components/events-in-event/index'
+import { EventsInEventIndex } from '@/components/events-in-event/index'
 
 import { WhatIsGensosenkyo } from '@/components/votes/WhatIsGensosenkyo'
 import { IllustratedBy } from '@/components/common/IllustratedBy'

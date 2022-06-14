@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation'
 import { NavBar } from '@/components/common/NavBar'
-import SiteFooter from '@/components/common/SiteFooter'
+import { SiteFooter } from '@/components/common/SiteFooter'
 import EventsInEventIndex from '@/components/events-in-event/index'
 
 import { useLocale } from '@/hooks/useLocale'

@@ -1,12 +1,10 @@
 import type { NextPage } from 'next'
 import TwitterIcon from '@/components/svg/TwitterIcon'
 import ExternalLink from '@/components/svg/ExternalLink'
-import { useLocale } from '@/hooks/useLocale'
-// import useTranslation from 'next-translate/useTranslation'
+import useTranslation from 'next-translate/useTranslation'
 
-const SiteFooter: NextPage = () => {
-  const { t } = useLocale()
-  // const { t } = useTranslation('common_site_footer')
+export const SiteFooter: NextPage = () => {
+  const commonTranslation = useTranslation('common')
 
   return (
     <>
@@ -17,7 +15,7 @@ const SiteFooter: NextPage = () => {
               <span className="pr-1">
                 <TwitterIcon />
               </span>
-              {t.WEBSITE_TITLE} ({' '}
+              {commonTranslation.t('幻水総選挙2022')} ({' '}
               <a
                 href="https://twitter.com/gensosenkyo"
                 target="_blank"
@@ -37,5 +35,3 @@ const SiteFooter: NextPage = () => {
     </>
   )
 }
-
-export default SiteFooter

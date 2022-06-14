@@ -16,7 +16,7 @@ import EventsInEventIndex from '@/components/events-in-event/index'
 
 import { WhatIsGensosenkyo } from '@/components/votes/WhatIsGensosenkyo'
 import { IllustratedBy } from '@/components/common/IllustratedBy'
-import SiteFooter from '@/components/common/SiteFooter'
+import { SiteFooter } from '@/components/common/SiteFooter'
 
 import { useLocale } from '@/hooks/useLocale'
 

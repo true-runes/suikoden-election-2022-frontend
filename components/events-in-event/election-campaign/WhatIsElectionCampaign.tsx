@@ -1,15 +1,12 @@
 import type { NextPage } from 'next'
-
-import { useLocale } from '@/hooks/useLocale'
+import useTranslation from 'next-translate/useTranslation'
 
 export const WhatIsElectionCampaign: NextPage = () => {
-  const { locale } = useLocale()
+  const { t } = useTranslation('election_campaign_what_is_election_campaign')
 
   return (
     <>
-      <h2 className="text-xl font-bold pb-4">
-        {locale === 'ja' ? '選挙運動とは？' : 'What is Campaigning?'}
-      </h2>
+      <h2 className="text-xl font-bold pb-4">{t('選挙運動とは？')}</h2>
       <div className="text-base text-left">
         <div className="pb-4">
           ハッシュタグ「{' '}

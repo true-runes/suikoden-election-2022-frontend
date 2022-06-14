@@ -1,11 +1,10 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
-import { useLocale } from '@/hooks/useLocale'
-// import useTranslation from 'next-translate/useTranslation'
+import useTranslation from 'next-translate/useTranslation'
 
-const EventsInEventIndex: NextPage = () => {
-  const { locale } = useLocale()
-  // const { t } = useTranslation('')
+export const EventsInEventIndex: NextPage = () => {
+  const commonTranslation = useTranslation('common')
+  const { t } = useTranslation('events_in_event')
 
   return (
     <div className="bg-white text-black">
@@ -13,21 +12,21 @@ const EventsInEventIndex: NextPage = () => {
         <div className="hero-content text-center">
           <div className="max-w-md">
             <h1 className="text-2xl font-bold pb-4 underline font-zen-old-mincho">
-              {locale === 'ja' ? '総選挙内企画' : 'Projects'}
+              {commonTranslation.t('総選挙内企画')}
             </h1>
 
             <div>
               <p className="pb-4 text-left">
-                {locale === 'ja'
-                  ? '今年も下記の企画を準備中です。詳細は各項目のリンク先に記載があります。'
-                  : 'The following projects are being prepared for this year. Details for each item can be found in the links below.'}
+                {t(
+                  '今年も下記の企画を準備中です。詳細は各項目のリンク先に記載があります。'
+                )}
               </p>
               <div className="text-base text-left pb-4">
                 <ul className="list-decimal pl-6 pr-2">
                   <li className="pb-4">
                     <Link href="/events-in-event/election-campaign" passHref>
                       <span className="link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900">
-                        {locale === 'ja' ? '選挙運動' : 'Campaigning'}
+                        {commonTranslation.t('選挙運動')}
                       </span>
                     </Link>
                   </li>
@@ -37,9 +36,7 @@ const EventsInEventIndex: NextPage = () => {
                       passHref
                     >
                       <span className="link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900">
-                        {locale === 'ja'
-                          ? '開票イラスト'
-                          : 'Voting illustrations'}
+                        {commonTranslation.t('開票イラスト')}
                       </span>
                     </Link>
                     <div className="pt-4 text-base">
@@ -47,9 +44,7 @@ const EventsInEventIndex: NextPage = () => {
                         <li className="pb-2">
                           <Link href="/events-in-event/sosenkyo-book" passHref>
                             <span className="link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900">
-                              {locale === 'ja'
-                                ? '幻水総選挙本'
-                                : 'Sosenkyo Book'}
+                              {commonTranslation.t('幻水総選挙本')}
                             </span>
                           </Link>
                         </li>
@@ -59,30 +54,30 @@ const EventsInEventIndex: NextPage = () => {
                   <li className="pb-4">
                     <Link href="/events-in-event/novels-on-themes" passHref>
                       <span className="link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900">
-                        {locale === 'ja' ? 'お題小説' : 'Themed short stories'}
+                        {commonTranslation.t('お題小説')}
                       </span>
                     </Link>
                   </li>
                   <li className="pb-4">
                     <Link href="/events-in-event/oshi-serif" passHref>
                       <span className="link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900">
-                        {locale === 'ja' ? '推し台詞教えて！' : 'Fave quote'}
+                        {commonTranslation.t('推し台詞教えて！')}
                       </span>
                     </Link>
                   </li>
                   <li className="pb-4">
                     <Link href="/events-in-event/op-cl-illustrations" passHref>
                       <span className="link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900">
-                        {locale === 'ja'
-                          ? 'オープニングイラスト・クロージングイラスト'
-                          : 'Opening illustration / Closing illustration'}
+                        {commonTranslation.t(
+                          'オープニングイラスト・クロージングイラスト'
+                        )}
                       </span>
                     </Link>
                   </li>
                   <li className="pb-2">
                     <Link href="/events-in-event/bonus-votes" passHref>
                       <span className="link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900">
-                        {locale === 'ja' ? 'ボーナス票' : 'Bonus votes'}
+                        {commonTranslation.t('ボーナス票')}
                       </span>
                     </Link>
                   </li>
@@ -95,5 +90,3 @@ const EventsInEventIndex: NextPage = () => {
     </div>
   )
 }
-
-export default EventsInEventIndex

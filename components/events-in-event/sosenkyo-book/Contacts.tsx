@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 // import useTranslation from 'next-translate/useTranslation'
 
-const Contacts: NextPage = () => {
+export const Contacts: NextPage = () => {
   // const { t } = useTranslation('')
 
   return (
@@ -31,5 +31,3 @@ const Contacts: NextPage = () => {
     </>
   )
 }
-
-export default Contacts

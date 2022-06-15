@@ -53,8 +53,6 @@ const Home: NextPage = () => {
           <EventSummary />
         </div>
 
-        <IllustrationsApplicationStatus />
-
         <div className="divider" />
         <EventSummary />
 

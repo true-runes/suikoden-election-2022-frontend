@@ -17,6 +17,18 @@ export const Main: NextPage = () => {
     '幻想水滸伝 紡がれし百年の時',
   ]
 
+  const suikoden1Items = ['幻水1', '幻想水滸伝1', '幻水1の協力攻撃']
+  const suikoden2Items = ['幻水2', '幻想水滸伝2', '幻水2の協力攻撃']
+  const suikoden3Items = ['幻水3', '幻想水滸伝3', '幻水3の協力攻撃']
+  const suikoden4Items = ['幻水4', '幻想水滸伝4', '幻水4の協力攻撃']
+  const suikoden5Items = ['幻水5', '幻想水滸伝5', '幻水5の協力攻撃']
+  const suikodenTkItems = ['幻水TK', '幻想水滸伝TK', '幻水TKの協力攻撃']
+  const suikodenTsumuTokiItems = [
+    '幻水紡時',
+    '幻想水滸伝紡時',
+    '幻水紡時の協力攻撃',
+  ]
+
   const rhapsodiaItems = [
     '忍者攻撃',
     '海賊攻撃',
@@ -53,10 +65,45 @@ export const Main: NextPage = () => {
     '騎馬部隊攻撃',
   ]
 
-  // tweetText と 攻撃名 は別にしたほうがいいかもしれん
   const [titleName, setTitleName] = useState('')
   const [uniteAttackName, setUniteAttackName] = useState('')
   const [tweetText, setTweetText] = useState('')
+  const [targetUniteAttacks, setTargetUniteAttacks] = useState([] as string[])
+
+  const updateTitleName = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setTitleName(event.target.value)
+
+    console.log('updateTitleName')
+
+    switch (event.target.value) {
+      case '幻想水滸伝':
+        setTargetUniteAttacks(suikoden1Items)
+        break
+      case '幻想水滸伝II':
+        setTargetUniteAttacks(suikoden2Items)
+        break
+      case '幻想水滸伝III':
+        setTargetUniteAttacks(suikoden3Items)
+        break
+      case '幻想水滸伝IV':
+        setTargetUniteAttacks(suikoden4Items)
+        break
+      case 'ラプソディア':
+        setTargetUniteAttacks(rhapsodiaItems)
+        break
+      case '幻想水滸伝V':
+        setTargetUniteAttacks(suikoden5Items)
+        break
+      case '幻想水滸伝ティアクライス':
+        setTargetUniteAttacks(suikodenTkItems)
+        break
+      case '幻想水滸伝 紡がれし百年の時':
+        setTargetUniteAttacks(suikodenTsumuTokiItems)
+        break
+      default:
+        console.log('default!')
+    }
+  }
 
   useEffect(() => {
     const updatedTweetText = `
@@ -94,7 +141,7 @@ ${uniteAttackName}
                   <select
                     className="select select-accent w-full max-w-xs bg-white text-black"
                     defaultValue="default-value"
-                    onChange={(e) => setTitleName(e.target.value)}
+                    onChange={(e) => updateTitleName(e)}
                   >
                     <option disabled value="default-value">
                       作品名を選択して下さい
@@ -111,13 +158,13 @@ ${uniteAttackName}
               {/* TODO: コンポーネント化する */}
               <div className="pb-10">
                 <h2 className="text-xl font-bold pb-8 text-center">
-                  協力攻撃名
+                  {titleName === '' ? null : `${titleName} の 協力攻撃一覧`}
                 </h2>
                 <div>
                   <div className="pb-0 w-full">
                     {/* TODO: コンポーネント化する。作品名に応じて渡す props を変えれば良さそう（要propsバケツリレー） */}
                     <ul className="list text-left pl-6 pr-2 w-full">
-                      {rhapsodiaItems.map((item, index) => (
+                      {targetUniteAttacks.map((item, index) => (
                         <li key={index} className="pb-2">
                           <label htmlFor={`${item}`} className="checkbox-label">
                             <input
@@ -143,13 +190,16 @@ ${uniteAttackName}
               {/* TODO: コンポーネント化する */}
               <div className="pb-10">
                 {/* TODO: 押下条件の設定（バリデーション） */}
-                {/* TODO: ツイート内容の動的生成 */}
+                {/* TODO: 改行が含まれないっぽいので要修正 */}
                 <a
                   href={`https://twitter.com/intent/tweet?text=テストツイートです。${tweetText}`}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <button className="btn btn-outline btn-secondary">
+                  <button
+                    className="btn btn-outline btn-secondary"
+                    disabled={titleName === ''}
+                  >
                     ツイートの雛形を生成する（ツイッターアプリへ）
                   </button>
                 </a>
@@ -157,7 +207,10 @@ ${uniteAttackName}
 
               <div className="pb-10">
                 <CopyToClipboard text={tweetText}>
-                  <button className="btn btn-outline btn-secondary">
+                  <button
+                    className="btn btn-outline btn-secondary"
+                    disabled={titleName === ''}
+                  >
                     ツイートの雛形テキストをクリップボードへコピーする
                   </button>
                 </CopyToClipboard>

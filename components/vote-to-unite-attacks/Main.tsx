@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import type { NextPage } from 'next'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 
@@ -38,6 +39,15 @@ export const Main: NextPage = () => {
     '飛行部隊攻撃',
     '騎馬部隊攻撃',
   ]
+
+  // tweetText と 攻撃名 は別にしたほうがいいかもしれん
+  const [tweetText, setTweetText] = useState('初期値！')
+
+  const updateTweetText = (event: any) => {
+    const t = event.target.value
+
+    setTweetText(t)
+  }
 
   return (
     <>
@@ -93,8 +103,10 @@ export const Main: NextPage = () => {
                         <li key={index} className="pb-2">
                           <input
                             id={`${item}`}
+                            value={item}
                             type="checkbox"
                             className="checkbox checkbox-accent mr-4 pb-4"
+                            onChange={(e) => updateTweetText(e)}
                           />
                           <label htmlFor={`${item}`} className="checkbox-label">
                             <span className="align-top">{item}</span>
@@ -111,7 +123,7 @@ export const Main: NextPage = () => {
                 {/* TODO: 押下条件の設定（バリデーション） */}
                 {/* TODO: ツイート内容の動的生成 */}
                 <a
-                  href="https://twitter.com/intent/tweet?text=テストツイートです"
+                  href={`https://twitter.com/intent/tweet?text=テストツイートです。${tweetText}`}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -122,7 +134,7 @@ export const Main: NextPage = () => {
               </div>
 
               <div>
-                <CopyToClipboard text="テストツイートです">
+                <CopyToClipboard text={tweetText}>
                   <button className="btn btn-outline btn-secondary">
                     ツイートの雛形テキストをクリップボードへコピーする
                   </button>

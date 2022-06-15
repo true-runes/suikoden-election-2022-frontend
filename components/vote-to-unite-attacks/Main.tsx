@@ -75,6 +75,7 @@ export const Main: NextPage = () => {
 
     console.log('updateTitleName')
 
+    // FIXME: idやkeyを使ってうまく書き直す
     switch (event.target.value) {
       case '幻想水滸伝':
         setTargetUniteAttacks(suikoden1Items)
@@ -105,6 +106,7 @@ export const Main: NextPage = () => {
     }
   }
 
+  // TODO: useEffect を条件ごとに分割したい…
   useEffect(() => {
     const updatedTweetText = `
 ${titleName}
@@ -163,11 +165,13 @@ ${uniteAttackName}
                 <div>
                   <div className="pb-0 w-full">
                     {/* TODO: コンポーネント化する。作品名に応じて渡す props を変えれば良さそう（要propsバケツリレー） */}
+                    {/* FIXME: idやkeyが日本語なので直す */}
                     <ul className="list text-left pl-6 pr-2 w-full">
                       {targetUniteAttacks.map((item, index) => (
                         <li key={index} className="pb-2">
                           <label htmlFor={`${item}`} className="checkbox-label">
                             <input
+                              id={`${item}`}
                               data-theme="light"
                               key={index}
                               value={item}
@@ -178,7 +182,9 @@ ${uniteAttackName}
                                 setUniteAttackName(e.target.value)
                               }
                             />
-                            <span className="align-top">{item}</span>
+                            <label htmlFor={`${item}`}>
+                              <span className="align-top">{item}</span>
+                            </label>
                           </label>
                         </li>
                       ))}
@@ -190,7 +196,7 @@ ${uniteAttackName}
               {/* TODO: コンポーネント化する */}
               <div className="pb-10">
                 {/* TODO: 押下条件の設定（バリデーション） */}
-                {/* TODO: 改行が含まれないっぽいので要修正 */}
+                {/* FIXME: 改行が含まれないっぽいので要修正 */}
                 <a
                   href={`https://twitter.com/intent/tweet?text=テストツイートです。${tweetText}`}
                   target="_blank"

@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
 
 export const Main: NextPage = () => {
   // TODO: ソートする
@@ -118,6 +119,14 @@ export const Main: NextPage = () => {
                     ツイートの雛形を生成する（ツイッターアプリへ）
                   </button>
                 </a>
+              </div>
+
+              <div>
+                <CopyToClipboard text="テストツイートです">
+                  <button className="btn btn-outline btn-secondary">
+                    ツイートの雛形テキストをクリップボードへコピーする
+                  </button>
+                </CopyToClipboard>
               </div>
             </div>
           </div>

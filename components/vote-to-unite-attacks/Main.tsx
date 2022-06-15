@@ -1,9 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import type { NextPage } from 'next'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 
 export const Main: NextPage = () => {
   // TODO: ソートする
+  // TODO: 別ファイルから読み込むようにする
+
+  const titleNames = [
+    '幻想水滸伝',
+    '幻想水滸伝II',
+    '幻想水滸伝III',
+    '幻想水滸伝IV',
+    'ラプソディア',
+    '幻想水滸伝V',
+    '幻想水滸伝ティアクライス',
+    '幻想水滸伝 紡がれし百年の時',
+  ]
+
   const rhapsodiaItems = [
     '忍者攻撃',
     '海賊攻撃',
@@ -41,13 +54,18 @@ export const Main: NextPage = () => {
   ]
 
   // tweetText と 攻撃名 は別にしたほうがいいかもしれん
-  const [tweetText, setTweetText] = useState('初期値！')
+  const [titleName, setTitleName] = useState('')
+  const [uniteAttackName, setUniteAttackName] = useState('')
+  const [tweetText, setTweetText] = useState('')
 
-  const updateTweetText = (event: any) => {
-    const t = event.target.value
-
-    setTweetText(t)
-  }
+  useEffect(() => {
+    const updatedTweetText = `
+${titleName}
+${uniteAttackName}
+#幻水総選挙2022協力攻撃部門
+`
+    setTweetText(updatedTweetText)
+  }, [titleName, uniteAttackName])
 
   return (
     <>
@@ -73,19 +91,19 @@ export const Main: NextPage = () => {
               <div className="pb-10">
                 <h2 className="text-xl font-bold pb-8 text-center">作品名</h2>
                 <div>
-                  <select className="select select-accent w-full max-w-xs bg-white text-black">
-                    <option disabled selected>
+                  <select
+                    className="select select-accent w-full max-w-xs bg-white text-black"
+                    defaultValue="default-value"
+                    onChange={(e) => setTitleName(e.target.value)}
+                  >
+                    <option disabled value="default-value">
                       作品名を選択して下さい
                     </option>
-                    {/* ここはベタ書きでいい。ここにレンダリングコストを使いたくない */}
-                    <option>幻想水滸伝</option>
-                    <option>幻想水滸伝II</option>
-                    <option>幻想水滸伝III</option>
-                    <option>幻想水滸伝IV</option>
-                    <option>ラプソディア</option>
-                    <option>幻想水滸伝V</option>
-                    <option>幻想水滸伝ティアクライス</option>
-                    <option>幻想水滸伝 紡がれし百年の時</option>
+                    {titleNames.map((titleName) => (
+                      <option key={titleName} value={titleName}>
+                        {titleName}
+                      </option>
+                    ))}
                   </select>
                 </div>
               </div>
@@ -97,18 +115,22 @@ export const Main: NextPage = () => {
                 </h2>
                 <div>
                   <div className="pb-0 w-full">
-                    {/* TODO: コンポーネント化する。作品名に応じて渡す props を変えれば良さそう */}
+                    {/* TODO: コンポーネント化する。作品名に応じて渡す props を変えれば良さそう（要propsバケツリレー） */}
                     <ul className="list text-left pl-6 pr-2 w-full">
                       {rhapsodiaItems.map((item, index) => (
                         <li key={index} className="pb-2">
-                          <input
-                            id={`${item}`}
-                            value={item}
-                            type="checkbox"
-                            className="checkbox checkbox-accent mr-4 pb-4"
-                            onChange={(e) => updateTweetText(e)}
-                          />
                           <label htmlFor={`${item}`} className="checkbox-label">
+                            <input
+                              data-theme="light"
+                              key={index}
+                              value={item}
+                              type="radio"
+                              name="radio-4"
+                              className="radio radio-accent mr-4  checked:bg-blue-500"
+                              onChange={(e) =>
+                                setUniteAttackName(e.target.value)
+                              }
+                            />
                             <span className="align-top">{item}</span>
                           </label>
                         </li>
@@ -133,12 +155,29 @@ export const Main: NextPage = () => {
                 </a>
               </div>
 
-              <div>
+              <div className="pb-10">
                 <CopyToClipboard text={tweetText}>
                   <button className="btn btn-outline btn-secondary">
                     ツイートの雛形テキストをクリップボードへコピーする
                   </button>
                 </CopyToClipboard>
+              </div>
+
+              <div>
+                Debug: {titleName}
+                <br />
+                Debug: {uniteAttackName}
+                <br />
+              </div>
+
+              <div
+                className="card w-96 bg-base-100 shadow-xl"
+                data-theme="light"
+              >
+                <div className="card-body">
+                  <h2 className="card-title">ツイート雛形</h2>
+                  <pre className="text-left">{tweetText}</pre>
+                </div>
               </div>
             </div>
           </div>

@@ -2,107 +2,65 @@ import React, { useState, useEffect } from 'react'
 import type { NextPage } from 'next'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 
+import titleNames from '@/lib/titleNames.json'
+import uniteAttacksSuikoden1 from '@/lib/uniteAttacksSuikoden1.json'
+import uniteAttacksSuikoden2 from '@/lib/uniteAttacksSuikoden2.json'
+import uniteAttacksSuikoden3 from '@/lib/uniteAttacksSuikoden3.json'
+import uniteAttacksSuikoden4 from '@/lib/uniteAttacksSuikoden4.json'
+import uniteAttacksSuikoden5 from '@/lib/uniteAttacksSuikoden5.json'
+import uniteAttacksSuikodenTk from '@/lib/uniteAttacksSuikodenTk.json'
+import uniteAttacksSuikodenTsumutoki from '@/lib/uniteAttacksSuikodenTsumutoki.json'
+import uniteAttacksRhapsodia from '@/lib/uniteAttacksRhapsodia.json'
+
 export const Main: NextPage = () => {
-  // TODO: ソートする
-  // TODO: 別ファイルから読み込むようにする
-
-  const titleNames = [
-    '幻想水滸伝',
-    '幻想水滸伝II',
-    '幻想水滸伝III',
-    '幻想水滸伝IV',
-    'ラプソディア',
-    '幻想水滸伝V',
-    '幻想水滸伝ティアクライス',
-    '幻想水滸伝 紡がれし百年の時',
-  ]
-
-  const suikoden1Items = ['幻水1', '幻想水滸伝1', '幻水1の協力攻撃']
-  const suikoden2Items = ['幻水2', '幻想水滸伝2', '幻水2の協力攻撃']
-  const suikoden3Items = ['幻水3', '幻想水滸伝3', '幻水3の協力攻撃']
-  const suikoden4Items = ['幻水4', '幻想水滸伝4', '幻水4の協力攻撃']
-  const suikoden5Items = ['幻水5', '幻想水滸伝5', '幻水5の協力攻撃']
-  const suikodenTkItems = ['幻水TK', '幻想水滸伝TK', '幻水TKの協力攻撃']
-  const suikodenTsumuTokiItems = [
-    '幻水紡時',
-    '幻想水滸伝紡時',
-    '幻水紡時の協力攻撃',
-  ]
-
-  const rhapsodiaItems = [
-    '忍者攻撃',
-    '海賊攻撃',
-    '親子攻撃',
-    '付き人攻撃',
-    'お姫様攻撃',
-    '海賊親子攻撃',
-    '麗しの友情攻撃',
-    '新・騎士団攻撃',
-    'アイスクラッシュ攻撃',
-    '美青年攻撃',
-    '美女攻撃',
-    '美少女攻撃',
-    '真・忍者攻撃',
-    'ニャー？攻撃',
-    '乱れ撃ち攻撃',
-    '槍攻撃',
-    '腐れ縁攻撃',
-    '大剣攻撃',
-    'オベル軍攻撃',
-    '遺志を継ぐもの攻撃',
-    '元・騎士団攻撃',
-    '海族団攻撃',
-    '魔法使い攻撃',
-    '火炎陣',
-    '雷神',
-    '風烈牙',
-    '水竜',
-    '焦土',
-    'Ｗリーダー攻撃',
-    '双剣攻撃',
-    '真・友情攻撃',
-    '飛行部隊攻撃',
-    '騎馬部隊攻撃',
-  ]
-
   const [titleName, setTitleName] = useState('')
   const [uniteAttackName, setUniteAttackName] = useState('')
   const [tweetText, setTweetText] = useState('')
-  const [targetUniteAttacks, setTargetUniteAttacks] = useState([] as string[])
+  const [targetUniteAttacks, setTargetUniteAttacks] = useState([] as any)
+
+  // FIXME: targetUniteAttacks の型定義
+  // [
+  //   {
+  //     "id": 1,
+  //     "name": "幻水1",
+  //     "characterNames": [
+  //       "キャラ1",
+  //       "キャラ2"
+  //     ]
+  //   },
+  // ]
 
   const updateTitleName = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setTitleName(event.target.value)
 
-    console.log('updateTitleName')
-
-    // FIXME: idやkeyを使ってうまく書き直す
+    // FIXME: idやkeyを使ってうまく書き直す（対応表があるといい）
     switch (event.target.value) {
       case '幻想水滸伝':
-        setTargetUniteAttacks(suikoden1Items)
+        setTargetUniteAttacks(uniteAttacksSuikoden1)
         break
       case '幻想水滸伝II':
-        setTargetUniteAttacks(suikoden2Items)
+        setTargetUniteAttacks(uniteAttacksSuikoden2)
         break
       case '幻想水滸伝III':
-        setTargetUniteAttacks(suikoden3Items)
+        setTargetUniteAttacks(uniteAttacksSuikoden3)
         break
       case '幻想水滸伝IV':
-        setTargetUniteAttacks(suikoden4Items)
+        setTargetUniteAttacks(uniteAttacksSuikoden4)
         break
       case 'ラプソディア':
-        setTargetUniteAttacks(rhapsodiaItems)
+        setTargetUniteAttacks(uniteAttacksRhapsodia)
         break
       case '幻想水滸伝V':
-        setTargetUniteAttacks(suikoden5Items)
+        setTargetUniteAttacks(uniteAttacksSuikoden5)
         break
       case '幻想水滸伝ティアクライス':
-        setTargetUniteAttacks(suikodenTkItems)
+        setTargetUniteAttacks(uniteAttacksSuikodenTk)
         break
       case '幻想水滸伝 紡がれし百年の時':
-        setTargetUniteAttacks(suikodenTsumuTokiItems)
+        setTargetUniteAttacks(uniteAttacksSuikodenTsumutoki)
         break
       default:
-        console.log('default!')
+        console.log('作品名に対応したデータが見つかりませんでした。')
     }
   }
 
@@ -149,8 +107,8 @@ ${uniteAttackName}
                       作品名を選択して下さい
                     </option>
                     {titleNames.map((titleName) => (
-                      <option key={titleName} value={titleName}>
-                        {titleName}
+                      <option key={titleName.id} value={titleName.ja}>
+                        {titleName.ja}
                       </option>
                     ))}
                   </select>
@@ -165,16 +123,19 @@ ${uniteAttackName}
                 <div>
                   <div className="pb-0 w-full">
                     {/* TODO: コンポーネント化する。作品名に応じて渡す props を変えれば良さそう（要propsバケツリレー） */}
-                    {/* FIXME: idやkeyが日本語なので直す */}
+                    {/* FIXME: item の型をつける */}
                     <ul className="list text-left pl-6 pr-2 w-full">
-                      {targetUniteAttacks.map((item, index) => (
-                        <li key={index} className="pb-2">
-                          <label htmlFor={`${item}`} className="checkbox-label">
+                      {targetUniteAttacks.map((item: any) => (
+                        <li key={item.id} className="pb-2">
+                          <label
+                            htmlFor={`${item.id}`}
+                            className="checkbox-label"
+                          >
                             <input
-                              id={`${item}`}
+                              id={`${item.id}`}
                               data-theme="light"
-                              key={index}
-                              value={item}
+                              key={item.id}
+                              value={item.name}
                               type="radio"
                               name="radio-4"
                               className="radio radio-accent mr-4  checked:bg-blue-500"
@@ -182,8 +143,8 @@ ${uniteAttackName}
                                 setUniteAttackName(e.target.value)
                               }
                             />
-                            <label htmlFor={`${item}`}>
-                              <span className="align-top">{item}</span>
+                            <label htmlFor={`${item.id}`}>
+                              <span className="align-top">{item.name}</span>
                             </label>
                           </label>
                         </li>
@@ -195,8 +156,8 @@ ${uniteAttackName}
 
               {/* TODO: コンポーネント化する */}
               <div className="pb-10">
-                {/* TODO: 押下条件の設定（バリデーション） */}
-                {/* FIXME: 改行が含まれないっぽいので要修正 */}
+                {/* TODO: 押下条件の設定（バリデーション）-> ボタンを出さない */}
+                {/* FIXME: 改行が含まれないっぽいので要修正（別途変数にまとめる？） */}
                 <a
                   href={`https://twitter.com/intent/tweet?text=テストツイートです。${tweetText}`}
                   target="_blank"

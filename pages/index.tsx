@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+// import Link from 'next/link'
 import type { NextPage } from 'next'
 
 import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation'
@@ -19,7 +20,7 @@ import { IllustratedBy } from '@/components/common/IllustratedBy'
 import { SiteFooter } from '@/components/common/SiteFooter'
 
 import { useLocale } from '@/hooks/useLocale'
-import { IllustrationsApplicationStatus } from '@/components/events-in-event/illustrations-with-results/IllustrationsApplicationStatus'
+// import { IllustrationsApplicationStatus } from '@/components/events-in-event/illustrations-with-results/IllustrationsApplicationStatus'
 
 const Home: NextPage = () => {
   const { t } = useLocale()

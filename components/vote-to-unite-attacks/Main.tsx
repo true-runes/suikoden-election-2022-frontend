@@ -58,8 +58,11 @@ export const Main: NextPage = () => {
 ${uniteAttackName}
 #幻水総選挙2022協力攻撃部門
 `
+
+    const updatedTweetTextForParameter = `テストツイートです%20テストツイートです%0A${titleName}%0A${uniteAttackName}%0A%23ハッシュタグのテキスト`
+
     setTweetText(updatedTweetText)
-    setTweetTextForParameter(updatedTweetText)
+    setTweetTextForParameter(updatedTweetTextForParameter)
   }, [titleName, uniteAttackName])
 
   return (

@@ -12,23 +12,26 @@ import uniteAttacksSuikodenTk from '@/lib/uniteAttacksSuikodenTk.json'
 import uniteAttacksSuikodenTsumutoki from '@/lib/uniteAttacksSuikodenTsumutoki.json'
 import uniteAttacksRhapsodia from '@/lib/uniteAttacksRhapsodia.json'
 
+type CharacterName = string
+
+type UniteAttack = {
+  id: number
+  name: string
+  characterNames: CharacterName[]
+}
+
+// type UniteAttacks = {
+//   titleName: string
+//   attacks: UniteAttack[]
+// }
+
 export const Main: NextPage = () => {
   const [titleName, setTitleName] = useState('')
   const [uniteAttackName, setUniteAttackName] = useState('')
   const [tweetText, setTweetText] = useState('')
-  const [targetUniteAttacks, setTargetUniteAttacks] = useState([] as any)
-
-  // FIXME: targetUniteAttacks の型定義
-  // [
-  //   {
-  //     "id": 1,
-  //     "name": "幻水1",
-  //     "characterNames": [
-  //       "キャラ1",
-  //       "キャラ2"
-  //     ]
-  //   },
-  // ]
+  const [targetTitleUniteAttacks, setTargetTitleUniteAttacks] = useState(
+    [] as UniteAttack[]
+  )
 
   const updateTitleName = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setTitleName(event.target.value)
@@ -36,28 +39,28 @@ export const Main: NextPage = () => {
     // FIXME: idやkeyを使ってうまく書き直す（対応表があるといい）
     switch (event.target.value) {
       case '幻想水滸伝':
-        setTargetUniteAttacks(uniteAttacksSuikoden1)
+        setTargetTitleUniteAttacks(uniteAttacksSuikoden1.attacks)
         break
       case '幻想水滸伝II':
-        setTargetUniteAttacks(uniteAttacksSuikoden2)
+        setTargetTitleUniteAttacks(uniteAttacksSuikoden2.attacks)
         break
       case '幻想水滸伝III':
-        setTargetUniteAttacks(uniteAttacksSuikoden3)
+        setTargetTitleUniteAttacks(uniteAttacksSuikoden3.attacks)
         break
       case '幻想水滸伝IV':
-        setTargetUniteAttacks(uniteAttacksSuikoden4)
+        setTargetTitleUniteAttacks(uniteAttacksSuikoden4.attacks)
         break
       case 'ラプソディア':
-        setTargetUniteAttacks(uniteAttacksRhapsodia)
+        setTargetTitleUniteAttacks(uniteAttacksRhapsodia.attacks)
         break
       case '幻想水滸伝V':
-        setTargetUniteAttacks(uniteAttacksSuikoden5)
+        setTargetTitleUniteAttacks(uniteAttacksSuikoden5.attacks)
         break
       case '幻想水滸伝ティアクライス':
-        setTargetUniteAttacks(uniteAttacksSuikodenTk)
+        setTargetTitleUniteAttacks(uniteAttacksSuikodenTk.attacks)
         break
       case '幻想水滸伝 紡がれし百年の時':
-        setTargetUniteAttacks(uniteAttacksSuikodenTsumutoki)
+        setTargetTitleUniteAttacks(uniteAttacksSuikodenTsumutoki.attacks)
         break
       default:
         console.log('作品名に対応したデータが見つかりませんでした。')
@@ -125,7 +128,7 @@ ${uniteAttackName}
                     {/* TODO: コンポーネント化する。作品名に応じて渡す props を変えれば良さそう（要propsバケツリレー） */}
                     {/* FIXME: item の型をつける */}
                     <ul className="list text-left pl-6 pr-2 w-full">
-                      {targetUniteAttacks.map((item: any) => (
+                      {targetTitleUniteAttacks.map((item: any) => (
                         <li key={item.id} className="pb-2">
                           <label
                             htmlFor={`${item.id}`}

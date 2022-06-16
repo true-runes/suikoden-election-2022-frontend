@@ -1,26 +1,20 @@
-[
-  {
-    "id": 1,
-    "name": "幻水1",
-    "characterNames": [
-      "キャラ1",
-      "キャラ2"
-    ]
-  },
-  {
-    "id": 2,
-    "name": "幻想水滸伝1",
-    "characterNames": [
-      "キャラ1",
-      "キャラ2"
-    ]
-  },
-  {
-    "id": 3,
-    "name": "幻水1の協力攻撃",
-    "characterNames": [
-      "キャラ1",
-      "キャラ2"
-    ]
-  }
-]
+{
+  "titleName": "幻想水滸伝",
+  "attacks": [
+    {
+      "id": 1,
+      "name": "幻水1",
+      "characterNames": ["キャラ1", "キャラ2"]
+    },
+    {
+      "id": 2,
+      "name": "幻想水滸伝1",
+      "characterNames": ["キャラ1", "キャラ2"]
+    },
+    {
+      "id": 3,
+      "name": "幻水1の協力攻撃",
+      "characterNames": ["キャラ1", "キャラ2"]
+    }
+  ]
+}

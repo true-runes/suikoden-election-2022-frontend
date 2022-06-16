@@ -1,26 +1,20 @@
-[
-  {
-    "id": 1,
-    "name": "幻水4",
-    "characterNames": [
-      "キャラA",
-      "キャラB"
-    ]
-  },
-  {
-    "id": 2,
-    "name": "幻想水滸伝4",
-    "characterNames": [
-      "キャラA",
-      "キャラB"
-    ]
-  },
-  {
-    "id": 3,
-    "name": "幻水4の協力攻撃",
-    "characterNames": [
-      "キャラA",
-      "キャラB"
-    ]
-  }
-]
+{
+  "titleName": "幻想水滸伝IV",
+  "attacks": [
+    {
+      "id": 1,
+      "name": "幻水4",
+      "characterNames": ["キャラA", "キャラB"]
+    },
+    {
+      "id": 2,
+      "name": "幻想水滸伝4",
+      "characterNames": ["キャラA", "キャラB"]
+    },
+    {
+      "id": 3,
+      "name": "幻水4の協力攻撃",
+      "characterNames": ["キャラA", "キャラB"]
+    }
+  ]
+}

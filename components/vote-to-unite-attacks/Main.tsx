@@ -24,6 +24,7 @@ export const Main: NextPage = () => {
   const [titleName, setTitleName] = useState('')
   const [uniteAttackName, setUniteAttackName] = useState('')
   const [tweetText, setTweetText] = useState('')
+  const [tweetTextForParameter, setTweetTextForParameter] = useState('')
   const [targetTitleUniteAttacks, setTargetTitleUniteAttacks] = useState(
     [] as UniteAttack[]
   )
@@ -58,6 +59,7 @@ ${uniteAttackName}
 #幻水総選挙2022協力攻撃部門
 `
     setTweetText(updatedTweetText)
+    setTweetTextForParameter(updatedTweetText)
   }, [titleName, uniteAttackName])
 
   return (
@@ -156,7 +158,7 @@ ${uniteAttackName}
 
                   <div className="w-96 pb-10">
                     <a
-                      href={`https://twitter.com/intent/tweet?text=テストツイートです。${tweetText}`}
+                      href={`https://twitter.com/intent/tweet?text=テストツイートです。${tweetTextForParameter}`}
                       target="_blank"
                       rel="noreferrer"
                     >

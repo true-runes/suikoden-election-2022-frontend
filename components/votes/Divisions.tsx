@@ -33,7 +33,7 @@ export const Divisions: NextPage = () => {
                       href="https://note.com/gensosenkyo/n/nc07265ea4511"
                       target="_blank"
                       rel="noreferrer"
-                      className="underline underline-offset-2 text-blue-500 hover:text-blue-900"
+                      className="underline underline-offset-4 text-blue-500 hover:text-blue-900"
                     >
                       「コンビ部門」の再検討について (2022/06/13)
                     </a>
@@ -111,7 +111,7 @@ export const Divisions: NextPage = () => {
                       href="https://twitter.com/search?q=%23%E5%B9%BB%E6%B0%B4%E7%B7%8F%E9%81%B8%E6%8C%992022&src=typed_query&f=live"
                       target="_blank"
                       rel="noreferrer"
-                      className="underline underline-offset-2 text-blue-500 hover:text-blue-900"
+                      className="underline underline-offset-4 text-blue-500 hover:text-blue-900"
                     >
                       #幻水総選挙2022
                     </a>

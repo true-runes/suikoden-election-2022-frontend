@@ -18,7 +18,7 @@ export const HowToTweet: NextPage = () => {
                 href="https://twitter.com/search?q=%23%E5%B9%BB%E6%B0%B4%E7%B7%8F%E9%81%B8%E6%8C%99%E3%81%8A%E9%A1%8C%E5%B0%8F%E8%AA%AC&src=typed_query&f=live"
                 target="_blank"
                 rel="noreferrer"
-                className="underline underline-offset-2 text-blue-500 hover:text-blue-900"
+                className="underline underline-offset-4 text-blue-500 hover:text-blue-900"
               >
                 #幻水総選挙お題小説
               </a>

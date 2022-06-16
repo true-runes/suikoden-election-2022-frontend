@@ -53,8 +53,7 @@ export const Main: NextPage = () => {
   }
 
   useEffect(() => {
-    const updatedTweetText = `
-${titleName}
+    const updatedTweetText = `${titleName}
 ${uniteAttackName}
 #幻水総選挙2022協力攻撃部門
 `
@@ -169,10 +168,7 @@ ${uniteAttackName}
 
                   <div className="pb-0">
                     <CopyToClipboard text={tweetText}>
-                      <button
-                        className="w-96 btn btn-outline btn-secondary"
-                        disabled={titleName === ''}
-                      >
+                      <button className="w-96 btn btn-outline btn-secondary">
                         ツイート雛形をクリップボードへコピーする
                       </button>
                     </CopyToClipboard>

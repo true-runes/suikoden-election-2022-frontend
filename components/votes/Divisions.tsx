@@ -33,7 +33,7 @@ export const Divisions: NextPage = () => {
                       href="https://note.com/gensosenkyo/n/nc07265ea4511"
                       target="_blank"
                       rel="noreferrer"
-                      className="underline underline-offset-2 text-blue-500 hover:text-blue-900"
+                      className="underline underline-offset-4 text-blue-500 hover:text-blue-900"
                     >
                       「コンビ部門」の再検討について (2022/06/13)
                     </a>
@@ -41,8 +41,10 @@ export const Divisions: NextPage = () => {
                 </ul>
               </div>
 
+              <div className="py-4" />
+
               <div className="pb-4">
-                <h2 className="text-xl font-bold pb-4">
+                <h2 className="text-xl font-bold pb-4 underline underline-offset-4">
                   {locale === 'ja'
                     ? '①オールキャラ部門'
                     : '(1) All characters division'}
@@ -53,7 +55,7 @@ export const Divisions: NextPage = () => {
                     : 'In this division, vote for your favorite characters.'}
                 </p>
                 <div className="pb-4">
-                  <h3 className="text-lg font-bold">
+                  <h3 className="text-lg font-bold pb-2">
                     {locale === 'ja' ? '投票数' : 'Number of votes'}
                   </h3>
                   {locale === 'ja' ? (
@@ -101,7 +103,7 @@ export const Divisions: NextPage = () => {
                   </div>
                 </div>
                 <div className="pb-4">
-                  <h3 className="text-lg font-bold">
+                  <h3 className="text-lg font-bold pb-2">
                     {locale === 'ja'
                       ? '投票用ハッシュタグ'
                       : 'Hashtag to use for voting'}
@@ -111,7 +113,7 @@ export const Divisions: NextPage = () => {
                       href="https://twitter.com/search?q=%23%E5%B9%BB%E6%B0%B4%E7%B7%8F%E9%81%B8%E6%8C%992022&src=typed_query&f=live"
                       target="_blank"
                       rel="noreferrer"
-                      className="underline underline-offset-2 text-blue-500 hover:text-blue-900"
+                      className="underline underline-offset-4 text-blue-500 hover:text-blue-900"
                     >
                       #幻水総選挙2022
                     </a>
@@ -119,14 +121,54 @@ export const Divisions: NextPage = () => {
                 </div>
               </div>
 
-              <h2 className="text-xl font-bold pb-4">
-                {locale === 'ja'
-                  ? '②？？？部門（近日発表！）'
-                  : '(2) ??? division (Reveal soon!)'}
+              <div className="py-4" />
+
+              <h2 className="text-xl font-bold pb-4 underline underline-offset-4">
+                ②協力攻撃部門
               </h2>
-              <p className="text-base text-center pb-4">
-                {locale === 'ja' ? '？？？' : '???'}
-              </p>
+              <div>
+                <div className="text-base text-center pb-4">
+                  <ul className="list-disc text-left pl-6 pr-2">
+                    <li className="pb-2">
+                      お好きな「協力攻撃」を選んで投票する部門です。
+                    </li>
+                    <li className="pb-2">
+                      幻水シリーズ全ての協力攻撃が対象です。
+                    </li>
+                  </ul>
+                </div>
+                <div className="pb-4">
+                  <div className="pb-2">
+                    <h3 className="text-lg font-bold pb-2">投票数</h3>
+                    <p className="text-lg pb-4">
+                      お一人様 <span className="text-red-500">1票</span>
+                    </p>
+                  </div>
+
+                  <div className="pb-2">
+                    <h3 className="text-lg font-bold pb-2">
+                      投票用ハッシュタグ
+                    </h3>
+                    <p className="text-lg pb-4">準備中</p>
+                  </div>
+
+                  <div className="pb-2">
+                    <h3 className="text-lg font-bold pb-2">補足</h3>
+                    <ul className="list-disc text-left pl-6 pr-2">
+                      <li className="pb-2">ボーナス票は付きません。</li>
+                      <li className="pb-2">
+                        同じ名前の協力攻撃が多いことから、出来る限り正確に投票できるような方法を準備中です。
+                      </li>
+                      <li className="pb-2">
+                        お時間がないこともあり、開票イラスト、お題小説、推し台詞の募集はいたしません。申し訳ございません。
+                      </li>
+                      <li className="pb-2">
+                        選挙運動や投票時、後夜祭などで当部門の作品を掲載していただくことは構いませんので、ぜひどうぞ。
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

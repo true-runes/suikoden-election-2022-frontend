@@ -23,6 +23,8 @@ type UniteAttack = {
 export const Main: NextPage = () => {
   const [titleName, setTitleName] = useState('')
   const [uniteAttackName, setUniteAttackName] = useState('')
+  // TODO: キャラ名入れたほうがいい場合は入れる
+  const [uniteCharacterNames, setUniteCharacterNames] = useState([])
   const [tweetText, setTweetText] = useState('')
   const [tweetTextForParameter, setTweetTextForParameter] = useState('')
   const [targetTitleUniteAttacks, setTargetTitleUniteAttacks] = useState(
@@ -53,8 +55,11 @@ export const Main: NextPage = () => {
     setUniteAttackName('')
   }
 
-  // TODO: ハッシュタグは変数化する
+  // TODO: ハッシュタグは変数にしておく
+  // TODO: キャラ名入れたほうがいい場合は入れる (uniteCharacterNames)
   useEffect(() => {
+    console.log(uniteCharacterNames)
+
     const updatedTweetText = `${titleName}
 ${uniteAttackName}
 #幻水総選挙2022協力攻撃
@@ -64,7 +69,7 @@ ${uniteAttackName}
 
     setTweetText(updatedTweetText)
     setTweetTextForParameter(updatedTweetTextForParameter)
-  }, [titleName, uniteAttackName])
+  }, [titleName, uniteAttackName, uniteCharacterNames])
 
   return (
     <>
@@ -130,9 +135,10 @@ ${uniteAttackName}
                               type="radio"
                               name="radio-4"
                               className="radio radio-accent mr-4 checked:bg-blue-500"
-                              onChange={(e) =>
+                              onChange={(e) => {
                                 setUniteAttackName(e.target.value)
-                              }
+                                setUniteCharacterNames([item.characterNames])
+                              }}
                             />
                           </label>
                           <label htmlFor={`${item.id}`}>

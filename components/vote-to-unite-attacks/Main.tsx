@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import type { NextPage } from 'next'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 
+import ExternalLink from '@/components/svg/ExternalLink'
+
 import titleNames from '@/lib/titleNames.json'
 import uniteAttacksSuikoden1 from '@/lib/uniteAttacksSuikoden1.json'
 import uniteAttacksSuikoden2 from '@/lib/uniteAttacksSuikoden2.json'
@@ -173,7 +175,7 @@ ${uniteAttackName}
                     data-theme="light"
                   >
                     <div className="card-body">
-                      <h2 className="card-title pb-4">ツイート雛形</h2>
+                      <h2 className="card-title pb-4">投票内容</h2>
                       <pre className="text-left">{tweetText}</pre>
                     </div>
                   </div>
@@ -187,8 +189,11 @@ ${uniteAttackName}
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <button className="w-full btn btn-outline btn-secondary">
-                          ツイート雛形をツイートする（ツイッターへ）
+                        <button className="w-full btn btn-outline btn-secondary pr-2">
+                          ツイートで投票する
+                          <span className="pl-1">
+                            <ExternalLink />
+                          </span>
                         </button>
                       </a>
                     </div>
@@ -196,10 +201,25 @@ ${uniteAttackName}
                     <div className="pb-0">
                       <CopyToClipboard text={tweetText}>
                         <button className="w-full btn btn-outline btn-secondary">
-                          ツイート雛形をクリップボードへコピーする
+                          投票内容をコピーする
                         </button>
                       </CopyToClipboard>
                     </div>
+                  </div>
+
+                  <div className="w-80 mt-6 ml-6 text-left">
+                    <span className="text-red-500 font-bold">
+                      鍵アカウントの方は投票内容をコピーし、
+                      <a
+                        href="https://twitter.com/messages/compose?recipient_id=1471724029"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="link link-hover underline underline-offset-4"
+                      >
+                        @gensosenkyo宛にDM
+                      </a>
+                      でお送りください。
+                    </span>
                   </div>
                 </div>
               )}

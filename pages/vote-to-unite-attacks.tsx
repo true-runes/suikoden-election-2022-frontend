@@ -10,7 +10,7 @@ import { Main } from '@/components/vote-to-unite-attacks/Main'
 const VoteToUniteAttacks: NextPage = () => {
   return (
     <div className="bg-white text-black">
-      <title>「協力攻撃部門」投票テンプレ - 幻水総選挙2022</title>
+      <title>「協力攻撃部門」投票ページ - 幻水総選挙2022</title>
       <div className="right">
         <HumbergerNavigation />
       </div>
@@ -25,7 +25,7 @@ const VoteToUniteAttacks: NextPage = () => {
                 ホーム
               </Link>
             </li>
-            <li>「協力攻撃部門」投票テンプレ</li>
+            <li>「協力攻撃部門」投票ページ</li>
           </ul>
         </div>
 

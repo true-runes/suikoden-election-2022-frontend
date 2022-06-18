@@ -73,20 +73,13 @@ ${uniteAttackName}
           <div className="hero-content text-center">
             <div className="max-w-md">
               <h1 className="text-2xl font-bold pt-4 pb-10 underline underline-offset-4 font-zen-old-mincho">
-                「協力攻撃部門」投票ページ（仮）
+                「協力攻撃部門」投票ページ
               </h1>
 
               <div className="pb-0">
                 <ul className="list-disc text-left pl-6 pr-2">
-                  <li className="pb-2">
-                    「協力攻撃部門」投票ページ（仮）の説明
-                  </li>
-                  <li className="pb-2">
-                    「協力攻撃部門」投票ページ（仮）の説明
-                  </li>
-                  <li className="pb-2">
-                    「協力攻撃部門」投票ページ（仮）の説明
-                  </li>
+                  <li className="pb-2">お好きな協力攻撃を選んでください。 </li>
+                  <li className="pb-2">投票はお一人様1票です。</li>
                 </ul>
               </div>
 
@@ -170,11 +163,11 @@ ${uniteAttackName}
                   <div className="divider" />
 
                   <div
-                    className="card max-w-2xl bg-base-100 shadow-xl"
+                    className="card max-w-2xl bg-emerald-50 shadow-xl"
                     data-theme="light"
                   >
                     <div className="card-body">
-                      <h2 className="card-title">ツイート雛形</h2>
+                      <h2 className="card-title pb-4">ツイート雛形</h2>
                       <pre className="text-left">{tweetText}</pre>
                     </div>
                   </div>

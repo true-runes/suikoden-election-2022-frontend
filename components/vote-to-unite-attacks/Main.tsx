@@ -137,7 +137,7 @@ ${uniteAttackName}
                               className="radio radio-accent mr-4 checked:bg-blue-500"
                               onChange={(e) => {
                                 setUniteAttackName(e.target.value)
-                                setUniteCharacterNames([item.characterNames])
+                                setUniteCharacterNames(item.characterNames)
                               }}
                             />
                           </label>

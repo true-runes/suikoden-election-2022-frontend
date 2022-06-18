@@ -2,19 +2,126 @@
   "titleName": "幻想水滸伝IV",
   "attacks": [
     {
-      "id": 1,
-      "name": "幻水4",
-      "characterNames": ["キャラA", "キャラB"]
+      "id": "1",
+      "name": "麗しの友情攻撃",
+      "characterNames": ["ラインバッハ", "シャルルマーニュ"]
     },
     {
-      "id": 2,
-      "name": "幻想水滸伝4",
-      "characterNames": ["キャラA", "キャラB"]
+      "id": "2",
+      "name": "親子攻撃",
+      "characterNames": ["リノ・エン・クルデス", "フレア"]
     },
     {
-      "id": 3,
-      "name": "幻水4の協力攻撃",
-      "characterNames": ["キャラA", "キャラB"]
+      "id": "3",
+      "name": "海賊攻撃",
+      "characterNames": ["シグルド", "ハーヴェイ"]
+    },
+    {
+      "id": "4",
+      "name": "師弟攻撃",
+      "characterNames": ["ウォーロック", "パブロ"]
+    },
+    { "id": "5", "name": "真友情攻撃", "characterNames": ["主人公", "スノウ"] },
+    { "id": "6", "name": "双剣攻撃", "characterNames": ["主人公", "キカ"] },
+    { "id": "7", "name": "大剣攻撃Ａ", "characterNames": ["セルマ", "ミツバ"] },
+    { "id": "8", "name": "肉体派攻撃", "characterNames": ["カール", "ヘルガ"] },
+    { "id": "9", "name": "忍者攻撃", "characterNames": ["アカギ", "ミズキ"] },
+    {
+      "id": "10",
+      "name": "バーサーカー攻撃",
+      "characterNames": ["ダリオ", "ゴー"]
+    },
+    {
+      "id": "11",
+      "name": "魔法使い攻撃",
+      "characterNames": ["コンラッド", "カタリナ"]
+    },
+    { "id": "12", "name": "友情攻撃", "characterNames": ["主人公", "スノウ"] },
+    { "id": "13", "name": "弓矢攻撃", "characterNames": ["テッド", "アルド"] },
+    {
+      "id": "14",
+      "name": "漁師攻撃",
+      "characterNames": ["シラミネ", "ウゲツ"]
+    },
+    {
+      "id": "15",
+      "name": "いぶし銀攻撃",
+      "characterNames": ["オルナン", "バーソロミュー", "ラインホルト"]
+    },
+    {
+      "id": "16",
+      "name": "裏美青年攻撃",
+      "characterNames": ["ジェレミー", "トラヴィス", "トリスタン"]
+    },
+    {
+      "id": "17",
+      "name": "兄妹攻撃",
+      "characterNames": ["ロウセン", "ロウハク", "ロウフォン"]
+    },
+    {
+      "id": "18",
+      "name": "真忍者攻撃",
+      "characterNames": ["ケイト", "アカギ", "ミズキ"]
+    },
+    {
+      "id": "19",
+      "name": "大剣攻撃Ｂ",
+      "characterNames": ["イザク", "アクセル", "セルマ"]
+    },
+    {
+      "id": "20",
+      "name": "ニャー攻撃",
+      "characterNames": ["チープー", "ナルクル", "チャンポ"]
+    },
+    {
+      "id": "21",
+      "name": "美少女攻撃",
+      "characterNames": ["ビッキー", "リタ", "ミレイ"]
+    },
+    {
+      "id": "22",
+      "name": "美女攻撃（１）",
+      "characterNames": ["アメリア", "キカ", "ジーン"]
+    },
+    {
+      "id": "23",
+      "name": "美女攻撃（２）",
+      "characterNames": ["グレッチェン", "ジーン", "キカ"]
+    },
+    {
+      "id": "24",
+      "name": "美青年攻撃",
+      "characterNames": ["シグルド", "ハーヴェイ", "ヘルムート"]
+    },
+    {
+      "id": "25",
+      "name": "乱れ撃ち攻撃（１）",
+      "characterNames": ["テッド", "アルド", "フレア"]
+    },
+    {
+      "id": "26",
+      "name": "乱れ撃ち攻撃（２）",
+      "characterNames": ["テッド", "ロウハク", "フレア"]
+    },
+    {
+      "id": "27",
+      "name": "乱れ撃ち攻撃（３）",
+      "characterNames": ["テッド", "アルド", "フレデリカ"]
+    },
+    {
+      "id": "28",
+      "name": "乱れ撃ち攻撃（４）",
+      "characterNames": ["テッド", "ロウハク", "フレデリカ"]
+    },
+    {
+      "id": "29",
+      "name": "槍攻撃",
+      "characterNames": ["リノ・エン・クルデス", "ユージン", "レイチェル"]
+    },
+    {
+      "id": "30",
+      "name": "騎士団攻撃",
+      "characterNames": ["タル", "ケネス", "ポーラ", "ジュエル"]
     }
   ]
 }

@@ -2,19 +2,161 @@
   "titleName": "幻想水滸伝III",
   "attacks": [
     {
-      "id": 1,
-      "name": "幻水3",
-      "characterNames": ["キャラA", "キャラB"]
+      "id": "1",
+      "name": "決戦攻撃",
+      "characterNames": ["からくり丸Ｚ", "ブライト"]
     },
     {
-      "id": 2,
-      "name": "幻想水滸伝3",
-      "characterNames": ["キャラA", "キャラB"]
+      "id": "2",
+      "name": "傭兵Ａ攻撃",
+      "characterNames": ["エース", "ジョーカー"]
     },
     {
-      "id": 3,
-      "name": "幻水3の協力攻撃",
-      "characterNames": ["キャラA", "キャラB"]
+      "id": "3",
+      "name": "えい、えい、えい",
+      "characterNames": ["ビッキー", "ビッキー（子供）"]
+    },
+    {
+      "id": "4",
+      "name": "傭兵Ｃ攻撃",
+      "characterNames": ["デューク", "エレーン"]
+    },
+    {
+      "id": "5",
+      "name": "からくり攻撃",
+      "characterNames": ["ベル", "からくり丸Ｚ"]
+    },
+    {
+      "id": "6",
+      "name": "騎士Ａ攻撃",
+      "characterNames": ["ボルス", "パーシヴァル"]
+    },
+    {
+      "id": "7",
+      "name": "格闘家攻撃",
+      "characterNames": ["ジョアン", "エミリー"]
+    },
+    {
+      "id": "8",
+      "name": "子供攻撃",
+      "characterNames": ["メルヴィル", "アラニス"]
+    },
+    { "id": "9", "name": "忍者攻撃", "characterNames": ["ワタリ", "アヤメ"] },
+    {
+      "id": "10",
+      "name": "アルマキナン攻撃",
+      "characterNames": ["ユイリ", "ユミィ"]
+    },
+    {
+      "id": "11",
+      "name": "竜騎士攻撃",
+      "characterNames": ["フッチ", "シャロン"]
+    },
+    {
+      "id": "12",
+      "name": "竜騎士Ｂ攻撃",
+      "characterNames": ["フッチ", "シャロン"]
+    },
+    {
+      "id": "13",
+      "name": "魔法使い攻撃",
+      "characterNames": ["エステラ", "ロディ"]
+    },
+    {
+      "id": "14",
+      "name": "マクシミリアン攻撃",
+      "characterNames": ["フレッド", "リコ"]
+    },
+    {
+      "id": "15",
+      "name": "断罪攻撃",
+      "characterNames": ["ランディス", "アヤメ"]
+    },
+    {
+      "id": "16",
+      "name": "野生のおたけび",
+      "characterNames": ["フーバー", "ハレック"]
+    },
+    {
+      "id": "17",
+      "name": "ライドオン攻撃",
+      "characterNames": ["ジョー軍曹", "シャボン"]
+    },
+    { "id": "18", "name": "族長攻撃", "characterNames": ["ルシア", "デュパ"] },
+    {
+      "id": "19",
+      "name": "せいいっぱい攻撃",
+      "characterNames": ["トーマス", "セシル"]
+    },
+    {
+      "id": "20",
+      "name": "漢攻撃",
+      "characterNames": ["ワン・フー", "レオ", "ムーア"]
+    },
+    {
+      "id": "21",
+      "name": "騎士攻撃Ｂ",
+      "characterNames": ["クリス", "ボルス", "パーシヴァル", "レオ"]
+    },
+    {
+      "id": "22",
+      "name": "トライファイト攻撃",
+      "characterNames": ["デュパ", "シバ", "バズバ"]
+    },
+    {
+      "id": "23",
+      "name": "ティント攻撃",
+      "characterNames": ["リリィ", "リード", "サムス"]
+    },
+    {
+      "id": "24",
+      "name": "バード攻撃",
+      "characterNames": ["ネイ", "シャボン", "トッポ"]
+    },
+    {
+      "id": "25",
+      "name": "美少女攻撃",
+      "characterNames": ["ビッキー", "ベル", "メル"]
+    },
+    {
+      "id": "26",
+      "name": "美女攻撃",
+      "characterNames": ["ルシア", "ユイリ", "エステラ"]
+    },
+    {
+      "id": "27",
+      "name": "竜巻攻撃",
+      "characterNames": ["ケンジ", "ジョーカー", "ジョアン"]
+    },
+    {
+      "id": "28",
+      "name": "美青年攻撃",
+      "characterNames": ["フレッド", "フランツ", "フッチ"]
+    },
+    {
+      "id": "29",
+      "name": "美青年攻撃（裏）",
+      "characterNames": ["ジョー軍曹", "バズバ", "ルビ"]
+    },
+    {
+      "id": "30",
+      "name": "娘攻撃",
+      "characterNames": ["サナエ・Ｙ", "エミリー", "シャロン"]
+    },
+    {
+      "id": "31",
+      "name": "傭兵Ｄ攻撃",
+      "characterNames": ["デューク", "エレーン", "ガウ", "ニコル"]
+    },
+    {
+      "id": "32",
+      "name": "傭兵Ｂ攻撃",
+      "characterNames": ["ゲド", "エース", "ジョーカー", "ジャック", "クイーン"]
+    },
+    {
+      "id": "33",
+      "name": "ワンワン攻撃",
+      "characterNames": ["コロク", "コーイチ", "コニー", "コサンジ", "コゴロウ"]
     }
   ]
 }

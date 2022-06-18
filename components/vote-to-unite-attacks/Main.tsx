@@ -53,10 +53,11 @@ export const Main: NextPage = () => {
     setUniteAttackName('')
   }
 
+  // TODO: ハッシュタグは変数化する
   useEffect(() => {
     const updatedTweetText = `${titleName}
 ${uniteAttackName}
-#幻水総選挙2022協力攻撃部門
+#幻水総選挙2022協力攻撃
 `
 
     const updatedTweetTextForParameter = `テストツイートです%20テストツイートです%0A${titleName}%0A${uniteAttackName}%0A%23ハッシュタグのテキスト`
@@ -70,26 +71,34 @@ ${uniteAttackName}
       <div className="bg-white text-black">
         <div className="hero">
           <div className="hero-content text-center">
-            <div className="w-96">
+            <div className="max-w-md">
               <h1 className="text-2xl font-bold pt-4 pb-10 underline underline-offset-4 font-zen-old-mincho">
-                「協力攻撃部門」投票テンプレ
+                「協力攻撃部門」投票ページ（仮）
               </h1>
 
               <div className="pb-0">
                 <ul className="list-disc text-left pl-6 pr-2">
-                  <li className="pb-2">たぶん説明が入る</li>
-                  <li className="pb-2">たぶん説明が入る</li>
-                  <li className="pb-2">たぶん説明が入る</li>
+                  <li className="pb-2">
+                    「協力攻撃部門」投票ページ（仮）の説明
+                  </li>
+                  <li className="pb-2">
+                    「協力攻撃部門」投票ページ（仮）の説明
+                  </li>
+                  <li className="pb-2">
+                    「協力攻撃部門」投票ページ（仮）の説明
+                  </li>
                 </ul>
               </div>
 
               <div className="divider" />
 
               <div className="pb-10">
-                <h2 className="text-xl font-bold pb-8 text-center">作品名</h2>
+                <h2 className="w-full text-xl font-bold pb-8 text-center">
+                  作品名
+                </h2>
                 <div>
                   <select
-                    className="select select-accent w-96 bg-white text-black"
+                    className="select select-accent max-w-md bg-white text-black"
                     defaultValue="default-value"
                     onChange={(e) => updateTitleName(e)}
                   >
@@ -107,14 +116,14 @@ ${uniteAttackName}
 
               <div className="pb-0">
                 <h2 className="text-xl font-bold pb-8 text-center">
-                  {titleName === '' ? null : `${titleName} の 協力攻撃一覧`}
+                  協力攻撃一覧
                 </h2>
                 <div>
-                  <div className="pb-0 w-96">
+                  <div className="pb-0 max-w-md">
                     {/* TODO: item の型をつける */}
-                    <ul className="list text-left pl-6 pr-2 w-96">
+                    <ul className="list text-left pl-6 pr-2 max-w-md">
                       {targetTitleUniteAttacks.map((item: any) => (
-                        <li key={item.id} className="pb-2">
+                        <li key={item.id} className="pb-4">
                           <label
                             htmlFor={`${item.id}`}
                             className="checkbox-label"
@@ -132,10 +141,23 @@ ${uniteAttackName}
                                 setUniteAttackName(e.target.value)
                               }
                             />
-                            <label htmlFor={`${item.id}`}>
-                              <span className="align-top">{item.name}</span>
-                            </label>
                           </label>
+                          <label htmlFor={`${item.id}`}>
+                            <span className="align-top">{item.name}</span>
+                          </label>
+                          <br />
+                          <div className="pl-10 text-xs">
+                            {item.characterNames.map(
+                              (characterName: string, index: number) => (
+                                <span key={characterName}>
+                                  {characterName}
+                                  {index !== item.characterNames.length - 1
+                                    ? '＆'
+                                    : ''}
+                                </span>
+                              )
+                            )}
+                          </div>
                         </li>
                       ))}
                     </ul>
@@ -159,24 +181,26 @@ ${uniteAttackName}
 
                   <div className="divider" />
 
-                  <div className="w-96 pb-10">
-                    <a
-                      href={`https://twitter.com/intent/tweet?text=テストツイートです。${tweetTextForParameter}`}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <button className="w-96 btn btn-outline btn-secondary">
-                        ツイート雛形をツイートする（ツイッターへ）
-                      </button>
-                    </a>
-                  </div>
+                  <div className="max-w-full">
+                    <div className="pb-10">
+                      <a
+                        href={`https://twitter.com/intent/tweet?text=テストツイートです。${tweetTextForParameter}`}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <button className="w-full btn btn-outline btn-secondary">
+                          ツイート雛形をツイートする（ツイッターへ）
+                        </button>
+                      </a>
+                    </div>
 
-                  <div className="pb-0">
-                    <CopyToClipboard text={tweetText}>
-                      <button className="w-96 btn btn-outline btn-secondary">
-                        ツイート雛形をクリップボードへコピーする
-                      </button>
-                    </CopyToClipboard>
+                    <div className="pb-0">
+                      <CopyToClipboard text={tweetText}>
+                        <button className="w-full btn btn-outline btn-secondary">
+                          ツイート雛形をクリップボードへコピーする
+                        </button>
+                      </CopyToClipboard>
+                    </div>
                   </div>
                 </div>
               )}

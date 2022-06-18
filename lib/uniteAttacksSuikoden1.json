@@ -1,20 +1,122 @@
 {
-  "titleName": "幻想水滸伝",
+  "titleName": "幻想水滸伝I",
   "attacks": [
     {
-      "id": 1,
-      "name": "幻水1",
-      "characterNames": ["キャラ1", "キャラ2"]
+      "id": "1",
+      "name": "お守り攻撃",
+      "characterNames": ["グレミオ", "パーン"]
     },
     {
-      "id": 2,
-      "name": "幻想水滸伝1",
-      "characterNames": ["キャラ1", "キャラ2"]
+      "id": "2",
+      "name": "漁師攻撃",
+      "characterNames": ["タイ・ホー", "ヤム・クー"]
     },
     {
-      "id": 3,
-      "name": "幻水1の協力攻撃",
-      "characterNames": ["キャラ1", "キャラ2"]
+      "id": "3",
+      "name": "ボコボコ攻撃",
+      "characterNames": ["パーン", "ロニー・ベル"]
+    },
+    {
+      "id": "4",
+      "name": "弓乱射攻撃",
+      "characterNames": ["キルキス", "シルビナ", "スタリオン", "ルビィ"]
+    },
+    {
+      "id": "5",
+      "name": "戦士の村攻撃",
+      "characterNames": ["ヒックス", "テンガアール"]
+    },
+    {
+      "id": "6",
+      "name": "夫婦攻撃",
+      "characterNames": ["レパント", "アイリーン"]
+    },
+    {
+      "id": "7",
+      "name": "山賊攻撃",
+      "characterNames": ["バルカス", "シドニア"]
+    },
+    {
+      "id": "8",
+      "name": "コボルト攻撃",
+      "characterNames": ["クロミミ", "ゴン"]
+    },
+    { "id": "9", "name": "竜騎士攻撃", "characterNames": ["フッチ", "ミリア"] },
+    {
+      "id": "10",
+      "name": "デコボコ攻撃",
+      "characterNames": ["ハンフリー", "フリン"]
+    },
+    {
+      "id": "11",
+      "name": "腐れ縁攻撃",
+      "characterNames": ["ゲン", "カマンドール"]
+    },
+    {
+      "id": "12",
+      "name": "からくり攻撃",
+      "characterNames": ["ジュッポ", "メグ"]
+    },
+    { "id": "13", "name": "大工攻撃", "characterNames": ["ゲン", "サンスケ"] },
+    {
+      "id": "14",
+      "name": "師弟攻撃",
+      "characterNames": ["坊っちゃん", "カイ"]
+    },
+    {
+      "id": "15",
+      "name": "湖賊攻撃",
+      "characterNames": ["アンジー", "レオナルド", "カナック"]
+    },
+    {
+      "id": "16",
+      "name": "エルフ攻撃",
+      "characterNames": ["キルキス", "シルビナ", "スタリオン"]
+    },
+    {
+      "id": "17",
+      "name": "ニンジャ攻撃",
+      "characterNames": ["カスミ", "フウマ", "カゲ"]
+    },
+    {
+      "id": "18",
+      "name": "美青年攻撃",
+      "characterNames": ["フリック", "アレン", "グレンシール"]
+    },
+    {
+      "id": "19",
+      "name": "レパント一家攻撃",
+      "characterNames": ["レパント", "アイリーン", "シーナ"]
+    },
+    {
+      "id": "20",
+      "name": "美女攻撃",
+      "characterNames": ["クレオ", "アイリーン", "バレリア", "ソニア"]
+    },
+    {
+      "id": "21",
+      "name": "美少女攻撃",
+      "characterNames": ["カミーユ", "カスミ", "テンガアール"]
+    },
+    {
+      "id": "22",
+      "name": "コボルト＋1攻撃",
+      "characterNames": ["クロミミ", "ゴン", "フー・スー・ルー"]
+    },
+    {
+      "id": "23",
+      "name": "格闘家攻撃",
+      "characterNames": ["パーン", "エイケイ", "モーガン"]
+    },
+    {
+      "id": "24",
+      "name": "ヒカリ攻撃",
+      "characterNames": ["リュウカン", "フッケン", "カイ"]
+    },
+    {
+      "id": "25",
+      "name": "かじ屋攻撃",
+      "characterNames": ["マース", "ミース", "ムース", "モース"]
     }
   ]
 }

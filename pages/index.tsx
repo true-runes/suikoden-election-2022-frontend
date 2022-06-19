@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import type { NextPage } from 'next'
 
@@ -19,35 +19,9 @@ import { IllustratedBy } from '@/components/common/IllustratedBy'
 import { SiteFooter } from '@/components/common/SiteFooter'
 
 import { useLocale } from '@/hooks/useLocale'
-
-// const nowSecond = () => {
-//   const time = new Date()
-//   const hour = time.getHours()
-//   const minute = time.getMinutes()
-//   const second = time.getSeconds()
-
-//   return second
-// }
+import { IllustrationsApplicationStatus } from '@/components/events-in-event/illustrations-with-results/IllustrationsApplicationStatus'
 
 const Home: NextPage = () => {
-  // TODO: "now" ではなく、開催日からの差分を出し、減らしていく
-  // const [now, setNow] = useState(new Date())
-
-  // TODO: 子コンポーネントへの影響にも注意する（コンポーネント切り出すべき）
-  // useEffect(
-  //   function () {
-  //     const intervalId = setInterval(function () {
-  //       setNow(new Date())
-  //     }, 1000)
-
-  //     return function () {
-  //       clearInterval(intervalId)
-  //     }
-  //   },
-
-  //   [now]
-  // )
-
   const { t } = useLocale()
 
   return (
@@ -68,42 +42,6 @@ const Home: NextPage = () => {
           height={1788}
         />
 
-        {/* <div className="hero bg-base-200">
-          <div className="hero-content text-center">
-            <div className="max-w-md">
-              <span className="text-xl">投票開始まであと</span>
-              <br />
-              <br />
-              <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
-                <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                  <span className="countdown font-mono text-5xl">
-                    <StyledNowDate now={now} />
-                  </span>
-                  日
-                </div>
-                <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                  <span className="countdown font-mono text-5xl">
-                    <StyledNowHour now={now} />
-                  </span>
-                  時
-                </div>
-                <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                  <span className="countdown font-mono text-5xl">
-                    <StyledNowMinute now={now} />
-                  </span>
-                  分
-                </div>
-                <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                  <span className="countdown font-mono text-5xl">
-                    <StyledNowSecond now={now} />
-                  </span>
-                  秒
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
         <div className="pt-4">
           <div id="what-is-gensosenkyo" className="-mt-32 pt-32">
             <WhatIsGensosenkyo />
@@ -114,6 +52,11 @@ const Home: NextPage = () => {
         <div id="event-summary" className="-mt-32 pt-32">
           <EventSummary />
         </div>
+
+        <IllustrationsApplicationStatus />
+
+        <div className="divider" />
+        <EventSummary />
 
         <div className="divider" />
         <div id="divisions" className="-mt-32 pt-32">
@@ -154,19 +97,3 @@ const Home: NextPage = () => {
 }
 
 export default Home
-
-// const StyledNowSecond = styled.span`
-//   --value: ${(props: { now: Date }) => props.now.getSeconds()};
-// `
-
-// const StyledNowMinute = styled.span`
-//   --value: ${(props: { now: Date }) => props.now.getMinutes()};
-// `
-
-// const StyledNowHour = styled.span`
-//   --value: ${(props: { now: Date }) => props.now.getHours()};
-// `
-
-// const StyledNowDate = styled.span`
-//   --value: ${(props: { now: Date }) => props.now.getDate()};
-// `

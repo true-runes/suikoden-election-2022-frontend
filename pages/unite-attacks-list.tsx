@@ -10,7 +10,7 @@ import { SiteFooter } from '@/components/common/SiteFooter'
 
 import { AttacksList } from '@/components/unite-attacks-list/AttacksList'
 
-type attack = {
+type Attack = {
   id: number
   name: string
   name_en: string
@@ -18,13 +18,13 @@ type attack = {
   page_annotation: string
 }
 
-type apiResponse = {
-  [key: string]: attack[]
+type ApiResponse = {
+  [key: string]: Attack[]
 }
 
 const UniteAttacksList: NextPage = () => {
   const [nowLoading, setNowLoading] = useState(true)
-  const [apiResponse, setApiResponse] = useState<apiResponse>({})
+  const [apiResponse, setApiResponse] = useState<ApiResponse>({})
 
   // TODO: 開発サーバが動的に使えるように環境変数で定義する
   const apiUrl = 'https://headquarters.suikoden.info/unite_attacks?title=all'

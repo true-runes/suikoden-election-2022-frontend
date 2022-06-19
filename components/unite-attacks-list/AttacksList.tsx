@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import useTranslation from 'next-translate/useTranslation'
 
-type attack = {
+type Attack = {
   id: number
   name: string
   name_en: string
@@ -9,12 +9,12 @@ type attack = {
   page_annotation: string
 }
 
-type apiResponse = {
-  [key: string]: attack[]
+type ApiResponse = {
+  [key: string]: Attack[]
 }
 
 type Props = {
-  apiResponse: apiResponse
+  apiResponse: ApiResponse
 }
 
 export const AttacksList: NextPage<Props> = ({ apiResponse }) => {
@@ -33,7 +33,7 @@ export const AttacksList: NextPage<Props> = ({ apiResponse }) => {
             <div>
               <div className="pb-8 max-w-md">
                 <ul className="list text-left pl-24 pr-24 max-w-md">
-                  {apiResponse[title].map((attack: attack) => {
+                  {apiResponse[title].map((attack: Attack) => {
                     return (
                       <li key={attack.id} className="pb-4">
                         <span>

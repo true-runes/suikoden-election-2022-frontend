@@ -166,9 +166,6 @@ export const Divisions: NextPage = () => {
                     <ul className="list-disc text-left pl-6 pr-2">
                       <li className="pb-2">ボーナス票は付きません。</li>
                       <li className="pb-2">
-                        同じ名前の協力攻撃が多いことから、出来る限り正確に投票できるような方法を準備中です。
-                      </li>
-                      <li className="pb-2">
                         お時間がないこともあり、開票イラスト、お題小説、推し台詞の募集はいたしません。申し訳ございません。
                       </li>
                       <li className="pb-2">

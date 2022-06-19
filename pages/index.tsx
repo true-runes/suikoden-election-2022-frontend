@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-// import Link from 'next/link'
 import type { NextPage } from 'next'
 
 import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation'
@@ -20,7 +19,6 @@ import { IllustratedBy } from '@/components/common/IllustratedBy'
 import { SiteFooter } from '@/components/common/SiteFooter'
 
 import { useLocale } from '@/hooks/useLocale'
-// import { IllustrationsApplicationStatus } from '@/components/events-in-event/illustrations-with-results/IllustrationsApplicationStatus'
 
 const Home: NextPage = () => {
   const { t } = useLocale()
@@ -55,9 +53,6 @@ const Home: NextPage = () => {
         </div>
 
         <div className="divider" />
-        <EventSummary />
-
-        <div className="divider" />
         <div id="divisions" className="-mt-32 pt-32">
           <Divisions />
         </div>
@@ -83,13 +78,19 @@ const Home: NextPage = () => {
         </div>
 
         <div className="divider" />
-        <EventsInEventIndex />
+        <div id="events-in-event-index" className="-mt-32 pt-32">
+          <EventsInEventIndex />
+        </div>
 
         <div className="divider" />
-        <IllustratedBy />
+        <div id="illustrated-by" className="-mt-32 pt-32">
+          <IllustratedBy />
+        </div>
 
         <div className="divider" />
-        <SiteFooter />
+        <div id="site-footer" className="-mt-32 pt-32">
+          <SiteFooter />
+        </div>
       </main>
     </div>
   )

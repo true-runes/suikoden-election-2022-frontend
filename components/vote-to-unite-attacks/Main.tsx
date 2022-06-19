@@ -191,43 +191,47 @@ ${uniteAttackName}
                     <div className="pb-0 max-w-md">
                       {/* TODO: item の型をつける */}
                       <ul className="list text-left pl-6 pr-2 max-w-md">
-                        {apiResponse.map((item: any) => (
-                          <li key={item.id} className="pb-4">
+                        {apiResponse.map((uniteAttack: any) => (
+                          <li key={uniteAttack.id} className="pb-4">
                             <label
-                              htmlFor={`${item.id}`}
+                              htmlFor={`${uniteAttack.id}`}
                               className="checkbox-label"
                             >
                               <input
-                                id={`${item.id}`}
+                                id={`${uniteAttack.id}`}
                                 data-theme="light"
-                                key={item.id}
-                                value={item.name}
-                                checked={uniteAttackName === item.name}
+                                key={uniteAttack.id}
+                                value={uniteAttack.name}
+                                checked={uniteAttackName === uniteAttack.name}
                                 type="radio"
                                 name="radio-4"
                                 className="radio radio-accent mr-4 checked:bg-blue-500"
                                 onChange={(e) => {
                                   setUniteAttackName(e.target.value)
-                                  setUniteCharacterNames(item.characterNames)
+                                  setUniteCharacterNames(
+                                    uniteAttack.characterNames
+                                  )
                                 }}
                               />
                             </label>
-                            <label htmlFor={`${item.id}`}>
+                            <label htmlFor={`${uniteAttack.id}`}>
                               <span className="align-top">
-                                {lang === 'ja' ? item.name : item.name_en}
+                                {lang === 'ja'
+                                  ? uniteAttack.name
+                                  : uniteAttack.name_en}
                               </span>
                             </label>
                             <br />
                             <span className="pl-10 text-xs">
-                              {lang === 'ja'
-                                ? item.character_names
-                                : item.character_names_en}
+                              {/* TODO: 英語を用意したい */}
+                              {uniteAttack.character_names}
                             </span>
-                            {item.page_annotation && (
+                            {uniteAttack.page_annotation && (
                               <>
                                 <br />
                                 <span className="pl-10 text-xs">
-                                  {item.page_annotation}
+                                  {/* TODO: 英語を用意したい */}
+                                  {uniteAttack.page_annotation}
                                 </span>
                               </>
                             )}

@@ -149,7 +149,16 @@ export const Divisions: NextPage = () => {
                     <h3 className="text-lg font-bold pb-2">
                       投票用ハッシュタグ
                     </h3>
-                    <p className="text-lg pb-4">準備中</p>
+                    <p className="text-lg pb-4">
+                      <a
+                        href="https://twitter.com/search?q=%23%E5%B9%BB%E6%B0%B4%E7%B7%8F%E9%81%B8%E6%8C%992022%E5%8D%94%E5%8A%9B%E6%94%BB%E6%92%83&src=typed_query&f=live"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="underline underline-offset-4 text-blue-500 hover:text-blue-900"
+                      >
+                        #幻水総選挙2022協力攻撃
+                      </a>
+                    </p>
                   </div>
 
                   <div className="pb-2">

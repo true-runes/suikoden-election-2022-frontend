@@ -44,9 +44,11 @@ export const AttacksList: NextPage<Props> = ({ apiResponse }) => {
                           {attack.character_names}
                         </span>
                         <br />
-                        <span className="text-xs">
-                          {attack.page_annotation}
-                        </span>
+                        {attack.page_annotation && (
+                          <span className="text-xs">
+                            ※{attack.page_annotation}
+                          </span>
+                        )}
                       </li>
                     )
                   })}

@@ -62,6 +62,26 @@ const VoteExamples: NextPage = () => {
                 </li>
               </ul>
             </div>
+
+            <div className="pb-10" />
+
+            <div className="text-base text-center pb-0">
+              <h2 className="text-xl font-bold pb-4">協力攻撃部門 投票例</h2>
+              <ul className="list-disc pl-6 pr-2 text-left">
+                <li className="pb-2">
+                  投票方法は{' '}
+                  <a
+                    href="https://twitter.com/gensosenkyo/status/1538137055167148032"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline underline-offset-4 text-blue-500 hover:text-blue-900"
+                  >
+                    こちらのツイート
+                  </a>{' '}
+                  をご参照下さい。
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

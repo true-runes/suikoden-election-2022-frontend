@@ -164,6 +164,19 @@ export const Divisions: NextPage = () => {
                   <div className="pb-2">
                     <h3 className="text-lg font-bold pb-2">補足</h3>
                     <ul className="list-disc text-left pl-6 pr-2">
+                      <li className="pb-2">
+                        投票方法は{' '}
+                        <a
+                          href="https://twitter.com/gensosenkyo/status/1538137055167148032"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="underline underline-offset-4 text-blue-500 hover:text-blue-900"
+                        >
+                          こちらのツイート
+                        </a>{' '}
+                        をご参照下さい。
+                      </li>
+
                       <li className="pb-2">ボーナス票は付きません。</li>
                       <li className="pb-2">
                         お時間がないこともあり、開票イラスト、お題小説、推し台詞の募集はいたしません。申し訳ございません。

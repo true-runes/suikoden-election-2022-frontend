@@ -105,26 +105,40 @@ const Home: NextPage = () => {
         </div> */}
 
         <div className="pt-4">
-          <WhatIsGensosenkyo />
+          <div id="what-is-gensosenkyo" className="-mt-32 pt-32">
+            <WhatIsGensosenkyo />
+          </div>
         </div>
 
         <div className="divider" />
-        <EventSummary />
+        <div id="event-summary" className="-mt-32 pt-32">
+          <EventSummary />
+        </div>
 
         <div className="divider" />
-        <Divisions />
+        <div id="divisions" className="-mt-32 pt-32">
+          <Divisions />
+        </div>
 
         <div className="divider" />
-        <HowToVote />
+        <div id="how-to-vote" className="-mt-32 pt-32">
+          <HowToVote />
+        </div>
 
         <div className="divider" />
-        <VoteExamples />
+        <div id="vote-examples" className="-mt-32 pt-32">
+          <VoteExamples />
+        </div>
 
         <div className="divider" />
-        <HallOfFame />
+        <div id="hall-of-fame" className="-mt-32 pt-32">
+          <HallOfFame />
+        </div>
 
         <div className="divider" />
-        <Onegai />
+        <div id="onegai" className="-mt-32 pt-32">
+          <Onegai />
+        </div>
 
         <div className="divider" />
         <EventsInEventIndex />

@@ -149,16 +149,35 @@ export const Divisions: NextPage = () => {
                     <h3 className="text-lg font-bold pb-2">
                       投票用ハッシュタグ
                     </h3>
-                    <p className="text-lg pb-4">準備中</p>
+                    <p className="text-lg pb-4">
+                      <a
+                        href="https://twitter.com/search?q=%23%E5%B9%BB%E6%B0%B4%E7%B7%8F%E9%81%B8%E6%8C%992022%E5%8D%94%E5%8A%9B%E6%94%BB%E6%92%83&src=typed_query&f=live"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="underline underline-offset-4 text-blue-500 hover:text-blue-900"
+                      >
+                        #幻水総選挙2022協力攻撃
+                      </a>
+                    </p>
                   </div>
 
                   <div className="pb-2">
                     <h3 className="text-lg font-bold pb-2">補足</h3>
                     <ul className="list-disc text-left pl-6 pr-2">
-                      <li className="pb-2">ボーナス票は付きません。</li>
                       <li className="pb-2">
-                        同じ名前の協力攻撃が多いことから、出来る限り正確に投票できるような方法を準備中です。
+                        投票方法は{' '}
+                        <a
+                          href="https://twitter.com/gensosenkyo/status/1538137055167148032"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="underline underline-offset-4 text-blue-500 hover:text-blue-900"
+                        >
+                          こちらのツイート
+                        </a>{' '}
+                        をご参照下さい。
                       </li>
+
+                      <li className="pb-2">ボーナス票は付きません。</li>
                       <li className="pb-2">
                         お時間がないこともあり、開票イラスト、お題小説、推し台詞の募集はいたしません。申し訳ございません。
                       </li>

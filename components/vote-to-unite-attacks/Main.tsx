@@ -208,27 +208,33 @@ ${uniteAttackName}
 
                   <div className="max-w-full">
                     <div className="pb-10">
-                      <button
-                        className="w-full btn btn-outline btn-secondary pr-2"
-                        disabled={uniteAttackName === ''}
-                      >
-                        <a
-                          href={`https://twitter.com/intent/tweet?text=${tweetTextForParameter}`}
-                          target="_blank"
-                          rel="noreferrer"
+                      {/* TODO: 重複部分が多く、やや冗長（a タグ をうまく取り扱いたい） */}
+                      {uniteAttackName === '' ? (
+                        <button
+                          className="w-full btn btn-outline btn-secondary pr-2"
+                          disabled
                         >
-                          <span
-                            className={
-                              uniteAttackName === '' ? 'text-gray-500' : ''
-                            }
-                          >
+                          <span className="text-gray-500">
                             {t('ツイートで投票する')}
                           </span>
                           <span className="pl-1">
                             <ExternalLink />
                           </span>
+                        </button>
+                      ) : (
+                        <a
+                          href={`https://twitter.com/intent/tweet?text=${tweetTextForParameter}`}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <button className="w-full btn btn-outline btn-secondary pr-2">
+                            <span>{t('ツイートで投票する')}</span>
+                            <span className="pl-1">
+                              <ExternalLink />
+                            </span>
+                          </button>
                         </a>
-                      </button>
+                      )}
                     </div>
 
                     <div className="pb-0">

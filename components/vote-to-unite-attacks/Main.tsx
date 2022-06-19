@@ -230,7 +230,7 @@ ${uniteAttackName}
                               <>
                                 <br />
                                 <span className="pl-10 text-xs">
-                                  {/* TODO: 英語を用意したい */}
+                                  {/* TODO: 英語を用意したい */}※
                                   {uniteAttack.page_annotation}
                                 </span>
                               </>

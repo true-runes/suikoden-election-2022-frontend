@@ -70,7 +70,7 @@ export const Main: NextPage = () => {
     setUniteAttackName('')
   }
 
-  // TODO: ハッシュタグは変数にしておく
+  // TODO: ハッシュタグは変数にしたい
   // TODO: キャラ名入れたほうがいい場合は入れる (uniteCharacterNames)
   useEffect(() => {
     console.log(uniteCharacterNames)
@@ -79,8 +79,8 @@ export const Main: NextPage = () => {
 ${uniteAttackName}
 #幻水総選挙2022協力攻撃
 `
-
-    const updatedTweetTextForParameter = `テストツイートです%20テストツイートです%0A${titleName}%0A${uniteAttackName}%0A%23ハッシュタグのテキスト`
+    // %0A は改行、%23 はパウンド記号、%20 は半角スペース を表す
+    const updatedTweetTextForParameter = `${titleName}%0A${uniteAttackName}%0A%23幻水総選挙2022協力攻撃`
 
     setTweetText(updatedTweetText)
     setTweetTextForParameter(updatedTweetTextForParameter)
@@ -213,7 +213,7 @@ ${uniteAttackName}
                         disabled={uniteAttackName === ''}
                       >
                         <a
-                          href={`https://twitter.com/intent/tweet?text=テストツイートです。${tweetTextForParameter}`}
+                          href={`https://twitter.com/intent/tweet?text=${tweetTextForParameter}`}
                           target="_blank"
                           rel="noreferrer"
                         >

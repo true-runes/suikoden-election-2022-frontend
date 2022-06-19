@@ -99,7 +99,7 @@ ${uniteAttackName}
               <div className="pb-0">
                 <ul className="list-disc text-left pl-6 pr-2">
                   <li className="pb-2">お好きな協力攻撃を選んでください。 </li>
-                  <li className="pb-2">投票はお一人様1票です。</li>
+                  <li className="pb-2">投票はお一人様1票（1回）です。</li>
                 </ul>
               </div>
 

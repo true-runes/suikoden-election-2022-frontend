@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import type { NextPage } from 'next'
 import useTranslation from 'next-translate/useTranslation'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
+import axios from 'axios'
+import Image from 'next/image'
 
 import ExternalLink from '@/components/svg/ExternalLink'
 
@@ -23,6 +25,11 @@ type UniteAttack = {
   characterNames: CharacterName[]
 }
 
+console.log(process.env.NEXT_PUBLIC_ILLUSTRATIONS_APPLICATION_STATUS_API_URL)
+const apiUrl =
+  process.env.NEXT_PUBLIC_ILLUSTRATIONS_APPLICATION_STATUS_API_URL ||
+  'localhost'
+
 export const Main: NextPage = () => {
   const { t, lang } = useTranslation('votes_to_unite_attacks')
 
@@ -35,9 +42,45 @@ export const Main: NextPage = () => {
   const [targetTitleUniteAttacks, setTargetTitleUniteAttacks] = useState(
     [] as UniteAttack[]
   )
+  const [apiResponse, setApiResponse] = useState([])
+  const [nowLoading, setNowLoading] = useState(false)
 
   const updateTitleName = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setTitleName(event.target.value)
+
+    const titleUrlParams = {
+      幻想水滸伝: 's1',
+      Suikoden: 's1',
+      幻想水滸伝II: 's2',
+      'Suikoden II': 's2',
+      幻想水滸伝III: 's3',
+      'Suikoden III': 's3',
+      幻想水滸伝IV: 's4',
+      'Suikoden IV': 's4',
+      ラプソディア: 'tactics',
+      'Suikoden Tactics': 'tactics',
+      幻想水滸伝V: 's5',
+      'Suikoden V': 's5',
+      幻想水滸伝ティアクライス: 'tk',
+      'Suikoden Tierkreis': 'tk',
+      '幻想水滸伝 紡がれし百年の時': 'woven',
+      'Suikoden The Woven Web of a Century': 'woven',
+    }[event.target.value]
+
+    const apiUrl = `${process.env.NEXT_PUBLIC_UNITE_ATTACKS_API_URL}?title=${titleUrlParams}&order=kana`
+
+    setNowLoading(true)
+
+    axios
+      .get(apiUrl)
+      .then((response) => {
+        setApiResponse(response.data)
+
+        setNowLoading(false)
+      })
+      .catch((error) => {
+        console.error(error)
+      })
 
     // TODO: 型定義
     // 各 JSON に titleName(Ja|En) を作るのがベターだとは思う
@@ -136,13 +179,19 @@ ${uniteAttackName}
                 </h2>
                 {titleName === '' ? (
                   '？？？？？'
+                ) : nowLoading ? (
+                  <Image
+                    src="/images/spinner.gif"
+                    alt="幻水総選挙スピナー"
+                    width="47"
+                    height="47"
+                  />
                 ) : (
                   <div>
                     <div className="pb-0 max-w-md">
                       {/* TODO: item の型をつける */}
                       <ul className="list text-left pl-6 pr-2 max-w-md">
-                        {/* 英語版作るときにここでエラーになる */}
-                        {targetTitleUniteAttacks.map((item: any) => (
+                        {apiResponse.map((item: any) => (
                           <li key={item.id} className="pb-4">
                             <label
                               htmlFor={`${item.id}`}
@@ -164,24 +213,24 @@ ${uniteAttackName}
                               />
                             </label>
                             <label htmlFor={`${item.id}`}>
-                              <span className="align-top">{item.name}</span>
+                              <span className="align-top">
+                                {lang === 'ja' ? item.name : item.name_en}
+                              </span>
                             </label>
                             <br />
-                            <div className="pl-10 text-xs">
-                              {/* 英語の場合はここで分岐が必要 */}
-                              {/* characterNames.(ja|en)? あまり階層作りたくない。シンプルにしたい */}
-                              {/* JaCharacterNames, EnCharacterNames */}
-                              {item.characterNames.map(
-                                (characterName: string, index: number) => (
-                                  <span key={characterName}>
-                                    {characterName}
-                                    {index !== item.characterNames.length - 1
-                                      ? '＆'
-                                      : ''}
-                                  </span>
-                                )
-                              )}
-                            </div>
+                            <span className="pl-10 text-xs">
+                              {lang === 'ja'
+                                ? item.character_names
+                                : item.character_names_en}
+                            </span>
+                            {item.page_annotation && (
+                              <>
+                                <br />
+                                <span className="pl-10 text-xs">
+                                  {item.page_annotation}
+                                </span>
+                              </>
+                            )}
                           </li>
                         ))}
                       </ul>

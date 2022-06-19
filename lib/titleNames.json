@@ -2,6 +2,7 @@
   {
     "id": "s1",
     "ja": "幻想水滸伝",
+    "en": "Suikoden",
     "alias": [
       "幻水"
     ]
@@ -9,6 +10,7 @@
   {
     "id": "s2",
     "ja": "幻想水滸伝II",
+    "en": "Suikoden II",
     "alias": [
       "幻水II"
     ]
@@ -16,6 +18,7 @@
   {
     "id": "s3",
     "ja": "幻想水滸伝III",
+    "en": "Suikoden III",
     "alias": [
       "幻水III"
     ]
@@ -23,6 +26,7 @@
   {
     "id": "s4",
     "ja": "幻想水滸伝IV",
+    "en": "Suikoden IV",
     "alias": [
       "幻水IV"
     ]
@@ -30,6 +34,7 @@
   {
     "id": "rhapsodia",
     "ja": "ラプソディア",
+    "en": "Suikoden Tactics",
     "alias": [
       "ラプソ"
     ]
@@ -37,6 +42,7 @@
   {
     "id": "s5",
     "ja": "幻想水滸伝V",
+    "en": "Suikoden V",
     "alias": [
       "幻水V"
     ]
@@ -44,6 +50,7 @@
   {
     "id": "tk",
     "ja": "幻想水滸伝ティアクライス",
+    "en": "Suikoden Tierkreis",
     "alias": [
       "幻水TK",
       "TK",
@@ -53,6 +60,7 @@
   {
     "id": "tsumutoki",
     "ja": "幻想水滸伝 紡がれし百年の時",
+    "en": "Suikoden The Woven Web of a Century",
     "alias": [
       "紡時",
       "つむじ"

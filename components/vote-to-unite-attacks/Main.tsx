@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import type { NextPage } from 'next'
+import useTranslation from 'next-translate/useTranslation'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 
 import ExternalLink from '@/components/svg/ExternalLink'
@@ -23,6 +24,8 @@ type UniteAttack = {
 }
 
 export const Main: NextPage = () => {
+  const { t, lang } = useTranslation('votes_to_unite_attacks')
+
   const [titleName, setTitleName] = useState('')
   const [uniteAttackName, setUniteAttackName] = useState('')
   // TODO: キャラ名入れたほうがいい場合は入れる
@@ -37,15 +40,25 @@ export const Main: NextPage = () => {
     setTitleName(event.target.value)
 
     // TODO: 型定義
+    // 各 JSON に titleName(Ja|En) を作るのがベターだとは思う
     const titleNameVsUniteAttacksArray: any = {
       幻想水滸伝: uniteAttacksSuikoden1.attacks,
+      Suikoden: uniteAttacksSuikoden1.attacks,
       幻想水滸伝II: uniteAttacksSuikoden2.attacks,
+      'Suikoden II': uniteAttacksSuikoden2.attacks,
       幻想水滸伝III: uniteAttacksSuikoden3.attacks,
+      'Suikoden III': uniteAttacksSuikoden3.attacks,
       幻想水滸伝IV: uniteAttacksSuikoden4.attacks,
+      'Suikoden IV': uniteAttacksSuikoden4.attacks,
       ラプソディア: uniteAttacksRhapsodia.attacks,
+      'Suikoden Tactics': uniteAttacksRhapsodia.attacks,
       幻想水滸伝V: uniteAttacksSuikoden5.attacks,
+      'Suikoden V': uniteAttacksSuikoden5.attacks,
       幻想水滸伝ティアクライス: uniteAttacksSuikodenTk.attacks,
+      'Suikoden Tierkreis': uniteAttacksSuikodenTk.attacks,
       '幻想水滸伝 紡がれし百年の時': uniteAttacksSuikodenTsumutoki.attacks,
+      'Suikoden The Woven Web of a Century':
+        uniteAttacksSuikodenTsumutoki.attacks,
     }
 
     if (titleNameVsUniteAttacksArray) {
@@ -94,7 +107,7 @@ ${uniteAttackName}
 
               <div className="pb-10">
                 <h2 className="w-full text-xl font-bold pb-8 text-center">
-                  作品名
+                  {t('作品名')}
                 </h2>
                 <div>
                   <select
@@ -103,11 +116,14 @@ ${uniteAttackName}
                     onChange={(e) => updateTitleName(e)}
                   >
                     <option disabled value="default-value">
-                      作品名を選択して下さい
+                      {t('作品名を選択して下さい')}
                     </option>
                     {titleNames.map((titleName) => (
-                      <option key={titleName.id} value={titleName.ja}>
-                        {titleName.ja}
+                      <option
+                        key={titleName.id}
+                        value={lang === 'ja' ? titleName.ja : titleName.en}
+                      >
+                        {lang === 'ja' ? titleName.ja : titleName.en}
                       </option>
                     ))}
                   </select>
@@ -116,57 +132,65 @@ ${uniteAttackName}
 
               <div className="pb-0">
                 <h2 className="text-xl font-bold pb-8 text-center">
-                  協力攻撃一覧
+                  {t('協力攻撃一覧')}
                 </h2>
-                <div>
-                  <div className="pb-0 max-w-md">
-                    {/* TODO: item の型をつける */}
-                    <ul className="list text-left pl-6 pr-2 max-w-md">
-                      {targetTitleUniteAttacks.map((item: any) => (
-                        <li key={item.id} className="pb-4">
-                          <label
-                            htmlFor={`${item.id}`}
-                            className="checkbox-label"
-                          >
-                            <input
-                              id={`${item.id}`}
-                              data-theme="light"
-                              key={item.id}
-                              value={item.name}
-                              checked={uniteAttackName === item.name}
-                              type="radio"
-                              name="radio-4"
-                              className="radio radio-accent mr-4 checked:bg-blue-500"
-                              onChange={(e) => {
-                                setUniteAttackName(e.target.value)
-                                setUniteCharacterNames(item.characterNames)
-                              }}
-                            />
-                          </label>
-                          <label htmlFor={`${item.id}`}>
-                            <span className="align-top">{item.name}</span>
-                          </label>
-                          <br />
-                          <div className="pl-10 text-xs">
-                            {item.characterNames.map(
-                              (characterName: string, index: number) => (
-                                <span key={characterName}>
-                                  {characterName}
-                                  {index !== item.characterNames.length - 1
-                                    ? '＆'
-                                    : ''}
-                                </span>
-                              )
-                            )}
-                          </div>
-                        </li>
-                      ))}
-                    </ul>
+                {titleName === '' ? (
+                  '？？？？？'
+                ) : (
+                  <div>
+                    <div className="pb-0 max-w-md">
+                      {/* TODO: item の型をつける */}
+                      <ul className="list text-left pl-6 pr-2 max-w-md">
+                        {/* 英語版作るときにここでエラーになる */}
+                        {targetTitleUniteAttacks.map((item: any) => (
+                          <li key={item.id} className="pb-4">
+                            <label
+                              htmlFor={`${item.id}`}
+                              className="checkbox-label"
+                            >
+                              <input
+                                id={`${item.id}`}
+                                data-theme="light"
+                                key={item.id}
+                                value={item.name}
+                                checked={uniteAttackName === item.name}
+                                type="radio"
+                                name="radio-4"
+                                className="radio radio-accent mr-4 checked:bg-blue-500"
+                                onChange={(e) => {
+                                  setUniteAttackName(e.target.value)
+                                  setUniteCharacterNames(item.characterNames)
+                                }}
+                              />
+                            </label>
+                            <label htmlFor={`${item.id}`}>
+                              <span className="align-top">{item.name}</span>
+                            </label>
+                            <br />
+                            <div className="pl-10 text-xs">
+                              {/* 英語の場合はここで分岐が必要 */}
+                              {/* characterNames.(ja|en)? あまり階層作りたくない。シンプルにしたい */}
+                              {/* JaCharacterNames, EnCharacterNames */}
+                              {item.characterNames.map(
+                                (characterName: string, index: number) => (
+                                  <span key={characterName}>
+                                    {characterName}
+                                    {index !== item.characterNames.length - 1
+                                      ? '＆'
+                                      : ''}
+                                  </span>
+                                )
+                              )}
+                            </div>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
 
-              {uniteAttackName === '' ? null : (
+              {uniteAttackName === 'a' ? null : (
                 <div>
                   <div className="divider" />
 
@@ -175,7 +199,7 @@ ${uniteAttackName}
                     data-theme="light"
                   >
                     <div className="card-body">
-                      <h2 className="card-title pb-4">投票内容</h2>
+                      <h2 className="card-title pb-4">{t('投票内容')}</h2>
                       <pre className="text-left">{tweetText}</pre>
                     </div>
                   </div>
@@ -184,24 +208,42 @@ ${uniteAttackName}
 
                   <div className="max-w-full">
                     <div className="pb-10">
-                      <a
-                        href={`https://twitter.com/intent/tweet?text=テストツイートです。${tweetTextForParameter}`}
-                        target="_blank"
-                        rel="noreferrer"
+                      <button
+                        className="w-full btn btn-outline btn-secondary pr-2"
+                        disabled={uniteAttackName === ''}
                       >
-                        <button className="w-full btn btn-outline btn-secondary pr-2">
-                          ツイートで投票する
+                        <a
+                          href={`https://twitter.com/intent/tweet?text=テストツイートです。${tweetTextForParameter}`}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <span
+                            className={
+                              uniteAttackName === '' ? 'text-gray-500' : ''
+                            }
+                          >
+                            {t('ツイートで投票する')}
+                          </span>
                           <span className="pl-1">
                             <ExternalLink />
                           </span>
-                        </button>
-                      </a>
+                        </a>
+                      </button>
                     </div>
 
                     <div className="pb-0">
                       <CopyToClipboard text={tweetText}>
-                        <button className="w-full btn btn-outline btn-secondary">
-                          投票内容をコピーする
+                        <button
+                          className="w-full btn btn-outline btn-secondary"
+                          disabled={uniteAttackName === ''}
+                        >
+                          <span
+                            className={
+                              uniteAttackName === '' ? 'text-gray-500' : ''
+                            }
+                          >
+                            {t('投票内容をコピーする')}
+                          </span>
                         </button>
                       </CopyToClipboard>
                     </div>

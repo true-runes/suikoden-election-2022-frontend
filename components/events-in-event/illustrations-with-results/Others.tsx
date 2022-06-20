@@ -40,6 +40,19 @@ export const Others: NextPage = () => {
             </Link>
             のページをご覧ください。
           </li>
+          <li className="pb-2">
+            応募状況は
+            <a
+              href="/events-in-event/result-illustration-applications"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span className="mx-1 link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900">
+                こちら
+              </span>
+            </a>
+            で公開しております。
+          </li>
         </ul>
       </div>
     </>

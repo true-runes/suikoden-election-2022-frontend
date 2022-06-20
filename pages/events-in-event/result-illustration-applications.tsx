@@ -87,6 +87,10 @@ const ResultIllustrationApplications: NextPage = () => {
                   />
                 ) : (
                   <>
+                    {/* <p>2022年06月20日 12:34 現在</p>
+
+                    <div className="py-2" /> */}
+
                     <Grid
                       data={gridJsData}
                       columns={[

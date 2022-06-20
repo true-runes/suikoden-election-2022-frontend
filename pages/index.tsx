@@ -15,6 +15,7 @@ import Onegai from '@/components/votes/Onegai'
 import { EventsInEventIndex } from '@/components/events-in-event/index'
 
 import { LinkToEnglishTranslationDocument } from '@/components/common/LinkToEnglishTranslationDocument'
+import { LinkToResultIllustrationApplications } from '@/components/common/LinkToResultIllustrationApplications'
 import { WhatIsGensosenkyo } from '@/components/votes/WhatIsGensosenkyo'
 import { IllustratedBy } from '@/components/common/IllustratedBy'
 import { SiteFooter } from '@/components/common/SiteFooter'
@@ -87,10 +88,12 @@ const Home: NextPage = () => {
           </div>
         )}
 
-        <div className="pt-4">
-          <div id="what-is-gensosenkyo" className="-mt-32 pt-32">
-            <WhatIsGensosenkyo />
-          </div>
+        <div className="pt-4" />
+        <LinkToResultIllustrationApplications />
+
+        <div className="divider" />
+        <div id="what-is-gensosenkyo" className="-mt-32 pt-32">
+          <WhatIsGensosenkyo />
         </div>
 
         <div className="divider" />

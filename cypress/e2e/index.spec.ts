@@ -15,7 +15,6 @@ describe('ホームページ', () => {
   })
 
   // 壊れやすいのでいったん skip とする
-
   it.skip('h1 タグ が期待どおりであること', () => {
     cy.url().should('equal', 'http://localhost:3100/')
 
@@ -26,7 +25,6 @@ describe('ホームページ', () => {
   })
 
   // 壊れやすいのでいったん skip とする
-
   it.skip('h2 タグ が期待どおりであること', () => {
     cy.url().should('equal', 'http://localhost:3100/')
 
@@ -62,7 +60,6 @@ describe('ホームページ（投票期間中）', () => {
   })
 
   // 壊れやすいのでいったん skip とする
-
   it.skip('期待どおりの挙動をすること', () => {
     cy.url().should('equal', 'http://localhost:3100/')
 

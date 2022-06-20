@@ -14,11 +14,13 @@ import { HallOfFame } from '@/components/votes/HallOfFame'
 import Onegai from '@/components/votes/Onegai'
 import { EventsInEventIndex } from '@/components/events-in-event/index'
 
+import { LinkToEnglishTranslationDocument } from '@/components/common/LinkToEnglishTranslationDocument'
 import { WhatIsGensosenkyo } from '@/components/votes/WhatIsGensosenkyo'
 import { IllustratedBy } from '@/components/common/IllustratedBy'
 import { SiteFooter } from '@/components/common/SiteFooter'
 
 import { useLocale } from '@/hooks/useLocale'
+import useTranslation from 'next-translate/useTranslation'
 
 // const nowSecond = () => {
 //   const time = new Date()
@@ -49,6 +51,7 @@ const Home: NextPage = () => {
   // )
 
   const { t } = useLocale()
+  const { lang } = useTranslation()
 
   return (
     <div className="bg-white text-black">
@@ -103,6 +106,13 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div> */}
+
+        {lang === 'en' && (
+          <div className="pt-4">
+            <LinkToEnglishTranslationDocument />
+            <div className="divider" />
+          </div>
+        )}
 
         <div className="pt-4">
           <div id="what-is-gensosenkyo" className="-mt-32 pt-32">

@@ -25,11 +25,6 @@ type UniteAttack = {
   characterNames: CharacterName[]
 }
 
-console.log(process.env.NEXT_PUBLIC_ILLUSTRATIONS_APPLICATION_STATUS_API_URL)
-const apiUrl =
-  process.env.NEXT_PUBLIC_ILLUSTRATIONS_APPLICATION_STATUS_API_URL ||
-  'localhost'
-
 export const Main: NextPage = () => {
   const { t, lang } = useTranslation('votes_to_unite_attacks')
 
@@ -67,7 +62,10 @@ export const Main: NextPage = () => {
       'Suikoden The Woven Web of a Century': 'woven',
     }[event.target.value]
 
-    const apiUrl = `${process.env.NEXT_PUBLIC_UNITE_ATTACKS_API_URL}?title=${titleUrlParams}&order=kana`
+    const apiEndpoint =
+      process.env.NEXT_PUBLIC_UNITE_ATTACKS_API_URL ||
+      'https://headquarters.suikoden.info/unite_attacks'
+    const apiUrl = `${apiEndpoint}?title=${titleUrlParams}&order=kana`
 
     setNowLoading(true)
 

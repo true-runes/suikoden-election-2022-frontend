@@ -14,6 +14,7 @@ import { HallOfFame } from '@/components/votes/HallOfFame'
 import Onegai from '@/components/votes/Onegai'
 import { EventsInEventIndex } from '@/components/events-in-event/index'
 
+import { DeadLines } from '@/components/common/DeadLines'
 import { LinkToEnglishTranslationDocument } from '@/components/common/LinkToEnglishTranslationDocument'
 import { WhatIsGensosenkyo } from '@/components/votes/WhatIsGensosenkyo'
 import { IllustratedBy } from '@/components/common/IllustratedBy'
@@ -107,17 +108,22 @@ const Home: NextPage = () => {
           </div>
         </div> */}
 
+        <div className="pt-4" />
+
         {lang === 'en' && (
-          <div className="pt-4">
+          <>
             <LinkToEnglishTranslationDocument />
             <div className="divider" />
-          </div>
+          </>
         )}
 
-        <div className="pt-4">
-          <div id="what-is-gensosenkyo" className="-mt-32 pt-32">
-            <WhatIsGensosenkyo />
-          </div>
+        <div id="deadlines" className="-mt-32 pt-32">
+          <DeadLines />
+        </div>
+
+        <div className="divider" />
+        <div id="what-is-gensosenkyo" className="-mt-32 pt-32">
+          <WhatIsGensosenkyo />
         </div>
 
         <div className="divider" />

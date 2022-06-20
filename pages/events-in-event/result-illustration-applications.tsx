@@ -87,9 +87,15 @@ const ResultIllustrationApplications: NextPage = () => {
                   />
                 ) : (
                   <>
-                    {/* <p>2022年06月20日 12:34 現在</p>
+                    <div className="text-center">
+                      <p>
+                        現時点で1枚以上の開票イラストを受領しましたキャラです。
+                      </p>
+                      <p>（随時更新）</p>
+                      {/* <p>2022年06月20日 12:34 現在 created_at.latest </p> */}
+                    </div>
 
-                    <div className="py-2" /> */}
+                    <div className="my-4" />
 
                     <Grid
                       data={gridJsData}

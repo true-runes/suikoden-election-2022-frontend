@@ -14,15 +14,17 @@ const ResultIllustrationApplications: NextPage = () => {
   const [nowLoading, setNowLoading] = useState(true)
 
   const apiUrl =
+    process.env.NEXT_PUBLIC_RESULT_ILLUSTRATIONS_STATUS_API ||
     'https://headquarters.suikoden.info/result_illustration_applications'
 
   useEffect(() => {
     setNowLoading(true)
+    setGridJsData([]) // https://github.com/grid-js/gridjs/issues/227 （効かないおまじない）
 
     axios
       .get(apiUrl)
       .then((response) => {
-        // [['スタリオン'], ['アルベルト']] のような形式にする
+        // [['スタリオン'], ['アルベルト']] のような二次元配列の形式にする
         const gridJsData = response.data.map((characterName: string) => {
           return [characterName]
         })
@@ -35,7 +37,7 @@ const ResultIllustrationApplications: NextPage = () => {
       .finally(() => {
         setNowLoading(false)
       })
-  }, [])
+  }, [apiUrl])
 
   return (
     <div className="bg-white text-black">
@@ -107,7 +109,7 @@ const ResultIllustrationApplications: NextPage = () => {
                           sortDesc: '降順で並び替える',
                         },
                         loading: '読み込み中…',
-                        // noRecordsFound: 'レコードが見つかりませんでした',
+                        noRecordsFound: '見つかりませんでした',
                         error: 'エラーが発生しました',
                       }}
                     />

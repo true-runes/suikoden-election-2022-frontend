@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import type { NextPage } from 'next'
 
@@ -15,6 +15,7 @@ import Onegai from '@/components/votes/Onegai'
 import { EventsInEventIndex } from '@/components/events-in-event/index'
 
 import { LinkToEnglishTranslationDocument } from '@/components/common/LinkToEnglishTranslationDocument'
+import { LinkToResultIllustrationApplications } from '@/components/common/LinkToResultIllustrationApplications'
 import { WhatIsGensosenkyo } from '@/components/votes/WhatIsGensosenkyo'
 import { IllustratedBy } from '@/components/common/IllustratedBy'
 import { SiteFooter } from '@/components/common/SiteFooter'
@@ -22,34 +23,7 @@ import { SiteFooter } from '@/components/common/SiteFooter'
 import { useLocale } from '@/hooks/useLocale'
 import useTranslation from 'next-translate/useTranslation'
 
-// const nowSecond = () => {
-//   const time = new Date()
-//   const hour = time.getHours()
-//   const minute = time.getMinutes()
-//   const second = time.getSeconds()
-
-//   return second
-// }
-
 const Home: NextPage = () => {
-  // TODO: "now" ではなく、開催日からの差分を出し、減らしていく
-  // const [now, setNow] = useState(new Date())
-
-  // TODO: 子コンポーネントへの影響にも注意する（コンポーネント切り出すべき）
-  // useEffect(
-  //   function () {
-  //     const intervalId = setInterval(function () {
-  //       setNow(new Date())
-  //     }, 1000)
-
-  //     return function () {
-  //       clearInterval(intervalId)
-  //     }
-  //   },
-
-  //   [now]
-  // )
-
   const { t } = useLocale()
   const { lang } = useTranslation()
 
@@ -114,10 +88,12 @@ const Home: NextPage = () => {
           </div>
         )}
 
-        <div className="pt-4">
-          <div id="what-is-gensosenkyo" className="-mt-32 pt-32">
-            <WhatIsGensosenkyo />
-          </div>
+        <div className="pt-4" />
+        <LinkToResultIllustrationApplications />
+
+        <div className="divider" />
+        <div id="what-is-gensosenkyo" className="-mt-32 pt-32">
+          <WhatIsGensosenkyo />
         </div>
 
         <div className="divider" />
@@ -151,32 +127,22 @@ const Home: NextPage = () => {
         </div>
 
         <div className="divider" />
-        <EventsInEventIndex />
+        <div id="events-in-event-index" className="-mt-32 pt-32">
+          <EventsInEventIndex />
+        </div>
 
         <div className="divider" />
-        <IllustratedBy />
+        <div id="illustrated-by" className="-mt-32 pt-32">
+          <IllustratedBy />
+        </div>
 
         <div className="divider" />
-        <SiteFooter />
+        <div id="site-footer" className="-mt-32 pt-32">
+          <SiteFooter />
+        </div>
       </main>
     </div>
   )
 }
 
 export default Home
-
-// const StyledNowSecond = styled.span`
-//   --value: ${(props: { now: Date }) => props.now.getSeconds()};
-// `
-
-// const StyledNowMinute = styled.span`
-//   --value: ${(props: { now: Date }) => props.now.getMinutes()};
-// `
-
-// const StyledNowHour = styled.span`
-//   --value: ${(props: { now: Date }) => props.now.getHours()};
-// `
-
-// const StyledNowDate = styled.span`
-//   --value: ${(props: { now: Date }) => props.now.getDate()};
-// `

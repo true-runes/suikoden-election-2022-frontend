@@ -93,23 +93,22 @@ const Home: NextPage = () => {
           </>
         )}
 
-        <div id="vote-dead-line-card" className="-mt-32 pt-32">
-          <VoteDeadLineCard />
-        </div>
-
-        {/* 投票開始とともに開く */}
-        {false && (
-          <div id="about-check-vote-card" className="-mt-32 pt-32">
-            <AboutCheckVoteCard />
+        <div className="max-w-lg mx-auto">
+          <div id="vote-dead-line-card" className="-mt-32 pt-32">
+            <VoteDeadLineCard />
           </div>
-        )}
 
-        <div id="about-projects-card" className="-mt-32 pt-32">
-          <AboutProjectsCard />
+          {/* 投票開始とともに開く */}
+          {false && (
+            <div id="about-check-vote-card" className="-mt-32 pt-32">
+              <AboutCheckVoteCard />
+            </div>
+          )}
+
+          <div id="about-projects-card" className="-mt-32 pt-32">
+            <AboutProjectsCard />
+          </div>
         </div>
-
-        {/* <div className="divider" />
-        <LinkToResultIllustrationApplications /> */}
 
         <div className="divider" />
         <div id="what-is-gensosenkyo" className="-mt-32 pt-32">

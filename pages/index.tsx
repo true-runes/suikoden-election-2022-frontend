@@ -14,8 +14,10 @@ import { HallOfFame } from '@/components/votes/HallOfFame'
 import Onegai from '@/components/votes/Onegai'
 import { EventsInEventIndex } from '@/components/events-in-event/index'
 
+import { VoteDeadLineCard } from '@/components/common/VoteDeadLineCard'
+import { AboutProjectsCard } from '@/components/common/AboutProjectsCard'
+import { AboutCheckVoteCard } from '@/components/common/AboutCheckVoteCard'
 import { LinkToEnglishTranslationDocument } from '@/components/common/LinkToEnglishTranslationDocument'
-import { LinkToResultIllustrationApplications } from '@/components/common/LinkToResultIllustrationApplications'
 import { WhatIsGensosenkyo } from '@/components/votes/WhatIsGensosenkyo'
 import { IllustratedBy } from '@/components/common/IllustratedBy'
 import { SiteFooter } from '@/components/common/SiteFooter'
@@ -81,15 +83,31 @@ const Home: NextPage = () => {
           </div>
         </div> */}
 
+        <div className="pt-4" />
+
         {lang === 'en' && (
-          <div className="pt-4">
+          <>
             <LinkToEnglishTranslationDocument />
             <div className="divider" />
-          </div>
+          </>
         )}
 
-        <div className="pt-4" />
-        <LinkToResultIllustrationApplications />
+        <div className="max-w-lg mx-auto">
+          <div id="vote-dead-line-card" className="-mt-32 pt-32">
+            <VoteDeadLineCard />
+          </div>
+
+          {/* 投票開始とともに開く */}
+          {false && (
+            <div id="about-check-vote-card" className="-mt-32 pt-32">
+              <AboutCheckVoteCard />
+            </div>
+          )}
+
+          <div id="about-projects-card" className="-mt-32 pt-32">
+            <AboutProjectsCard />
+          </div>
+        </div>
 
         <div className="divider" />
         <div id="what-is-gensosenkyo" className="-mt-32 pt-32">

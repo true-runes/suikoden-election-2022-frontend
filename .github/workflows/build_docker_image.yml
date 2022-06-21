@@ -1,7 +1,7 @@
 name: (GitHub Actions) Build Docker Image
 
 on:
-  push:
+  workflow_dispatch:
 
 jobs:
   build:

@@ -11,6 +11,7 @@ import { SiteFooter } from '@/components/common/SiteFooter'
 
 const ResultIllustrationApplications: NextPage = () => {
   const [gridJsData, setGridJsData] = useState([])
+  const [lastUpdatedAt, setLastUpdatedAt] = useState('')
   const [nowLoading, setNowLoading] = useState(true)
 
   const apiUrl =
@@ -25,11 +26,14 @@ const ResultIllustrationApplications: NextPage = () => {
       .get(apiUrl)
       .then((response) => {
         // [['スタリオン'], ['アルベルト']] のような二次元配列の形式にする
-        const gridJsData = response.data.map((characterName: string) => {
-          return [characterName]
-        })
+        const gridJsData = response.data.character_names.map(
+          (characterName: string) => {
+            return [characterName]
+          }
+        )
 
         setGridJsData(gridJsData)
+        setLastUpdatedAt(response.data.last_updated_at)
       })
       .catch((error) => {
         console.error(error)
@@ -91,8 +95,9 @@ const ResultIllustrationApplications: NextPage = () => {
                       <p>
                         現時点で1枚以上の開票イラストを受領しましたキャラです。
                       </p>
-                      <p>（随時更新）</p>
-                      {/* <p>2022年06月20日 12:34 現在 created_at.latest </p> */}
+                      <div className="my-2" />
+                      <p>最終更新日時</p>
+                      <p> {lastUpdatedAt}</p>
                     </div>
 
                     <div className="my-4" />

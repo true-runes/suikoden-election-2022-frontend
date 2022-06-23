@@ -4,9 +4,12 @@ import { useState } from 'react'
 import axios from 'axios'
 
 import { ResultEachHashtag } from '@/components/check-your-votes/ResultEachHashtag'
+import { ResultDescription } from '@/components/check-your-votes/ResultDescription'
 
 export const CheckForm: NextPage = () => {
+  const [isInitialState, setIsInitialState] = useState(true)
   const [screenName, setScreenName] = useState('')
+  const [screenNameForResult, setScreenNameForResult] = useState('')
   const [nowLoading, setNowLoading] = useState(false)
 
   const [gss2022, setGss2022] = useState([])
@@ -35,19 +38,21 @@ export const CheckForm: NextPage = () => {
         setShortStories(response.data.short_stories)
         setFavQuotes(response.data.fav_quotes)
         setSosenkyoCampaigns(response.data.sosenkyo_campaigns)
+
+        setScreenNameForResult(screenName)
       })
       .catch((error) => {
         console.error(error)
       })
       .finally(() => {
         setNowLoading(false)
+        setIsInitialState(false)
       })
   }
 
   return (
     <>
       <div className="pb-8">
-        <h2 className="text-xl font-bold pb-4">チェックするところ</h2>
         <div className="text-base">
           <input
             id="screen_name"
@@ -74,27 +79,52 @@ export const CheckForm: NextPage = () => {
           </button>
         </div>
       </div>
-      <div className="pb-8">
-        <h2 className="text-xl font-bold pb-4">結果が出るところ</h2>
-        {nowLoading ? (
-          <Image
-            src="/images/spinner.gif"
-            alt="幻水総選挙スピナー"
-            width="47"
-            height="47"
-          />
-        ) : (
+
+      <div className="pb-0">
+        {isInitialState && !nowLoading ? null : (
           <>
-            <p>#幻水総選挙2022</p>
-            <ResultEachHashtag tweetIds={gss2022} />
-            <p>#幻水総選挙2022協力攻撃</p>
-            <ResultEachHashtag tweetIds={uniteAttacks} />
-            <p>#幻水総選挙お題小説</p>
-            <ResultEachHashtag tweetIds={shortStories} />
-            <p>#幻水総選挙推し台詞</p>
-            <ResultEachHashtag tweetIds={favQuotes} />
-            <p>#幻水総選挙運動</p>
-            <ResultEachHashtag tweetIds={sosenkyoCampaigns} />
+            {nowLoading ? (
+              <Image
+                src="/images/spinner.gif"
+                alt="幻水総選挙スピナー"
+                width="47"
+                height="47"
+              />
+            ) : (
+              <>
+                <ResultDescription screenName={screenNameForResult} />
+
+                <div className="divider" />
+                <ResultEachHashtag
+                  tweetIds={gss2022}
+                  title={'#幻水総選挙2022'}
+                />
+
+                <div className="divider" />
+                <ResultEachHashtag
+                  tweetIds={uniteAttacks}
+                  title={'#幻水総選挙2022協力攻撃'}
+                />
+
+                <div className="divider" />
+                <ResultEachHashtag
+                  tweetIds={shortStories}
+                  title={'#幻水総選挙お題小説'}
+                />
+
+                <div className="divider" />
+                <ResultEachHashtag
+                  tweetIds={favQuotes}
+                  title={'#幻水総選挙推し台詞'}
+                />
+
+                <div className="divider" />
+                <ResultEachHashtag
+                  tweetIds={sosenkyoCampaigns}
+                  title={'#幻水総選挙運動'}
+                />
+              </>
+            )}
           </>
         )}
       </div>

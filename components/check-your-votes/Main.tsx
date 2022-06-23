@@ -10,13 +10,11 @@ export const Main: NextPage = () => {
         <div className="hero-content text-center w-full">
           <div className="pb-0 w-full">
             <div className="max-w-md">
-              <h1 className="text-2xl font-bold pb-8 underline font-zen-old-mincho">
+              <h1 className="text-2xl font-bold pt-8 pb-8 underline font-zen-old-mincho">
                 投票チェック
               </h1>
 
               <Description />
-              <div className="divider" />
-
               <CheckForm />
             </div>
           </div>

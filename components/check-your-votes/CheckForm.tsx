@@ -63,7 +63,7 @@ export const CheckForm: NextPage = () => {
                 clickCheckButton()
               }
             }}
-            placeholder="@gensosenkyo"
+            placeholder="gensosenkyo (@は不要です)"
             className="input input-bordered input-accent w-full max-w-full bg-white text-black"
             value={screenName}
           />

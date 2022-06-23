@@ -1,6 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 import type { NextPage } from 'next'
+import { useState, useEffect } from 'react'
+import dayjs from 'dayjs'
+import ja from 'dayjs/locale/ja'
+import isSameOrAfter from 'dayjs/plugin/isSameOrAfter'
 
 import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation'
 
@@ -26,8 +30,24 @@ import { useLocale } from '@/hooks/useLocale'
 import useTranslation from 'next-translate/useTranslation'
 
 const Home: NextPage = () => {
+  dayjs.locale(ja)
+  dayjs.extend(isSameOrAfter)
+
   const { t } = useLocale()
   const { lang } = useTranslation()
+
+  const [isDuringVoteTerm, setIsDuringVoteTerm] = useState(false)
+
+  useEffect(() => {
+    const dayjsCurrentDateTime = dayjs(
+      new Date().toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' })
+    )
+    const dayjsVoteStartDateTime = dayjs('2022-06-24 21:00:00')
+
+    setIsDuringVoteTerm(
+      dayjsCurrentDateTime.isSameOrAfter(dayjsVoteStartDateTime)
+    )
+  }, [])
 
   return (
     <div className="bg-white text-black">
@@ -98,7 +118,7 @@ const Home: NextPage = () => {
           </div>
 
           {/* 投票開始とともに開く */}
-          {false && (
+          {isDuringVoteTerm && (
             <div id="about-check-vote-card" className="-mt-32 pt-32">
               <AboutCheckVoteCard />
             </div>

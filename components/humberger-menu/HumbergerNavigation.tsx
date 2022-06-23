@@ -1,12 +1,11 @@
 import { push as Menu } from 'react-burger-menu'
 import Link from 'next/link'
-import PreviousWebsites from '@/components/humberger-menu/PreviousWebsites'
+import { PreviousWebsites } from '@/components/humberger-menu/PreviousWebsites'
+import { GeneralInformation } from '@/components/humberger-menu/GeneralInformation'
 import { useLocale } from '@/hooks/useLocale'
-// import useTranslation from 'next-translate/useTranslation'
 
 const Navigation = () => {
   const { t, locale } = useLocale()
-  // const { t } = useTranslation('')
 
   return (
     <div id="outer-container">
@@ -126,6 +125,9 @@ const Navigation = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="text-lg">
+            <GeneralInformation />
           </div>
           <div className="text-lg">
             <PreviousWebsites />

@@ -134,11 +134,17 @@ const Usagisan: NextPage = () => {
                                 <h2 className="text-xl font-bold pb-2">
                                   作品名
                                 </h2>
-                                {characterDetailProducts.map((product) => (
-                                  <p className="my-2" key={product}>
-                                    {product}
-                                  </p>
-                                ))}
+                                {characterDetailProducts.length > 0 ? (
+                                  <>
+                                    {characterDetailProducts.map((product) => (
+                                      <p className="my-2" key={product}>
+                                        {product}
+                                      </p>
+                                    ))}
+                                  </>
+                                ) : (
+                                  <></>
+                                )}
                               </>
                             )}
                           </>

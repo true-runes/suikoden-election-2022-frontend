@@ -1,4 +1,4 @@
-const PreviousWebsiteLink = (props: any) => {
+export const PreviousWebsiteLink = (props: any) => {
   return (
     <div className="py-2">
       <a
@@ -34,5 +34,3 @@ const PreviousWebsiteLink = (props: any) => {
     </div>
   )
 }
-
-export default PreviousWebsiteLink

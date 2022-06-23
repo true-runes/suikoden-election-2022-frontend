@@ -25,7 +25,6 @@ export const CheckForm: NextPage = () => {
       'https://headquarters.suikoden.info/check_votes_and_bonuses'
     const apiUrl = `${baseUrl}?screen_name=${screenName}`
 
-    console.log(apiUrl)
     setNowLoading(true)
 
     axios
@@ -68,7 +67,7 @@ export const CheckForm: NextPage = () => {
             id="check_button"
             type="submit"
             onClick={clickCheckButton}
-            className="mt-4 w-full btn btn-outline btn-secondary"
+            className="mt-4 w-full btn btn-active btn-accent"
             disabled={nowLoading}
           >
             投票チェックする

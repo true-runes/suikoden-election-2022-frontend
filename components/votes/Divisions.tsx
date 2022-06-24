@@ -128,6 +128,34 @@ export const Divisions: NextPage = () => {
               >
                 ②協力攻撃部門
               </h2>
+              <div className="alert shadow-lg bg-white text-black text-xl">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    className="stroke-info flex-shrink-0 w-6 h-6 mt-1"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+
+                  <span>
+                    <Link href="/vote-to-unite-attacks" passHref>
+                      <span className="px-1 link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900">
+                        投票ページはこちら
+                      </span>
+                    </Link>
+                  </span>
+                </div>
+              </div>
+
+              <div className="my-6" />
+
               <div>
                 <div className="text-base text-center pb-4">
                   <ul className="list-disc text-left pl-6 pr-2">
@@ -140,20 +168,6 @@ export const Divisions: NextPage = () => {
                   </ul>
                 </div>
                 <div className="pb-4">
-                  <div className="pb-2">
-                    <h3 className="text-lg font-bold pb-2">投票ページ</h3>
-                    <div className="text-lg pb-4">
-                      <p className="pb-1">
-                        投票ページは
-                        <Link href="/vote-to-unite-attacks" passHref>
-                          <span className="px-1 link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900">
-                            こちら
-                          </span>
-                        </Link>
-                      </p>
-                    </div>
-                  </div>
-
                   <div className="pb-2">
                     <h3 className="text-lg font-bold pb-2">投票数</h3>
                     <p className="text-lg pb-4">

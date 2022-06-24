@@ -14,9 +14,9 @@ export const CheckForm: NextPage = () => {
 
   const [gss2022, setGss2022] = useState([])
   const [uniteAttacks, setUniteAttacks] = useState([])
-  const [shortStories, setShortStories] = useState([])
-  const [favQuotes, setFavQuotes] = useState([])
-  const [sosenkyoCampaigns, setSosenkyoCampaigns] = useState([])
+  // const [shortStories, setShortStories] = useState([])
+  // const [favQuotes, setFavQuotes] = useState([])
+  // const [sosenkyoCampaigns, setSosenkyoCampaigns] = useState([])
 
   const changeScreenName = (e: any) => {
     setScreenName(e.target.value)
@@ -35,9 +35,9 @@ export const CheckForm: NextPage = () => {
       .then((response) => {
         setGss2022(response.data.gss2022)
         setUniteAttacks(response.data.unite_attacks)
-        setShortStories(response.data.short_stories)
-        setFavQuotes(response.data.fav_quotes)
-        setSosenkyoCampaigns(response.data.sosenkyo_campaigns)
+        // setShortStories(response.data.short_stories)
+        // setFavQuotes(response.data.fav_quotes)
+        // setSosenkyoCampaigns(response.data.sosenkyo_campaigns)
 
         setScreenNameForResult(screenName)
       })

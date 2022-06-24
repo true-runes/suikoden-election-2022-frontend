@@ -1,0 +1,139 @@
+{
+  "titleName": "Rhapsodia",
+  "attacks": [
+    {
+      "id": "1",
+      "name": "アイスクラッシュ攻撃",
+      "characterNames": ["キリル", "コルセリア"]
+    },
+    {
+      "id": "2",
+      "name": "遺志を継ぐもの攻撃",
+      "characterNames": ["キリル", "アンダルク", "セネカ"]
+    },
+    {
+      "id": "3",
+      "name": "麗しの友情攻撃",
+      "characterNames": ["ラインバッハ", "シャルルマーニュ"]
+    },
+    {
+      "id": "4",
+      "name": "お姫様攻撃",
+      "characterNames": ["フレア", "コルセリア"]
+    },
+    {
+      "id": "5",
+      "name": "オベル軍攻撃",
+      "characterNames": ["ミレイ", "ジェレミー", "トリスタン"]
+    },
+    {
+      "id": "6",
+      "name": "親子攻撃",
+      "characterNames": ["リノ・エン・クルデス", "フレア"]
+    },
+    {
+      "id": "7",
+      "name": "海賊親子攻撃",
+      "characterNames": ["ダリオ", "ナレオ"]
+    },
+    {
+      "id": "8",
+      "name": "海賊攻撃",
+      "characterNames": ["ハーヴェイ", "シグルド"]
+    },
+    {
+      "id": "9",
+      "name": "海賊団攻撃",
+      "characterNames": ["シグルド", "ハーヴェイ", "ダリオ", "ナレオ"]
+    },
+    { "id": "10", "name": "火炎陣", "characterNames": ["ジーン", "カタリナ"] },
+    { "id": "11", "name": "騎馬部隊攻撃", "characterNames": ["ツノウマ×３"] },
+    {
+      "id": "12",
+      "name": "姉弟攻撃",
+      "characterNames": ["オルネラ", "バスク"]
+    },
+    {
+      "id": "13",
+      "name": "腐れ縁攻撃",
+      "characterNames": ["ミツバ", "ジェレミー", "ラインホルト"]
+    },
+    { "id": "14", "name": "焦土", "characterNames": ["カタリナ", "パブロ"] },
+    {
+      "id": "15",
+      "name": "新・騎士団攻撃",
+      "characterNames": ["ケネス", "カタリナ"]
+    },
+    {
+      "id": "16",
+      "name": "真・忍者攻撃",
+      "characterNames": ["アカギ", "ミズキ", "ケイト"]
+    },
+    {
+      "id": "17",
+      "name": "真・友情攻撃",
+      "characterNames": ["4主人公", "スノウ"]
+    },
+    { "id": "18", "name": "水竜", "characterNames": ["マキシン", "ロジェ"] },
+    { "id": "19", "name": "双剣攻撃", "characterNames": ["4主人公", "キカ"] },
+    {
+      "id": "20",
+      "name": "大剣攻撃",
+      "characterNames": ["アクセル", "ミツバ", "セルマ"]
+    },
+    {
+      "id": "21",
+      "name": "Ｗリーダー攻撃",
+      "characterNames": ["4主人公", "キリル"]
+    },
+    {
+      "id": "22",
+      "name": "付き人攻撃",
+      "characterNames": ["セネカ", "アンダルク"]
+    },
+    {
+      "id": "23",
+      "name": "ニャー？攻撃",
+      "characterNames": ["ノア", "ナルクル", "チャンポ"]
+    },
+    { "id": "24", "name": "忍者攻撃", "characterNames": ["アカギ", "ミズキ"] },
+    { "id": "25", "name": "飛行部隊攻撃", "characterNames": ["イワドリ×３"] },
+    {
+      "id": "26",
+      "name": "美少女攻撃",
+      "characterNames": ["リタ", "ミレイ", "コルセリア"]
+    },
+    {
+      "id": "27",
+      "name": "美女攻撃",
+      "characterNames": ["キカ", "ジーン", "オルネラ"]
+    },
+    {
+      "id": "28",
+      "name": "美青年攻撃",
+      "characterNames": ["クープ", "アンダルク", "ロジェ"]
+    },
+    { "id": "29", "name": "風烈牙", "characterNames": ["シメオン", "パブロ"] },
+    {
+      "id": "30",
+      "name": "魔法使い攻撃",
+      "characterNames": ["シメオン", "ロジェ", "ジーン", "マキシン"]
+    },
+    {
+      "id": "31",
+      "name": "乱れ撃ち攻撃",
+      "characterNames": ["フレア", "フレデリカ", "セネカ"]
+    },
+    {
+      "id": "32",
+      "name": "元・騎士団攻撃",
+      "characterNames": ["タル", "ポーラ", "ケネス", "ジュエル"]
+    },
+    {
+      "id": "33",
+      "name": "槍攻撃",
+      "characterNames": ["リノ・エン・クルデス", "レイチェル", "ユージン"]
+    },
+    { "id": "34", "name": "雷神", "characterNames": ["マキシン", "シメオン"] }
+  ]
+}

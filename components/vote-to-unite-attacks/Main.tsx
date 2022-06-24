@@ -297,7 +297,7 @@ ${uniteAttackName}
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <button className="w-full btn btn-outline btn-secondary pr-2">
+                          <button className="w-full btn btn-active btn-accent pr-2">
                             <span>{t('ツイートで投票する')}</span>
                             <span className="pl-1">
                               <ExternalLink />
@@ -310,7 +310,7 @@ ${uniteAttackName}
                     <div className="pb-0">
                       <CopyToClipboard text={tweetText}>
                         <button
-                          className="w-full btn btn-outline btn-secondary"
+                          className="w-full btn btn-active btn-accent"
                           disabled={uniteAttackName === ''}
                         >
                           <span

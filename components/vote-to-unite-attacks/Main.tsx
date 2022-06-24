@@ -139,8 +139,20 @@ ${uniteAttackName}
 
               <div className="pb-0">
                 <ul className="list-disc text-left pl-6 pr-2">
-                  <li className="pb-2">お好きな協力攻撃を選んでください。 </li>
-                  <li className="pb-2">投票はお一人様1票（1回）です。</li>
+                  <li className="pb-2">
+                    幻水シリーズ
+                    <span className="px-1 text-red-500 font-bold">
+                      全ての協力攻撃から、1つだけ
+                    </span>
+                    選んでください。
+                  </li>
+                  <li className="pb-2">
+                    投票は
+                    <span className="px-1 text-red-500 font-bold">
+                      お一人様1票（1回）
+                    </span>
+                    です。
+                  </li>
                 </ul>
               </div>
 

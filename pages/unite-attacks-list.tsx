@@ -83,7 +83,25 @@ const UniteAttacksList: NextPage = () => {
                       height="47"
                     />
                   ) : (
-                    <AttacksList apiResponse={apiResponse} />
+                    <>
+                      <div className="bg-white text-black text-xl text-center">
+                        <div>
+                          <span>
+                            <Link href="/vote-to-unite-attacks" passHref>
+                              <span className="px-1 link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900">
+                                「協力攻撃部門」投票ページはこちら
+                              </span>
+                            </Link>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div className="my-8" />
+                      <div className="divider" />
+                      <div className="my-8" />
+
+                      <AttacksList apiResponse={apiResponse} />
+                    </>
                   )}
 
                   <div className="divider" />

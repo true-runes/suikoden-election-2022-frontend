@@ -12,6 +12,18 @@ export const GeneralInformation = () => {
 
         <div className="collapse-content">
           <div>
+            <Link href="/check-your-vote" passHref>
+              <span className="link link-hover">投票チェック</span>
+            </Link>
+          </div>
+          <div className="my-4" />
+          <div>
+            <Link href="/unite-attacks-list" passHref>
+              <span className="link link-hover">「協力攻撃」一覧</span>
+            </Link>
+          </div>
+          <div className="my-4" />
+          <div>
             <Link
               href="/events-in-event/result-illustration-applications"
               passHref

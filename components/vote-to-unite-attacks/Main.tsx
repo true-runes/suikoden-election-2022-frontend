@@ -303,8 +303,10 @@ ${uniteAttackName}
                           rel="noreferrer"
                         >
                           <button className="w-full btn btn-active btn-accent pr-2">
-                            <span>{t('ツイートで投票する')}</span>
-                            <span className="pl-1">
+                            <span className="text-white">
+                              {t('ツイートで投票する')}
+                            </span>
+                            <span className="pl-1 text-white">
                               <ExternalLink />
                             </span>
                           </button>
@@ -320,7 +322,9 @@ ${uniteAttackName}
                         >
                           <span
                             className={
-                              uniteAttackName === '' ? 'text-gray-500' : ''
+                              uniteAttackName === ''
+                                ? 'text-gray-500'
+                                : 'text-white'
                             }
                           >
                             {t('投票内容をコピーする')}

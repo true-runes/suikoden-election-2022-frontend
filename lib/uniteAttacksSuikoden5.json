@@ -1,0 +1,204 @@
+{
+  "titleName": "幻想水滸伝V",
+  "attacks": [
+    { "id": "1", "name": "お守り", "characterNames": ["王子", "リオン"] },
+    { "id": "2", "name": "お守り", "characterNames": ["王子", "ミアキス"] },
+    { "id": "3", "name": "王族", "characterNames": ["王子", "サイアリーズ"] },
+    {
+      "id": "4",
+      "name": "ファレナ",
+      "characterNames": ["王子", "リオン", "ゲオルグ", "カイル", "ミアキス"]
+    },
+    { "id": "5", "name": "ニセモノ", "characterNames": ["王子", "ロイ"] },
+    {
+      "id": "6",
+      "name": "女王騎士剣技",
+      "characterNames": ["カイル", "ゲオルグ"]
+    },
+    {
+      "id": "7",
+      "name": "真・女王騎士",
+      "characterNames": ["ゲオルグ", "カイル", "ミアキス", "ガレオン"]
+    },
+    {
+      "id": "8",
+      "name": "美青年",
+      "characterNames": ["ラハル", "ダイン", "マティアス"]
+    },
+    {
+      "id": "9",
+      "name": "美少年",
+      "characterNames": ["ロイ", "ニック", "リヒャルト"]
+    },
+    {
+      "id": "10",
+      "name": "美少年（裏）",
+      "characterNames": ["アックス", "ベゲン", "モルーン"]
+    },
+    {
+      "id": "11",
+      "name": "美少女",
+      "characterNames": ["ノーマ", "フェイレン", "ビッキー"]
+    },
+    {
+      "id": "12",
+      "name": "美女",
+      "characterNames": ["サイアリーズ", "ネリス", "ジーン"]
+    },
+    {
+      "id": "13",
+      "name": "新・美女",
+      "characterNames": ["シャルミシタ", "ネリス", "ジーン"]
+    },
+    {
+      "id": "14",
+      "name": "美女（裏）",
+      "characterNames": ["ビャクレン", "フレイル", "ミルーン"]
+    },
+    { "id": "15", "name": "漢", "characterNames": ["ゲッシュ", "ヤール"] },
+    { "id": "16", "name": "親子", "characterNames": ["ログ", "ラン"] },
+    {
+      "id": "17",
+      "name": "真・親子",
+      "characterNames": ["キサラ", "ログ", "ラン"]
+    },
+    { "id": "18", "name": "ライバル", "characterNames": ["ラン", "スバル"] },
+    {
+      "id": "19",
+      "name": "兄妹",
+      "characterNames": ["フェイロン", "フェイレン"]
+    },
+    { "id": "20", "name": "探偵助手", "characterNames": ["サギリ", "シグレ"] },
+    {
+      "id": "21",
+      "name": "マクシミリアン",
+      "characterNames": ["イザベル", "マティアス"]
+    },
+    {
+      "id": "22",
+      "name": "群島諸国",
+      "characterNames": ["ベルナデット", "ヤール", "ネリス"]
+    },
+    {
+      "id": "23",
+      "name": "アーメス",
+      "characterNames": ["ニフサーラ", "シャルミシタ"]
+    },
+    {
+      "id": "24",
+      "name": "いっちゃえー",
+      "characterNames": ["ビッキー", "ゲンオウ"]
+    },
+    {
+      "id": "25",
+      "name": "竜馬",
+      "characterNames": ["ランス", "フレイル", "アックス"]
+    },
+    {
+      "id": "26",
+      "name": "ライドオン・赤",
+      "characterNames": ["リューグ", "ランス"]
+    },
+    {
+      "id": "27",
+      "name": "ライドオン・青",
+      "characterNames": ["ラハル", "フレイル"]
+    },
+    {
+      "id": "28",
+      "name": "ライドオン・紫",
+      "characterNames": ["ニック", "アックス"]
+    },
+    {
+      "id": "29",
+      "name": "幼なじみ",
+      "characterNames": ["ミアキス", "リューグ", "ラハル"]
+    },
+    {
+      "id": "30",
+      "name": "らいどおん",
+      "characterNames": ["エルンスト", "ノーマ"]
+    },
+    {
+      "id": "31",
+      "name": "ヒカリ",
+      "characterNames": ["イサト", "ワボン", "アズラッド"]
+    },
+    { "id": "32", "name": "エルフ", "characterNames": ["イサト", "ウルダ"] },
+    {
+      "id": "33",
+      "name": "謎",
+      "characterNames": ["ツヴァイク", "ローレライ", "キリィ"]
+    },
+    {
+      "id": "34",
+      "name": "闘技奴隷",
+      "characterNames": ["シュン", "ゼガイ", "ベルクート"]
+    },
+    {
+      "id": "35",
+      "name": "からくり",
+      "characterNames": ["ルゥ", "ソレンセン"]
+    },
+    { "id": "36", "name": "看守", "characterNames": ["シウス", "レレイ"] },
+    {
+      "id": "37",
+      "name": "ビーバー5",
+      "characterNames": [
+        "マルーン",
+        "ミルーン",
+        "ムルーン",
+        "メルーン",
+        "モルーン"
+      ]
+    },
+    {
+      "id": "38",
+      "name": "ドワーフ",
+      "characterNames": ["ガンデ", "ワボン", "ベゲン"]
+    },
+    {
+      "id": "39",
+      "name": "ドレミ",
+      "characterNames": ["レミファ", "ミファソ", "ファソラ", "ソラシ", "ラシド"]
+    },
+    {
+      "id": "40",
+      "name": "高飛車",
+      "characterNames": ["イザベル", "キャザリー", "ゼラセ"]
+    },
+    {
+      "id": "41",
+      "name": "縁",
+      "characterNames": ["ゲオルグ", "ローレライ", "キリィ", "ビッキー"]
+    },
+    {
+      "id": "42",
+      "name": "影",
+      "characterNames": ["レーヴン", "サギリ", "シグレ"]
+    },
+    { "id": "43", "name": "魔力自慢", "characterNames": ["ゼラセ", "レヴィ"] },
+    {
+      "id": "44",
+      "name": "竜馬騎兵団",
+      "characterNames": ["リューグ", "ラハル", "ニック"]
+    },
+    { "id": "45", "name": "剣豪", "characterNames": ["ベルクート", "ダイン"] },
+    { "id": "46", "name": "剣聖", "characterNames": ["ハヅキ", "リヒャルト"] },
+    {
+      "id": "47",
+      "name": "拳で語ろう",
+      "characterNames": ["シュン", "ニケア"]
+    },
+    {
+      "id": "48",
+      "name": "14歳",
+      "characterNames": ["シュン", "フェイレン", "ルウ"]
+    },
+    {
+      "id": "49",
+      "name": "闘神祭未体験",
+      "characterNames": ["ニケア", "ガヴァヤ"]
+    }
+  ]
+}

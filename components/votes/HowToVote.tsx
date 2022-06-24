@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import useTranslation from 'next-translate/useTranslation'
 
-const HowToVote: NextPage = () => {
+export const HowToVote: NextPage = () => {
   const { t } = useTranslation('votes_how_to_vote')
 
   return (
@@ -84,5 +84,3 @@ const HowToVote: NextPage = () => {
     </div>
   )
 }
-
-export default HowToVote

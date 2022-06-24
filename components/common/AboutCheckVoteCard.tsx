@@ -15,10 +15,7 @@ export const AboutCheckVoteCard: NextPage = () => {
 
                 <div>
                   <span>
-                    <Link
-                      href="/events-in-event/result-illustration-applications"
-                      passHref
-                    >
+                    <Link href="/check-your-vote" passHref>
                       <span className="mx-1 link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900">
                         投票チェックはこちら
                       </span>

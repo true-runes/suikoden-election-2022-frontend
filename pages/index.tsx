@@ -11,11 +11,11 @@ import HumbergerNavigation from '@/components/humberger-menu/HumbergerNavigation
 import { NavBar } from '@/components/common/NavBar'
 
 import { EventSummary } from '@/components/common/EventSummary'
-import HowToVote from '@/components/votes/HowToVote'
-import VoteExamples from '@/components/votes/VoteExamples'
+import { HowToVote } from '@/components/votes/HowToVote'
+import { VoteExamples } from '@/components/votes/VoteExamples'
 import { Divisions } from '@/components/votes/Divisions'
 import { HallOfFame } from '@/components/votes/HallOfFame'
-import Onegai from '@/components/votes/Onegai'
+import { Onegai } from '@/components/votes/Onegai'
 import { EventsInEventIndex } from '@/components/events-in-event/index'
 
 import { VoteDeadLineCard } from '@/components/common/VoteDeadLineCard'
@@ -66,42 +66,6 @@ const Home: NextPage = () => {
           width={3180}
           height={1788}
         />
-
-        {/* <div className="hero bg-base-200">
-          <div className="hero-content text-center">
-            <div className="max-w-md">
-              <span className="text-xl">投票開始まであと</span>
-              <br />
-              <br />
-              <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
-                <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                  <span className="countdown font-mono text-5xl">
-                    <StyledNowDate now={now} />
-                  </span>
-                  日
-                </div>
-                <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                  <span className="countdown font-mono text-5xl">
-                    <StyledNowHour now={now} />
-                  </span>
-                  時
-                </div>
-                <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                  <span className="countdown font-mono text-5xl">
-                    <StyledNowMinute now={now} />
-                  </span>
-                  分
-                </div>
-                <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                  <span className="countdown font-mono text-5xl">
-                    <StyledNowSecond now={now} />
-                  </span>
-                  秒
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
 
         <div className="pt-4" />
 

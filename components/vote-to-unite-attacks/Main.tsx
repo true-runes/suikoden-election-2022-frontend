@@ -257,6 +257,13 @@ ${uniteAttackName}
                 <div>
                   <div className="divider" />
 
+                  {uniteAttackName !== '' && (
+                    <div className="my-6 text-xl text-red-500 font-bold">
+                      <p className="mb-1">投票は お一人様1票（1回） です。</p>
+                      <p>こちらでよろしいですか？</p>
+                    </div>
+                  )}
+
                   <div
                     className="card max-w-2xl bg-emerald-50 shadow-xl"
                     data-theme="light"

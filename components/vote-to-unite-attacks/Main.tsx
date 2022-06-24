@@ -253,9 +253,12 @@ ${uniteAttackName}
                 )}
               </div>
 
+              <div className="my-8" />
+
               {uniteAttackName === 'a' ? null : (
                 <div>
                   <div className="divider" />
+                  <div className="my-8" />
 
                   {uniteAttackName !== '' && (
                     <div className="my-6 text-xl text-red-500 font-bold">
@@ -274,7 +277,9 @@ ${uniteAttackName}
                     </div>
                   </div>
 
+                  <div className="my-8" />
                   <div className="divider" />
+                  <div className="my-8" />
 
                   <div className="max-w-full">
                     <div className="pb-10">
@@ -325,19 +330,31 @@ ${uniteAttackName}
                     </div>
                   </div>
 
-                  <div className="w-80 mt-6 ml-6 text-left">
-                    <span className="text-red-500 font-bold">
-                      鍵アカウントの方は投票内容をコピーし、
-                      <a
-                        href="https://twitter.com/messages/compose?recipient_id=1471724029"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="link link-hover underline underline-offset-4"
-                      >
-                        @gensosenkyo宛にDM
-                      </a>
-                      でお送りください。
-                    </span>
+                  <div className="my-8" />
+                  <div className="divider" />
+                  <div className="my-8" />
+
+                  <div className="ml-6 text-left">
+                    <ul className="list-disc text-left pl-2 pr-2">
+                      <li className="pb-2 text-red-500 font-bold">
+                        鍵アカウントの方は投票内容をコピーし、
+                        <a
+                          href="https://twitter.com/messages/compose?recipient_id=1471724029"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="link link-hover underline underline-offset-4"
+                        >
+                          @gensosenkyo宛にDM
+                        </a>
+                        でお送りください。
+                      </li>
+                      <li className="pb-2">
+                        投票ボタンがうまく動かない方は、投票内容をコピーしたものを手動で貼り付けて、ツイートしてください。
+                      </li>
+                      <li className="pb-2">
+                        ツイートまたはDMをしない限り、集計には反映されません。
+                      </li>
+                    </ul>
                   </div>
                 </div>
               )}

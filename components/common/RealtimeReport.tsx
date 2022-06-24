@@ -2,6 +2,9 @@ import type { NextPage } from 'next'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
+import { Doughnut } from 'react-chartjs-2'
+
 type AllCharacters = {
   sum: number
   votes_per_day: {
@@ -68,6 +71,36 @@ export const RealtimeReport: NextPage = () => {
       })
   }, [apiEndpoint])
 
+  // 一つ一つ register しないと Error: "category" is not a registered scale. みたいなエラーになる
+  ChartJS.register(ArcElement, Tooltip, Legend)
+
+  const data = {
+    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    datasets: [
+      {
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+          'rgba(255, 159, 64, 0.2)',
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)',
+        ],
+        borderWidth: 1,
+      },
+    ],
+  }
+
   return (
     <div className="bg-white text-black">
       <div className="hero">
@@ -87,7 +120,7 @@ export const RealtimeReport: NextPage = () => {
                     <div>協力攻撃部門ツイート投票数{uniteAttacks.sum}</div>
 
                     <div className="mt-10" />
-
+                    <Doughnut data={data} />
                     <p>{dataJune24['21']}</p>
                   </>
                 )}

@@ -14,9 +14,6 @@ export const CheckForm: NextPage = () => {
 
   const [gss2022, setGss2022] = useState([])
   const [uniteAttacks, setUniteAttacks] = useState([])
-  // const [shortStories, setShortStories] = useState([])
-  // const [favQuotes, setFavQuotes] = useState([])
-  // const [sosenkyoCampaigns, setSosenkyoCampaigns] = useState([])
 
   const changeScreenName = (e: any) => {
     setScreenName(e.target.value)
@@ -35,9 +32,6 @@ export const CheckForm: NextPage = () => {
       .then((response) => {
         setGss2022(response.data.gss2022)
         setUniteAttacks(response.data.unite_attacks)
-        // setShortStories(response.data.short_stories)
-        // setFavQuotes(response.data.fav_quotes)
-        // setSosenkyoCampaigns(response.data.sosenkyo_campaigns)
 
         setScreenNameForResult(screenName)
       })
@@ -105,24 +99,6 @@ export const CheckForm: NextPage = () => {
                   tweetIds={uniteAttacks}
                   title={'#幻水総選挙2022協力攻撃'}
                 />
-
-                {/* <div className="divider" />
-                <ResultEachHashtag
-                  tweetIds={shortStories}
-                  title={'#幻水総選挙お題小説'}
-                /> */}
-
-                {/* <div className="divider" />
-                <ResultEachHashtag
-                  tweetIds={favQuotes}
-                  title={'#幻水総選挙推し台詞'}
-                /> */}
-
-                {/* <div className="divider" />
-                <ResultEachHashtag
-                  tweetIds={sosenkyoCampaigns}
-                  title={'#幻水総選挙運動'}
-                /> */}
               </>
             )}
           </>

@@ -14,9 +14,23 @@ export const VoteDeadLineCard: NextPage = () => {
                 <div className="my-1" />
 
                 <div className="text-left">
-                  <p>①オールキャラ部門</p>
+                  <p>
+                    <a
+                      href="#all-characters-division"
+                      className="underline underline-offset-4 text-blue-500 hover:text-blue-900"
+                    >
+                      ①オールキャラ部門
+                    </a>
+                  </p>
                   <div className="mb-1" />
-                  <p>②協力攻撃部門</p>
+                  <p>
+                    <a
+                      href="#unite-attacks-division"
+                      className="underline underline-offset-4 text-blue-500 hover:text-blue-900"
+                    >
+                      ②協力攻撃部門
+                    </a>
+                  </p>
                 </div>
 
                 <div className="my-1" />

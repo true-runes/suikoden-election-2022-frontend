@@ -1,10 +1,9 @@
 import type { NextPage } from 'next'
 import { useLocale } from '@/hooks/useLocale'
-// import useTranslation from 'next-translate/useTranslation'
+import Link from 'next/link'
 
 export const Divisions: NextPage = () => {
   const { locale } = useLocale()
-  // const { t } = useTranslation('')
 
   return (
     <div className="bg-white text-black">
@@ -43,7 +42,7 @@ export const Divisions: NextPage = () => {
 
               <div className="py-4" />
 
-              <div className="pb-4">
+              <div id="all-characters-division" className="pb-4 -mt-32 pt-32">
                 <h2 className="text-xl font-bold pb-4 underline underline-offset-4">
                   {locale === 'ja'
                     ? '①オールキャラ部門'
@@ -123,7 +122,10 @@ export const Divisions: NextPage = () => {
 
               <div className="py-4" />
 
-              <h2 className="text-xl font-bold pb-4 underline underline-offset-4">
+              <h2
+                id="unite-attacks-division"
+                className="text-xl font-bold pb-4 -mt-32 pt-32 underline underline-offset-4"
+              >
                 ②協力攻撃部門
               </h2>
               <div>
@@ -138,6 +140,20 @@ export const Divisions: NextPage = () => {
                   </ul>
                 </div>
                 <div className="pb-4">
+                  <div className="pb-2">
+                    <h3 className="text-lg font-bold pb-2">投票ページ</h3>
+                    <div className="text-lg pb-4">
+                      <p className="pb-1">
+                        投票ページは
+                        <Link href="/vote-to-unite-attacks" passHref>
+                          <span className="px-1 link link-hover underline underline-offset-4 text-blue-500 hover:text-blue-900">
+                            こちら
+                          </span>
+                        </Link>
+                      </p>
+                    </div>
+                  </div>
+
                   <div className="pb-2">
                     <h3 className="text-lg font-bold pb-2">投票数</h3>
                     <p className="text-lg pb-4">

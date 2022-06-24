@@ -106,23 +106,23 @@ export const CheckForm: NextPage = () => {
                   title={'#幻水総選挙2022協力攻撃'}
                 />
 
-                <div className="divider" />
+                {/* <div className="divider" />
                 <ResultEachHashtag
                   tweetIds={shortStories}
                   title={'#幻水総選挙お題小説'}
-                />
+                /> */}
 
-                <div className="divider" />
+                {/* <div className="divider" />
                 <ResultEachHashtag
                   tweetIds={favQuotes}
                   title={'#幻水総選挙推し台詞'}
-                />
+                /> */}
 
-                <div className="divider" />
+                {/* <div className="divider" />
                 <ResultEachHashtag
                   tweetIds={sosenkyoCampaigns}
                   title={'#幻水総選挙運動'}
-                />
+                /> */}
               </>
             )}
           </>

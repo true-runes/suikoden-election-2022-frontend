@@ -153,7 +153,7 @@ export const Divisions: NextPage = () => {
               {isDuringVoteTerm && (
                 <>
                   <div className="alert shadow-lg bg-white text-black text-xl">
-                    <div>
+                    <div className="w-full ml-2">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -183,7 +183,7 @@ export const Divisions: NextPage = () => {
               )}
 
               <div className="alert shadow-lg bg-white text-black text-xl">
-                <div>
+                <div className="w-full ml-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

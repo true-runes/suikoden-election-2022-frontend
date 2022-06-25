@@ -20,6 +20,7 @@ export const ResultEachHashtag: NextPage<Props> = ({ tweetIds, title }) => {
           {tweetIds.map((item: string) => (
             <div key={item}>
               <TwitterTweetEmbed
+                placeholder={'読み込み中…'}
                 tweetId={item}
                 options={{ id: 'gensosenkyo', lang: 'ja' }}
               />

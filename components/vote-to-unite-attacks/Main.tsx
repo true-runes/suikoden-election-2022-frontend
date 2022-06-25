@@ -74,6 +74,7 @@ export const Main: NextPage = () => {
       .then((response) => {
         setApiResponse(response.data)
 
+        console.log('apiResponse', response.data)
         setNowLoading(false)
       })
       .catch((error) => {
@@ -114,7 +115,11 @@ export const Main: NextPage = () => {
   // TODO: ハッシュタグは変数にしたい
   // TODO: キャラ名入れたほうがいい場合は入れる (uniteCharacterNames)
   useEffect(() => {
-    console.log(uniteCharacterNames)
+    // setUniteCharacterNames(
+    //   uniteAttack.characterNames
+    // )
+    // console.log(apiResponse)
+    // console.log(uniteCharacterNames)
 
     const updatedTweetText = `${titleName}
 ${uniteAttackName}
@@ -211,8 +216,16 @@ ${uniteAttackName}
                                 id={`${uniteAttack.id}`}
                                 data-theme="light"
                                 key={uniteAttack.id}
-                                value={uniteAttack.name}
-                                checked={uniteAttackName === uniteAttack.name}
+                                value={
+                                  lang === 'ja'
+                                    ? uniteAttack.name
+                                    : uniteAttack.name_en
+                                }
+                                checked={
+                                  lang === 'ja'
+                                    ? uniteAttackName === uniteAttack.name
+                                    : uniteAttackName === uniteAttack.name_en
+                                }
                                 type="radio"
                                 name="radio-4"
                                 className="radio radio-accent mr-4 checked:bg-blue-500"

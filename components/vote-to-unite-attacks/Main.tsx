@@ -17,6 +17,8 @@ import uniteAttacksSuikodenTk from '@/lib/uniteAttacksSuikodenTk.json'
 import uniteAttacksSuikodenTsumutoki from '@/lib/uniteAttacksSuikodenTsumutoki.json'
 import uniteAttacksRhapsodia from '@/lib/uniteAttacksRhapsodia.json'
 
+import { InstructionForEnglishWithImages } from '@/components/vote-to-unite-attacks/InstructionForEnglishWithImages'
+
 type CharacterName = string
 
 type UniteAttack = {
@@ -141,6 +143,8 @@ ${uniteAttackName}
               <h1 className="text-2xl font-bold pt-4 pb-10 underline underline-offset-4 font-zen-old-mincho">
                 「協力攻撃部門」投票ページ
               </h1>
+
+              {lang === 'en' && <InstructionForEnglishWithImages />}
 
               <div className="pb-0">
                 <ul className="list-disc text-left pl-6 pr-2">

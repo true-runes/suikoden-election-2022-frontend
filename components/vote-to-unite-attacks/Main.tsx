@@ -17,6 +17,8 @@ import uniteAttacksSuikodenTk from '@/lib/uniteAttacksSuikodenTk.json'
 import uniteAttacksSuikodenTsumutoki from '@/lib/uniteAttacksSuikodenTsumutoki.json'
 import uniteAttacksRhapsodia from '@/lib/uniteAttacksRhapsodia.json'
 
+import { InstructionForEnglishWithImages } from '@/components/vote-to-unite-attacks/InstructionForEnglishWithImages'
+
 type CharacterName = string
 
 type UniteAttack = {
@@ -74,6 +76,7 @@ export const Main: NextPage = () => {
       .then((response) => {
         setApiResponse(response.data)
 
+        console.log('apiResponse', response.data)
         setNowLoading(false)
       })
       .catch((error) => {
@@ -114,7 +117,11 @@ export const Main: NextPage = () => {
   // TODO: ハッシュタグは変数にしたい
   // TODO: キャラ名入れたほうがいい場合は入れる (uniteCharacterNames)
   useEffect(() => {
-    console.log(uniteCharacterNames)
+    // setUniteCharacterNames(
+    //   uniteAttack.characterNames
+    // )
+    // console.log(apiResponse)
+    // console.log(uniteCharacterNames)
 
     const updatedTweetText = `${titleName}
 ${uniteAttackName}
@@ -136,6 +143,8 @@ ${uniteAttackName}
               <h1 className="text-2xl font-bold pt-4 pb-10 underline underline-offset-4 font-zen-old-mincho">
                 「協力攻撃部門」投票ページ
               </h1>
+
+              {lang === 'en' && <InstructionForEnglishWithImages />}
 
               <div className="pb-0">
                 <ul className="list-disc text-left pl-6 pr-2">
@@ -211,8 +220,16 @@ ${uniteAttackName}
                                 id={`${uniteAttack.id}`}
                                 data-theme="light"
                                 key={uniteAttack.id}
-                                value={uniteAttack.name}
-                                checked={uniteAttackName === uniteAttack.name}
+                                value={
+                                  lang === 'ja'
+                                    ? uniteAttack.name
+                                    : uniteAttack.name_en
+                                }
+                                checked={
+                                  lang === 'ja'
+                                    ? uniteAttackName === uniteAttack.name
+                                    : uniteAttackName === uniteAttack.name_en
+                                }
                                 type="radio"
                                 name="radio-4"
                                 className="radio radio-accent mr-4 checked:bg-blue-500"

@@ -16,6 +16,11 @@ export const EventSummary: NextPage = () => {
             <div>
               <div className="pb-8">
                 <h2 className="text-xl font-bold pb-4">{t('投票期間')}</h2>
+
+                <p className="text-2xl text-red-500 mb-4">
+                  投票期間は終了しました。
+                </p>
+
                 <div className="text-base">
                   <p>{t('2022年6月24日（金）21:00 から')}</p>
                   {lang === 'en' && <p>to</p>}

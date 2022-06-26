@@ -84,7 +84,7 @@ const UniteAttacksList: NextPage = () => {
                     />
                   ) : (
                     <>
-                      <div className="bg-white text-black text-xl text-center">
+                      {/* <div className="bg-white text-black text-xl text-center">
                         <div>
                           <span>
                             <Link href="/vote-to-unite-attacks" passHref>
@@ -98,7 +98,7 @@ const UniteAttacksList: NextPage = () => {
 
                       <div className="my-8" />
                       <div className="divider" />
-                      <div className="my-8" />
+                      <div className="my-8" /> */}
 
                       <AttacksList apiResponse={apiResponse} />
                     </>

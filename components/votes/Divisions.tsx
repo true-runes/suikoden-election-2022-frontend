@@ -150,7 +150,7 @@ export const Divisions: NextPage = () => {
                 ②協力攻撃部門
               </h2>
 
-              {isDuringVoteTerm && (
+              {false && isDuringVoteTerm && (
                 <>
                   <div className="alert shadow-lg bg-white text-black text-xl">
                     <div className="w-full ml-2">

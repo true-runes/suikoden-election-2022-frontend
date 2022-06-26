@@ -34,9 +34,13 @@ export const VoteDeadLineCard: NextPage = () => {
 
                 <div className="my-1" />
 
+                <p className="text-2xl text-red-500 mb-4">
+                  投票期間は終了しました。
+                </p>
+
                 <div className="text-base">
-                  <p className="text-red-500">2022年6月24日（金）21:00 から</p>
-                  <p className="text-red-500">2022年6月26日（日）23:59 まで</p>
+                  <p className="text-black">2022年6月24日（金）21:00 から</p>
+                  <p className="text-black">2022年6月26日（日）23:59 まで</p>
                 </div>
               </div>
             </div>

@@ -8,8 +8,8 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@bugsnag/js": "7.17.0",
-    "@bugsnag/plugin-react": "7.17.0",
+    "@bugsnag/js": "7.17.4",
+    "@bugsnag/plugin-react": "7.17.4",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
     "@types/node": "17.0.23",

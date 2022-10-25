@@ -19,7 +19,7 @@
     "@types/styled-components": "5.1.26",
     "autoprefixer": "10.4.12",
     "axios": "1.1.3",
-    "cypress": "10.10.0",
+    "cypress": "10.11.0",
     "daisyui": "2.33.0",
     "dayjs": "1.11.6",
     "eslint": "8.26.0",

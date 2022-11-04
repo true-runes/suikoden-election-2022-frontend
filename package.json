@@ -37,7 +37,7 @@
     "react-copy-to-clipboard": "5.1.0",
     "react-twitter-embed": "4.0.4",
     "sass": "1.56.0",
-    "sharp": "0.31.1",
+    "sharp": "0.31.2",
     "styled-components": "5.3.6",
     "stylelint": "14.14.1",
     "stylelint-config-standard": "29.0.0",

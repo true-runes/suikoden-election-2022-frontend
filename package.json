@@ -3,7 +3,7 @@
   "description": "Suikoden Election 2022 Frontend",
   "version": "0.1.0",
   "dependencies": {
-    "next": "12.1.6",
+    "next": "12.3.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -23,7 +23,7 @@
     "daisyui": "2.41.0",
     "dayjs": "1.11.6",
     "eslint": "8.28.0",
-    "eslint-config-next": "12.1.6",
+    "eslint-config-next": "12.3.3",
     "eslint-config-prettier": "8.5.0",
     "gridjs": "5.1.0",
     "gridjs-react": "5.1.0",

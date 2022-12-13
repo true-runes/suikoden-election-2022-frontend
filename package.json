@@ -12,7 +12,7 @@
     "@bugsnag/plugin-react": "7.18.0",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
-    "@types/node": "18.11.14",
+    "@types/node": "18.11.15",
     "@types/react": "18.0.26",
     "@types/react-burger-menu": "2.8.3",
     "@types/react-copy-to-clipboard": "5.0.4",

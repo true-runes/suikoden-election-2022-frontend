@@ -3228,10 +3228,10 @@ grapheme-splitter@^1.0.4:
   resolved "https://registry.yarnpkg.com/grapheme-splitter/-/grapheme-splitter-1.0.4.tgz#9cf3a665c6247479896834af35cf1dbb4400767e"
   integrity sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==
 
-gridjs-react@5.1.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/gridjs-react/-/gridjs-react-5.1.1.tgz#b912c613e4267c0d5aceb10b28848ed08cb2b56d"
-  integrity sha512-oBOX1njJl32aDE564UlJrfUr0gPGd5K3OkKhkbLL3dzmDIXCJFyzjQaBXDY3MVeyFe1i/evt+cyfYUJiJeNbcA==
+gridjs-react@6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/gridjs-react/-/gridjs-react-6.0.1.tgz#c889c7c1e9ce884397ec6d70ec8e2941e289cc95"
+  integrity sha512-Cb9tti25vlQH7qn1J61NMzu+1sRYxGCbTdlj+/iJmhWTe+8C0VI6snr6Gi2LKDsvcUhlBSb56T6IZQ8UF3D6aQ==
 
 gridjs@5.1.0:
   version "5.1.0"

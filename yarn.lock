@@ -3233,12 +3233,12 @@ gridjs-react@6.0.1:
   resolved "https://registry.yarnpkg.com/gridjs-react/-/gridjs-react-6.0.1.tgz#c889c7c1e9ce884397ec6d70ec8e2941e289cc95"
   integrity sha512-Cb9tti25vlQH7qn1J61NMzu+1sRYxGCbTdlj+/iJmhWTe+8C0VI6snr6Gi2LKDsvcUhlBSb56T6IZQ8UF3D6aQ==
 
-gridjs@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/gridjs/-/gridjs-5.1.0.tgz#77563e766c1faf6e8042577404098bb05ec514d0"
-  integrity sha512-ElT4RccHVZXR6mAn0Neh7jRv0yLPYLl9tWr9EC1tIJ7UC035kScGc/VMSJlPmOTyUU6qPUz1mtmzg/i8+IT24g==
+gridjs@6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/gridjs/-/gridjs-6.0.3.tgz#2e275e5551284e1af5ccf6069c4ae65748a3e7b9"
+  integrity sha512-h4ncsshs/O+uRKQbZyaTtOyD2SgyPTdMdIM/DllT0QK/no7MOMDR2Bb4Pz6erdiEDKu93QfSnZ3RM5MTCKW9FA==
   dependencies:
-    preact "^10.10.6"
+    preact "^10.11.3"
 
 hard-rejection@^2.1.0:
   version "2.1.0"
@@ -5111,10 +5111,10 @@ postcss@^8.4.20:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-preact@^10.10.6:
-  version "10.10.6"
-  resolved "https://registry.yarnpkg.com/preact/-/preact-10.10.6.tgz#1fe62aecf93974b64e6a42e09ba1f00f93207d14"
-  integrity sha512-w0mCL5vICUAZrh1DuHEdOWBjxdO62lvcO++jbzr8UhhYcTbFkpegLH9XX+7MadjTl/y0feoqwQ/zAnzkc/EGog==
+preact@^10.11.3:
+  version "10.11.3"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.11.3.tgz#8a7e4ba19d3992c488b0785afcc0f8aa13c78d19"
+  integrity sha512-eY93IVpod/zG3uMF22Unl8h9KkrcKIRs2EGar8hwLZZDU1lkjph303V9HZBwufh2s736U6VXuhD109LYqPoffg==
 
 prebuild-install@^7.1.1:
   version "7.1.1"

@@ -3233,10 +3233,10 @@ gridjs-react@6.0.1:
   resolved "https://registry.yarnpkg.com/gridjs-react/-/gridjs-react-6.0.1.tgz#c889c7c1e9ce884397ec6d70ec8e2941e289cc95"
   integrity sha512-Cb9tti25vlQH7qn1J61NMzu+1sRYxGCbTdlj+/iJmhWTe+8C0VI6snr6Gi2LKDsvcUhlBSb56T6IZQ8UF3D6aQ==
 
-gridjs@6.0.5:
-  version "6.0.5"
-  resolved "https://registry.yarnpkg.com/gridjs/-/gridjs-6.0.5.tgz#1d2ac11edb8663340f5cf9ab3acafd47c1051cf8"
-  integrity sha512-dpGi1eK27tnplumOOrYOIQEJJaPZcx6kzexQTqtNN0CBKEVJBpFvbCJgk7xZyRMF42RoCT6BYRcQjzXCpQXbvQ==
+gridjs@6.0.6:
+  version "6.0.6"
+  resolved "https://registry.yarnpkg.com/gridjs/-/gridjs-6.0.6.tgz#7983f08d4bc9d4a9616ee2c7bbfc01ef6bf4ddd2"
+  integrity sha512-TZ20nY+weE/wlyXOd3A9FJyJlsJ/MrHr6frMgUHFN29RmWZCYtnyfF0zuspXC81oePwSJeSZ8HY651aeyX8+rQ==
   dependencies:
     preact "^10.11.3"
 

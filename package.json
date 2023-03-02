@@ -38,7 +38,7 @@
     "react-twitter-embed": "4.0.4",
     "sass": "1.58.3",
     "sharp": "0.31.3",
-    "styled-components": "5.3.6",
+    "styled-components": "5.3.8",
     "stylelint": "15.2.0",
     "stylelint-config-standard": "30.0.1",
     "stylelint-order": "6.0.2",

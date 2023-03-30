@@ -22,7 +22,7 @@
     "cypress": "12.9.0",
     "daisyui": "2.51.5",
     "dayjs": "1.11.7",
-    "eslint": "8.36.0",
+    "eslint": "8.37.0",
     "eslint-config-next": "12.1.6",
     "eslint-config-prettier": "8.8.0",
     "gridjs": "6.0.6",

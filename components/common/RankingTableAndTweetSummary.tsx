@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import ExternalLink from '@/components/svg/ExternalLink'
 
 export const RankingTableAndTweetSummary: NextPage = () => {
   return (
@@ -20,8 +21,11 @@ export const RankingTableAndTweetSummary: NextPage = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      順位表 (PDF on Booth)
+                      順位表 (BOOTH)
                     </a>
+                    <span className="pl-1">
+                      <ExternalLink />
+                    </span>
                   </p>
                   <div className="mb-4" />
                   <p>
@@ -31,8 +35,11 @@ export const RankingTableAndTweetSummary: NextPage = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      第一部 開票ツイート まとめ
+                      第一部 開票ツイート まとめ (min.t)
                     </a>
+                    <span className="pl-1">
+                      <ExternalLink />
+                    </span>
                   </p>
                   <div className="mb-2" />
                   <p>
@@ -42,8 +49,11 @@ export const RankingTableAndTweetSummary: NextPage = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      第二部 開票ツイート まとめ
+                      第二部 開票ツイート まとめ (min.t)
                     </a>
+                    <span className="pl-1">
+                      <ExternalLink />
+                    </span>
                   </p>
                 </div>
 

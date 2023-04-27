@@ -4668,10 +4668,10 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-next-translate@1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/next-translate/-/next-translate-1.6.0.tgz#28329d9970030c573c529a1a6d5c6b4e75146164"
-  integrity sha512-rmRBYOwPHvokN+5uH3O/SZqfRUVORLkgt/097mSaq3+CWcEtXEjkVrfBZpYwZ8W3og4QVd+uphYX//qegnIbRg==
+next-translate@2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/next-translate/-/next-translate-2.0.5.tgz#d723ce59889a7833562ea7b4fe571fe76a875d3b"
+  integrity sha512-1aNweJUV9/edW2haexIqk66m/uiWRbZqC4K4bJxQRUjcOqNElJ3ZOBNeY50PYgY3Gb8tTFYkD3g+lqKtx6izYw==
 
 next@12.1.6:
   version "12.1.6"

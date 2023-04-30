@@ -12,7 +12,7 @@ jobs:
         node-version: ["18.x"]
     steps:
       - name: Checkout
-        uses: actions/checkout@v3.1.0
+        uses: actions/checkout@v3.5.2
       - name: Node.js のセットアップ
         uses: actions/setup-node@v3
         with:
@@ -38,7 +38,7 @@ jobs:
         run: |
           npx cypress info
       - name: Cypress を実行する
-        uses: cypress-io/github-action@v4.2.0
+        uses: cypress-io/github-action@v5.6.1
         with:
           build: npx next build
           start: npx next start --port 3100
@@ -53,13 +53,13 @@ jobs:
         env:
           DEPLOYMENT_ENVIRONMENT: production
       - name: Cypress のスクリーンショットをアップロードする
-        uses: actions/upload-artifact@v3.1.1
+        uses: actions/upload-artifact@v3.1.2
         if: always()
         with:
           name: cypress_screenshots
           path: cypress/screenshots/
       - name: Cypress の動画をアップロードする
-        uses: actions/upload-artifact@v3.1.1
+        uses: actions/upload-artifact@v3.1.2
         if: always()
         with:
           name: cypress_videos

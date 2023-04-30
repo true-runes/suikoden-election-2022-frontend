@@ -18,6 +18,7 @@ import { HallOfFame } from '@/components/votes/HallOfFame'
 import { Onegai } from '@/components/votes/Onegai'
 import { EventsInEventIndex } from '@/components/events-in-event/index'
 
+import { RankingTableAndTweetSummary } from '@/components/common/RankingTableAndTweetSummary'
 import { VoteDeadLineCard } from '@/components/common/VoteDeadLineCard'
 import { AboutProjectsCard } from '@/components/common/AboutProjectsCard'
 import { AboutCheckVoteCard } from '@/components/common/AboutCheckVoteCard'
@@ -78,6 +79,10 @@ const Home: NextPage = () => {
         )}
 
         <div className="max-w-lg mx-auto">
+          <div id="ranking-table-and-tweet-summary" className="-mt-32 pt-32">
+            <RankingTableAndTweetSummary />
+          </div>
+
           <div id="vote-dead-line-card" className="-mt-32 pt-32">
             <VoteDeadLineCard />
           </div>

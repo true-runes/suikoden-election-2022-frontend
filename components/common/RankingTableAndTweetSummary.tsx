@@ -16,12 +16,12 @@ export const RankingTableAndTweetSummary: NextPage = () => {
                 <div className="text-left">
                   <p className="text-center">
                     <a
-                      href="https://gensosenkyo.booth.pm/items/4262247"
+                      href="https://drive.google.com/file/d/1zmmWdC69cwNLT3cEDT3D2vdgszhkE1zd/view"
                       className="underline underline-offset-4 text-blue-500 hover:text-blue-900"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      順位表 (BOOTH)
+                      順位表 (PDF)
                     </a>
                     <span className="pl-1">
                       <ExternalLink />

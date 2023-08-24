@@ -10,7 +10,7 @@
   "devDependencies": {
     "@bugsnag/js": "7.21.0",
     "@bugsnag/plugin-react": "7.19.0",
-    "@testing-library/jest-dom": "6.1.1",
+    "@testing-library/jest-dom": "6.1.2",
     "@testing-library/react": "14.0.0",
     "@types/node": "18.17.9",
     "@types/react": "18.0.26",

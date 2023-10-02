@@ -17,7 +17,7 @@
     "@types/react-burger-menu": "2.8.4",
     "@types/react-copy-to-clipboard": "5.0.5",
     "@types/styled-components": "5.1.28",
-    "autoprefixer": "10.4.15",
+    "autoprefixer": "10.4.16",
     "axios": "1.5.1",
     "cypress": "13.2.0",
     "daisyui": "3.7.6",

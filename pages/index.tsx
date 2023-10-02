@@ -26,6 +26,7 @@ import { LinkToEnglishTranslationDocument } from '@/components/common/LinkToEngl
 import { WhatIsGensosenkyo } from '@/components/votes/WhatIsGensosenkyo'
 import { IllustratedBy } from '@/components/common/IllustratedBy'
 import { SiteFooter } from '@/components/common/SiteFooter'
+import { RealtimeReport } from '@/components/common/RealtimeReport'
 
 import { useLocale } from '@/hooks/useLocale'
 import useTranslation from 'next-translate/useTranslation'
@@ -97,6 +98,9 @@ const Home: NextPage = () => {
             <AboutProjectsCard />
           </div>
         </div>
+
+        <div className="divider" />
+        <RealtimeReport />
 
         <div className="divider" />
         <div id="what-is-gensosenkyo" className="-mt-32 pt-32">

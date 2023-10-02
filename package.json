@@ -20,7 +20,7 @@
     "autoprefixer": "10.4.16",
     "axios": "1.5.1",
     "cypress": "13.3.0",
-    "daisyui": "3.7.6",
+    "daisyui": "3.8.2",
     "dayjs": "1.11.10",
     "eslint": "8.50.0",
     "eslint-config-next": "12.1.6",

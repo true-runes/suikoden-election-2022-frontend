@@ -2,8 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 
 const middleware = (req: NextRequest) => {
   if (
-    process.env.DEPLOYMENT_ENVIRONMENT === 'production' &&
-    (req.page !== undefined && req.page.name !== '/usagisan')
+    process.env.DEPLOYMENT_ENVIRONMENT === 'production'
   )
     return NextResponse.next()
 

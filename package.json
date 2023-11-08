@@ -11,7 +11,7 @@
     "@bugsnag/js": "7.21.0",
     "@bugsnag/plugin-react": "7.19.0",
     "@testing-library/jest-dom": "6.1.4",
-    "@testing-library/react": "14.0.0",
+    "@testing-library/react": "14.1.0",
     "@types/node": "20.9.0",
     "@types/react": "18.0.26",
     "@types/react-burger-menu": "2.8.6",
